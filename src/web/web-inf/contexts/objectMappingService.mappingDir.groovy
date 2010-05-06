@@ -1,0 +1,1 @@
+"${registry.directory.rootDirectory.absolutePath}/../ormMapping".toString()

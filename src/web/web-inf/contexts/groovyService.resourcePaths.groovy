@@ -1,0 +1,1 @@
+["${registry.root.directory.rootDirectory.absolutePath}/../ormMapping".toString()] as String[]

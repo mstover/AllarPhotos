@@ -1,0 +1,1 @@
+com.lazerinc.kodak.KodakSearchCategoryBean.class

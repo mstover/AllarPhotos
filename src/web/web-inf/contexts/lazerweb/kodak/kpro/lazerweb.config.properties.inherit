@@ -1,0 +1,6 @@
+product_tables=kpro,kdk_begs
+href-base=/lazerweb/kodak/kpro/
+download_dir=/kodak/kpro/files/
+default_product_display_number=12
+keyword_fields=Usage\ Rights
+po_number=96-KC2-249468W

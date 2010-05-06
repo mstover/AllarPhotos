@@ -1,0 +1,3 @@
+Username	First Name	Last Name	Email	Phone	Company	Address	City	State	Country	Expires On
+#foreach($user in $users)$user.username	$user.firstName	$user.lastName	$user.emailAddress	$user.phone	$!user.company.name	$user.shipAddress1	$user.shipCity	$user.shipState	$user.shipCountry	$format.formatCalendar($user.expDate,"MM/dd/yyyy")
+#end

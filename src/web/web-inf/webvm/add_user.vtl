@@ -1,0 +1,9 @@
+Hello $user.firstName,
+
+You have been granted access to the #foreach($library in $libraries)$library #if(($velocityCount+2) < $libraries.size()), #elseif(($velocityCount+1) < $libraries.size())and #end#end libraries which you may access here:
+$url
+      
+A new user account has been created for you:
+
+Username: $user.username
+Password: $user.password

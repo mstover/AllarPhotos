@@ -1,0 +1,196 @@
+#macro(page $title $directorySet)
+	#set($directory = "$directorySet")
+	<html><head>
+	#pageMeta($directory)
+	#pageTitle($title)
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+	#if($browser == "IE")
+		<script language="Javascript" src="/lazerweb/javascript/ie.js" type="text/javascript"></script>
+		<script language="Javascript" src="/lazerweb/javascript/fix_png.js" type="text/javascript"></script>
+	#else
+		<script language="Javascript" src="/lazerweb/javascript/mozilla.js" type="text/javascript"></script>
+	#end
+	<script language="Javascript" src="/lazerweb/javascript/functions.js" type="text/javascript"></script>
+	<script language="Javascript" src="/lazerweb/javascript/validation.js" type="text/javascript"></script>
+	<script language="Javascript" src="/lazerweb/javascript/ajax.js" type="text/javascript"></script>
+	<script language="Javascript" src="/lazerweb/javascript/ts_picker.js" type="text/javascript"></script>
+	#siteJavascript()
+	#pageJavascript()
+	</head>
+	#bodyTag()
+	#header()
+	#mainContent()
+	#footer()
+#end
+
+#macro(pageMeta $directory)
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="style_$!{directory}.css" media="screen">
+#menuStyleLink()
+#end
+
+#macro(menuStyleLink)
+	<LINK REL="STYLESHEET" TYPE="text/css" HREF="/lazerweb/include/style_menu.css" media="screen">
+#end
+
+#macro(pageTitle $title)
+	<title>$!title</title>
+#end
+
+#macro(siteJavascript)
+	
+#end
+
+#macro(pageJavascript)
+	
+#end
+
+#macro(bodyTag)
+	<body>
+#end
+
+#macro(mainContent)
+	//This should be overridden
+#end
+
+#macro(preNav)
+	<div class="page">
+#end
+
+#macro(postNav)
+	<div class="content">
+#end
+
+#macro(header)
+	#preNav()
+	#navigation()
+	#postNav()
+#end
+
+#macro(navigation)
+	
+#end
+
+#macro(footer)
+	</div></div>
+	</body></html>
+#end
+
+#macro(messages)
+	#if($errorBean && ($errorBean.errorMessages.size() > 0 || ($messages && $messages.size() > 0)))
+    	<div id="messages">
+    	#if($errorBean.errorMessages.size() > 0)
+    		<div class="errorSection">
+    				#foreach($error in $errorBean.errorMessages)
+    					#if($error.length() > 0) 
+    						<li class="message">$!error</li>
+    					#end
+    				#end
+    		</div>
+    	#end
+    	#if($messages && $messages.size() > 0)
+    		<div class="messageSection">
+    			<ul>
+    				#foreach($message in $messages)
+    					<li class="message">$!message.msg</li>
+    				#end
+    				</ul>
+    		</div>
+    	#end
+    	</div>
+	#end
+#end
+
+#macro(messageAlert)
+	#if($errorBean && ($errorBean.errorMessage.size() > 0 || ($messages && $messages.size() > 0)))		
+		<script language="Javascript">
+		<!--
+		#if($errorBean.errorMessages.size() > 0)
+			alert("#foreach($error in $errorBean.errorMessages)#if($error.length() > 0)$!error #end#end");
+		#end
+    	#if($messages && $messages.size() > 0)
+			alert("#foreach($message in $messages)$!message.msg #end");
+    	#end
+		-->
+		</script>
+	#end
+#end
+	
+
+#macro(hidden $name $value)
+	<input type="hidden" name="$!name" value="$!value">
+#end
+
+#macro(hiddenList $name $list)
+	#foreach($item in $list)
+		#hidden($name $item)
+	#end
+#end
+
+#macro(redirectForm $value)
+	<FORM ACTION="page.redirect" METHOD="POST">
+	<input type="hidden" name="redirectUrl" value="$!value">
+#end
+
+#macro(list $items $separator)
+	#foreach($item in $items)#if($velocityCount > 0)$separator#end$item#end
+#end
+
+#macro(optionList $items $selected $defaultChoice)
+	#if($defaultChoice)
+		<option value="">$defaultChoice</option>
+	#end
+	#foreach($item in $items)
+		<option #if($item == $selected)selected#end value="$!item">$!item</option>
+	#end
+#end
+
+#macro(stateList $selectName $selectedState)
+	<SELECT NAME="$selectName">
+    #foreach($state in $data.states)
+    		
+    			#if($state.id == $selectedState.id)
+					<OPTION VALUE='$state.id' SELECTED>$!state.name</OPTION>
+    			
+    			#else
+					<OPTION VALUE='$!state.id'>$!state.name</OPTION>
+    			#end
+    		
+    	#end
+    </SELECT>
+#end
+
+#macro(countryList $selectName $selectedCountry)
+	<SELECT NAME="$selectName">
+    #foreach($country in $data.countries)
+    		
+    			#if($country.id == $selectedCountry.id)
+					<OPTION VALUE='$country.id' SELECTED>$!country.name</OPTION>
+    			
+    			#else
+					<OPTION VALUE='$!country.id'>$!country.name</OPTION>
+    			#end
+    		
+    	#end
+    </SELECT>
+#end
+
+#macro(displayIMG $product $maxSideLength)
+	#if($math.toInteger($product.getValue("Height")) > $math.toInteger($product.getValue("Width")))
+    		#set($attr = "height")
+    	#else
+    		#set($attr = "width")
+		#end
+	#if($maxSideLength <= 200)
+		#set($isThumb = true)
+	#else
+		#set($isThumb = false)
+	#end
+	<IMG #if($product.productFamily.productExpirationTester.pastExpiredThreshold($product))class="pastExpiredThreshold"#elseif($product.productFamily.productExpirationTester.isExpired($product))class="expiredIMG"#elseif($product.productFamily.productExpirationTester.willExpire($product))class="willExpire"#elseif($product.productFamily.productExpirationTester.hasUsageRights($product))class="hasUsage"#else class="noUsage"#end SRC='/$configuration.context_path/servlet/fetchpix?product_family=$product.productFamilyName&product_id=$product.id&thumb=$isThumb&&mimetype=image/jpeg' #if($attr != "")style='$attr: ${maxSideLength}px;'#end>
+#end
+
+#macro(datePick $formName $elementName)
+	<a href="javascript:show_calendar('$formName','$elementName', document.$formName['$elementName'].value);"><img src="/lazerweb/iwimages/cal.gif" width="16" height="16" border="0" title="Click Here to Pick the timestamp" alt="Click Here to Pick the timestamp"></a>
+#end
+	

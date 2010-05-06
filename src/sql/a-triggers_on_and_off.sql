@@ -1,0 +1,38 @@
+ALTER TRIGGER cities_trig INACTIVE;
+ALTER TRIGGER companies_trig INACTIVE;
+ALTER TRIGGER groups_trig INACTIVE;
+ALTER TRIGGER industries_trig INACTIVE;
+ALTER TRIGGER referrers_trig INACTIVE;
+ALTER TRIGGER resources_trig INACTIVE;
+ALTER TRIGGER users_trig INACTIVE;
+ALTER TRIGGER user_att_trig INACTIVE;
+ALTER TRIGGER user_long_values_trig INACTIVE;
+ALTER TRIGGER log_items_insert INACTIVE;
+ALTER TRIGGER log_names_insert INACTIVE;
+ALTER TRIGGER log_values_insert INACTIVE;
+
+SET GENERATOR companies_gen to X;
+SET GENERATOR groups_gen to X;
+SET GENERATOR industries_gen to X;
+SET GENERATOR product_tables_gen to X;
+SET GENERATOR referrers_gen to X;
+SET GENERATOR resources_gen to X;
+SET GENERATOR users_gen to X;
+SET GENERATOR user_att_gen to X;
+SET GENERATOR user_long_values_gen to X;
+SET GENERATOR log_items_gen to X;
+SET GENERATOR log_names_gen to X;
+SET GENERATOR log_values_gen to X;
+
+ALTER TRIGGER cities_trig ACTIVE;
+ALTER TRIGGER companies_trig ACTIVE;
+ALTER TRIGGER groups_trig ACTIVE;
+ALTER TRIGGER industries_trig ACTIVE;
+ALTER TRIGGER referrers_trig ACTIVE;
+ALTER TRIGGER resources_trig ACTIVE;
+ALTER TRIGGER users_trig ACTIVE;
+ALTER TRIGGER user_att_trig ACTIVE;
+ALTER TRIGGER user_long_values_trig ACTIVE;
+ALTER TRIGGER log_items_insert ACTIVE;
+ALTER TRIGGER log_names_insert ACTIVE;
+ALTER TRIGGER log_values_insert ACTIVE;

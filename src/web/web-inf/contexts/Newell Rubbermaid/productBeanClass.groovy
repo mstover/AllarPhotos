@@ -1,0 +1,1 @@
+com.lazerinc.irwin.IrwinProductBean.class

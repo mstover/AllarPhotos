@@ -1,0 +1,1 @@
+delete from ${product.productFamilyName}category where product_id=$product.id

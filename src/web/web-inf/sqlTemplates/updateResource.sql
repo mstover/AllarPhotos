@@ -1,0 +1,1 @@
+update resources set name='$!sql.escapeSql($obj.name)',resource_type=$obj.type where resource_id=$obj.id

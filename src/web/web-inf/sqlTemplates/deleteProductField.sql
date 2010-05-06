@@ -1,0 +1,1 @@
+delete from ${obj.family}Fields where name='$obj.name'

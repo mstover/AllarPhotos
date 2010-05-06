@@ -1,0 +1,21 @@
+<jmeterTestPlan version="1.1" properties="1.7">
+  <hashTree>
+    <org.apache.jmeter.protocol.http.proxy.ProxyControl>
+      <boolProp name="ProxyControlGui.regex_match">false</boolProp>
+      <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.proxy.gui.ProxyControlGui</stringProp>
+      <intProp name="ProxyControlGui.grouping_mode">0</intProp>
+      <boolProp name="ProxyControlGui.capture_http_headers">true</boolProp>
+      <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.proxy.ProxyControl</stringProp>
+      <stringProp name="TestElement.name">HTTP Proxy Server</stringProp>
+      <boolProp name="ProxyControlGui.use_keepalive">true</boolProp>
+      <collectionProp name="ProxyControlGui.include_list">
+        <stringProp name="109392629">.*\.jsp.*</stringProp>
+      </collectionProp>
+      <collectionProp name="ProxyControlGui.exclude_list"/>
+      <boolProp name="TestElement.enabled">true</boolProp>
+      <stringProp name="ProxyControlGui.port">8090</stringProp>
+      <boolProp name="ProxyControlGui.add_assertion">false</boolProp>
+    </org.apache.jmeter.protocol.http.proxy.ProxyControl>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>

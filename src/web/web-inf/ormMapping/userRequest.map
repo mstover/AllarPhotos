@@ -1,0 +1,25 @@
+mapping {
+	class=UserRequest
+	primary { request_id }
+	pairs {
+		setUsername=username
+		setFirstName=first_name
+		setLastName=last_name
+		setEmail=email
+		setId=request_id
+		setCompany=company
+		setPhone=phone
+		setReason=reason
+		setAddress1=address1
+		setAddress2=address2
+		setCity=city
+		setState=state
+		setCountry=country
+		setZip=zip
+	}
+	submappings {
+		setRequestedResource {
+			mapfile=resource.map
+		}
+	}
+}

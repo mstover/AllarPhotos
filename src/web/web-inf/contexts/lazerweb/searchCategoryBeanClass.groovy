@@ -1,0 +1,1 @@
+com.lazerinc.client.beans.SearchCategoryBean.class

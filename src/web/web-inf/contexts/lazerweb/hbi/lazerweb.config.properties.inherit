@@ -1,0 +1,11 @@
+href-base=/lazerweb/hbi/
+search_root_name=Libraries
+number_of_products_shown=20000
+default_product_display_number=2
+file_types=pdf,jpg,eps,png
+InvalidLoginException=/lazerweb/hbi/index.jsp
+IncompleteUserInformationException=/lazerweb/hbi/edit_user_info.jsp?badInfo/=true
+servlet_dir=/lazerweb/servlet/
+web_host=@WEB_HOST_IA@
+product_tables=hb_sales,ia_bali,ia_bt,ia_hanes,ia_plytx,ia_jms,ia_wndbr,hb_c9,hb_cas,hb_champ,hb_duo,hb_hanes_champ,hb_hanes_sleep,hb_hos,hb_leggs,hb_ob,hb_polo,hb_socks,hb_uw
+logoTop=hbi/images/hanes-logo.gif

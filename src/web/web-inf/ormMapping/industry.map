@@ -1,0 +1,9 @@
+mapping {
+	class=Industry
+	cached=true
+	primary { industry_id }
+	pairs {
+		setId=industry_id
+		setName=industry_name
+	}
+}

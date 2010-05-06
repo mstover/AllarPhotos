@@ -1,0 +1,1 @@
+new com.lazerinc.welchallyn.WAExpirationTester()

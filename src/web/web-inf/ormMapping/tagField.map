@@ -1,0 +1,4 @@
+mapping {
+	class=TagField
+	inherits=productField.map
+}

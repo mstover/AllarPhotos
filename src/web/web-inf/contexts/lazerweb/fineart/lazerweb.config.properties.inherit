@@ -1,0 +1,10 @@
+product_tables=fineart
+web_directory=fineart
+href-base=/lazerweb/fineart/
+number_of_products_shown=200
+search_display_size=50
+default_product_display_number=24
+file_types=pdf,jpg,eps,png
+customer_name=FineArt
+web_host=@WEB_HOST_FineArt@
+browseset_sortby=date

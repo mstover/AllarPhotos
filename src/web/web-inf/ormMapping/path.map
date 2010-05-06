@@ -1,0 +1,7 @@
+mapping {
+	class=Path
+	pairs {
+		setId=path_id
+		setName=product_path
+	}
+}

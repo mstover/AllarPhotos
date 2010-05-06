@@ -1,0 +1,4 @@
+product_tables=hb_c9,hb_cas,hb_champ,hb_leggs,hb_hos,hb_ob,hb_duo,hb_polo,hb_logos,hb_sales
+customer_name=HBI
+file_types=pdf,jpg,eps,png,originals
+href-base=/lazerweb/hbi/def/

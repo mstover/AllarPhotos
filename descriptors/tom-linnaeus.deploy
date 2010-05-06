@@ -1,0 +1,15 @@
+deploy.war.dir=l:/apache-tomcat-5.5.12/webapps
+app.name=lazerweb
+IMAGE_DB=jdbc/imagedb
+LOG_DB=jdbc/imagedb
+KEYCODE_DB=jdbc/keywordDb
+path_prefix=/var/lazer/digital_assets
+WEB_HOST=216.190.208.105:8080
+WEB_HOST_IA=216.190.208.105:8080
+WEB_HOST_HBI=216.190.208.105:8080
+WEB_HOST_Kdk=216.190.208.105:8080
+WEB_HOST_WA=216.190.208.105:8080
+WEB_HOST_WK=216.190.208.105:8080
+EMAIL_ACTIVE=false
+error_monitor=developers@lazerinc.com
+RECONFIGURABLE=true

@@ -1,0 +1,1 @@
+insert into $pathTable (path_id,path) values($path.id,'$sql.escapeSql($path.name)')

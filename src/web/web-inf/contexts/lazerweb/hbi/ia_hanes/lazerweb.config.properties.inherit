@@ -1,0 +1,4 @@
+product_tables=ia_hanes,hb_uw,hb_socks,hb_hanes_champ,hb_hanes_mag,hb_slush,hb_cas,hb_hanes_sleep,hb_hanes_ult
+customer_name=IA Hanes
+href-base=/lazerweb/hbi/ia_hanes/
+file_types=pdf,jpg,eps,png,originals

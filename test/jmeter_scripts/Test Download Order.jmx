@@ -1,0 +1,679 @@
+<jmeterTestPlan version="1.1" properties="1.7">
+  <hashTree>
+    <GenericController>
+      <stringProp name="TestElement.gui_class">org.apache.jmeter.control.gui.LogicControllerGui</stringProp>
+      <stringProp name="TestElement.test_class">org.apache.jmeter.control.GenericController</stringProp>
+      <stringProp name="TestElement.name">Test Download Order</stringProp>
+      <boolProp name="TestElement.enabled">true</boolProp>
+    </GenericController>
+    <hashTree>
+      <CSVDataSet>
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.testbeans.gui.TestBeanGUI</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.config.CSVDataSet</stringProp>
+        <stringProp name="variableNames">family,family_name,top_family</stringProp>
+        <stringProp name="TestElement.name">CSV Data Set Config</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <stringProp name="filename">ia_sites.csv</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${family}/index.jsp</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments"/>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">Index Page</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+      </HTTPSampler>
+      <hashTree/>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${top_family}/whats_new.jsp</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">POST</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">action_login</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">actiona</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">0</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_history_index</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">mstover</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_username</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">[NBfM]</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_password</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">Login</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">go</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+          </collectionProp>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">Login - Whats New</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+      </HTTPSampler>
+      <hashTree/>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${family}/catsearch.jsp</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">0</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_history_index</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">0</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_browse_set</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${family_name}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_category_prefixLibrary Name|0|1|or|and</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">Active</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_category_prefixArchive|0|1|or|and</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${family}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">image_library</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+          </collectionProp>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">${family}: Catsearch</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+      </HTTPSampler>
+      <hashTree>
+        <RegexExtractor>
+          <stringProp name="RegexExtractor.default">No Categories!</stringProp>
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.extractor.gui.RegexExtractorGui</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.extractor.RegexExtractor</stringProp>
+          <stringProp name="RegexExtractor.regex">href\=\&apos;catsearch\.jsp\?request_category_prefixImage\%20Type\|0\|1\|or\|and\=([^&apos;&quot;]+)\&apos;</stringProp>
+          <stringProp name="TestElement.name">Choose Category</stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+          <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+          <stringProp name="RegexExtractor.match_number">0</stringProp>
+          <stringProp name="RegexExtractor.template">$1$</stringProp>
+          <stringProp name="RegexExtractor.refname">category</stringProp>
+        </RegexExtractor>
+        <hashTree/>
+      </hashTree>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${family}/catsearch.jsp</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${category}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_category_prefixImage+Type%7C0%7C1%7Cor%7Cand</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+          </collectionProp>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">${family}(${category}): Choose Category</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+      </HTTPSampler>
+      <hashTree/>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${family}/browse_products.jsp?request_browse_set=0</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">POST</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">View Search Now</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">submit</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+          </collectionProp>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">${family} (${category}): View Products</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+      </HTTPSampler>
+      <hashTree>
+        <RegexExtractor>
+          <stringProp name="RegexExtractor.default">No Family!</stringProp>
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.extractor.gui.RegexExtractorGui</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.extractor.RegexExtractor</stringProp>
+          <stringProp name="RegexExtractor.regex">&amp;request_product_family\=([^&apos;+&amp;]+)&amp;</stringProp>
+          <stringProp name="TestElement.name">Image Family</stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+          <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+          <stringProp name="RegexExtractor.match_number">1</stringProp>
+          <stringProp name="RegexExtractor.template">$1$</stringProp>
+          <stringProp name="RegexExtractor.refname">image_family</stringProp>
+        </RegexExtractor>
+        <hashTree/>
+        <RegexExtractor>
+          <stringProp name="RegexExtractor.default">No Image!</stringProp>
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.extractor.gui.RegexExtractorGui</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.extractor.RegexExtractor</stringProp>
+          <stringProp name="RegexExtractor.regex">dummy\.jsp\?request_product_id\=(\d+)&amp;</stringProp>
+          <stringProp name="TestElement.name">File Ids</stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+          <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+          <stringProp name="RegexExtractor.match_number">-1</stringProp>
+          <stringProp name="RegexExtractor.template">$1$</stringProp>
+          <stringProp name="RegexExtractor.refname">file_ids</stringProp>
+        </RegexExtractor>
+        <hashTree/>
+      </hashTree>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${family}/dummy.jsp</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">POST</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${file_ids_1}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_product_id</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${image_family}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_product_family</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">action_add_to_cart</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">action</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">Add to Cart</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">submit</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+          </collectionProp>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">${family}(${category}): Add To Cart</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+      </HTTPSampler>
+      <hashTree/>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${family}/dummy.jsp</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">POST</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${file_ids_2}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_product_id</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${image_family}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_product_family</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">action_add_to_cart</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">action</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">Add to Cart</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">submit</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+          </collectionProp>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">${family}(${category}): Add To Cart</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+      </HTTPSampler>
+      <hashTree/>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${family}/dummy.jsp</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">POST</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${file_ids_3}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_product_id</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${image_family}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_product_family</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">action_add_to_cart</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">action</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">Add to Cart</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">submit</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+          </collectionProp>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">${family}(${category}): Add To Cart</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+      </HTTPSampler>
+      <hashTree/>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${family}/shopping_cart.jsp</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments"/>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">${family}(${category}): Shopping Cart</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+      </HTTPSampler>
+      <hashTree/>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${family}/check_user.jsp</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">POST</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">action_order_items</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">action</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">action_remove_from_cart</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">actiona</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">0</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_cart_set</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${file_ids_1}|${image_family}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_product</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${file_ids_1}|${image_family}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">addToOrder.download_product</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${file_ids_2}|${image_family}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_product</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${file_ids_2}|${image_family}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">addToOrder.download_product</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${file_ids_3}|${image_family}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">request_product</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">${file_ids_3}|${image_family}</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">addToOrder.download_product</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+          </collectionProp>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">${family}(${category}): Request Download</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+      </HTTPSampler>
+      <hashTree/>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${family}/verify.jsp</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">POST</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments"/>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">${family}(${category}): Check User</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+      </HTTPSampler>
+      <hashTree/>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${family}/order.jsp</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">POST</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">true</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">dlOnly</stringProp>
+              <boolProp name="HTTPArgument.always_encode">false</boolProp>
+            </elementProp>
+            <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.value">I Accept the Usage Rights</stringProp>
+              <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              <stringProp name="Argument.name">submit</stringProp>
+              <boolProp name="HTTPArgument.always_encode">true</boolProp>
+            </elementProp>
+          </collectionProp>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">${family}(${category}): Verify Order</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+      </HTTPSampler>
+      <hashTree>
+        <RegexExtractor>
+          <stringProp name="RegexExtractor.default">No File!</stringProp>
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.extractor.gui.RegexExtractorGui</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.extractor.RegexExtractor</stringProp>
+          <stringProp name="RegexExtractor.regex">\&lt;a href\=&apos;files/([^.]+.zip)&apos;\&gt;([^.]+\.zip)\&lt;\/a\&gt;</stringProp>
+          <stringProp name="TestElement.name">Regular Expression Extractor</stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+          <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+          <stringProp name="RegexExtractor.match_number">1</stringProp>
+          <stringProp name="RegexExtractor.template">$1$</stringProp>
+          <stringProp name="RegexExtractor.refname">download_file</stringProp>
+        </RegexExtractor>
+        <hashTree/>
+      </hashTree>
+      <HTTPSampler>
+        <stringProp name="HTTPSampler.path">/lazerweb/${family}/files/${download_file}</stringProp>
+        <stringProp name="TestElement.test_class">org.apache.jmeter.protocol.http.sampler.HTTPSampler</stringProp>
+        <stringProp name="HTTPSampler.method">GET</stringProp>
+        <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        <stringProp name="HTTPSampler.protocol">http</stringProp>
+        <boolProp name="TestElement.enabled">true</boolProp>
+        <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <elementProp name="HTTPsampler.Arguments" elementType="org.apache.jmeter.config.Arguments">
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.gui.HTTPArgumentsPanel</stringProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.config.Arguments</stringProp>
+          <collectionProp name="Arguments.arguments"/>
+          <stringProp name="TestElement.name"></stringProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </elementProp>
+        <stringProp name="HTTPSampler.mimetype"></stringProp>
+        <stringProp name="TestElement.gui_class">org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui</stringProp>
+        <stringProp name="HTTPSampler.FILE_FIELD"></stringProp>
+        <stringProp name="TestElement.name">${family}(${category}): Download Zip</stringProp>
+        <stringProp name="HTTPSampler.monitor">false</stringProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.FILE_NAME"></stringProp>
+        <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+      </HTTPSampler>
+      <hashTree>
+        <SizeAssertion>
+          <stringProp name="TestElement.gui_class">org.apache.jmeter.assertions.gui.SizeAssertionGui</stringProp>
+          <intProp name="SizeAssertion.operator">3</intProp>
+          <stringProp name="TestElement.test_class">org.apache.jmeter.assertions.SizeAssertion</stringProp>
+          <stringProp name="TestElement.name">Download File has bytes</stringProp>
+          <longProp name="SizeAssertion.size">10000</longProp>
+          <boolProp name="TestElement.enabled">true</boolProp>
+        </SizeAssertion>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

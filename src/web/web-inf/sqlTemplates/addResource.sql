@@ -1,0 +1,1 @@
+insert into resources(resource_id,name,resource_type) values ($obj.id,'$sql.escapeSql($obj.name)',$obj.type)

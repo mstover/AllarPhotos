@@ -1,0 +1,102 @@
+<html>
+	<head>
+	
+		<!--                                           -->
+		<!-- Any title is fine                         -->
+		<!--                                           -->
+		<title>Wrapper HTML for LazerWeb</title>
+
+		<!--                                           -->
+		<!-- Use normal html, such as style            -->
+		<!--                                           -->
+		<style>
+			body {
+				padding:0;
+				margin:0;
+			}
+			
+			.folder-tree table {
+				font-size:80%;
+			}
+			
+			.center {
+				padding:1em;
+			}
+			
+			.title {
+				font-size:130%;
+				font-weight:bold;
+				display:block;
+				text-align:center;
+			}
+			
+			.gwt-MenuItem {
+				font-size:80%;
+				background:#ccd;
+				padding:1px 3px;
+				border:thin solid black;
+			}	
+			
+			.gwt-TreeItem-selected {
+				background: #ccd;
+			}
+			
+			.gwt-MenuItem-selected {
+				background: #55a;
+				color:#fff;
+			}		
+			
+			.gwt-MenuItem-selected a {
+				background: #55a;
+				color:#fff;
+			}		
+			
+			.gwt-MenuBar {
+				width:100%;
+				padding:0px;
+			}
+			
+			.gwt-MenuBar table,tr,td {
+				margin:0px;
+				padding:0px;
+			}
+			
+			.top-menu {
+				width:100%;
+				background:#ccd;
+				border:thin solid black;
+			}
+			
+			.top-menu .gwt-MenuItem {
+				padding:1px 10px;
+				border:none;
+			}
+			
+		</style>
+
+		<!--                                           -->
+		<!-- The module reference below is the link    -->
+		<!-- between html and your Web Toolkit module  -->		
+		<!--                                           -->
+		<meta name='gwt:module' content='com.lazerinc.ajaxclient.Uploader'>
+		
+	</head>
+
+	<!--                                           -->
+	<!-- The body can have arbitrary html, or      -->
+	<!-- you can leave the body empty if you want  -->
+	<!-- to create a completely dynamic ui         -->
+	<!--                                           -->
+	<body>
+
+		<!--                                            -->
+		<!-- This script is required bootstrap stuff.   -->
+		<!-- You can put it in the HEAD, but startup    -->
+		<!-- is slightly faster if you include it here. -->
+		<!--                                            -->
+		<script language="javascript" src="gwt.js"></script>
+
+
+		<div id="comp" style="width:100%;height:100%;"></div>
+	</body>
+</html>

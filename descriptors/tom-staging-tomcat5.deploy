@@ -1,0 +1,17 @@
+deploy.war.dir=Y:/webapps
+app.name=lazerweb
+basedir=../webapps
+IMAGE_DB=jdbc/imagedb
+LOG_DB=jdbc/imagedb
+KEYCODE_DB=jdbc/keywordDb
+path_pattern=
+path_substitute=
+WEB_HOST=216.190.208.101:8080
+WEB_HOST_IA=216.190.208.101:8080
+WEB_HOST_HB=216.190.208.101:8080
+WEB_HOST_Kdk=216.190.208.101:8080
+WEB_HOST_WA=216.190.208.101:8080
+WEB_HOST_WK=216.190.208.101:8080
+EMAIL_ACTIVE=false
+error_monitor=tomc@lazerinc.com
+RECONFIGURABLE=true

@@ -1,0 +1,6 @@
+#foreach($key in $headers)${key}${primaryDelim}#end
+
+#foreach($line in $export)
+#foreach($key in $headers)#if(!$line.get($key) || $line.get($key).size() == 0) #else#foreach($value in $line.get($key))${value}#if($velocityCount<$math.sub($line.get($key).size(),1))${secondaryDelim}#end#end#end${primaryDelim}#end
+
+#end

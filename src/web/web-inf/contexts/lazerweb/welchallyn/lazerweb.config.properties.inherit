@@ -1,0 +1,10 @@
+product_tables=welch
+web_directory=wa
+href-base=/lazerweb/wa/
+number_of_products_shown=200
+search_display_size=12
+default_product_display_number=24
+file_types=pdf,jpg,eps,png
+customer_name=Welch Allyn
+web_host=@WEB_HOST_WA@
+browseset_sortby=date

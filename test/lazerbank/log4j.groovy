@@ -1,0 +1,5 @@
+if(objClass != null)
+{
+    return org.apache.log4j.Logger.getLogger(objClass);
+}
+else return org.apache.log4j.Logger.getLogger(obj.class);

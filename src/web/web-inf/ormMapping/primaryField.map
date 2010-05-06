@@ -1,0 +1,4 @@
+mapping {
+	class=PrimaryField
+	inherits=productField.map
+}

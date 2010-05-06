@@ -1,0 +1,1 @@
+com.lazerinc.hbi.HbiDefProductBean.class

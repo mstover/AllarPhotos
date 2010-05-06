@@ -1,0 +1,20 @@
+mapping {
+	class=LogItem
+	cached=false
+	primary {item_id}
+	multiRow=true
+	pairs {
+		setId=item_id
+		setDateTime=date_column
+	}
+	compound-mappings {
+		setValue=setValue {
+			category
+			val
+		}
+	}
+	subclass {
+		order=value { mapfile=orderitem.map }
+		download=value { mapfile=downloaditem.map }
+	}
+}

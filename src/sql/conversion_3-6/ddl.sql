@@ -1,0 +1,1 @@
+insert into rights(right_id,name) values(6,'upload')

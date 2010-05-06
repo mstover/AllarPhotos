@@ -1,0 +1,15 @@
+deploy.war.dir=/mnt/lazerftp/tomcat5/webapps
+app.name=lazerweb
+IMAGE_DB=jdbc/imagedb
+LOG_DB=jdbc/imagedb
+KEYCODE_DB=jdbc/keywordDb
+path_prefix=/path to scanbank
+WEB_HOST=216.190.208.101:8080
+WEB_HOST_IA=216.190.208.101:8080
+EMAIL_ACTIVE=false
+error_monitor=mikes@lazerinc.com
+RECONFIGURABLE=true
+lw_username=mstover
+lw_password=[NBfM]
+download_dir=/home/mikes/programs/apache-tomcat-5.5.12/webapps/ROOT/d/
+@download_url@="/d/".toString()

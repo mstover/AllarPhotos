@@ -1,0 +1,1 @@
+update product_tables set remote_managed='$family.isRemoteManaged()' where product_table_id=$family.id

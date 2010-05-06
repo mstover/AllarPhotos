@@ -1,0 +1,15 @@
+mapping {
+	class=Company
+	cached=true
+	primary { company_id }
+	pairs {
+		setId=company_id
+		setName=company_name
+	}
+	submappings {
+		setIndustry {
+			mapfile=industry.map
+		}
+	}
+		
+}

@@ -1,0 +1,9 @@
+runtime.log=velocity.log
+file.resource.loader.modificationCheckInterval=60
+velocimacro.permissions.allow.inline=true
+velocimacro.permissions.allow.inline.to.replace.global=true
+velocimacro.permissions.allow.inline.local.scope=true
+file.resource.loader.path="${registry.contextRoot.parentFile.parentFile.absolutePath}/kodak/vm,${registry.contextRoot.parentFile.parentFile.absolutePath}/kodak/help, ${registry.contextRoot.parentFile.absolutePath}/webvm".toString()
+file.resource.loader.cache=false
+velocimacro.library=main.vm,ajax.vm,kodak-main.vm,kodak-extra.vm
+directive.foreach.counter.initial.value=0

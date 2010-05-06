@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/java"/>
+	<classpathentry kind="src" path="test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/activation.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-fileupload-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jai_codec.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jai_core.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-1.2.8.jar"/>
+	<classpathentry kind="lib" path="lib/logkit-1.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/mail.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/velocity-1.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/velocity-tools-1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="dev_lib/commons-dbcp-1.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="dev_lib/commons-pool-1.2.jar"/>
+	<classpathentry kind="lib" path="dev_lib/junit.jar"/>
+	<classpathentry exported="true" kind="lib" path="dev_lib/servlet.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/commons-collections-3.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/strategiclibrary-1.5.jar"/>
+	<classpathentry kind="lib" path="dev_lib/gwt-servlet.jar" sourcepath="/home/mikes/programs/gwt-linux-1.2.22/gwt-user.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/coinjema-core-1.0.jar"/>
+	<classpathentry kind="lib" path="/home/mikes/programs/eclipse-plugins/eclipse/plugins/org.aspectj.runtime_1.5.2.20060629124300/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="dev_lib/jaybird-full-2.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/usr/java/jdk1.6.0/lib/tools.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/groovy-all-1.0.jar"/>
+	<classpathentry kind="output" path="eclipse"/>
+</classpath>

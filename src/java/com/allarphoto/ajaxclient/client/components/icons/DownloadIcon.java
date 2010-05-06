@@ -1,0 +1,40 @@
+package com.lazerinc.ajaxclient.client.components.icons;
+
+import com.lazerinc.ajaxclient.client.Services;
+import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
+import com.lazerinc.ajaxclient.client.beans.Request;
+
+public class DownloadIcon extends BaseIcon {
+	String type;
+
+	String description;
+
+	public DownloadIcon() {
+		addStyleName("button-icon");
+		init();
+	}
+
+	public DownloadIcon(AjaxProduct p, String t, String desc) {
+		addStyleName("button-icon");
+		product = p;
+		type = t;
+		description = desc;
+		init();
+	}
+
+	public Request createRequest() {
+		return new Request(product, true, type, this, getTitle());
+	}
+
+	public String getIconName() {
+		return type + "_download.gif";
+	}
+
+	public String getToolTip() {
+		if (!Services.getServices().cart.contains(createRequest()))
+			return description;
+		else
+			return "Remove from Shopping Cart";
+	}
+
+}

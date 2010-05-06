@@ -1,0 +1,1 @@
+["${registry.root.directory.rootDirectory.absolutePath}/../classes".toString(),"${registry.root.directory.rootDirectory.absolutePath}/../lib/strategiclibrary-1.5.jar".toString()] as List

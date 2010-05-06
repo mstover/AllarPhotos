@@ -1,0 +1,32 @@
+#macro(mouseoverSpan $text)
+#mouseoverElement($text "span")
+#end
+
+#macro(clickableSpan $text $onclickJS)
+#clickableElement($text "span" $onclickJS)
+#end
+
+#macro(mouseoverElement $text $htmlTag)
+	#set($clickableDivId = "clickable_$divCounter.next")
+<$htmlTag id="$clickableDivId" class="mouse_out" onmouseover="javascript:mouseoverObj('$clickableDivId');" onmouseout="javascript:mouseoutObj('$clickableDivId');">$!text</$htmlTag>
+#end
+
+#macro(clickableElement $text $htmlTag $onclickJS)
+	#set($clickableDivId = "clickable_$divCounter.next")
+<$htmlTag id="$clickableDivId" onclick="javascript:$!onclickJS.replaceAll("this_el_id","$clickableDivId")" class="mouse_out" onmouseover="javascript:mouseoverObj('$clickableDivId');" onmouseout="javascript:mouseoutObj('$clickableDivId');">$!text</$htmlTag>
+#end
+
+#macro(swappControl $divId $text $htmlTag)
+	#clickableElement($text $htmlTag "toggleView('$divId');")
+#end
+
+#macro(swappableDiv $divId $text $divClass $divStyle)
+	<div id="$divId" style="position:absolute; left:0px;top:0px;z-index:0;visibility:hidden">$text</div>
+	<div id="${divId}_view" #if($divClass)class="$divClass"#end #if($divStyle)style="$divStyle"#end></div>
+#end
+
+#macro(mouseoverImg $mainImg $t_1 $t_2 $onclick)
+#set($newImgId = "img_$divCounter.next")<img id="$newImgId" #if($onclick)onclick="javascript:$onclick.replaceAll("this_el_id","$newImgId")"#end src="$mainImg" onmouseover="javascript:imgToggle('$newImgId','$t_1');" onmouseout="javascript:imgToggle('$newImgId','$t_2');">#end
+
+#macro(mouseoverImg_border $mainImg $onclick)
+#set($newImgId = "img_$divCounter.next")<img id="$newImgId" class="mouse_out" #if($onclick)onclick="javascript:$onclick.replaceAll("this_el_id","$newImgId")"#end src="/$mainImg" onmouseover="javascript:mouseoverObj('$newImgId');" onmouseout="javascript:mouseoutObj('$newImgId');">#end

@@ -1,0 +1,24 @@
+mapping {
+	class=ProductField
+	primary {
+		field_id
+		family
+	}
+	cached=true
+	pairs {
+		setType=field_type
+		setName=field_name
+		setFieldID=field_id
+		setFamily=family
+		setSearchOrder=search_order
+		setDisplayOrder=display_order
+	}
+	subclass {
+		-1=field_type { mapfile=protectedField.map }
+		1=field_type { mapfile=categoryField.map }
+		2=field_type { mapfile=descriptionField.map }
+		8=field_type { mapfile=numericalField.map }
+		6=field_type { mapfile=primaryField.map }
+		11=field_type {mapfile=tagField.map }
+	}
+}

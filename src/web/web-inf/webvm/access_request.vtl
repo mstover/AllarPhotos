@@ -1,0 +1,20 @@
+#macro(displayResources $requests)
+	#foreach($request in $requests)
+		$dbutil.getProductFamily($request.requestedResource.name).descriptiveName
+	#end
+#end
+
+#if($user)
+	$user.firstName $user.lastName ($user.emailAddress) has requested access to the following Libraries: 
+	#displayResources($requests)
+#else
+	Company: $request.company
+	Phone: $request.phone
+	Reason: $request.reason
+	$request.firstName $request.lastName ($request.email) has requested an account and access to the following libraries:
+	#displayResources($requests)
+#end
+
+To approve or reject these request, please visit the administrative page ($url) for the Lazerweb system.
+
+This message was sent automatically from the Lazerweb system.

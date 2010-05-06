@@ -1,0 +1,1 @@
+["fineart"] as String[]

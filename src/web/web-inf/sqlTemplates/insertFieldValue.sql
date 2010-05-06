@@ -1,0 +1,1 @@
+insert into ${family}${table} (product_id,field_id,$column) values($product.id,$field.fieldID,$keyId)

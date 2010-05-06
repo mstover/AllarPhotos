@@ -1,0 +1,1 @@
+select path_id,path product_path from $pathTable where path='$sql.escapeSql($path)'

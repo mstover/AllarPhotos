@@ -1,0 +1,10 @@
+mapping {
+	class=Resource
+	cached=true
+	primary { resource_id }
+	pairs {
+		setName=resource_name
+		setId=resource_id
+		setType=resource_type
+	}
+}

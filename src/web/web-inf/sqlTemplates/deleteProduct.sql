@@ -1,0 +1,1 @@
+update $obj.productFamilyName set is_active=0 where product_id=$obj.id

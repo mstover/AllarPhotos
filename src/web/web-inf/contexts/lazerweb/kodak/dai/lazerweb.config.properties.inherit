@@ -1,0 +1,8 @@
+product_tables=kdk_dai,kdk_sec
+href-base=/lazerweb/kodak/dai/
+download_dir=/kodak/dai/files/
+number_of_products_shown=500
+default_product_display_number=5
+po_number=96-KC2-02288W
+email_contact=cynthia.rohnke@kodak.com,webmaster@lazerinc.com
+file_types=eps

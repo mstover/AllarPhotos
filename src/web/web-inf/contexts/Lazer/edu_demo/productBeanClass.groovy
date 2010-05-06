@@ -1,0 +1,1 @@
+com.lazerinc.edu.EduProductBean.class

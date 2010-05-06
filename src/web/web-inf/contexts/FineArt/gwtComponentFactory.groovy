@@ -1,0 +1,1 @@
+com.lazerinc.ajaxclient.client.components.fineart.FineArtComponentFactory.class

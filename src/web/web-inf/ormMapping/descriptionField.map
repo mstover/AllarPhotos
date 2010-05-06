@@ -1,0 +1,4 @@
+mapping {
+	class=DescriptionField
+	inherits=productField.map
+}

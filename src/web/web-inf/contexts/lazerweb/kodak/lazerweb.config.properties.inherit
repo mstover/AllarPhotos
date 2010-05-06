@@ -1,0 +1,13 @@
+product_tables=kdk_dai,kdk_sec,kpro,kdk_begs,kdk_ink
+web_directory=kodak
+href-base=/lazerweb/kodak/
+search_model=com.lazerinc.ecommerce.impl.KodakDAISearchModel
+original_dir=Original Directory
+download_dir=/kodak/files/
+filesize=File Size
+file_types=pdf,jpg,eps
+customer_name=Kodak Digital and Film Imaging Systems
+email_contact=john.formella@kodak.com
+pixels_per_inch=327
+number_of_products_shown=250
+logoTop=kodak/images/image_lib_logo_05_0221.gif

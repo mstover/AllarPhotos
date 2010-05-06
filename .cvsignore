@@ -1,0 +1,13 @@
+developer.properties
+junit*.properties
+.DS_Store
+.project
+*.ajproperties
+build
+eclipse
+.settings
+.fbwarnings
+ajcore.*
+bin
+*.log.*
+dist

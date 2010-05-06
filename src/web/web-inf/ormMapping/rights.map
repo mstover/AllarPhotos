@@ -1,0 +1,18 @@
+mapping {
+	class=Rights
+	primary=resource_id
+	multiRow=true
+	pairs {
+	}
+	compound-mappings {
+		meth=setRight {
+			right_name
+			right_value
+		}
+	}
+	submappings {
+		setResource {
+			mapfile=resource.map
+		}
+	}
+}

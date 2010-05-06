@@ -1,0 +1,16 @@
+mapping {
+	class=ProductFamily
+	cached=true
+	primary { family_id }
+	pairs {
+		setId=family_id
+		setTableName=table_name
+		setDescriptiveName=descriptive_name
+		setDescription=description
+		setOrderModelClass=order_model
+		setPrimaryLabel=primary_label
+		setProductType=product_type
+		setCustomerName=customer_name
+		setRemoteManaged=remote_managed
+	}
+}

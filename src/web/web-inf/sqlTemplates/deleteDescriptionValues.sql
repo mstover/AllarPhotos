@@ -1,0 +1,1 @@
+delete from ${product.productFamilyName}description where product_id=$product.id

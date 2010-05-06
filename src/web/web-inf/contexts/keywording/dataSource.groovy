@@ -1,0 +1,1 @@
+new javax.naming.InitialContext().lookup("java:comp/env/@KEYCODE_DB@")

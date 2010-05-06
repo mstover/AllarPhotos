@@ -1,0 +1,9 @@
+mapping {
+	class=Referrer
+	cached=true
+	primary { referrer_id }
+	pairs {
+		setId=referrer_id
+		setName=referrer_name
+	}
+}

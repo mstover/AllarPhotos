@@ -1,0 +1,10 @@
+mapping {
+    class=State
+	cached=true
+	primary { state_id }
+    pairs {
+    	setId=state_id
+    	setName=state_name
+    	setCode=state_code
+    }
+ }

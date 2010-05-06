@@ -1,0 +1,15 @@
+deploy.war.dir=/home/mikes/Documents
+app.name=lazerweb
+IMAGE_DB=jdbc/imagedb
+LOG_DB=jdbc/imagedb
+KEYCODE_DB=jdbc/keywordDb
+path_prefix=/var/lazer/digital_assets
+WEB_HOST=192.9.200.228:8080
+WEB_HOST_IA=hbidemo.lazerinc.com:8080
+EMAIL_ACTIVE=false
+lw_username=mstover
+lw_password=[NBfM]
+error_monitor=mikes@lazerinc.com
+RECONFIGURABLE=true
+download_dir=/var/lazer/apache-tomcat-5.5.12/webapps/ROOT/d/
+download_url="/d/".toString()

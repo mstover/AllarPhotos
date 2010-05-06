@@ -1,0 +1,14 @@
+mapping {
+	class=VirtualProductFamily
+	cached=true
+	primary { virtual_library_id }
+	pairs {
+		setId=virtual_library_id
+		setTableName=name
+	}
+	submappings {
+		setOwner {
+			mapfile=user.map
+		}
+	}		
+}

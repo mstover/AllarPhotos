@@ -1,0 +1,16 @@
+mapping {
+	class=UploadItem
+	cached=false
+	primary {item_id}
+	multiRow=true
+	pairs {
+		setId=item_id
+		setDateTime=date_column
+	}
+	compound-mappings {
+		setValue=setValue {
+			category
+			val
+		}
+	}
+}

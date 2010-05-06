@@ -1,0 +1,9 @@
+mapping {
+     class=City
+     cached=true
+     primary { city_id }
+     pairs {
+     	setId=city_id
+     	setName=city_name
+     }
+ }

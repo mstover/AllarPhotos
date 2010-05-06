@@ -1,0 +1,1 @@
+ALTER TABLE groups ADD description VARCHAR(32765);

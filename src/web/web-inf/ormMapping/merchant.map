@@ -1,0 +1,29 @@
+mapping {
+	class=Merchant	
+	cached=true
+	primary {merchant_id}
+	pairs {
+		setMerchantID=merchant_id
+		setAddress1=address1
+		setAddress2=address2
+		setTaxRate=tax_rate
+		setZip=zip
+		setFax=fax
+		setOrderingEmail=ordering_email
+		setFulfillmentEmail=fulfillment_email
+		setOrderProcessing=order_processing
+		setName=merchant_name
+		setPhone=phone
+	}
+	submappings {
+		setCity {
+			mapfile=city.map
+		}
+		setState {
+			mapfile=state.map
+		}
+		setCountry {
+			mapfile=country.map
+		}
+	}
+}

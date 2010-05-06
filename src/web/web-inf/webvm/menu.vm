@@ -1,0 +1,161 @@
+#macro(menubar)
+	#set($top = 0)
+	#setMenuPositions()	
+	
+	#if($browser == "Mozilla")
+		#set($style = "fixed")
+		#set($popupOffset = 22)
+	#else
+		#set($style="absolute")
+		#set($popupOffset = 20)
+	#end
+	<div id="menubar" class="menubar" style="width:100%;z-index:0;visibility:hidden">This space left intentionally blank</div>
+	<div id="menubar" class="menubar" style="position:$style; width:100%; left:0px;top:${top}px;z-index:2">&nbsp;</div>
+	#createMenus($style $slots)
+	
+#end
+
+#macro(createMenus $style $slots)
+	#set($slotCount = 0)
+	## Browse objects menu
+		#menuDiv("Browse" $slots.get($slotCount) $NValue $style)
+	#set($home_MI = ["Home", "$appData.context/index.jsp","true"])
+	#set($requests_MI =  ["Requests","$appData.context/RequestList.jsp","true"])
+	#set($projects_MI =  ["Projects","$appData.context/ProjectList.jsp","true"])
+	#set($apps_MI =  ["Applications","$appData.context/SwappList.jsp","true"])
+	#set($programs_MI =  ["Programs","$appData.context/ProgramList.jsp","true"])
+	#set($sites_MI =  ["Sites","$appData.context/SiteList.jsp","true"])
+	#set($search_MI = ["Search","$appData.context/Search.jsp","true"])
+	#menu("Browse" [$home_MI,$requests_MI,$projects_MI,$apps_MI,$programs_MI,$sites_MI,$search_MI] $slots.get($slotCount) $style)
+	#set($slotCount = $slotCount + 1)
+	
+	## New Menu
+		#menuDiv("New" $slots.get($slotCount) $NValue $style)
+		#set($requestCenter_MI = ["New Request", "$appData.context/requestmenu.jsp","true"])	
+		#set($newTodo_MI = ["New Todo", "$appData.context/EditTodo.jsp?Action=Add","false"])	
+		#set($newProject_MI = ["New Project", "$appData.context/EditProject.jsp","false"])	
+		#set($newSwapp_MI = ["New Application", "$appData.context/EditSwapp.jsp?Action=Add","false"])
+		#menu("New" [$requestCenter_MI,$newTodo_MI,$newProject_MI,$newSwapp_MI] $slots.get($slotCount) $style)
+		#set($slotCount = $slotCount + 1)	
+	
+	## My Stuff menu
+		#menuDiv("My Stuff" $slots.get($slotCount) $NValue $style)
+		#set($timesheet_MI = ["Timesheet", "$appData.context/EditTimeSheet.jsp","false"])
+		#set($my_tasks_MI = ["My Items","$appData.context/OwnershipReport.jsp?new_search=true&Contact_id=$user.id&state_id=5&state_id=8&state_id=6&state_id=7&completedMilestoneWithin=&estimatedMilestoneWithin=&strict=true&cannedQuery=&Action=Filter","false"])
+		#set($my_todos_MI = ["My Todos","$appData.context/OwnershipReport.jsp?new_search=true&Contact_id=$user.id&sections=Todos","false"])
+		#set($my_approvals_MI = ["My Approvals","$appData.context/OwnershipReport.jsp?new_search=true&Contact_id=$!user.id&sections=Approvals&completedMilestoneWithin=&estimatedMilestoneWithin=&strict=true&cannedQuery=&Action=Filter","false"])
+		#set($ownershipReport_MI =  ["My Group Items","$appData.context/OwnershipReport.jsp?new_search=true&groupID=$!user.group.id","false"])
+		#set($upcoming_MI =  ["Upcoming Tasks","$appData.context/PriorityReport.jsp","false"])
+		#set($programReport_MI =  ["My Programs","$appData.context/OwnershipReport.jsp?new_search=true&Contact_id=$!user.id&sections=Programs&strict=false","false"])
+		#set($groupProgramReport_MI =  ["My Group Programs","$appData.context/OwnershipReport.jsp?new_search=true&groupID=$!user.group.id&sections=Programs&strict=false","false"])
+		#set($authBackups_MI = ["My Authorized Backups","$appData.context/AuthBackup.jsp","false"])
+		#menu("My Stuff" [$timesheet_MI,$my_tasks_MI,$my_todos_MI,$my_approvals_MI,$programReport_MI,$groupProgramReport_MI,$ownershipReport_MI,$upcoming_MI,$authBackups_MI] $slots.get($slotCount) $style)
+		#set($slotCount = $slotCount + 1)
+		
+	## Preferences  menu
+		#menuDiv("Preferences" $slots.get($slotCount) $NValue $style)
+		#set($prefs_MI =  ["Edit My Preferences","$appData.context/EditBuddyList.jsp","false"])
+		#set($groupPrefs_MI = ["Edit Group Preferences","$appData.context/EditGroupPrefs.jsp","false"])
+		#set($favorites_MI = ["View Favorites","$appData.context/PreferenceDetails.jsp","false"])
+		#set($groupAlias_MI = ["Create/Modify Group Alias","$appData.context/CreateGroupAlias.jsp","false"])
+		#set($pushItems_MI = ["Push Items","$appData.context/PushItems.jsp","false"])
+		#menu("Preferences" [$prefs_MI,$groupPrefs_MI,$favorites_MI,$groupAlias_MI,$pushItems_MI] $slots.get($slotCount) $style)		
+		#set($slotCount = $slotCount + 1)
+	
+	##Reports Menu
+		#menuDiv("Reports" $slots.get($slotCount) $NValue $style)
+		#set($finishedReport_MI =  ["Finished Report","$appData.context/FinishedReport.jsp","true"])
+		#set($timeReport_MI =  ["Time Report","$appData.context/TimeReport.jsp","false"])
+		#set($projectSummary_MI =  ["Project Summary","$appData.context/ProjectSummary.jsp","false"])
+		#set($tabReport_MI =  ["Tab Report","$appData.context/reports/TabReport.jsp","true"])
+		#set($metricReport_MI =  ["Metrics Report","$appData.context/reports/MetricsReport.jsp","true"])
+		#set($adminReport_MI =  ["PTO and Admin Report","$appData.context/reports/AdminReport.jsp","false"])
+		#if($user.contactType && $user.contactType.displayName == "Time Admin")
+			#set($timeAdminReport_MI = ["Hourly Timesheets","$appData.context/TimeReport.jsp?actiond=time_admin_report","false"])
+			#menu("Reports" [$finishedReport_MI,$timeReport_MI,$projectSummary_MI,$tabReport_MI,$metricReport_MI,$adminReport_MI,$timeAdminReport_MI] $slots.get($slotCount) $style)
+		#else
+			#menu("Reports" [$finishedReport_MI,$timeReport_MI,$projectSummary_MI,$tabReport_MI,$metricReport_MI,$adminReport_MI] $slots.get($slotCount) $style)
+		#end
+		#set($slotCount = $slotCount + 1)
+		
+		## Help
+		#menuDiv("Help" $slots.get($slotCount) "https://yoda.gblx.net/cgi-bin/wiki/wiki-ipsd.pl?PMtoolGuidlines" $style)
+		#set($userGuide_MI = ["User Guide","https://yoda.gblx.net/cgi-bin/wiki/wiki-ipsd.pl?PMtoolGuidlines","true"])
+		#set($faq_MI = ["PMTool FAQ","$appData.context/FAQ.jsp","true"])
+		#set($about_MI = ["About PMTool","$appData.context/about.jsp","true"])
+		#if($appData.getProperty("betaweek") == "true")
+			#menu("Help" [$userGuide_MI,$faq_MI,$about_MI] $slots.get($slotCount) $style)
+		#else
+			#set($beta_MI = ["Help Us Beta Test","https://www.globalview.gblx.net/pvtest/index.jsp","true"])
+			#menu("Help" [$userGuide_MI,$faq_MI,$beta_MI,$about_MI] $slots.get($slotCount) $style)
+		#end
+		#set($slotCount = $slotCount + 1)
+		
+		## logout
+		#if($user)
+			#menuDiv("Logout" $slots.get($slotCount) $NValue $style)
+			#set($logout_MI = ["Logout","$appData.context/index.jsp?action=logout",false])
+			#set($items = [$logout_MI])
+			#set($popY = $top + $popupOffset)
+			<div id="Logout" class="menu" onmouseover="javascript:enterMenu('Logout')" onmouseout="javascript:exitMenu('Logout')" style="position:$style; left:${slots.get($slotCount)}px; top:${popY}px; z-index:5; visibility: hidden; ">
+				#menuLinks($items)
+				#loginAsGoodies()
+			</div>
+			#set($slotCount = $slotCount + 1)
+		#end
+#end
+
+#macro(menuDiv $name $left $url $style)
+	<div id="${name}_menu" onmouseover="javascript:enterMenu('$name')" onmouseout="javascript:exitMenu('$name')" class="menuHeader" #menuStyle($left 3 $style)>
+			#if($url)
+				<a href="$!url">$name</a>
+			#else
+				$name
+			#end
+			</div>
+#end
+
+#macro(menu $menu $items $x $style)
+	#set($popY = $top + $popupOffset)
+	<div id="$menu" class="menu" style="position:$style; left:${x}px; top:${popY}px; z-index:5; visibility: hidden;" onmouseover="javascript:enterMenu('$menu')" onmouseout="javascript:exitMenu('$menu')">
+	#menuLinks($items)
+	</div>
+#end
+
+#macro(menuLinks $items)
+	#foreach($item in $items)
+		#if($item.get(2) == "true" || $user)
+			<a href="$item.get(1)">$item.get(0)</a><br>
+		#end
+	#end
+#end
+
+#macro(setMenuPositions)
+	#set($slots = [20,100,180,260,360,440,520,600,680,760,840,920])
+#end
+
+#macro(menuStyle $left $z $style)style="position:$style; left:${left}px;top:${top}px;z-index:$z"#end
+
+#macro(loginAsGoodies)
+	#if($user.isSuperUser() || $user.underlings.size() > 0)
+            			<form name="loginas" action="$appData.context/redirect.jsp" method="POST">
+            			<input type="hidden" name="actiona" value="login">
+            			Relogin As:<br>
+            			<select name="login_as" onchange="submit()">
+            			<option value=""></option>
+            			#if($user.isSuperUser())
+            				#foreach($buddy in $user.original.buddyList)
+            					<option value="$buddy.username">$buddy</option>
+            				#end
+            			#else
+            				#foreach($underling in $user.underlings)
+            					<option value="$underling.username">$underling</option>
+            				#end
+            			#end
+            			</select>
+            			#if($user.original.username != $user.contact.username)
+            				<br><input type="submit" name="revert" value="Be Yourself">
+            			#end
+            			</form>
+            		#end
+#end

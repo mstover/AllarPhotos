@@ -1,0 +1,1 @@
+com.lazerinc.fineart.FineArtProductBean.class

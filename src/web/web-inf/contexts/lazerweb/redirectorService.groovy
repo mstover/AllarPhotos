@@ -1,0 +1,1 @@
+new strategiclibrary.service.webaction.error.DefaultRedirector()

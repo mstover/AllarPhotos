@@ -1,0 +1,1 @@
+update groups set name='$!sql.escapeSql($obj.name)' where group_id=$obj.id

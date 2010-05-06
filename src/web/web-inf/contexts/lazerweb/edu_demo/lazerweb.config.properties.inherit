@@ -1,0 +1,4 @@
+product_tables=edu_demo
+customer_name=YIHL
+file_types=pdf,jpg,eps,png,originals
+href-base=/lazerweb/edu_demo/

@@ -1,0 +1,29 @@
+mapping {
+	class=CommerceProduct
+	primary {
+		prod_id
+		family
+	}
+	cached=true
+	multiRow=true
+	compound-mappings {
+   		meth1=setValue {
+   			name
+   			val
+   		}
+   		meth2=setValue {
+   			num_field
+   			num_val
+   		}
+   	}
+   	pairs {
+   		setId=prod_id
+   		setDateCataloged=date_cataloged
+   		setDateModified=date_modified
+   		setPrimary=primary_name
+   		setProductFamilyName=family
+   	}
+   	submappings {
+   		setPath { mapfile=path.map }
+   	}
+}

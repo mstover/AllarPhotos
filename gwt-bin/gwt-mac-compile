@@ -1,0 +1,5 @@
+#!/bin/sh
+APPDIR=`dirname $0`/..;
+
+java -Xmx512m -cp "$APPDIR/src/java:$APPDIR/gwt-bin/gwt-leo-1_4_61/gwt-user.jar:$APPDIR/gwt-bin/gwt-leo-1_4_61/gwt-dev-mac.jar" com.google.gwt.dev.GWTCompiler -style PRETTY -out "$APPDIR/build/webfiles/jsclient" "$@" com.lazerinc.ajaxclient.LazerAdmin;
+java -Xmx512m -cp "$APPDIR/src/java:$APPDIR/gwt-bin/gwt-leo-1_4_61/gwt-user.jar:$APPDIR/gwt-bin/gwt-leo-1_4_61/gwt-dev-mac.jar" com.google.gwt.dev.GWTCompiler -style PRETTY -out "$APPDIR/build/webfiles/address_fragment" "$@" com.lazerinc.ajaxclient.AddressFragment;

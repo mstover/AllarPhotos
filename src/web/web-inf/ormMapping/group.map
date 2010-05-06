@@ -1,0 +1,10 @@
+mapping [
+	class=UserGroup
+	cached=true
+	primary { group_id }
+	pairs {
+		setId=group_id
+		setName=name
+		setDescription=description
+	}
+}

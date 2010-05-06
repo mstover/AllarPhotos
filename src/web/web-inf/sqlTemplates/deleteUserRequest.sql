@@ -1,0 +1,1 @@
+delete from user_requests where request_id=$request.id

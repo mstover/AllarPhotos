@@ -1,0 +1,5 @@
+#macro(idList $list)
+	#foreach($obj in $list)
+		$obj.id#if($velocityCount+1 < $list.size()), #end
+	#end
+#end

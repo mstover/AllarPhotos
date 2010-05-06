@@ -1,0 +1,1 @@
+com.lazerinc.worldkitchen.WorldKitProductBean.class

@@ -1,0 +1,1 @@
+insert into groups(group_id,name) values($obj.id,'$sql.escapeSql($obj.name)')

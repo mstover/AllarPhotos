@@ -1,0 +1,29 @@
+mappings {
+	class=Address
+	cached=true
+	primary { address_id }
+	pairs {
+		setId=address_id
+		setAttn=attn
+		setZip=zip
+		setPhone=phone
+		setFax=fax
+		setAddress1=address_1
+		setAddress2=address_2
+		setInUse=in_use
+	}
+	submappings {
+		setCity {
+			mapfile=city.map
+		}
+		setState {
+			mapfile=state.map
+		}
+		setCountry {
+			mapfile=country.map
+		}
+		setCompany {
+			mapfile=company.map
+		}
+	}
+}

@@ -1,0 +1,1 @@
+ALTER TABLE product_tables ADD remote_managed VARCHAR(8) NOT NULL;

@@ -1,0 +1,4 @@
+mapping {
+	class=ProtectedField
+	inherits=productField.map
+}

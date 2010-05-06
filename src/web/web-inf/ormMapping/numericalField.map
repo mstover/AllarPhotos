@@ -1,0 +1,4 @@
+mapping {
+	class=NumericalField
+	inherits=productField.map
+}

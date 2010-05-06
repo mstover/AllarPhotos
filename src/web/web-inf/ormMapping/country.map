@@ -1,0 +1,10 @@
+mapping {
+	class=Country
+	cached=true
+	primary { country_id}
+	pairs {
+		setId=country_id
+		setName=country_name
+		setCode=country_code
+	}
+}

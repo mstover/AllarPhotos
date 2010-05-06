@@ -1,0 +1,100 @@
+mapping {
+	class=CommerceUser
+	cached=true
+	primary {user_id}
+	multiRow=true
+	compound-mappings {
+   		meth1=setProperty {
+   			key_name
+   			short_value
+   		}
+   		meth2=setProperty {
+   			key_name
+   			long_value
+   		}
+   	}
+   	pairs {
+   		setUserID=user_id
+   		setAddressLine1=bill_address1
+        setAddressLine2=bill_address2
+        setBillAddress1=bill_address1
+        setBillAddress2=bill_address2
+        setPhone=phone
+        setBillZip=bill_zip
+        setEmailAddress=email
+        setFax=fax
+        setFirstName=first_name
+        setLastName=last_name
+        setMiddleInitial=middle_initial
+        setEncryptedPassword=passwd
+        setShipAddress1=ship_address1
+        setShipAddress2=ship_address2
+        setShipZip=ship_zip
+        setUsername=username
+        setZip=bill_zip
+        setExpDate=exp_date
+   	}
+   	
+   	submappings {
+   	    setReferrer {
+   	    	mapfile=referrer.map
+   	    }
+   		setCompany {
+   			mapfile=company.map
+   		}
+   		setShipCity {
+   			class=City
+   			cached=true
+   			primary {ship_city_id}
+   			pairs {
+   				setId=ship_city_id
+   			}
+   		}
+   		setBillCity {
+   			class=City
+   			cached=true
+   			primary {bill_city_id}
+   			pairs {
+   				setId=bill_city_id
+   			}
+   		}
+   		setCity {
+   			mapfile=city.map
+   		}
+   		setState {
+   			mapfile=state.map
+   		}
+   		setShipState {
+   			class=State
+   			cached=true
+   			primary {ship_state_id}
+   			pairs {
+   				setId=ship_state_id
+   			}
+   		}
+   		setBillState {
+   			class=State
+   			cached=true
+   			primary {bill_state_id}
+   			pairs {
+   				setId=bill_state_id
+   			}
+   		}
+   		setShipCountry {
+   			class=Country
+   			cached=true
+   			primary {ship_country_id}
+   			pairs {
+   				setId=ship_country_id
+   			}
+   		}
+   		setBillCountry {
+   			class=Country
+   			cached=true
+   			primary {bill_country_id}
+   			pairs {
+   				setId=bill_country_id
+   			}
+   		}   		
+   	}
+}

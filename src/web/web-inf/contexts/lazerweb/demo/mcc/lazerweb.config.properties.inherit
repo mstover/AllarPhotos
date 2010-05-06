@@ -1,0 +1,4 @@
+product_tables=lw_demo
+customer_name=MCC
+file_types=pdf,jpg,eps,png,originals
+href-base=/lazerweb/demo/mcc/

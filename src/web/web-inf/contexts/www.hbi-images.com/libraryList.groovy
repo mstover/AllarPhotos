@@ -1,0 +1,1 @@
+["hb_c9","hb_cas","hb_champ","hb_duo","hb_hanes_champ","hb_hanes_mag","hb_hanes_sleep","hb_hanes_ult","hb_hos","hb_leggs","hb_ob","hb_logos","hb_polo","hb_slush","hb_socks","hb_uw","ia_bali","ia_bt","ia_hanes","ia_jms","ia_plytx","ia_wndbr"] as String[]

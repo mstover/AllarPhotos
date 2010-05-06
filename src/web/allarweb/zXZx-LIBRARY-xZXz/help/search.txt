@@ -1,0 +1,15 @@
+<DIV ALIGN="center"><H2>Searching for Images</H2></DIV>
+
+		<p>This is the page where you find the specific types of images you wish to view. You are 
+		shown the total number of images matching your current search criteria and the search history 
+		you have built up.</p>
+		
+		<p>At each screen you are presented with a category and new keywords to choose from in the 
+		&quot;Category Drill-Down Search&quot;. If you already know your file name or a particular keyword 
+		(eg. &quot;Logo&quot;) you may enter that in the &quot;Keyword Search&quot; field.</p>
+		
+		<p>Once you have 
+		narrowed your search criteria down to the point where 12 or fewer items match your search criteria, 
+		you will be taken to the view images page. At any point you can view the images found in your 
+		search by clicking the &quot;View&quot; tab at the top of the page.</p>
+

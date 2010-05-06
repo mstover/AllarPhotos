@@ -1,0 +1,408 @@
+body {
+				padding:0;
+				margin:0;
+				font-size:10pt;
+				overflow:hidden;
+			}
+			
+			table {
+				font-size:10pt;
+			}
+			
+			.popup-info {
+				background:#eea;
+				color:#c55;
+				font-size:110%;
+				padding:2em;
+				border:medium solid black;
+				overflow:auto;
+			}
+			
+			.user-spreadsheet {
+				background:#eea;
+				color:#c55;
+				padding:2em;
+				border:medium solid black;
+			}	
+			
+			.user-grid table {
+				border:thin solid black;
+			}
+			
+			.user-grid td {
+				padding:1px 5px;
+				border:thin solid black;
+			}		
+			
+			.odd {
+				background: #eee;
+			}
+			
+			img.busy {
+				padding:1em;
+			}
+			
+			.even {
+				background: #ccc;
+			}
+			
+			.top-buffer {
+				margin-top:5em;
+			}
+			
+			.west {
+			}
+			
+			.east {
+				padding-top:1em;
+			}
+			
+			.number-selector {
+			}
+			
+			.number-selector .title {
+				font-weight:bold;
+				text-align:center;				
+                font-size: 100%;
+                margin-bottom:0px;
+                padding-bottom:0px;
+			}
+			
+			.number-selector td button {
+				background:#f66;
+                font-size: 80%;
+                cursor:pointer;
+			}
+			
+			.number-selector td .gwt-Label {
+				cursor:pointer;
+			}
+			
+			.number-selector td {            
+                padding:0;
+			}
+
+			.number-selector td button.clicked {
+                background-color:#f99;
+            } 	
+            
+            .active {
+            	cursor:pointer;
+            }
+			
+			img.expired-image {
+				border:medium solid red;
+			}
+			
+			.order-display .text {
+				font-size:90%;
+			}
+			
+			.order-display .label {
+				font-size:90%;
+			}
+			
+			table.order-display-table table td {
+				border:none;
+			}
+			
+			table.order-display-table table {
+				border:none;
+			}
+			
+			.status-awaiting_approval {
+				color:#aa0;
+				font-weight:bold;
+			}
+			 
+			.status-awaiting_confirmation {
+				color:#d80;
+				font-weight:bold;
+			}
+			
+			.status-awaiting_fulfillment {
+				color:#0a0;
+				font-weight:bold;
+			}
+			
+			.status-fulfilled {
+				font-weight:bold;
+			}
+			
+			.status-rejected {
+				color:#a00;
+				font-weight:bold;
+			}
+			
+			.status-cancelled {
+				color:#0aa;
+				font-weight:bold;
+			}
+			
+			table.order-display-table {
+				border:thin solid gray;
+			}
+			
+			table.order-display-table td {
+				border:thin solid gray;
+			}
+				
+.lazerweb-trademark {
+		font-style:italic;
+}
+			
+			.download-link {
+				font-size:140%;
+			}
+			
+			.linked {
+				color:blue;
+				cursor:pointer;
+			}
+			
+			.tooltip {
+				border:thin solid black;
+				background:#eec;
+				padding:2px;
+			}
+			
+			.new-account-panel {
+				border:medium inset black;
+				background:#cc8;
+			}
+			
+			.results-display-control .gwt-CheckBox {
+				padding:0 30px;
+			}
+			
+			.license-text {
+				font-family: serif,monospace;
+				font-style: italic;
+			}
+			
+			.mouse_over {
+				text-decoration:underline;
+			}
+			
+			.user-name-tree-item table{
+				color : #246;
+			}
+			
+			.image-viewer {
+				background:#dde;
+				padding:5px 5px 0px 5px;
+				border:thin solid black;
+				text-align:center;
+			}
+			
+			.thumbnail img {
+				border:medium solid transparent;
+				cursor:pointer;
+			}
+
+			.ie6 .thumbnail img {
+				border:medium solid #CCC;
+			}
+			
+			.image-viewer table {
+			}	
+			
+			.thumbnail img.mouse {
+				border:medium solid #d89800;
+			}
+			
+			.toolbar img {
+				border:3px solid transparent;
+			}
+			
+			.toolbar img.mouse {
+				border:outset 3px #ccc;
+			}
+			
+			.toolbar table {
+				padding:0px;
+			}
+			
+			.toolbar td {
+				font-size:90%;
+			}
+			
+			.product-popup {
+				border:thick solid black;
+				background:#ccc;
+				padding:2em;
+				overflow:auto;
+			}
+			
+			.selected-checkbox {
+				font-weight:bold;
+				background:#ccd;
+			}
+			
+			.spreadsheet {
+				border:none;
+				max-height:500px;
+				max-width:800px;
+			}
+			
+			.perms-table td {
+				padding:3px 2em 3px 5px;
+			}
+			
+			.perms-table th {
+				padding:3px 2em 3px 5px;
+			}
+			
+			table th {
+				padding:1px 4px;
+			}
+			
+			.required {
+				color:red;
+			}
+			
+			.gwt-TabBarItem {
+				font-size:110%;
+				font-weight:bold;
+				padding-right:2em;
+				background : #eee;
+				border-top:medium outset #444;
+				border-left:medium outset #444;
+				border-right:medium outset #444;
+			}
+			
+			.gwt-TabBarItem-selected {
+				background-color : #ccc;
+				border-top:medium inset #222;
+				border-left:medium inset #222;
+				border-right:medium inset #222;
+			}
+			
+			.center {
+				padding:1em;
+			}
+			
+			.label {
+				font-size:105%;
+				font-weight:bold;
+				padding-right:2em;
+			}
+			
+			.header {
+				font-size:110%;
+				font-weight:bold;
+				text-align: center;
+				padding:1px 4px;
+			}
+			
+			.text {
+				padding:0px;
+				margin:0px;				
+			}
+			
+			div {
+				padding:0px;
+				margin:0px;
+			}
+			
+			.title {
+				font-size:120%;
+				font-weight:bold;
+				display:block;
+				text-align:center;
+				margin-bottom:2em;
+			}
+			
+			.page-title {
+				font-size:160%;
+				font-weight:bold;
+				text-align:center;
+			}
+			
+			.gwt-MenuItem {
+				background:#ccd;
+				padding:1px 3px;
+				cursor:pointer;
+			}	
+			
+			.gwt-TreeItem-selected {
+				background: #ccd;
+			}
+			
+			.gwt-TreeItem {
+				cursor:pointer;
+			}
+			
+			.button-icon {
+				cursor:pointer;
+			}
+			
+			.gwt-MenuItem-selected {
+				background: #55a;
+				color:#fff;
+			}		
+			
+			.gwt-MenuItem-selected a {
+				background: #55a;
+				color:#fff;
+			}		
+			
+			.gwt-MenuBar {
+				background:#ccd;
+				padding:0px;
+			}
+			
+			.gwt-MenuBar table,tr,td {
+				margin:0px;
+				padding:0px;
+			}
+			
+			.top-menu {
+				width:100%;
+				background:#ccd;
+				border:thin solid black;
+			}
+			
+			.sub-menu {
+				border:thin solid black;
+			}
+			
+			.top-menu .gwt-MenuItem {
+				padding:1px 10px;
+				border:none;
+			}
+	.support-panel {
+	border:medium solid black;
+	background:#ba3;
+	color:black;
+	padding:1em 1em 1em 1em;
+	}
+	.support-panel table {
+	color:black;
+	}
+	.support-panel td {
+	padding:10px;
+	}
+	
+	.legend {
+	font-style:italics;
+	font-weight:bold;
+	text-align:center;
+	}
+	
+	
+	.legend-popup {
+	border:thin solid black;
+	background:#ffd;
+	color:black;
+	padding:1em;
+	}
+	
+	.legend-popup td {
+		color:black;
+		font-size:120%;
+	}
+	
+	.deleted {
+		text-decoration:line-through;
+	}

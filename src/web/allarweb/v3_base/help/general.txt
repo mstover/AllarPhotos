@@ -1,0 +1,11 @@
+<DIV ALIGN="center"><H2>General Help Contents</H2></DIV>
+<div align="left"><ul>
+	<li><a href="help.jsp?help=login">Login</a>
+	<li><a href="help.jsp?help=search">Searching for Images</a>
+	<li><a href="help.jsp?help=browse">Viewing Images</a>
+	<li><a href="help.jsp?help=detail">Image Detail</a>
+	<li><a href="help.jsp?help=cart">Shopping Cart
+	<li><a href="help.jsp?help=verify">Verifying Your Order</a></a>
+	<li><a href="help.jsp?help=order">Confirming Your Order</a>
+	<li><a href="help.jsp?help=modify">Editing Your User Information</a>
+</ul></div>

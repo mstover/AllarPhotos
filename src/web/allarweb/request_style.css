@@ -1,0 +1,33 @@
+#top_logo {
+	padding-bottom:1em;
+	text-align:center;
+}
+
+#page {
+	text-align:center;
+	align:center;
+	margin:1em 4em;
+	padding:1em;
+	background:#CCe;
+	border-top: 2em solid black;
+}
+
+.notes {
+	padding:1em;
+	margin:auto;
+}
+
+ul {
+	text-align:left;
+}
+
+.form_table {
+	background-color:#aac;
+	padding:1em;
+	margin:1em auto;
+}
+
+.inner_table {
+	border:thin inset black;
+	background: #bbd;
+}

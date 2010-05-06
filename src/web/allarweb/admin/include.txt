@@ -1,0 +1,34 @@
+<%@ page import = "java.io.*,com.lazerinc.application.*,com.lazerinc.dbtools.*, com.lazerinc.ecommerce.*, com.lazerinc.utils.*, java.net.*, com.lazerinc.ecommerce.impl.*, java.util.*, com.lazerinc.beans.*"%>
+<%
+
+DatabaseApplicationController controller = (DatabaseApplicationController)application.getAttribute("lazerweb.admin.controller");
+	if(controller == null)
+				response.sendRedirect("index.jsp");
+	CommerceAdminWebInterface admin = (CommerceAdminWebInterface)session.getValue("lazerweb.admin");
+	String context = (String)session.getValue("lazerweb.context");
+	if(admin == null)
+	{
+		admin = new Administrator();
+		admin.setController(controller);
+		session.putValue("lazerweb.admin",admin);
+		session.putValue("lazerweb.context","lazerweb.admin");
+	}
+	else if(context == null || !context.equals("lazerweb.admin"))
+	{
+		session.putValue("lazerweb.context","lazerweb.admin"); 
+		CommerceWebInterface commerce = (CommerceWebInterface)session.getValue("lazerweb.commerce");
+		if(commerce != null)
+		{
+			admin.setUser(commerce.getUser());
+			if(!admin.checkUser())
+				response.sendRedirect("index.jsp");	
+		}	
+		else
+				response.sendRedirect("index.jsp");
+	}
+	if(null == request.getQueryString()){
+		session.putValue("goBack",request.getRequestURI());
+	}else{
+		session.putValue("goBack",(request.getRequestURI()+"?"+request.getQueryString()));
+	}
+%>

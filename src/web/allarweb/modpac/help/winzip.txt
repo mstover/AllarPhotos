@@ -1,0 +1,14 @@
+<div align="center"><h3>WinZip</h3></div>
+<p>If you use a Windows compatible computer, any files you download from 
+this site will be saved in a zip archive (.zip files). 
+<p>This is a very common method for packaging and compressing files for 
+speedy and safe transmission over the internet. WinZip is just one of many widely available utility programs used to 
+unpackage zip files. In fact, you may already have this software installed on your computer.
+<p>If you do not have a copy of this shareware or if you desire the latest version, go to the 
+<a href="http://www.winzip.com/" target="_blank">WinZip website</a> 
+and download your copy. Installation is easy, you can even set up your browser to automatically decompress any 
+.zip files you download.
+<br>&nbsp;<br>
+<div align="center">
+	<a href="http://www.winzip.com/" target="_blank">WinZip</a> 
+</div>

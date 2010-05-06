@@ -1,0 +1,47 @@
+<%@ page import = "com.lazerinc.application.*,com.lazerinc.dbtools.*, com.lazerinc.ecommerce.*, com.lazerinc.utils.*, java.net.*, com.lazerinc.ecommerce.impl.*, java.util.*, com.lazerinc.beans.*,java.text.*,java.io.*"%>
+<%
+
+/************************************************************
+Checks that all the necessary controllers have been set.
+Kicks back out to the appropriate directory if values return null.
+returnpage session value is used to get back to the starting point.
+************************************************************
+
+DO WE NEED ANY OF THIS?!? */
+
+DatabaseApplicationController controller = (DatabaseApplicationController)application.getAttribute("lazerweb.password_help.controller");
+	if(controller == null)
+	{ // returnpage = the url of current page displayed
+		if(null == request.getQueryString()){
+			session.putValue("returnpage",request.getRequestURI());
+		}else{
+			session.putValue("returnpage",(request.getRequestURI()+"?"+request.getQueryString()));
+		}
+		response.sendRedirect("start.jsp");
+	}
+	CommerceWebInterface commerce = (CommerceWebInterface)session.getValue("lazerweb.commerce");
+	String context = (String)session.getValue("lazerweb.context");
+	if(commerce == null)
+	{
+		commerce = new Commerce();
+		commerce.setController(controller);
+		session.putValue("lazerweb.commerce",commerce);
+		session.putValue("lazerweb.context","lazerweb.password_help");
+	}
+	else if(context == null || !context.equals("lazerweb.password_help"))
+	{
+		commerce.setController(controller);		
+		session.putValue("lazerweb.context","lazerweb.password_help");
+	}
+	
+	if(null == request.getQueryString()){
+			session.putValue("go_back",request.getRequestURI());
+	}else{
+			session.putValue("go_back",(request.getRequestURI()+"?"+request.getQueryString()));
+	}
+	if(null != request.getParameter("help_finish")){
+		session.removeValue("help_return");
+	}
+	
+//*/
+%>

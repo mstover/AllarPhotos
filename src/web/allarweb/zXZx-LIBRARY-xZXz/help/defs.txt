@@ -1,0 +1,6 @@
+<DIV ALIGN="center"><H2>Definitions of File Formats</H2></DIV>
+<div align="left"><ul>
+	<li><a href="help.jsp?help=jpeg">JPEG</a>
+	<li><a href="help.jsp?help=eps">EPS</a>
+	<li><a href="help.jsp?help=pdf">PDF</a>
+</ul></div>

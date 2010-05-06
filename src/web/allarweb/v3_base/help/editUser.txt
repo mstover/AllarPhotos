@@ -1,0 +1,9 @@
+<DIV ALIGN="center"><H2>Edit User Information</H2></DIV>
+<p>Ensure that all fields that are labelled in bold are filled in with
+            valid information to ensure correct accounting and shipping.</p>
+<p>After completing the information on the form, press the &quot;Modify User&quot;
+            button at the bottom of the form in order to process the edits and
+			proceed to the next page.</p>
+<p>If information on this page is incorrect, there will be an opportunity 
+            to correct/modify before the order is complete.</p>
+			

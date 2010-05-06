@@ -1,0 +1,60 @@
+.menubar
+{
+	background-color : #BDB76B;
+	margin-right : 10px;
+	font-size : 12pt;
+	border-bottom : 3px solid #000000;
+	margin-left : 0px;
+	margin-right : 0px;
+	padding: 1px;
+	padding-bottom:3px;
+}
+
+.menuHeader
+{
+	font : 12pt arial,helvetica,verdana,sans-serif;
+	font-weight : bold;
+	color : #2A546F;
+	padding: 1px;
+	padding-bottom:3px;
+}
+
+.menu
+{
+	font :  10pt arial,helvetica,verdana,sans-serif;
+    background-color:#BDB76B;
+    color : #2A546F;
+    padding-left : 2px;
+    padding-right: 10px;
+    padding-bottom : 5px;
+    padding-top:0px;
+    border-bottom :  3px solid black;
+    border-right : 1px solid black;
+    border-left : 1px solid black;
+}
+
+menuSelect
+{
+	font :  12pt arial,helvetica,verdana,sans-serif;
+    background-color:#BDB76B;
+    color : #2A546F;
+}
+
+.menu A:hover, .menuHeader A:hover
+{
+    font-weight : bold;
+    color : #2A546F;
+    text-decoration: none;
+}
+
+.menu A:link, .menuHeader A:link
+{
+    color : #2A546F;
+    text-decoration: none;
+}
+
+.menu A:visited, .menuHeader A:visited
+{
+    color : #2A546F;
+    text-decoration: none;
+}

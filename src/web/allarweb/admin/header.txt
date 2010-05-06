@@ -1,0 +1,48 @@
+<%
+{
+	String title = (String)request.getAttribute("title");
+	String[] userList = admin.listUsers();
+	String[] groupList = admin.listGroups();
+	String[] merchantList = admin.listMerchants();
+	String[] familyList = admin.listFamilies();
+	String base = controller.getConfigValue("href-base");
+%>
+<html>
+<head>
+	<LINK REL="STYLESHEET" TYPE="text/css" HREF="style.css">
+<title>Development Admin <%=title%></title>
+	
+</head>
+
+<body BGCOLOR="#ffffff">
+<DIV ALIGN="center">
+<TABLE WIDTH="800" CELLPADDING="2" CELLSPACING="0" BORDER="0" BGCOLOR="#00ffff">
+<TR>
+  <TD><a href="index.jsp" class="navigation">Home</a>
+  <% if(userList.length > 0)
+  	 {
+	 	 %> | <a href="users.jsp" class="navigation">Users</a><%
+	 }
+	 if(groupList.length > 0)
+  	 {
+	 	 %> | <a href="groups.jsp" class="navigation">Groups</a><%
+	 }
+	 if(merchantList.length > 0)
+  	 {
+	 	 %> | <a href="merchants.jsp" class="navigation">Merchants</a><%
+	 }
+	 if(familyList.length > 0)
+  	 {
+	 	 %> | <a href="libraries.jsp" class="navigation">Libraries</a><%
+	 }
+  %>
+  <DIV CLASS="title"><%=title%></DIV>
+<P>
+<HR></TD>
+</TR>
+<TR VALIGN="TOP">
+  <TD>
+<%} %>
+
+
+

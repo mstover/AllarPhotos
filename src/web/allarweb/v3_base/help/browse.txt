@@ -1,0 +1,15 @@
+<DIV ALIGN="center"><H2>Browse and Select</H2></DIV>
+<p>Any image that is desired for either download or ordering must be added to the
+            shopping cart.  Images are added to the
+			shopping cart by clicking the &quot;add to cart&quot; button beneath each image.</p>
+<p>In order to find more detailed information for an image that is being 
+            viewed, click on the image or the file name shown below
+			the image.  A page providing detail image information will then 
+			appear.</p>
+<p>The maximum number of images that may be viewed on each page may be less then 
+            the number found in your search.  If you have more images to view
+			than are displayed, you will have a &quot;Next&quot; button available
+			near the top of the screen which is used to view additional images
+			from your search.  As you navigate ahead to view additional 
+			pages of images, you will have a &quot;Previous&quot; button
+			available to move back to image pages already viewed. You can also jump to each page using the numbered links next to the previous and next buttons.</p>

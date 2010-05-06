@@ -1,0 +1,12 @@
+<!-- FOOTER IS TO BEGIN HERE --><br>
+    </td>
+  </tr>
+  <tr> 
+    <td height="5" bgcolor="#CC0000">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

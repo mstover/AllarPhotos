@@ -1,0 +1,10 @@
+<TR VALIGN='TOP'>
+	<TD><STRONG>@category@:</STRONG></TD>
+		<TD><SELECT NAME="request.category_prefix@category@|0|1|or|and" size=1>
+			<OPTION VALUE="choose one">choose one
+		@FOREACH:value@<OPTION VALUE="@value@">@value@
+		@END:FOREACH@
+			</SELECT>
+			<input type="submit" name="submit" value="Go!" align="absmiddle" border="0">
+	</TD>
+</TR>

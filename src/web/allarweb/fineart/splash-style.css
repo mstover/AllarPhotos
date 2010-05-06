@@ -1,0 +1,120 @@
+/* CSS Document */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #EEB;
+	margin: 0; padding: 0;
+}
+td {
+	vertical-align: top;
+}
+/*:::::::Wrapper Setup:::::::*/
+#wrapper {
+	width: 100%;
+	background-image:url(images/wrapper-bkd.jpg);
+	background-repeat:repeat-y;
+	background-position: center top;
+}
+#wrapper_base {
+	font-size: 1px;
+	height: 12px;
+	background-image:url(images/wrapper-base-bkd.jpg);
+	background-position:center top;
+	background-repeat:no-repeat;	
+}
+/*:::::::Wrapper End:::::::::*/
+
+h2 {}
+.midColor {
+	background-color: #CC9;	
+	color: #900;
+}
+.ltColor {
+	color: #900;
+	background-color: #EE9;	
+}
+.linkRichColor {
+	color:#600;
+	text-decoration:none;
+	font-weight:800;	
+}
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ghostedBkd {
+	visibility: visible;
+	background-color: #FFF;
+	opacity: 0.90;
+	filter: alpha(opacity=90);
+}
+.floatingLL {
+	margin-top: 250px;
+	margin-left: 20px;
+}
+.floatingUL {
+	margin-top: 50px;
+	margin-left: 20px;
+}
+.floatingLR {
+	margin-top: 250px;
+	margin-left: 600px;
+}
+.floatingUR {
+	margin-top: 50px;
+	margin-left: 600px;
+}
+#mainFrame {
+	width: 955px;
+	margin: 0 auto; padding: 0;
+	background-color: #FFF;
+}
+#poweredBy {
+	width: 125px; float: right;
+	font-size: 11px; font-style: italic; font-family: Arial, Helvetica, Verdana, sans-serif;
+	color: #600;	
+}
+#mastHead {
+	background-color: #FFF;
+	border-bottom: 8px solid #600;
+}
+#mainContent {
+	height: 550px;
+	margin: 0; padding: 0;
+	background-color: #FFF;
+	/* background-image: url(images/fade.jpg); background-position: bottom left;
+	background-repeat: no-repeat; */
+}
+.helpContentCell {
+	background-color:#EEB;
+	padding: 8px;
+}
+.helpContentCell h3 {
+	margin-top: 0;
+}
+ul ul {
+	padding-left: 16px;
+	font-size:0.9em;
+}
+.bookmarkAlert {
+	font-weight:900px;
+	color: #600;
+	text-align: center;
+}
+#loginBlock {
+	width: 280px;
+	padding: 4px;
+	font-size: 0.9em;
+}
+UL#sideTips {
+	margin: 0; padding: 0; 
+	font-size: 0.8em;
+}
+UL#sideTips li {
+	margin: 0 3px 6px 15px; padding: 0;
+}
+#footer {
+	font-size: 0.7em;
+	color: #EEB; background-color: #600;
+}

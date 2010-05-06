@@ -1,0 +1,27 @@
+#macro(navigation)
+	#menubar()
+#end
+
+#macro(preNav)
+	
+#end
+
+#macro(footer)
+	</div>
+	</body></html>
+#end
+
+#macro(postNav)
+	<div id="ajax_notification">Sending Request...</div>
+	<div id="ajax_failure_notification"></div>
+	#if($user)<div class="tool"><form action="adminUsers.jsp" style="display:inline;" method="GET">
+					User Search:<br>
+				<input type="hidden" name="action" value="search_users">
+				<input type="text" name="user_search_term" size="15"><input type="submit" name="submit" value="Go">
+		        <input type="hidden" name="action" value="SKIP_get_users_to_admin"></form></div>#end
+	<div class="content">#messages()
+#end
+
+#macro(siteJavascript)
+	<script language="Javascript" src="javascript/admin.js" type="text/javascript"></script> 
+#end

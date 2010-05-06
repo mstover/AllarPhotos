@@ -1,0 +1,20 @@
+<!-- HELP CONTENT COMMENT BUFFER -->
+<DIV ALIGN="center"><H3>Browse and Select</H3></DIV>
+	<p>You will see thumbnails of your current search when:<br>
+		(a) you choose the &quot;View Results&quot; menu option<br>
+		(b) you choose the &quot;Display&quot; option displayed below the "Number of Matching Images:" line<br>
+		(c) the number of images in your current search can be displayed on one page or<br>
+		(d) the images remaining in your current search all belong to the same category of images.</p>
+	<p>From these thumbnail pages you may either click on the image or file name to view detailed 
+		information about that file or you may add that file to your shopping cart by clicking the 
+		&quot;Add to Cart&quot; button  beneath the appropriate image.</p> 
+	<p>Any file that you desire for either download or order must be added to the 
+		shopping cart. At any time, you may initiate a new search by clicking the &quot;Search&quot; 
+		menu item. You may also proceed to the shopping cart to process your order by choosing 
+		the menu item labeled &quot;View Cart&quot;.</p>
+	<p>If you have more images to view 
+		than can fit on the screen, you will have a &quot;Next&quot; button available 
+		near the top of the screen which is used to view additional images 
+		from your search.  As you navigate ahead to view additional 
+		pages of images, you will have a &quot;Previous&quot; button 
+		available to move back to image pages already viewed.</p>

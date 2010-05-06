@@ -1,0 +1,21 @@
+<DIV ALIGN="center"><H2>Definitions of File Formats</H2></DIV>
+<div align="left"><ul>
+	<li><a href="help.jsp?help=jpeg">JPEG</a>
+	<li><a href="help.jsp?help=eps">EPS</a>
+	<li><a href="help.jsp?help=pdf">PDF</a>
+</ul></div>
+
+<p>&nbsp;</p>
+
+<div align="left">
+ <dt><b>JPEG</b>
+    <dd><p>The Joint Photographic Experts Group (JPEG) format is commonly used to display photographs and 
+						other continuous-tone images in hypertext markup language (HTML) documents over the World Wide 
+						Web and other online services. The JPEG format supports CMYK, RGB, and grayscale color modes, 
+						and does not support alpha channels. Unlike the GIF format, JPEG retains all color information 
+						in an RGB image but compresses file size by selectively discarding data.</p>
+				<p>A JPEG image is automatically decompressed when opened. A higher level of compression results 
+						in lower image quality, and a lower level of compression results in better image quality. In most 
+						cases, the Maximum quality option produces a result indistinguishable from the original. Definition 
+						courtesy Adobe Systems Incorporated.</p>
+</div>

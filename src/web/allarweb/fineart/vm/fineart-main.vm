@@ -1,0 +1,11 @@
+#macro(pageTitle $title)
+	<TITLE>Fine Art Online Library - $!title</TITLE>
+#end
+
+#macro(pageMeta $directory)
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Expires" CONTENT="0">
+  <meta http-equiv="Cache-Control" CONTENT="no-cache">
+  <meta http-equiv="Pragma" CONTENT="no-cache">
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="style_irwin.css">
+#end

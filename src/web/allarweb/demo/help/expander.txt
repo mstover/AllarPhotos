@@ -1,0 +1,14 @@
+<div align="center"><h3>Aladdin Stuffit Expander</h3></div>
+<p>If you use an Apple Macintosh computer, any files you download from 
+this site will be saved in an Aladdin Stuffit archive (.sit files). 
+<p>This is a very common method for packaging and compressing files for 
+speedy and safe transmission over the internet. Alladin's Stuffit format is so common, 
+you probably have already have Stuffit Expander installed on your computer and may not even know it.
+<p>If you do not have a copy of this free software or if you desire the latest version, go to the 
+<a href="http://www.aladdinsys.com/expander/expander_mac_login.html" target="_blank">Aladdin's website</a> 
+and download your copy. Installation is easy, you can even set up your browser to automatically decompress any 
+.sit files you download.
+<br>&nbsp;<br>
+<div align="center">
+	<a href="http://www.aladdinsys.com/expander/expander_mac_login.html" target="_blank">Aladdin's Stuffit Expander For Mac</a>
+	</div>

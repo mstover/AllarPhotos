@@ -1,0 +1,69 @@
+#macro(pageTitle $title)
+	<TITLE>$!customerName Digital Online Library demo - $!title</TITLE>
+#end
+
+#macro(pageMeta $directory)
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="style_$!{directory}.css" media="screen">
+	
+#end
+
+#macro(bodyTag)
+	<body onload="">
+#end
+
+#macro(preNav)
+  <div style='margin: 10px auto; width: 780px;'>
+  <table id='mainFrame' cellspacing='0' cellpadding="0">
+  <tr>
+	<td colspan='2' style='height: 6px; background-color: #00376E; border-bottom: 0px dotted silver;'>
+		<img src='images/mcc-logo-tag.jpg' style='float: right;' />
+		<img src='images/mcc-logo.jpg' style='' />
+	</td>
+  </tr>
+  <tr>
+#end
+
+#macro(postNav)
+	<td id='myContent'>
+		#messages()
+<!-- The Editable portion begins here. -->
+#end
+
+#macro(navigation)
+	<!-- Navigation Block Here-->
+	<td id='navBlock'>
+		<div style='margin: 12px 10px 12px 0px; padding-right: 8px; border-top: 1px solid silver; color: silver; text-align: right;'>
+			Digital Online Library</div>
+		<hr id='nav_spacer' style='height: 0; border: 0;' />
+		<!--a href='whats_new.jsp'>Welcome</a-->
+		<a href='catsearch.jsp?request_browse_set=0&toggle=yes&request_category_prefixArchive|$DB_EQ|$DB_IS|or|and=Active'>Search Active</a>
+	    #if($user && ($user.permissions.getPermission("${productsFound.productFamily}.Archive.Obsolete",7,"read") || $user.permissions.getPermission($productsFound.productFamily,3,"admin")))<a href='catsearch.jsp?request_browse_set=0&toggle=yes&request_category_prefixArchive|$DB_EQ|$DB_IS|or|and=Obsolete'>Search Obsolete</a>#end
+		<!-- <a href='catsearch.jsp?request_history_index=0&request_browse_set=0&request_category_prefixArchive|$DB_EQ|$DB_IS|or|and=&request_category_prefixexpired_category|$DB_EQ|$DB_IS|or|and=Expired'>Search Expired</a> -->
+        <a href='browse_products.jsp?request_browse_set=0'>View Now</a>
+		<a href='shopping_cart.jsp'>View Cart</a>
+		<a href='view_orders.jsp'>View Orders</a>
+		<a href='edit_user_info.jsp'>User Info</a>
+		<a href='whats_new.jsp?helpText=$!helpText'>Help</a>
+		<a href='catsearch.jsp?request_history_index=0&request_browse_set=0'>Switch Libraries</a>
+		#if($user && ($user.permissions.getAvailableResourceList(3,"admin").size() > 0 || $user.permissions.getAvailableResourceList(1,"admin").size() > 0))
+			<a href="/lazerweb/admin.jsp">Admin Tasks</a>
+		#elseif($user && $user.permissions.getAvailableResourceList(3,"upload").size() > 0)
+			<a href="/lazerweb/admin.jsp">Upload Images</a>
+		#end
+		<a href='index.jsp?action=action_logout'>Logoff</a>
+	</td>
+#end
+
+#macro(footer)
+	<img src='images/forced-spacer.gif' style='height: 1px; width: 614px;'/>
+	</td><!-- The Editable portion ends here. -->
+  </tr>
+  <tr> 
+    <td colspan='2' id='copyRight'>&copy; 2006 #if($!customerName) $!customerName #else Lazer#end Inc.</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
+#end

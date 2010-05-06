@@ -1,0 +1,18 @@
+<DIV ALIGN="center"><H2>Order/Download</H2></DIV>
+<p><b>Download help:</b> If you are downloading an image, then click on the file name for the compressed
+            image(s) that is next to the &quot;Download&quot; label.  A pop-up 
+            dialog box will appear requesting information
+            about the download, such as whether you desire to save the file to disk.  
+            If you select to save the file to disk, then press the &quot;OK&quot; 
+            button, and fill in the requested information regarding the desired 
+            directory for file storage.  After your download is complete, you may
+            return to the search page for additional images, or one of the other
+            pages using the buttons to the left of download information panel.</p>
+<p><b>Order confirmation:</b> If you ordered an image, then the Confirm Order/Download page will 
+            appear, providing information about your order.  If the information
+            regarding your order is correct, then your order is complete.
+            If you have any questions about your order, you may click one of the two links at the 
+						bottom of the page to request help or further information.  After
+            your order is complete, you may
+            return to the search page for additional images, or one of the other
+            pages using the buttons to the left of the order information panel.</p>

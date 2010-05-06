@@ -1,0 +1,17 @@
+<DIV ALIGN="center"><H2>Definitions of File Formats</H2></DIV>
+<div align="left"><ul>
+	<li><a href="help.jsp?help=jpeg">JPEG</a>
+	<li><a href="help.jsp?help=eps">EPS</a>
+	<li><a href="help.jsp?help=pdf">PDF</a>
+</ul></div>
+
+<p>&nbsp;</p>
+<div align="left"> 
+	<dt><b>PDF</b>
+    <dd><p>The Portable Document Format (PDF) is used by Adobe Acrobat, Adobe's electronic publishing software 
+						for Windows, Mac OS, UNIX, and DOS. You can view PDF files using the Acrobat Reader software. Identical 
+						to PostScript pages, PDF files can represent both vector and bitmap graphics, and can contain electronic 
+						document search and navigation features such as electronic links. For more information on PDF and Adobe 
+						Acrobat, see the Electronic Publishing Guide included on the Tour & Training CD-ROM. Definition courtesy 
+						Adobe Systems Incorporated.</p>
+</div>

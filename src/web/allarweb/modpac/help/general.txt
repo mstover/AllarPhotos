@@ -1,0 +1,2 @@
+<DIV ALIGN="center"><H2>General Help Contents</H2></DIV>
+<p>Please select a Help Topic you wish to display</p>

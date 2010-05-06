@@ -1,0 +1,22 @@
+<DIV ALIGN="center"><H2>Verify Information</H2></DIV>
+<p>The Verify panel gives you an opportunity to ensure that all of the User
+            and Order information is correct before the order is submitted.</p>
+<p>In the event that any User Information requires correction,
+			click on the &quot;Edit User Information&quot; text below the user information.  
+			This will send you back to the &quot;Edit User Information&quot; 
+			page.</p>  
+<p>If you have requested an order for images to be sent on CD-ROM you will be 
+			asked to check your shipping address which you may modify, if needed. You 
+			must also enter a &quot;Ship To Number&quot; and a &quot;Sold To Number&quot;
+			at this point. Each number must be represented as a number (no spaces or dashes) 
+			no more than seven digits long. If you have questions about this contact the 
+			<a href="lazerweb_feedback.jsp?subject=modpac+Online+Library&sendto=webmaster@lazerinc.com&receiver=Webmaster">site administrator</a>.</p>
+<p>You may also enter special processing or delivery requests on this page by filling in 
+			the box labelled &quot;Special Instructions&quot;.</p>
+<p>If the order requires modification, then click on the text 
+			&quot;Edit Order&quot; underneath the order data, which will 
+			return you to the &quot;Shopping Cart&quot; page.  From the 
+			Shopping Cart, the order may be changed.</p>
+<p>Once the order and user information is to your satisfaction, press the
+            &quot;Process Request&quot; at the bottom of the form to submit
+			your order.</p>

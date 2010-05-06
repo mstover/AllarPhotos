@@ -1,0 +1,279 @@
+body {
+				padding:0;
+				margin:0;
+				font-size:10pt;
+			}
+			
+			table {
+				font-size:10pt;
+			}
+			
+			.popup-info {
+				background:#eea;
+				color:#c55;
+				font-size:110%;
+				padding:2em;
+				border:medium solid black;
+			}
+			
+			.odd {
+				background: #eee;
+			}
+			
+			.even {
+				background: #ccc;
+			}
+			
+			.top-buffer {
+				margin-top:5em;
+			}
+			
+			.west {
+				width:30%;
+			}
+			
+			img.expired-image {
+				border:medium solid red;
+			}
+			
+			.order-display .text{
+				font-size:90%;
+			}
+			
+			.order-display .label {
+				font-size:90%;
+			}
+			
+			table.order-display-table table td {
+				border:none;
+			}
+			
+			table.order-display-table table {
+				border:none;
+			}
+			
+			.status-awaiting_approval {
+				color:#aa0;
+				font-weight:bold;
+			}
+			 
+			.status-awaiting_confirmation {
+				color:#d80;
+				font-weight:bold;
+			}
+			
+			.status-awaiting_fulfillment {
+				color:#0a0;
+				font-weight:bold;
+			}
+			
+			.status-fulfilled {
+				font-weight:bold;
+			}
+			
+			.status-rejected {
+				color:#a00;
+				font-weight:bold;
+			}
+			
+			.status-cancelled {
+				color:#0aa;
+				font-weight:bold;
+			}
+			
+			table.order-display-table {
+				border:thin solid gray;
+			}
+			
+			table.order-display-table td {
+				border:thin solid gray;
+			}
+				
+			
+			.download-link {
+				font-size:200%;
+			}
+			
+			.linked {
+				color:blue;
+			}
+			
+			.tooltip {
+				border:thin solid black;
+				background:#eec;
+				padding:2px;
+			}
+			
+			.product-popup .toolbar img {
+				padding:4px;
+				border:none;
+			}
+			
+			.new-account-panel {
+				border:medium inset black;
+				background:#cc8;
+			}
+			
+			.toolbar img {
+				border:3px solid transparent;
+			}
+			
+			.toolbar img.mouse {
+				border:outset 3px #ccc;
+			}
+			
+			.results-display-control .gwt-CheckBox {
+				padding:0 30px;
+			}
+			
+			.center {
+				width:70%;
+			}
+			
+			.license-text {
+				font-family: serif,monospace;
+				font-style: italic;
+			}
+			
+			.mouse_over {
+				text-decoration:underline;
+			}
+			
+			.user-name-tree-item table{
+				color : #246;
+			}
+			
+			.image-viewer {
+				background:#dde;
+				border:thin solid black;
+			}
+			
+			.image-viewer table {
+				display:inline;
+				padding:1em;
+			}	
+			
+			.product-popup {
+				border:thick solid black;
+				background:#ccc;
+				padding:2em;
+			}
+			
+			.selected-checkbox {
+				font-weight:bold;
+				background:#ccd;
+			}
+			
+			.spreadsheet {
+				border:none;
+				max-height:500px;
+				max-width:800px;
+			}
+			
+			.perms-table td {
+				padding:3px 2em 3px 5px;
+			}
+			
+			.perms-table th {
+				padding:3px 2em 3px 5px;
+			}
+			
+			td,th {
+				padding:2px 5px;
+			}
+			
+			.required {
+				color:red;
+			}
+			
+			.gwt-TabBarItem {
+				font-size:110%;
+				font-weight:bold;
+				padding-right:2em;
+				background : #eee;
+				border-top:medium outset #444;
+				border-left:medium outset #444;
+				border-right:medium outset #444;
+			}
+			
+			.gwt-TabBarItem-selected {
+				background-color : #ccc;
+				border-top:medium inset #222;
+				border-left:medium inset #222;
+				border-right:medium inset #222;
+			}
+			
+			.center {
+				padding:1em;
+			}
+			
+			.label {
+				font-size:110%;
+				font-weight:bold;
+				padding-right:2em;
+			}
+			
+			.header {
+				font-size:110%;
+				font-weight:bold;
+				text-align: center;
+			}
+			
+			.text {
+				
+			}
+			
+			.title {
+				font-size:130%;
+				font-weight:bold;
+				display:block;
+				text-align:center;
+				margin-bottom:2em;
+			}
+			
+			.page-title {
+				font-size:160%;
+				font-weight:bold;
+				padding-left:12em;
+			}
+			
+			.gwt-MenuItem {
+				background:#ccd;
+				padding:1px 3px;
+			}	
+			
+			.gwt-TreeItem-selected {
+				background: #ccd;
+			}
+			
+			.gwt-MenuItem-selected {
+				background: #55a;
+				color:#fff;
+			}		
+			
+			.gwt-MenuItem-selected a {
+				background: #55a;
+				color:#fff;
+			}		
+			
+			.gwt-MenuBar {
+				background:#ccd;
+				padding:0px;
+				border:thin solid black;
+			}
+			
+			.gwt-MenuBar table,tr,td {
+				margin:0px;
+				padding:0px;
+			}
+			
+			.top-menu {
+				width:100%;
+				background:#ccd;
+				border:thin solid black;
+			}
+			
+			.top-menu .gwt-MenuItem {
+				padding:1px 10px;
+				border:none;
+			}

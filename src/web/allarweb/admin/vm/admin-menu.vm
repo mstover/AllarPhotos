@@ -1,0 +1,36 @@
+#macro(setMenuPositions)
+	#set($slots = [20,100,180,260,360,440,520,600,680,760,840,920])
+#end
+
+#macro(createMenus $style $slots)
+	#set($slotCount = 0)
+	## Browse objects menu
+		#menuDiv("Home" $slots.get($slotCount) "/lazerweb/admin" $style)
+		
+	#set($slotCount = $slotCount + 1)
+	
+	## New Menu
+		
+		#if($user && $ugd.getGroups($user.permissions).size() > 0)
+    		#menuDiv("Groups" $slots.get($slotCount) $NValue $style)
+    		#set($itemList = [])
+    		#set($x = $itemList.add(["Admin Groups","/lazerweb/admin/adminGroups.jsp","false"]))
+			#set($x = $itemList.add(["Add Group","/lazerweb/admin/addGroup.jsp","false"]))
+    		#menu("Groups" $itemList $slots.get($slotCount) $style)
+    		#set($slotCount = $slotCount + 1)
+		
+			#menuDiv("Users" $slots.get($slotCount) "/lazerweb/admin/adminUsers.jsp" $style)
+    		#set($addUser_MI = ["Add User","/lazerweb/admin/addUser.jsp","false"])
+    		#set($adminUsers_MI = ["Admin Users","/lazerweb/admin/adminUsers.jsp","false"])
+    		#menu("Users" [$addUser_MI,$adminUsers_MI] $slots.get($slotCount) $style)
+    		#set($slotCount = $slotCount + 1)
+		
+			#menuDiv("Libraries" $slots.get($slotCount) $NULL $style)
+    		#set($keywordImport_MI = ["Upload Keyword File","/lazerweb/admin/import_data.jsp","false"])
+    		#set($downloadActivity_MI = ["View Download Statistics","/lazerweb/admin/downloadActivity.jsp","false"])
+    		#set($adminLibraries_MI = ["Admin Libraries","/lazerweb/admin/adminLibrary.jsp","false"])
+    		#menu("Libraries" [$keywordImport_MI,$downloadActivity_MI,$adminLibraries_MI] $slots.get($slotCount) $style)
+    		#set($slotCount = $slotCount + 1)
+		#end
+		
+#end

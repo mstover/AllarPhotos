@@ -1,0 +1,9 @@
+<!-- HELP CONTENT COMMENT BUFFER -->
+<DIV ALIGN="center"><H3>Asset Detail</H3></DIV>
+	<p>The Asset Detail page provides information about the file (such as 
+		file dimensions and type, as well as the file content and brand info). 
+		This page also displays a larger thumbnail view of the file.</p>
+	<p>To return to the thumbnail page, click the &quot;Go Back&quot; button. 
+		You may add this file to your shopping cart by clicking the 
+		&quot;Add to Cart&quot; button which will also bring you back to the 
+		browse page.</p>

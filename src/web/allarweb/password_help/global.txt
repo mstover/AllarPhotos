@@ -1,0 +1,20 @@
+<%!
+	com.lazerinc.application.DatabaseApplicationController controller;
+	//sets the necessary config files for this family and places 
+	//a reference to them into this family's controller
+	public void startup() {
+    	ServletConfig config = getServletConfig();
+        ServletContext application = config.getServletContext();
+		String configFile = "d:\\webdocs\\lazerweb\\password_help\\properties\\password_help.properties";
+		String tableConfigFile = "d:\\webdocs\\lazerweb\\password_help\\properties\\password_help.cfg";
+		DatabaseApplicationController c = (DatabaseApplicationController)application.getAttribute("lazerweb.controller");
+		if(c != null)
+		{
+			controller = new CommerceController();
+			((CommerceController)controller).setController(c);
+			controller.setConfigFile(configFile);
+			controller.setConfigFile(tableConfigFile);
+			application.setAttribute("lazerweb.password_help.controller",controller);
+		}	
+  	}
+%>

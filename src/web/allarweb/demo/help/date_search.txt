@@ -1,0 +1,21 @@
+<!-- HELP CONTENT COMMENT BUFFER -->
+<DIV ALIGN="center"><H3>Date Search</H3></DIV>
+<p>You may choose to search the library based on how new the files are. This is useful if
+		you frequently visit the library and you would like to only see new additions. If this is 
+		the case, use the &quot;Date Search&quot; option.</p> 
+<p>You may choose to view files added to the library in the past day, the past week or the 
+		past month. Simply choose the appropriate option in the drop-down menu provided.</p>
+<p>The number of files matching your 
+           search criteria will be shown at the top of the page. You may 
+           either view the images at this point by clicking on the &quot;View Now&quot; 
+					 menu option, or narrow your search further by either repeating 
+           the Date Search procedure or by using the <a href="help.jsp?page_view=keyword_search">Keyword Search</a> 
+					 or the <a href="help.jsp?page_view=category_search">Category Search</a> procedure. The 
+					 &quot;View Now&quot; option is only 
+					 available after you have narrowed your search to fewer than 100 files.</p>
+        <p>As new categories in a category hierarchy are selected, they will be
+           shown in the &quot;Common Elements&quot; block of the search panel.</p>
+        <p>Note:  At any time you may click the 
+           &quot;Reset Search&quot; menu item to restart your search.
+           </p>
+

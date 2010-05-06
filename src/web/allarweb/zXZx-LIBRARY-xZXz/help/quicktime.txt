@@ -1,0 +1,12 @@
+<div align="center"><h3>Apple Quicktime</h3></div>
+<p>Some files on this site are saved as Apple Quicktime audio or video files. 
+<p>This is a common file format for audio or video files on the internet. 
+These files may be viewed using Quicktime software. In fact, you may already have this software installed on your computer.
+NOTE: These are not streaming files, they must be downloaded prior to viewing.
+<p>If you do not have a copy of this free software or if you desire the latest version, go to the 
+<a href="http://www.apple.com/quicktime/download/" target="_blank">Quicktime download page</a>.
+<br>&nbsp;<br>
+<div align="center">
+	<a href="http://www.apple.com/quicktime/download/" target="_blank">Apple Quicktime</a> 
+
+</div>

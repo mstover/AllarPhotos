@@ -1,0 +1,7 @@
+<DIV ALIGN="center"><H2>Logging in</H2></DIV>
+<p>To use the Online Library Interface you must first 
+            have an account on the Online Library server being accessed. After you 
+            have a user name and password for the system you can use this 
+            information to log into the Online Image Library.</p>
+<p>Enter your user name and password and select the &quot;Login&quot;
+            link. This action will validate your login and start a session.</p>

@@ -1,0 +1,169 @@
+body {
+    text-align: center;
+    margin: 10px auto;
+}
+body, p, td, div {
+    font-family: Trebuchet, Trebuchet MS, Verdana, Arial, sans-serif;
+}
+td {
+    vertical-align: top; text-align: left;
+    padding: 0;
+}
+a {
+    color: #369; text-decoration: none; 
+    font-weight: bold;
+}
+a:hover {
+    color: #9777C1;
+}
+table#mainFrame {
+    width: 780px;
+    margin: 0 auto; padding: 0px;
+    border: 2px solid #636; background-color: #FFF;
+}
+#mastHead {
+    padding: 0; margin: auto auto;
+    text-align: center; vertical-align: middle;
+    border-width: 0 0 8px 0;
+    background-color: #96C; 
+}
+#textContent {
+    padding: 0; margin: 0;
+    background-color: #9C6;
+}
+#buttonBlock {
+    background-color: #FFF; 
+    padding: 0px;
+    text-align: center;
+}
+#copyRight {
+    height: 15px; color: #369;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+}
+.borderWhite {
+    border-color: #FFF; border-width: 8px;
+    border-style: solid;
+}
+.inputLabel {
+	float: left;
+	width: 50px;
+	padding-right: 6px;
+}
+.libraryButton img {
+	border: 0;
+	text-decoration: none;
+}
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alertColor {
+	font-style: italic;
+	color: #600;
+}
+
+<!-- useful beyond this point ??? -->
+
+td#navBlock {
+    width: 160px; height: 500px; 
+    border-right: 2px solid #CFD1E6;
+}
+td#navBlock a {
+    display: block; padding: 5px 25px 5px 5px;
+    text-align: right; font-weight: bold;
+    text-decoration: none; color: #369;
+    border-bottom: 1px dotted red;
+}
+div.inActiveLink {
+    display: block; padding: 5px 25px 5px 5px;
+    text-align: right; font-weight: bold;
+    text-decoration: none; color: #EEE;
+    border-bottom: 1px dotted red;
+}
+td#navBlock a:hover {
+    color: #9777C1;
+    background-color: #CFD1E6;
+}
+td#myContent {
+    width: 614px; padding: 10px;
+}
+.libThumb {
+    display: block; float: left;
+    padding: 5px;
+    border-color: blue;
+    border-style: dashed;
+    border-width: 0;
+}
+.libThumb img {
+    border: 0;
+}
+.libThumb:hover {
+    background-color: silver;
+}
+.categoryheader  {
+    font-size: 110%; line-height: 12px;
+    font-weight: bold; padding-bottom: 3px;
+}
+.btnBkd {
+    background-color: white; color: black; 
+    font-weight: bold;
+}
+.floatLeft {
+    float: left; padding-right: 10px;
+}
+.floatRight {
+    float: right; padding-left: 10px;
+}
+.center {
+    text-align: center;
+}
+.moretic {
+    width: 70px; height: 25px;
+    float: right;
+}
+div.pullquote {
+    float: right; width: 70px; 
+    color: #900; text-align: center;
+    border-width: 0;
+    font: bold italic 1em Trebuchet, Trebuchet MS, Arial, Helvetica, Verdana, sans-serif;
+    padding: 3px 3px; margin: 1px 7px;
+}
+UL  {
+    list-style-type: disc; list-style: disc;
+    padding: 0; margin: 0 0 1px 10px;
+}
+LI, dd  {
+    padding: 0; margin: 0 0 0 10px;
+}
+div.sideSubBox {
+    float: right; width: 160px;
+    padding: 3px; margin-left: 10px; 
+    background-color: #D3EDCE; font-size: 11px;
+}
+.buttonTable {
+    width: 310px;
+    border: 0; text-align: center;
+    padding: 0; margin: 0 auto; 
+}
+.lightBkd {
+    background-color: #FFF;
+    margin: 5px;
+    padding:0px;
+}
+.errorSection,.messageSection {
+	width:100%;
+}
+.errorSection .message
+{
+	color: #aa0000;
+	font-weight:bold;
+	font-size:110%;
+}
+.messageSection .message {
+	color: #880000;
+	font-weight:bold;
+	font-size:110%;
+}

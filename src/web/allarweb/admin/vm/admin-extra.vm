@@ -1,0 +1,214 @@
+#macro(commonGroups_ajax)
+#foreach($g in $commonGroups)$g.id|#end
+#end
+
+#macro(commonUsers_ajax)
+#foreach($u in $commonUsers)$u.userID|#end
+#end
+
+#macro(userAdminBox $cols $onclick $onmouseover $onmouseout)
+	<h3>Users</h3>
+	<div id="userAdminBox">
+	#set($quarter = $math.add($math.div($users.size(),$params.getParameterAsInt("user_cols",$cols)).intValue(),1))
+	<div style="float:left;">
+	#foreach($u in $users)
+		#if($velocityCount % $quarter == 0)
+		    </div><div style="float:left;">
+		#end
+			<span id="user_$u.userID" name="user" class="unsel_no_out" #if($onclick)onclick="javascript:clickUser($u.userID);"#end #if($onmouseout)onmouseout="javascript:mouseoutObj('user_$u.userID');"#end #if($onmouseover)onmouseover="javascript:mouseoverObj('user_$u.userID');"#end>$u.lastName, $u.firstName</span>
+			<br>
+	#end
+	</div></div>
+#end
+
+#macro(groupAdminBox $cols $onclick $onmouseover $onmouseout)
+	<h3>Groups</h3>
+	<div id="groupAdminBox">
+	#set($list = $ugd.getGroups($user.permissions))
+	#set($onehalf = $math.add($math.div($list.size(),$params.getParameterAsInt("group_cols",$cols)).intValue(),1))
+	<div style="float:left;">
+	#foreach($g in $list)
+		#if($velocityCount % $onehalf == 0)
+		    </div><div style="float:left;">
+		#end
+		<span id="group_$g.id" name="group" #if($onclick)onclick="javascript:clickGroup($g.id);"#end #if($onmouseover)onmouseover="javascript:mouseoverObj('group_$g.id');"#end #if($onmouseout)onmouseout="javascript:mouseoutObj('group_$g.id');"#end class="unsel_no_out">$g.name</span><br>
+					
+	#end
+	</div></div>
+#end
+
+#macro(rightsDisplay $rights $resource $groupToAdmin)
+	#if($rights.getRight("admin"))
+				#set($rightImg = "check")
+			#else
+				#set($rightImg = "x")
+			#end
+	<div style="width:100%;text-align:right;clear:left;"><div style="float:left;font-weight:bold;">admin</div> 
+		#if($groupToAdmin)
+			#mouseoverImg_border("lazerweb/iwimages/${rightImg}.gif" "toggleRight('admin',$resource.id,$groupToAdmin.id,'this_el_id');")
+		#else <img src="/lazerweb/iwimages/${rightImg}.gif">
+		#end
+	</div>
+			#if($rights.getRight("read"))
+				#set($rightImg = "check")
+			#else
+				#set($rightImg = "x")
+			#end
+	<div style="width:100%;text-align:right;clear:left;"><div style="float:left;font-weight:bold;">read</div> 
+		#if($groupToAdmin)
+			#mouseoverImg_border("lazerweb/iwimages/${rightImg}.gif" "toggleRight('read',$resource.id,$groupToAdmin.id,'this_el_id');")
+		#else <img src="/lazerweb/iwimages/${rightImg}.gif">
+		#end
+	</div>
+	#if($rights.getRight("order"))
+				#set($rightImg = "check")
+			#else
+				#set($rightImg = "x")
+			#end
+	<div style="width:100%;text-align:right;clear:left;"><div style="float:left;font-weight:bold;">order</div> 
+		#if($groupToAdmin)
+			#mouseoverImg_border("lazerweb/iwimages/${rightImg}.gif" "toggleRight('order',$resource.id,$groupToAdmin.id,'this_el_id');")
+		#else <img src="/lazerweb/iwimages/${rightImg}.gif">
+		#end
+	</div>
+	#if($rights.getRight("download"))
+				#set($rightImg = "check")
+			#else
+				#set($rightImg = "x")
+			#end
+	<div style="width:100%;text-align:right;clear:left;"><div style="float:left;font-weight:bold;">download</div> 
+		#if($groupToAdmin)
+			#mouseoverImg_border("lazerweb/iwimages/${rightImg}.gif" "toggleRight('download',$resource.id,$groupToAdmin.id,'this_el_id');")
+		#else <img src="/lazerweb/iwimages/${rightImg}.gif">
+		#end
+	</div>
+	#if($rights.getRight("upload"))
+				#set($rightImg = "check")
+			#else
+				#set($rightImg = "x")
+			#end
+	<div style="width:100%;text-align:right;clear:left;"><div style="float:left;font-weight:bold;">upload</div> 
+		#if($groupToAdmin)
+			#mouseoverImg_border("lazerweb/iwimages/${rightImg}.gif" "toggleRight('upload',$resource.id,$groupToAdmin.id,'this_el_id');")
+		#else <img src="/lazerweb/iwimages/${rightImg}.gif">
+		#end
+	</div>
+#end
+
+#macro(showAvailableLibraries $groupToAdmin)
+	<div style="border:thin solid black;padding:5px;">
+	#foreach($library in $user.permissions.getAvailableResourceList(3,"admin"))
+		#clickableSpan("$library.name" "addLibraryToPerms('$library.name',$groupToAdmin.id);") | 
+	#end</div>
+#end
+
+#macro(showAvailableGroups $groupToAdmin)
+	<div style="border:thin solid black;padding:5px;">
+	#foreach($g in $user.permissions.getAvailableResourceList(1,"admin"))
+		#clickableSpan("$g.name" "addGroupToPerms('$g.name',$groupToAdmin.id);") | 
+	#end</div>
+#end
+
+#macro(showAvailableMerchants $groupToAdmin)
+	<div style="border:thin solid black;padding:5px;">
+	#foreach($m in $user.permissions.getAvailableResourceList(4,"admin"))
+			#clickableSpan("$m.name" "addMerchantToPerms('$m.name',$groupToAdmin.id);") | 
+	#end</div>
+#end
+
+#macro(showAvailableProtFields $groupToAdmin)
+	<div style="border:thin solid black;padding:5px;">
+	#foreach($m in $user.permissions.getAvailableResourceList(7,"admin"))
+		#if(!$fieldFilter || $m.name.startsWith($fieldFilter))
+			#clickableSpan("$m.name" "addProtFieldToPerms('$m.name',$groupToAdmin.id,'$fieldFilter');") | 
+		#end
+	#end</div>
+#end
+
+#macro(showAvailableExpFields $groupToAdmin)
+	<div style="border:thin solid black;padding:5px;">
+	#foreach($m in $user.permissions.getAvailableResourceList(8,"admin"))
+		#clickableSpan("$m.name" "addExpFieldToPerms('$m.name',$groupToAdmin.id,'$fieldFilter');") | 
+	#end</div>
+#end
+
+#macro(perms $resType $security $groups)
+	#if($groups.size() == 1)
+		#set($groupToAdmin = $groups.iterator().next())
+	#end
+	#if($groupToAdmin && $resType == 3)
+		<div style="float:right;">#swappControl("avail_libraries" "Add Library" "h4")</div>
+		#swappableDiv("avail_libraries" "#showAvailableLibraries($groupToAdmin)" $NULL "float:right;max-width:75%;")
+	#end
+	#if($groupToAdmin && $resType == 1)
+		<div style="float:right;">#swappControl("avail_groups" "Add Group" "h4")</div>
+		#swappableDiv("avail_groups" "#showAvailableGroups($groupToAdmin)" $NULL "float:right;max-width:75%;")
+	#end
+	#if($groupToAdmin && $resType == 4)
+		<div style="float:right;">#swappControl("avail_merchants" "Add Merchant" "h4")</div>
+		#swappableDiv("avail_merchants" "#showAvailableMerchants($groupToAdmin)" $NULL "float:right;max-width:75%;")
+	#end
+	#if($groupToAdmin && $resType == 7)
+		<div style="float:right;">#swappControl("avail_protFields" "Add Protected Field" "h4")</div>
+		#swappableDiv("avail_protFields" "#showAvailableProtFields($groupToAdmin)" $NULL "float:right;max-width:75%;")
+	#end
+	#if($groupToAdmin && $resType == 8)
+		<div style="float:right;">#swappControl("avail_expFields" "Add Expirated Image Right" "h4")</div>
+		#swappableDiv("avail_expFields" "#showAvailableExpFields($groupToAdmin)" $NULL "float:right;max-width:75%;")
+	#end
+	<div style="clear:both;">
+	#foreach($resource in $security.getAvailableResourceList($resType))
+		#if($resType != 7 || !$fieldFilter || $resource.name.startsWith($fieldFilter))
+    		<span class="boxed"><div style="text-align:center;" class="label">#if($resType == 3)#clickableSpan($resource.name "reloadPermsWithFilter('$resource.name');")#else#mouseoverSpan($resource.name)#end</div>
+    		#rightsDisplay($security.getPermissions($resource) $resource $groupToAdmin)</span>
+		#end
+	#end</div>
+#end
+
+#macro(groupRights $security $groups)
+	#if($params.hasParam("filter"))
+		#set($fieldFilter = $params.getParameter("filter"))
+	#end
+	#if($groups.size() > 1)
+		<div style="color:red;">Can't edit permissions for multiple groups</div>
+	#else	
+		#set($groupToAdmin = $groups.iterator().next())
+	#end
+	<span class="boxed"><div style="float:left;">#swappControl("perms_on_groups" "Groups" "h3")</div>
+		#swappableDiv("perms_on_groups" "#perms(1 $security $groups)" $NULL $NULL)</span>
+	<span class="boxed"><div style="float:left;"><h3 id="library_view" onclick="javascript:toggleAdminView('Libraries','library_view','perms_on_libraries');" class="unsel_no_out" 
+		    onmouseover="javascript:mouseoverObj('library_view');" onmouseout="javascript:mouseoutObj('library_view');">View Libraries</h3>	</div>	
+			#swappableDiv("perms_on_libraries" "#perms(3 $security $groups)" $NULL $NULL)
+	</span>
+	<span class="boxed"><div style="float:left;">#swappControl("perms_on_merchants" "Merchants" "h3")</div>
+		#swappableDiv("perms_on_merchants" "#perms(4 $security $groups)" $NULL $NULL)
+	</span>
+	<span class="boxed"><div style="float:left;">#swappControl("perms_on_expFields" "Expired Image Rights" "h3")</div>
+			#swappableDiv("perms_on_expFields" "#perms(8 $security $groups)" $NULL $NULL)
+	</span>
+	<span class="boxed"><div style="float:left;"><h3 id="protFields_view" class="unsel_no_out">Protected Fields</h3></div>		
+			#swappableDiv("perms_on_protFields" "#perms(7 $security $groups)" $NULL $NULL)
+	</span>
+#end
+
+#macro(groupControlBox)	
+	#if($groups.size() > 0)
+    	<div id="controls" class="top_box">
+			<div style="display:inline;margin-left:2px;margin-right:2px;"><input type="button" value="Edit Membership" onclick="javascript:document.location='adminUsers.jsp'+getQueryFragment(selGroups,'group_id',true,true);"></div>
+    	    <div style="display:inline;margin-left:2px;margin-right:2px;"><input type="button" #if($groups.size() == 1)value="Delete Group"#else value="Delete Groups"#end onclick="javascript:document.location='?action=delete_groups'+getQueryFragment(selGroups,'group_id',true,false);"></div>
+    		#if($groups.size()==1)<div style="display:inline;margin-left:2px;margin-right:2px;"><form style="display:inline;" method="POST">
+						<input type="hidden" name="action" value="modify_group">
+						<input type="hidden" name="UserGroup.id" value="$groups.iterator().next().id">
+    				Change Group Name: <input type="text" name="UserGroup.name" value="$!groups.iterator().next().name">
+    				<input type="submit" value="Go">
+    		</form></div>
+    		#end
+    	</div>
+    	<table style="width:99%;margin:0px;" cellpadding="0" border="0" cellspacing="5">
+		<tr valign="top">
+			<td style="width:61%;"><div id="group_rights"><h2>Permissions</h2>
+    		#groupRights($combinedSecurity $groups)</div></td>
+			<td style="width:38%;"><div id="group_users">#userAdminBox(3 true true true)</div></td>
+		</tr></table>
+	#end
+#end

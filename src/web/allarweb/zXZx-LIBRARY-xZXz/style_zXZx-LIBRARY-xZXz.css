@@ -1,0 +1,59 @@
+body {margin: 5px;}
+
+body, p, td, div {font: 12px Verdana, Arial, sans-serif;}
+
+td {vertical-align: top; text-align: left;}
+
+a {color: #369; text-decoration: none; font-weight: bold;}
+a:hover {color: #9777C1;}
+
+table#mainFrame {margin: 0; padding: 0; width: 780px;
+    border: 2px solid #369;}
+
+td#navBlock {width: 160px; height: 500px; 
+    border-right: 2px solid #CFD1E6;}
+td#navBlock a {display: block; padding: 5px 25px 5px 5px;
+    text-align: right; font-weight: bold;
+    text-decoration: none; color: #369;
+    border-bottom: 1px dotted red;}
+div.inActiveLink {display: block; padding: 5px 25px 5px 5px;
+    text-align: right; font-weight: bold;
+    text-decoration: none; color: #EEE;
+    border-bottom: 1px dotted red;}
+td#navBlock a:hover {color: #9777C1;
+    background-color: #CFD1E6;}
+
+td#myContent {width: 614px; height: 500px; 
+    padding: 10px;}
+
+td#copyRight {width: 100%; height: 15px; background-color: #CFD1E6;
+    color: #369; text-align: center; vertical-align: middle;
+    font-size: 10px;}
+
+.categoryheader  {font-size: 110%; line-height: 12px;
+    font-weight: bold; padding-bottom: 3px;}
+
+.btnBkd {background-color: #369; color: white; font-weight: bold;}
+
+.floatLft {float: left; padding-right: 10px;}
+.floatRght {float: right; padding-left: 10px;}
+
+.moretic {width: 70px; height: 25px;
+    float: right;}
+div.pullquote {float: right; width: 70px; color: #900; text-align: center;
+    border-width: 0;
+    font: bold italic 1em Trebuchet, Trebuchet MS, Arial, Helvetica, Verdana, sans-serif;
+    padding: 3px 3px; margin: 1px 7px;}
+
+UL  {list-style-type: disc; list-style: disc;
+    padding: 0; margin: 0 0 1px 10px;}
+
+LI, dd  {padding: 0;
+    margin-top: 0; margin-bottom: 0;
+    margin-left: 10px;}
+
+table#wnContent {width: 590px; border: 3px solid #39C;}
+
+div.sideSubBox {float: right; width: 195px; background-color: #D3EDCE;
+    padding: 3px; margin-left: 10px; font-size: 11px;}
+

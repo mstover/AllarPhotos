@@ -1,0 +1,8 @@
+<DIV ALIGN="center"><H2>Library Contact Info</H2></DIV>
+<br>
+<dl>
+	<dt><b>Library Contact:</b> webmaster<br>	
+		<dd><a href="mailto:webmaster@lazerinc.com">webmaster@lazerinc.com</a></dd>
+        <dt><b>Webmaster</b><br>	
+		<dd><a href="mailto:webmaster@lazerinc.com">webmaster@lazerinc.com</a></dd>
+</dl>

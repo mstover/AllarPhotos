@@ -1,0 +1,2 @@
+<DIV ALIGN="center"><H2>Help Information</H2></DIV>
+<p>You are currently reading the help information. Close this window to continue reading the help document. When you are finished, close the help window to return to the image library.</p>

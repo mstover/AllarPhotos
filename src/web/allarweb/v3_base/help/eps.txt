@@ -1,0 +1,17 @@
+<DIV ALIGN="center"><H2>Definitions of File Formats</H2></DIV>
+<div align="left"><ul>
+	<li><a href="help.jsp?help=jpeg">JPEG</a>
+	<li><a href="help.jsp?help=eps">EPS</a>
+	<li><a href="help.jsp?help=pdf">PDF</a>
+</ul></div>
+
+<div align="left">
+    <dt><b>EPS</b>
+    <dd><p>The Encapsulated PostScript (EPS) language file format can contain both vector and bitmap graphics 
+						and is supported by virtually all graphic, illustration, and page-layout programs. The EPS format 
+						is used to transfer PostScript language artwork between applications. When you open an EPS file 
+						containing vector graphics created in another application, Photoshop rasterizes the file, converting 
+						the vector graphics to pixels.</p>
+				<p>The EPS format supports Lab, CMYK, RGB, indexed-color, duotone, grayscale, and Bitmap color modes, 
+						and does not support alpha channels. EPS does support clipping paths. Definition courtesy Adobe Systems Incorporated.</p>    
+</div>

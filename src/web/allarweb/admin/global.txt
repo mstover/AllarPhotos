@@ -1,0 +1,17 @@
+<%!
+	com.lazerinc.application.DatabaseApplicationController controller;
+	public void startup() {
+    	ServletConfig config = getServletConfig();
+        ServletContext application = config.getServletContext();
+		String configFile = "d:/programs/jakarta-tomcat-4.0.1/webapps/ROOT/lazerweb/admin/properties/admin.properties";
+		DatabaseApplicationController c = (DatabaseApplicationController)application.getAttribute("lazerweb.controller");
+	System.out.println("About to set the admin controller = "+c);
+		if(c != null)
+		{
+			controller = new CommerceController();
+			((CommerceController)controller).setController(c);
+			controller.setConfigFile(configFile);
+			application.setAttribute("lazerweb.admin.controller",controller);
+		}	
+  }
+%>

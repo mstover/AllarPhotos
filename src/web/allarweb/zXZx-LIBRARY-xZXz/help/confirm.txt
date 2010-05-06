@@ -1,0 +1,22 @@
+<!-- HELP CONTENT COMMENT BUFFER -->
+<DIV ALIGN="center"><H3>Order/Download Confirmation</H3></DIV>
+<p><b>Downloads:</b> If you are downloading an image, then click on the link 
+						next to the &quot;Download&quot; label.  A pop-up 
+            dialog box will appear asking you whether you desire to save the file to disk.  
+            If you select to save the file to disk, then press the &quot;OK&quot; 
+            button, and designate the destination on you hard drive your the download file. 
+						After your download is complete, you will need to extract the files from the 
+						compressed file you just downloaded.</p>
+<p>If you use a Macintosh you will have received the file in 
+						a StuffIt archive. See the help section for <a href="help.jsp?page_view=expander">Alladin's Expander</a> 
+						software for information about extracting these files.</p>
+<p>If you use a Windows computer you will have received the file in 
+						a zip archive. See the help section for <a href="help.jsp?page_view=expander">WinZip</a> 
+						software for information about extracting these files.</p><br>
+<p><b>Orders:</b> If you ordered files, then this page will provide information about your order. 
+						If the information
+            regarding your order is correct, then your order is complete.
+            If you have any questions about your order, you may contact the <a href="mailto:webmaster@lazerinc.com">webmaster</a>.
+						Files are delivered next day via an overnight delivery service. If the order is delivered to a location  
+						within the United States, you should receive your order in one to two business 
+						days. International deliveries may take three to four business days.</p>

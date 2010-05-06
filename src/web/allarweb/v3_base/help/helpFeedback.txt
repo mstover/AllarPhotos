@@ -1,0 +1,2 @@
+<DIV ALIGN="center"><H2>Feedback Form</H2></DIV>
+<p>Fill out this form to provide feedback or ask technical questions of the library webmaster. You can expect a quick reply during daytime business hours, usually within an hour.</p>

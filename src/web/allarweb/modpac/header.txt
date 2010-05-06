@@ -1,0 +1,55 @@
+<!-- Prevent this information from being cached on a Proxy server. -->
+<%
+	response.setHeader("Cache-Control","no-store"); //HTTP 1.1
+	response.setHeader("Pragma","no-cache"); //HTTP 1.0
+	response.setDateHeader ("Expires", 0); //prevents caching at theproxy server
+%>
+
+<html>
+<head>
+<title><c:out value="${title}"/></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="style_modpac.css" media='screen'>
+</head>
+<body>
+<table id='mainFrame' cellspacing='0'>
+  <tr>
+	<td colspan='2' style='height: 20px; background-color: #CFD1E6; border-bottom: 1px dotted red;'>&nbsp;</td>
+  </tr>
+  <tr>
+	<!-- Navigation Block Here-->
+	<td id='navBlock'><img 
+		    src="images/modpac_logo.gif">
+		<div style='margin: 12px 10px 12px 0px; padding-right: 8px;
+			border-top: 1px solid #369; color: red; text-align: right;'>
+			Digital Online Library</div>
+		<a href='whats_new.jsp'>Welcome</a>
+		<a href='catsearch.jsp?request_history_index=0&displaySet=0'>Reset Search</a>
+  <%--c:choose>
+	<c:when test='${false}'><!-- ((null != session.getValue("go_back") && ((String)session.getValue("go_back")).startsWith("/lazerweb/modpac/index")) ||
+			(commerce.searchSize() > Integer.parseInt(controller.getConfigValue("number_of_products_shown"))))}'-->
+		<div class='inActiveLink'>View Now</a>
+	</c:when>
+	<c:otherwise--%>
+		<a href='browse_products.jsp'>View Now</a>
+	<%--/c:otherwise>
+  </c:choose--%>
+		<a href='shopping_cart.jsp'>View Cart</a>
+		<a href='edit_user_info.jsp'>User Info</a>
+<c:choose>
+	<c:when test='${null != param.help}'>
+		<a href='help.jsp?help=<c:out value="${param.help}"/>'>Help</a>
+	</c:when>
+	<c:when test='${null != help}'>
+		<a href='help.jsp?help=<c:out value="${help}"/>'>Help</a>
+	</c:when>
+	<c:otherwise>
+		<a href='help.jsp?help=general'>Help</a>
+	</c:otherwise>
+</c:choose>
+
+
+		<a href='index.jsp?<%=RequestConstants.REQUEST_ACTION%>=<%=ActionConstants.ACTION_LOGOUT%>'>Logoff</a>
+	</td>
+	<td id='myContent'>
+<!-- The Editable portion begins here. -->

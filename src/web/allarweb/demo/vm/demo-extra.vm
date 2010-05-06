@@ -1,0 +1,361 @@
+#macro(showLibraryChoices $productFamilies)
+	#foreach($family in $productFamilies)
+		#set($f_dir = "${family.name}_dir")
+		#set($f_over = "${family.name}_over")
+		#set($f_inactive = "${family.name}_inactive")
+		#if($configuration.product_tables.indexOf($family.name) > -1)
+			<a href="$hbiCategoryImages.get($f_dir)/catsearch.jsp?request_history_index=-11&request_browse_set=0&request_category_prefixArchive|$DB_EQ|$DB_IS|or|and=Active&request_category_prefixLibrary+Name|$DB_EQ|$DB_IS|or|and=$dbUtil.getProductFamily($family.name).descriptiveName">#mouseoverImg("images/$hbiCategoryImages.get($family.name)" "images/$hbiCategoryImages.get($f_over)" "images/$hbiCategoryImages.get($family.name)" $NULL)</a>
+		#else
+			<img src='images/$hbiCategoryImages.get($f_inactive)'/>
+		#end
+	#end
+	## 1) drop in table with images
+	## 2) For each ... if family is not in $productFamilies then _inactive
+	## 3) else ... Roll-oversetup as is
+#end
+
+#macro(showProductDates $productBean)
+	<!-- Let's put the DateCatalogged right here -->
+	  <li><B>Date Cataloged:</B> 
+	  	<br>$!format.formatCalendar($productBean.getProduct().dateCataloged,"yyyy.MM.dd")</li>
+	  <!-- Let's put the DateModified right here -->
+	  <li><B>Date Modified:</B> 
+	  	<br>$!format.formatCalendar($productBean.getProduct().dateModified,"yyyy.MM.dd")</li>
+#end
+
+#macro(displayLibraryButton $productFamily)
+	#set($f_dir = "${productFamily}_dir")
+	#set($f_over = "${productFamily}_over")
+	#set($f_inactive = "${productFamily}_inactive")
+	#if($user.getCanReadFamily($productFamily))
+		<a class='libraryButton' href="$hbiCategoryImages.get($f_dir)/catsearch.jsp?request_history_index=-11&request_browse_set=0&request_category_prefixArchive|$DB_EQ|$DB_IS|or|and=Active&request_category_prefixLibrary+Name|$DB_EQ|$DB_IS|or|and=$dbUtil.getProductFamily($productFamily).descriptiveName">
+			#mouseoverImg("images/$hbiCategoryImages.get($productFamily)" "images/$hbiCategoryImages.get($f_over)" "images/$hbiCategoryImages.get($productFamily)" $NULL)
+		</a>
+	#else
+		<img src='images/$hbiCategoryImages.get($f_inactive)'/>
+	#end
+#end
+
+## Macro for Download Listing on order.jsp page
+#macro(downloadListing)
+    <dl>
+	  <div style='border: 2px solid #F6DDEE; padding: 5px;'>
+		#if($orderResponse.isDownloadOrder())
+			<dt><DIV CLASS="eyecatching">Files for Download:</DIV>
+		#end
+			<dd><b>Downloads:</b> <!-- $file.key -->
+		#foreach($file in $orderResponse.downloadFiles.entrySet())
+			#set($downloadCount = $velocityCount+1)
+			<h1 align='center'>&gt;&gt;&gt;<a href='${configuration.download_url}$file.value' style='font-weight: 800; color: #900;'>DOWNLOAD NUMBER $downloadCount</a>&lt;&lt;&lt;</h1>
+		#end
+		<em style='font-size: 0.8em; color: #777;'>Please note, multiple file downloads may be required to process 
+		entire request.</em>
+	  </div>
+		#if($orderResponse.isDownloadOrder())
+			#emailDownloadLink($orderResponse)
+			#downloadAssistance()
+		#end
+	</dl>
+#end
+
+## Site annotations for assisting in downloads
+#macro(downloadAssistance)
+<hr />
+<blockquote>
+	<p><STRONG class='underline'>To Download:</STRONG>
+		<div>Right-click* the download link(s) to the file, select "Save Target As" and save the file to your desired location.</div>
+	</p>
+	<p><STRONG class='underline'>Zip files:</STRONG>
+		<div>To ensure file integrity during file transfer, files are compressed into a <a href='http://en.wikipedia.org/wiki/ZIP_file_format' target='_blank'>zip format</a>.</div>
+		<div>Most of the new operating systems (MacOS X and Windows XP) will automatically decompress these files.</div>
+		<div>- If you are on a Windows computer that will not please consider using a utility such as <a href='http://www.winzip.com/' target='_blank'>WinZip</a>.
+	</p>
+	<p><STRONG class='underline'>Trouble with firewalls:</STRONG>
+	<div>Some users have reported trouble downloading files from the online library. In this 
+		case please contact fulfillment@lazerinc.com for assistance in retrieval.</div>
+	</p>
+</blockquote>
+<hr />
+#end
+
+#macro(midsplit)
+	<!-- midSplit to allow secondary editable portion -->
+	  </div>
+	</td></tr>
+	<tr><td class='borderWhite' id='buttonBlock'>
+	  <div class='lightBkd'>
+		<!-- endOf midsplit -->
+#end
+
+#macro(querySetForSearchHistory $querySet)
+#foreach($queryItem in $querySet)#set($tempQueryItemValues = $queryItem.values.clone())#set($xxx = $tempQueryItemValues.remove(""))#set($xxx = $tempQueryItemValues.remove("Unexpired"))#set($xxx=4)
+#foreach($queryValue in $tempQueryItemValues)
+#set($xxx=5)$!queryValue#if($velocityCount+1 < $tempQueryItemValues.size()), #end
+#end#if($xxx == 5 && $velocityCount+1 < $querySet.size()); #end
+#end	
+#end
+
+#macro(viewOrderDateRanges)
+	<div style="text-align:center;padding-bottom:0px;margin-bottom:0px;"><h3 style="padding-bottom:0px;margin-bottom:0px;">See Orders Since:</h3>
+	<a #selectedStyle($dateTool.lastWeek()) href="?order_status=$params.getParameter("order_status","awaiting_approval")&order_date=$dateTool.formatDate($dateTool.lastWeek())"> Last Week</a>
+	| <a #selectedStyle($dateTool.lastMonth()) href="?order_status=$params.getParameter("order_status","awaiting_approval")&order_date=$dateTool.formatDate($dateTool.lastMonth())"> Last Month</a>
+	| <a #selectedStyle($dateTool.prevMonth(6)) href="?order_status=$params.getParameter("order_status","awaiting_approval")&order_date=$dateTool.formatDate($dateTool.prevMonth(6))"> Last 6 Months</a>
+	| <a #selectedStyle($dateTool.lastYear()) href="?order_status=$params.getParameter("order_status","awaiting_approval")&order_date=$dateTool.formatDate($dateTool.lastYear())"> Last Year</a>
+	| <a #selectedStyle($dateTool.prevYear(30)) href="?order_status=$params.getParameter("order_status","awaiting_approval")&order_date=$dateTool.formatDate($dateTool.prevYear(30))"> All</a>
+	</div>
+#end
+
+
+#macro(searchHistory)
+	<!-- Search History HTML Buffer -->
+<div id='searchHistory' style='text-align: left;'>
+	<b>Search History:</b>&nbsp;&nbsp;&nbsp;
+	#if($productsFound.historyIndex > 0)
+		#foreach($querySet in $productsFound.queryList)
+			#if($velocityCount == 0)
+				<b><a href="catsearch.jsp?request_history_index=1&request_browse_set=0">Reset Search</a></b>&nbsp;&gt;&gt;&nbsp;				
+			#else
+    			#if($productsFound.historyIndex == $velocityCount)
+    				<span style="font-size:115%;">
+    			#end
+    			<a href="catsearch.jsp?request_history_index=$velocityCount&request_browse_set=0">#querySetForSearchHistory($querySet)</a>
+    			#if($productsFound.historyIndex == $velocityCount)
+    				</span>
+    			#else
+    				&nbsp;&gt;&gt;&nbsp;
+				#end
+			#end			
+		#end
+	#end
+</div>
+#end
+
+#macro(browsedProductControls $product)
+	<div id="image_control_${product.id}">
+	#if($cart.hasProduct($product))
+		<input type="button" class="btnBkd" border="0" name="unused" value="Remove from Cart" onclick="javascript:sendRequest('http://$host/$contextDir/dummy.jsp?removeFromCart.remove=$product.id|$product.productFamilyName&actiond=action_remove_from_cart');rewriteDiv('image_control_${product.id}',false,'$product.id','$product.productFamilyName');">
+	#else
+		<input type="button" class="btnBkd" border="0" name="unused" value="Add to Cart" onclick="javascript:sendRequest('http://$host/$contextDir/dummy.jsp?request_product_id=$product.id&request_product_family=$product.productFamilyName&actiond=action_add_to_cart');rewriteDiv('image_control_${product.id}',true,'$product.id','$product.productFamilyName');">
+	#end</div>
+#end
+
+#macro(showProductTable $pagedProducts $numCols $maxSideLength $listName)
+	<div align="center">
+  <TABLE CELLSPACING=0 style='border: 0;'>
+  #foreach($item in $pagedProducts.page)
+	  #if($item.class.simpleName == "CommerceProduct")
+		#set($product = $item)
+	  #else
+		#set($product = $item.product)
+	  #end
+        #if($velocityCount % $math.toInteger($numCols) == 0)<tr valign="bottom"> #end
+        <td class="small1" style='height: 150px; width: 150px; padding: 5px; text-align: left; vertical-align: bottom;'>
+				
+					<a href='display_product.jsp?request_product_id=$product.id&request_product_family=$product.productFamilyName&listName=$listName'>
+					#displayIMG($product $maxSideLength)<br>
+					$product.displayName</a><BR>
+					## If the Product is from "Alternate Selects" flag as "Not Color Corrected".
+					#if($product.getValue("Image Type") == "Alternate Selects") 
+						<STRONG style='color: #900;'>Not Color Corrected</STRONG><BR>
+					#end
+					#browsedProductControls($item)
+				
+        </td>
+        #if($velocityCount % $math.toInteger($numCols) == ($numCols - 1))
+          </tr>
+        #end
+   #end
+      </TABLE></div>
+#end
+
+#macro(previousButton $pagedList)
+  <input onclick="javascript:document.location='?request_browse_set=$math.sub($pagedList.pageNo,1)';" type="button" name="unused" value="Previous" align="absmiddle" class="btnBkd">
+#end
+
+#macro(nextButton $pagedList)
+	<input onclick="javascript:document.location='?request_browse_set=$math.add($pagedList.pageNo,1)';" type="button" name="unused" value="Next" align="absmiddle" class="btnBkd">
+#end
+
+#macro(browseControls $browseList)
+	<DIV ALIGN="center">
+        <H3>Displaying products $browseList.startIndex
+                through $browseList.endIndex</H3>
+    </DIV>
+	#if($browseList.numberPages > 1)
+        <table align="center">
+        <tr valign="middle">
+		  <td width='75'>
+		    #if($browseList.pageNo > 0)
+				#previousButton($browseList)
+			#else &nbsp;
+			#end
+		  </td>
+		  <td class="header" align="center">
+			#foreach($counter in [0..$math.toInteger($math.sub($browseList.numberPages,1))])
+				#if($counter == $browseList.pageNo)
+					<span class="currentPage">&nbsp;$math.add($counter,1)&nbsp;</span>
+				#else 
+					&nbsp;<a href='?request_browse_set=$counter'>$math.add($counter,1)</a>&nbsp;
+				#end
+				#if($counter < $browseList.numberPages)|#end
+			#end
+            </td>
+    		<td width='75'>
+    		#if($browseList.numberPages > $browseList.pageNo + 1)
+				#nextButton($browseList)
+    		#else &nbsp;
+			#end
+    		</td>
+				</tr>
+        </table>
+	#end
+#end
+
+#macro(displayOrderItems $itemList $status)
+	<TABLE style='padding: 2;' border='1' cellspacing="0">
+<tr><th>Image</th><th>Details</th>
+	#if($status == "awaiting_approval" || $status == "awaiting_confirmation" || $status == "awaiting_fulfillment")<th>Reject?</th>#end
+</tr>
+	#foreach($item in $itemList)
+		#if($item.class.simpleName == "OrderItem")
+			#set($product = $item.getProduct($user.permissions))
+		#else
+			#set($product = $item)
+		#end
+              <TR>
+                <TD style=''>
+                    <div align='center'>#displayIMG($product 75)</div>
+                    <div class='small2'>$!product.displayName</div>
+                </TD>
+                <TD style=''>
+                    <div class='small2 verifyRights' style=''><STRONG>Usage Expiration:</STRONG>
+                        $!product.getValue("Usage Expiration")</div>
+                    <div class='small2 verifyRights' style=''><STRONG>Usage Rights:</STRONG><br>
+                        $!product.getValue("Usage Rights")</div>
+                    <div class='small2 verifyRights' style=''><STRONG>Photographer:</STRONG>
+                        $!product.getValue("Photographer")</div>
+                    <div class='small2 verifyRights' style=''><STRONG>Model:</STRONG>
+                        $!product.getValue("Model Name")</div>
+                </TD>
+				#if($status == "awaiting_approval")
+					<td style="align:center;text-align:center;"><div style="padding:20px;align:center;text-align:center;"><input type="checkbox" name="file_reject" value="$item.item.file"></div></td>
+				#elseif($status == "awaiting_confirmation" || $status == "awaiting_fulfillment")
+					<td style="align:center;text-align:center;">
+                        <div style="padding:20px;align:center;text-align:center;">#if($item.item.status == "rejected")<div style="font-weight:bold;text-decoration:underline;font:16pt sans-serif;color:#990000;">Rejected</div>#end</div></td>
+				#end
+              </TR>	
+    #end
+    	</TABLE>
+#end
+
+#macro(searchFooter)
+	<TR VALIGN="TOP">
+			<td colspan="2" align="center"><div style="float:left;">
+			<form action="catsearch.jsp" method="POST">
+				<INPUT TYPE="Hidden" NAME="actions" VALUE="action_simple_search">
+				<div class='categoryheader'>Keyword Search:</div>
+				<input type="Text" size="20" name="request_simple_search">
+				<input class='btnBkd' type="submit" name="submit" value="Go!" align="absmiddle" border="0">
+			</form>
+			</div>
+			#if($canAccessExpired)
+    			<div style="float:right;"><div class="categoryHeader">&nbsp;</div>
+    				    <input type="button" class="btnBkd" name="unused" value="Expired images" onclick="javascript:document.location='?request_category_prefixexpired_category|$DB_EQ|$DB_IS|or|and=Expired';">
+    			</div>
+			#end
+	        <div style="text-align:center;">
+				<form action="catsearch.jsp" method="POST">
+	                        <div class="categoryHeader">Images Added Since:</div>
+	                        <select name="request_category_prefixDate Posted|$DB_GTEQ|$DB_IS|or|and">
+	                            <option value="null" selected>choose one</option>
+	                            <option value='$dateTool.yesterday'>Yesterday</option>
+	                            <option value='$dateTool.lastWeek'>Last Week</option>
+	                            <option value='$dateTool.lastMonth'>Last Month</option>
+	                            <option value='$dateTool.formatDate($dateTool.prevMonth(6))'>Last 6 Months</option>
+	                        </select>
+	                        <input class='btnBkd' type="submit" name="submit" value="Go!" align="absmiddle" border="0">
+	                    </form>
+	         </div>
+			</td></tr>
+#end
+
+#macro(nonEditFields $product $isAdmin $isSu)
+	<ul>
+	#foreach($field in $product.productFamily.fields)
+		#set($prodKeyword = "$!product.getValue($field.name)")
+		#if($field.displayOrder > 0 && ((!$isAdmin && !$isSu) || $field.displayOrder < 1000 || (!$isSu && $field.displayOrder < 2000)))
+			<LI><B>$field.name:</B>&nbsp;
+				#if($!prodKeyword.length() > 24) <br />#end
+				$!prodKeyword
+			</li>
+		#end
+	#end
+	  #showProductDates($productBean)
+	</ul>
+#end
+
+#macro(moveImage $product $isAdmin $isSu $listName)
+	#if($isAdmin || $isSu)<a href="modify_product.jsp?request_product_id=$product.id&request_product_family=$product.productFamilyName&listName=$params.getParameter("listName")">Edit Keywords</a>
+		#if($product.getValue("Archive") != "Offline")<br/><a href="display_product.jsp?action=move_image&request_product_id=$product.id&request_product_family=$product.productFamilyName&new_dir=Offline&category=Archive&listName=$listName">Move Offline</a>#end
+		#if($product.getValue("Archive") != "Obsolete")<br/><a href="display_product.jsp?action=move_image&request_product_id=$product.id&request_product_family=$product.productFamilyName&new_dir=Obsolete&category=Archive&listName=$listName">Move to Obsolete</a>#end
+		#if($product.getValue("Archive") != "Active")<br/><a href="display_product.jsp?action=move_image&request_product_id=$product.id&request_product_family=$product.productFamilyName&new_dir=Active&category=Archive&listName=$listName">Move to Active</a>#end
+	#end
+#end
+
+#macro(editFields $product $isAdmin $isSu)
+	<form method="POST">
+		<input type="hidden" name="request_product_id" value="$product.id">
+		<input type="hidden" name="request_product_family" value="$product.productFamilyName">
+		<input type="hidden" name="action" value="update_product_keywords">
+	#foreach($field in $product.productFamily.fields)
+		#set($prodKeyword = "$!product.getValue($field.name)")
+		#if((($isAdmin || $isSu) && $field.displayOrder >= 1000) || ($isSu && $field.displayOrder >= 2000))
+			#if($math.abs($field.type) == 1)
+					<div>
+						<div style='float: left; width: 125px; text-align: right; font-weight: bolder;'>$field.name:</div>
+						<div style=''><input type="text" name="$field.name" value="$!prodKeyword" size="40" maxsize="100" style='width: 190px;'></div>
+					</div>
+				#elseif($field.type == 2)
+					<div>
+						<div style='width: 125px; text-align: right; font-weight: bolder;'>$field.name:</div><br />
+						<textarea name="$field.name" cols="40" rows="5" style='width: 300px; margin-left: 15px;'>$!prodKeyword</textarea></div>
+				#elseif($field.type == 8)
+					<div>
+						<div style='float: left; width: 125px; text-align: right; font-weight: bolder;'>$field.name:</div>
+						<div style=''><input type="text" name="$field.name" value="$!prodKeyword" size="10" maxsize="20" style='width: 190px;'></div>
+					</div>
+			#end
+		#end
+	#end
+	<div style='padding-left: 125px;'><input type="submit" class="btnbkd" name="submit" value="Submit"></div></form>
+#end
+
+#macro(emailDownloadLink $orderResponse)
+	<div id="emailDownloadLinkForm">
+		<form action="emaillink.redirect" METHOD="POST" onsubmit="return verify(this);">
+			#hidden("redirectUrl" "catsearch.jsp")
+			#hidden("action" "send_download_link")
+			<h3>To send this download link to a third party:</h3>
+			<div class="input">Email Address: <input type="text" name="email_address" size="30"></div>
+			<div class="input">Message To Recipient:<br> <textarea name="message" cols="30" rows="5"></textarea></div>
+			<input type="submit" name="send" value="Send">
+			#hidden("library" "$orderResponse.products.keySet().iterator().next().productFamily.descriptiveName")
+    		#foreach($file in $orderResponse.downloadFiles.entrySet())
+    			#hidden("download_link" "${configuration.download_url}$file.value")
+    		#end
+		</form>
+	</div>
+#end
+
+#macro(usageAgreement)
+
+	Please Read the Following Usage Agreement<br/>
+<textarea class='usageAgreement' name="usage_agreement" readonly="readonly" style='width: 575px; height: 120px;'>
+  ****** USAGE AGREEMENT ******
+
+You are hereby receiving image(s) owned by $!customerName Inc., and  housed in an image library managed by Lazer, Inc.  By clicking below  
+on "I accept terms and conditions", you expressly accept and agree to  the terms and conditions of the Model's and/or Photographer's 
+rights  and usages to the image.  In addition, you accept responsibility to  monitor the use of the image and ensure that upon expiration
+of the rights and usages of the image, use of the image will be discontinued. </textarea><br/>
+  All assets acquired from this library are the responsibility of the account holder under this aggreement.
+#end

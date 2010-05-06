@@ -1,0 +1,12 @@
+<div align="center"><h3>Adobe Acrobat Reader</h3></div>
+<p>Some files on this site are saved in Adobe Portable Document Format (.pdf files). 
+<p>This is a common file format for sharing documents across any computer platform thanks 
+to Adobe's free Acrobat Reader software. In fact, you may already have this software installed on your computer.
+<p>If you do not have a copy of this free software or if you desire the latest version, go to the 
+<a href="http://www.adobe.com/products/acrobat/readstep.html" target="_blank">Acrobat download page</a> 
+and make sure to select Acrobat Reader to download your copy.
+<br>&nbsp;<br>
+<div align="center">
+	<a href="http://www.adobe.com/products/acrobat/readstep.html" target="_blank">Adobe Acrobat Reader</a> 
+
+</div>

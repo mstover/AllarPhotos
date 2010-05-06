@@ -1,0 +1,37 @@
+<p>The shopping cart 
+            is your personal area in the Online Library. Elements are placed here 
+            from search result pages. These elements will stay here for the 
+            duration of your session. 
+			<p>The element's thumbnail is a link to more information about it. 
+            Select it to display a detail page.</p>
+            <p>Each element in the page may have different check box options. 
+            Possible options may include:</p>
+    <ul>
+            <li><a href='help.jsp#dllo'>Download JPG (Powerpoint)</a>
+            <li><a href='help.jsp#dllo'>Download PDF (Email)</a>
+            <li><a href='help.jsp#ordhi'>Order CD-ROM (Accounts)</a>
+            <li><a href='help.jsp#remove'>Remove From Cart</a>
+    </ul>
+            <p>Select any desired actions for the elements by selecting the 
+            appropriate check boxes under each element and then clicking on the 
+            &quot;Proceed&quot; button. </p>
+  <dl>
+    <dt><a name='dllo'><b>Download</b></a>
+    <dd><p>This option downloads a low-resolution version of this file. For more information on the files 
+						that can be downloaded, see <a href="help.jsp?help=tips">Tips for Placing Orders</a>.</p>
+    <dt><a name='ordhi'><b>Order</b></a>
+    <dd><p>This option will bring up an order form for the elements chosen 
+            for ordering.  This option is normally used to request a copy of the 
+            HiRes version on some hard medium (such as a floppy or CD). For 
+						more information, see <a href="help.jsp?help=tips">Tips for Placing Orders</a>.</p>
+    <dt><a name='remove'><b>Remove From Cart</b></a>
+    <dd><p>This option removes the element from your personal shopping 
+            cart.  The file on the server is not affected.  The element remains in 
+            the Online Library as a member of its database and as a member of any folders 
+            it may be in.</p>
+            <p>You can remove an element while also performing another action. 
+            Removals are processed last, so the effect is to perform the other 
+            action and then remove the element from your shopping cart.</p> 
+            <p>If you remove something by accident, you can repeat your search to 
+            find the element again and add it back to your shopping cart.</p>
+  </dl>  

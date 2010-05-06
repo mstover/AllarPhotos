@@ -1,0 +1,12 @@
+<!-- HELP CONTENT COMMENT BUFFER -->
+<DIV ALIGN="center"><H3>Edit User Information</H3></DIV>
+	<p>Ensure that all fields that are marked in <b>bold</b> are filled in with 
+		valid information to ensure correct accounting and shipping.</p>
+	<p>After completing the information on the form, press the 
+		&quot;User Info&quot; button at the bottom of the form.</p>	
+	<p>Your current password is set as a default, so there is no need to enter 
+		anything in the password field unless you wish to change it. Keep in 
+		mind that any password changes you choose to make are case sensitive. 
+		Make sure you know what you "caps lock" setting is.</p>
+	<p>At any time, you may modify your user information by choosing the 
+		&quot;User Info&quot; menu item.</p>

@@ -1,0 +1,14 @@
+<%!
+	com.lazerinc.application.DatabaseApplicationController controller;
+	public void startup() {
+    	ServletConfig config = getServletConfig();
+        ServletContext application = config.getServletContext();
+		String configFile = application.getRealPath("/properties/lazerweb.properties");
+		System.out.println("Config file = "+configFile);
+		controller = new com.lazerinc.ecommerce.impl.CommerceController(configFile);
+System.out.println("Finished configuring controller");
+		application.setAttribute("lazerweb.controller",controller);
+		AutoImageImport importer = new AutoImageImport(controller);
+		importer.start();	
+  	}
+%>

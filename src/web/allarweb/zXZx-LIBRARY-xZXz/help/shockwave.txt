@@ -1,0 +1,10 @@
+<div align="center"><h3>Macromedia Shockwave</h3></div>
+<p>Shockwave is a multimedia technology often used in presentations and interactive, multimedia websites. 
+<p>The Shockwave Player allows you to view files and web pages using Shockwave technology. In fact, you may already have this software installed on your computer.
+<p>If you do not have a copy of this free software or if you desire the latest version, go to 
+<a href="http://sdc.shockwave.com/shockwave/download/frameset.fhtml" target="_blank">Macromedia's Shockwave</a> 
+and download your copy.
+<br>&nbsp;<br>
+<div align="center">
+	<a href="http://sdc.shockwave.com/shockwave/download/frameset.fhtml" target="_blank">Macromedia Shockwave</a> 
+</div>

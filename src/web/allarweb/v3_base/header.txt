@@ -1,0 +1,119 @@
+<!-- Prevent this information from being cached on a Proxy server. -->
+<%
+response.setHeader("Cache-Control","no-store"); //HTTP 1.1
+response.setHeader("Pragma","no-cache"); //HTTP 1.0
+response.setDateHeader ("Expires", 0); //prevents caching at theproxy server
+%>
+
+<html>
+<head>
+<title>Kodak Polychrome Graphics Online Library</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+
+function preloadImages() {
+	if (document.images) {
+		reset_over = newImage("buttons/reset_1.gif");
+		view_over = newImage("buttons/view_1.gif");
+		cart_over = newImage("buttons/cart_1.gif");
+		user_over = newImage("buttons/user_1.gif");
+		help_over = newImage("buttons/help_1.gif");
+		logoff_over = newImage("buttons/logoff_1.gif");
+		preloadFlag = true;
+	}
+}
+
+-->
+</script>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="style.css">
+</head>
+
+<body bgcolor="#CC0033" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0" align="left" valign="top" ONLOAD="preloadImages();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> <!-- Table Setup Section --> 
+    <td width="100" bgcolor="#000000"><img src="art/black_spacer.gif" width="100" height="1"></td>
+    <td width="25" bgcolor="#000000"><img src="art/black_spacer.gif" width="25" height="1"></td>
+	<!-- Specify a width larger than needed to allow for content extension here. -->
+    <td width="1800" bgcolor="#000000"><img src="art/black_spacer.gif" width="500" height="1"></td>
+    <td width="25" bgcolor="#000000"><img src="art/black_spacer.gif" width="25" height="1"></td>
+  </tr>
+  <tr align="left" valign="top" colspan="4"> <!-- Header Section --> 
+    <td colspan="4" bgcolor="#000000"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" background="art/bkd_chk.gif">
+        <tr> 
+          <td align="left" valign="middle"><img src="art/ema_polychrome_mast.gif" width="699" height="68" vspace="6"></td>
+		  <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  <tr align="left" valign="top">
+	<!-- Navigation Section --> 
+    <td width="100"> 
+      <table width="100" border="0" bordercolor="#ffffff" cellspacing="0" cellpadding="0">
+        <tr align="left" valign="top"> 
+          <td height="166">
+			<a href="catsearch.jsp?<%=RequestConstants.REQUEST_HISTORY_INDEX%>=0"
+				onMouseOver="changeImages('reset','buttons/reset_1.gif')"
+				onMouseOut="changeImages('reset', 'buttons/reset_0.gif')"> 
+            <img height=24 src="buttons/reset_0.gif" width="100" border="0" name="reset"></a><br>
+            <img height=1 src="art/separ_h_100.gif" width=100><br>
+			<A HREF="browse_products.jsp?<%=RequestConstants.REQUEST_BROWSE_SET%>=0"
+									onMouseOver="changeImages('view', 'buttons/view_1.gif'); return true;" 
+                	onMouseOut="changeImages('view', 'buttons/view_0.gif'); return true;"> 
+            <img height=24 src="buttons/view_0.gif" width="100" border="0" name="view"></a><br>
+            <img height=1 src="art/separ_h_100.gif" width=100><br>
+      <a href="shopping_cart.jsp"
+				onMouseOver="changeImages('cart', 'buttons/cart_1.gif'); return true;" 
+                onMouseOut="changeImages('cart', 'buttons/cart_0.gif'); return true;"> 
+            <img height=24 src="buttons/cart_0.gif" width=100 border=0 name="cart"></a><br>
+            <img height=1 src="art/separ_h_100.gif" width=100><br>
+            <a href="edit_user_info.jsp"
+				onMouseOver="changeImages('user', 'buttons/user_1.gif'); return true;" 
+                onMouseOut="changeImages('user', 'buttons/user_0.gif'); return true;"> 
+            <img height=24 src="buttons/user_0.gif" width=100 border=0 name="user"></a><br>
+            <img height=1 src="art/separ_h_100.gif" width=100><br>
+				<A HREF="help.jsp"
+					onMouseOver="changeImages('help', 'buttons/help_1.gif'); return true;" 
+                	onMouseOut="changeImages('help', 'buttons/help_0.gif'); return true;"> 
+            <img height=24 src="buttons/help_0.gif" width=100 border=0 name="help"></a><br>
+            <img height=1 src="art/separ_h_100.gif" width=100><br>
+        <a href="index.jsp?<%=RequestConstants.REQUEST_ACTION%>=<%=ActionConstants.ACTION_LOGOUT%>"
+				onMouseOver="changeImages('logoff', 'buttons/logoff_1.gif'); return true;"
+				onMouseOut="changeImages('logoff', 'buttons/logoff_0.gif'); return true;"> 
+            <img height=24 src="buttons/logoff_0.gif" width=100 border=0 name="logoff"></a><br>
+			<img height=1 src="art/separ_h_100.gif" width=100><br>
+            <img src="buttons/bottom_buffer.gif" width="100" height="12"></td>
+        </tr>
+      </table>
+    </td>
+    <td valign="top"><table 
+	  width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="left"><img src="buttons/rnd_buffer.gif" width="12" height="12"></td>
+          <td align="right" valign="top"><img src="art/crnr_out_ffffff_12x12_ne.gif" width="12" height="12"></td>
+        </tr>
+      </table></td>
+	<!-- Content Section -->
+    <td align="center"><table 
+	  bgcolor="#FFFFFF" width="100%" border="0" cellspacing="0" cellpadding="12">
+        <tr>
+          <td>
+<!-- The Editable portion begins here. -->

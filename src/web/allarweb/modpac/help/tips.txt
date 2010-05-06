@@ -1,0 +1,20 @@
+<DIV ALIGN="center"><H2>Tips for Ordering or Downloading Files</H2></DIV>
+<div align="left">
+ <dt><a name='dllo'><b>Downloads</b></a>
+    <dd><p>Downloads are typically low resolution files that can be used for viewing on 
+						computer monitors or for printing on office printers.</p>
+				<p>A typical use for each available 
+						file type is listed next to the download option beneath each image in the shopping cart. 
+						For example, the &quot;Download JPG (Powerpoint)&quot; option indicates that a JPG file 
+						can be used easily in a PowerPoint presentation. Options labelled as &quot;Email&quot; are often good 
+						choices if you wish to share this file with others by sending it through email.</p>
+				<p>The options 
+						are meant to be suggestions only, these image types can be used for other purposes. See the 
+						<a href="help.jsp?help=defs">Defintions</a> section for more information.</p>
+    <dt><a name='ordhi'><b>Orders</b></a>
+    <dd><p>Orders are generally shipped to your shipping address on CD-ROM although other delivery 
+						options are available. They usually high resolution files that may be used for high quality 
+						commercial printing.</p>
+				<p>See the <a href="help.jsp?help=defs">Defintions</a> section for more 
+						information on the available high resolution file types.</p>
+</div>

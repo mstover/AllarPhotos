@@ -1,0 +1,57 @@
+	<DIV ALIGN="center"><H2>Modify Keywords</H2></DIV>
+    <ul>
+            <li><a href='help.jsp?helpText=modify#keymod'>Keyword Modification</a>
+            <li><a href='help.jsp?helpText=modify#admin'>Why &quot;Online Library Administration&quot; page appears</a>
+            <li><a href='help.jsp?helpText=modify#return'>Return to &quot;Modify Keywords&quot;</a>
+            <li><a href='help.jsp?helpText=modify#reinit'>Always re-initialize after keyword edit session</a>
+    </ul>
+
+  <dl>
+    <dt><a name='keymod'>Keyword Modification</a>
+    <dd><p>Modify Keywords allows modifying one or more keywords for each product in the library.</p>
+        <p>Keywords may be modified by either entering text in the text box that is to the
+                        right of the keyword label, or using the drop down list box that is
+                        found to the right of the text box.</p>  
+        <p>Not all keyword options will have a drop down list box.  In addition, some text boxes used
+                        for modifying keywords will already have an entry, while others 
+                        are blank.</p>
+        <p>Entering new keyword values in the blank text boxes, or
+                        modifying existing text box values are both acceptable ways to modify the 
+                        keyword.  The values in the drop down list boxes may also be used to select
+                        keyword modifications.  If, for a given keyword, a new value is chosen from
+                        the drop down list box, then another entry for that keyword is typed into
+                        the text box, the text box value will be the one selected (regardless
+                        of whether the text box entry is typed before or after the drop down list
+                        box selection.)  For example, if
+                        the &quot;File Type&quot; keyword has the value JPEG in the drop down list box, 
+                        and the user selects EPS from the drop down list box, then the user types in 
+                        EPSF in the blank text box, followed by pressing the &quot;Submit&quot; button,  
+                        the value EPSF will be chosen.</p>
+    <dt><a name='admin'>Why &quot;Online Library Administration&quot; page appears</a>
+    <dd><p>In order to make changes to the keywords, the user must be logged into the Online Library
+                        Aministration site.</p>  
+        <p>After the first keyword modification(s) have been made
+                        for a product, press the &quot;Submit&quot; button.  For the first keyword
+                        update for a session, the &quot;Online Library Administration&quot;
+                        site appears after pressing the submit button.  Log into the Administration
+                        site using your administration user name and password (which should be the 
+                        same as those used for entering the library that you are using.)</p>
+        <p>After successfully logging into the Administration site, return to the library
+                        by using the browsers &quot;Back&quot; key until you are back at the 
+                        &quot;Modify Keywords&quot; page.  Then press the &quot;Submit&quot; again
+                        to complete the keyword edit.</p>
+        <p>Additional keyword edits may be made on other products in the library during the same
+                        session.  The Adminsitration site only has to be entered once each 
+                        session.</p>
+
+    <dt><a name='return'>Return to &quot;Modify Keywords&quot;</a>
+    <dd><p>After updating keyword(s) on a product, a blank web page will appear.  Return to the 
+                        &quot;Modify Keywords&quot; page by using the browsers &quot;Back&quot; key                                                                                                                         until you are back at the desired page.</p>
+    <dt><a name='reinit'>Always re-initialize after keyword edit session</a>
+    <dd><p>Upon completion of a keyword modification session, it is very important to re-initialize
+                        the Lazerweb system.  This is done through the 
+                        &quot;Online Library Administration&quot; site.  Go to the
+                        &quot;Libraries&quot; page, then click on the link 
+                        &quot;Re-Initialize Lazerweb&quot;.  The re-initialization will
+                        occur just by clicking on the link.</p>
+  </dl> 

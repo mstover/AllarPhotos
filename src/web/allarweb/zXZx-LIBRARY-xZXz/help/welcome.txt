@@ -1,0 +1,11 @@
+
+<div align="center"><h3>Welcome to the zXZx-CUSTOMER-xZXz Online <br>
+Digital Asset Management System</h3></div>
+
+<p>This library contains images, PowerPoint presentations, RealMedia Player files 
+and other digital content 
+for use by zXZx-CUSTOMER-xZXz employees, their retailers and business partners.
+<p>To effectively use this site, you may need some of the tools listed here at the 
+left of the screen. 
+<p>Or, if you are ready, you may <a href="catsearch.jsp?historyIndex=0">continue to 
+the library</a>.

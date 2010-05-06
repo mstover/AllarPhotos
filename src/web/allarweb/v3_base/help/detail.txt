@@ -1,0 +1,3 @@
+<DIV ALIGN="center"><H2>Image Detail</H2></DIV>
+<p>The Image Detail page will provide information about the file including keywords, and provide another view of the selected image.</p>
+<p>To return to your previous page, click on the &quot;Go Back&quot; button found below the image. You can also add the item to your shopping cart by using the &quot;add to cart&quot; button on this page.</p>

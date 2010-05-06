@@ -1,0 +1,393 @@
+<project name="Lazerweb" default="compile" basedir=".">
+	<taskdef resource="org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties"/>
+	  <dirname property="Lazerweb.basedir" file="${ant.file.Lazerweb}"/>
+
+<!-- ================== LAZERWEB BUILD FILE 03.31.03 ================== -->
+<!--
+ 	In addition to this build file, the following properties files 
+	must be available at the top level of the build directory:
+	
+	developers.properties
+	    - contains local values for the various build targets 
+	live.properties
+	    - contains values to filter for the live server environment
+	staging.properties
+	    - contains values to filter for the staging server environemt
+	local.properties
+	    - contains values to filter for the local server environment
+
+**** PLEASE NOTE: *****
+	The files listed above exist in CVS as ".bak" files. Use the .bak files
+	to create your version of the properties files, but DO NOT commit your
+	properties files to CVS. These are local files only that describe your 
+	particular environment.
+
+-->
+
+
+<!-- ================== PROPERTY INITIALIZATION =================== -->
+<!-- 
+	This file contains properties based on your local 
+	development environment and must contain the following:
+	
+	    live.java.dir				testing.java.dir
+	    live.webapp.dir			testing.webapp.dir
+	    live.webroot.dir			testing.webroot.dir
+	    staging.java.dir			local.java.dir
+	    staging.webapp.dir		local.webapp.dir
+		 staging.webroot.dir		local.webroot.dir
+    -->
+	
+	<target name="descriptor_set" depends="init">
+		<property file="${Lazerweb.basedir}/${descriptor.file}"/>
+	</target>
+    
+   <!-- initializes source properties -->
+	<property name="src.web" location="${Lazerweb.basedir}/src/web"/>
+	<property name="src.webfiles.dir" location="${Lazerweb.basedir}/src/web/lazerweb"/>
+	<property name="src.webinf.dir" location="${Lazerweb.basedir}/src/web/web-inf"/>
+	<property name="src.java.dir" location="${Lazerweb.basedir}/src/java"/>
+	<property name="test.java.dir" location="${Lazerweb.basedir}/test/java"/>
+	<property name="docs.api.dir" location="${Lazerweb.basedir}/doc/api"/>
+	<property name="lib.dir" location="${Lazerweb.basedir}/lib"/>
+	<property name="lib.runtime.dir" location="${Lazerweb.basedir}/runtime_lib"/>
+  	<property name="coinjema-version" value="1.0"/>
+	
+	<path id="sources">
+		<pathelement location="${src.java.dir}"/>
+	</path>
+	
+	<!-- test sources -->
+	<path id="test-source">
+		<pathelement location="${test.java.dir}"/>
+	</path>
+			
+	
+	<!-- Set Build location properties -->
+	<property name="dist.dir" location="${Lazerweb.basedir}/dist"/>
+	<property name="build.dir" location="${Lazerweb.basedir}/build"/>
+	<property name="build.classes.dir" location="${Lazerweb.basedir}/build/classes"/>
+	<property name="build.test.classes" location="${build.dir}/testclasses"/>
+	<property name="build.webinf.dir" location="${Lazerweb.basedir}/build/WEB-INF"/>
+	<property name="build.web.dir" location="${Lazerweb.basedir}/build/webfiles"/>
+	<property name="build.jsclient.dir" location="${Lazerweb.basedir}/build/webfiles/jsclient"/>
+	<property name="build.addr_fragment.dir" location="${Lazerweb.basedir}/build/webfiles/address_fragment"/>
+
+	<target name="init">
+		<mkdir dir="${build.classes.dir}"/>
+		<mkdir dir="${build.webinf.dir}"/>
+		<mkdir dir="${build.web.dir}"/>
+		<mkdir dir="${build.jsclient.dir}"/>
+		<mkdir dir="${build.addr_fragment.dir}"/>
+		<mkdir dir="${build.test.classes}"/>
+	</target>
+
+    <target name="gwt-build" depends="init">
+    	<echo>${os.name}</echo>
+		<exec executable="gwt-bin/gwt-linux-compile" os="Linux"></exec>
+		<exec executable="${Lazerweb.basedir}/gwt-bin/gwt-windows-compile.bat" os="Windows XP"></exec>
+		<exec executable="${Lazerweb.basedir}/gwt-bin/gwt-mac-compile" os="Mac OS X"></exec>
+    </target>
+
+
+	<!-- compiles api-documentation to working api directory-->
+	<target name="api-docs" depends="init, compile">
+	   <mkdir dir="${docs.api.dir}"/>
+      <javadoc sourcepath="${src.java.dir}"
+			      destdir="${docs.api.dir}"
+			      Protected="yes" author="yes" version="yes"
+			      doctitle="Lazerweb APIs Specification"
+			      windowtitle="Lazerweb API Specification"
+			      header="&lt;b&gt;Lazerweb&lt;/b&gt;&lt;br&gt;&lt;font size='-1'&gt;1.7&lt;/font&gt;"
+			      bottom="Copyright &#169; 1998-2008 Lazer Inc. All Rights Reserved."
+			      packagenames="com.lazerinc.*">
+	     <taglet name="strategiclibrary.service.webaction.taglet.ActionTaglet" path="${deploy.classes.dir}"/>
+	     <taglet name="strategiclibrary.service.webaction.taglet.ParamTaglet" path="${deploy.classes.dir}"/>
+	     <taglet name="strategiclibrary.service.webaction.BeanTaglet" path="${deploy.classes.dir}"/>
+	     <taglet name="strategiclibrary.service.webaction.ExceptionTaglet" path="${deploy.classes.dir}"/>
+      </javadoc>
+    </target>  
+
+    
+<!-- =============== DO NOT USE ANY TARGETS BELOW THIS LINE ==================== -->
+    
+    <!-- these targets depend on initialization targets specified above -->
+        
+	<!-- tests the availabilty of build properties -->
+	<target name="test_setup">
+
+		<available file="${src.webfiles.dir}" type="dir" property="src.webfiles.present"/>
+		<echo message="Availability of ${src.webfiles.dir} is ${src.webfiles.present}"/>
+		<available file="${src.webinf.dir}" type="dir" property="src.webinf.present"/>
+		<echo message="Availability of ${src.webinf.dir} is ${src.webinf.present}"/>
+		<available file="${src.java.dir}" type="dir" property="src.java.present"/>
+		<echo message="Availability of ${src.java.dir} is ${src.java.present}"/>
+		<available file="${docs.api.dir}" type="dir" property="docs.api.present"/>
+		<echo message="Availability of ${docs.api.dir} is ${docs.api.present}"/>
+		<available file="${deploy.classes.dir}" type="dir" property="deploy.classes.present"/>
+		<echo message="Availability of ${deploy.classes.dir} is ${deploy.classes.present}"/>
+		<available file="${deploy.lib.dir}" type="dir" property="deploy.lib.present"/>
+		<echo message="Availability of ${deploy.lib.dir} is ${deploy.lib.present}"/>
+		<available file="${deploy.webfiles.dir}" type="dir" property="deploy.webfiles.present"/>
+		<echo message="Availability of ${deploy.webfiles.dir} is ${deploy.webfiles.present}"/>
+		<available file="${deploy.webinf.dir}" type="dir" property="deploy.webinf.present"/>
+		<echo message="Availability of ${deploy.webinf.dir} is ${deploy.webinf.present}"/>
+		<available file="${deploy.compiled.jsp.dir}" type="dir" property="deploy.compiled.jsp.present"/>
+		<echo message="Availability of ${deploy.compiled.jsp.dir} is ${deploy.compiled.jsp.present}"/>
+
+
+		<condition property="dont.abort">
+			<and>
+				<available file="${src.webfiles.dir}"/>
+				<available file="${src.webinf.dir}"/>
+				<available file="${src.java.dir}"/>
+				<available file="${docs.api.dir}"/>
+				<available file="${deploy.classes.dir}"/>
+				<available file="${deploy.lib.dir}"/>
+				<available file="${deploy.webfiles.dir}"/>
+				<available file="${deploy.webinf.dir}"/>
+				<available file="${deploy.compiled.jsp.dir}"/>
+			</and>
+		</condition>
+		<fail unless="dont.abort">Some properties are unavailable.</fail>
+	</target>   
+
+	
+    <!-- queries for user confirmation before proceeding -->
+    <target name="continue_check">
+	<input
+	    message="This task may affect the live server. You sure you wanna continue?"
+	    validargs="y,n"
+	    addproperty="do.delete"/>
+	<condition property="do.abort">
+	    <equals arg1="n" arg2="${do.delete}"/>
+	</condition>
+	<fail if="do.abort">Build aborted by user.</fail>
+    </target>
+    
+   <!-- Build classpath -->
+   <path id="classpath">
+		<fileset dir="${Lazerweb.basedir}/">
+			 <include name="**/lib/*.jar"/>
+			<include name="**/dev_lib/*.jar"/>
+		</fileset>
+		<pathelement location="${tools.jar}"/>
+	</path>
+	
+	<path id="classpath-test">
+		<path refid="classpath"/>
+		<fileset dir="${Lazerweb.basedir}/">
+			 <include name="**/runtime_lib/*.jar"/>
+		</fileset>
+		<pathelement location="${build.classes.dir}"/>
+	</path>
+    
+    <!-- deletes previously compiled class files from server -->
+    <target name="clean">  	
+		<delete dir="${build.dir}" failonerror="false" includeEmptyDirs="true"/>
+    	<delete dir="${dist.dir}" failonerror="false" includeEmptyDirs="true"/>
+		<delete dir="${serveng.dir}/webapps/lazerweb" failonerror="true" includeEmptyDirs="true"/> 
+		<delete dir="${serveng.dir}/work/Catalina/localhost/lazerweb" failonerror="true" includeEmptyDirs="true"/>
+    </target>
+
+   <!-- compiles java sources to the server -->
+   <target name="compile" depends="init">
+   	<iajc sourceRootsRef="sources" classpathRef="classpath" 
+   	  					      destdir="${build.classes.dir}" source="1.5" target="1.5"
+   	  			      aspectPath="${Lazerweb.basedir}/lib/coinjema-core-${coinjema-version}.jar"/>
+		
+		<echo 
+			 message="You may need to restart the servlet engine for changes to take effect."/>
+   </target>
+	
+	<!-- compiles java sources to the server -->
+   <target name="compile_test">
+   	<iajc sourceRootsRef="test-source" classpathRef="classpath-test" source="1.5" target="1.5"
+   	  				  aspectPath="${Lazerweb.basedir}/lib/coinjema-core-${coinjema-version}.jar"
+   	  			      destdir="${build.test.classes}"/>
+		<echo 
+			 message="You may need to restart the servlet engine for changes to take effect."/>
+   </target>
+	
+	<target name="build_webfiles" depends="descriptor_set,gwt-build">
+    	<move todir="${build.web.dir}">
+    		<fileset dir="${build.jsclient.dir}/com.lazerinc.ajaxclient.LazerAdmin"/>
+    	</move>
+    	<copy todir="${build.web.dir}/hbi/def">
+    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    	</copy>
+    	<copy todir="${build.web.dir}/hbi/ia_bali">
+    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    	</copy>
+    	    	<copy todir="${build.web.dir}/hbi/ia_hanes">
+    	    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    	    	</copy>
+    	    	<copy todir="${build.web.dir}/hbi/ia_bt">
+    	    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    	    	</copy>
+    	    	<copy todir="${build.web.dir}/hbi/ia_jms">
+    	    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    	    	</copy>
+    	    	<copy todir="${build.web.dir}/hbi/ia_plytx">
+    	    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    	    	</copy>
+    	    	<copy todir="${build.web.dir}/hbi/ia_wndbr">
+    	    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    	    	</copy>
+		<filter filtersfile="${Lazerweb.basedir}/${descriptor.file}"/>
+		<copy todir="${build.web.dir}" filtering="true">
+			<fileset dir="${src.webfiles.dir}">
+				<exclude name="**/*.gif"/>
+				<exclude name="**/*.jpg"/>
+				<exclude name="**/*.png"/>
+				<exclude name="**/*.swf"/>
+				<exclude name="**/*.psd"/>
+			</fileset>
+		</copy>
+		<copy todir="${build.webinf.dir}" filtering="true">
+			<fileset dir="${src.webinf.dir}"/>
+		</copy>
+		<copy todir="${build.web.dir}">
+			<fileset dir="${src.webfiles.dir}">
+				<include name="**/*.gif"/>
+				<include name="**/*.jpg"/>
+				<include name="**/*.png"/>
+				<include name="**/*.swf"/>
+				<include name="**/*.psd"/>
+			</fileset>
+		</copy>	
+	</target>
+	
+	<target name="jar-core" depends="compile">
+		<mkdir dir="${dist.dir}"/>
+		<jar destfile="${dist.dir}/lazerdam.jar">
+			<fileset dir="${build.classes.dir}">
+			</fileset>
+		</jar>
+	</target>	
+	
+	<target name="jar-gwt" depends="compile">
+		<mkdir dir="${dist.dir}"/>
+		<jar destfile="${dist.dir}/lazerweb-gwt.jar">
+			<fileset dir="${build.classes.dir}">
+				<include name="com/lazerinc/ajaxclient/client/**"/>
+			</fileset>
+		</jar>
+	</target>
+				
+	
+	<target name="war" depends="compile,build_webfiles">
+		<mkdir dir="${dist.dir}"/>
+		<war basedir="${build.web.dir}" destfile="${dist.dir}/${app.name}.war" webxml="${build.webinf.dir}/web.xml">
+			<lib dir="${lib.dir}">
+				<include name="*.jar"/>
+			</lib>
+			<lib dir="${lib.runtime.dir}">
+				<include name="*.jar"/>
+			</lib>
+			<webinf dir="${build.webinf.dir}">
+				<exclude name="web.xml"/>
+			</webinf>
+			<classes dir="${build.classes.dir}">
+				<exclude name="com/lazerinc/ajaxclient/client/**"/>
+			</classes>
+		</war>			
+	</target>
+	
+	<target name="deploy" depends="war,jar-gwt">
+		<copy file="${dist.dir}/${app.name}.war" overwrite="true" tofile="${deploy.war.dir}/${app.name}.war"/>
+		<copy file="${dist.dir}/lazerweb-gwt.jar" overwrite="true" tofile="${deploy.war.dir}/../common/lib/lazerweb-gwt.jar"/>
+	</target>
+	
+	<target name="deploy-webfiles" depends="build_webfiles">
+		<copy todir="${deploy.war.dir}/${app.name}" overwrite="true">
+			<fileset dir="${build.web.dir}"/>
+		</copy>
+		<copy todir="${deploy.war.dir}/${app.name}/WEB-INF" overwrite="true">
+			<fileset dir="${build.webinf.dir}">
+				<exclude name="web.xml"/>
+			</fileset>
+		</copy>
+		<get src="http://${WEB_HOST}/${app.name}/hbi/index.jsp?actiona=action_login&amp;request_username=${lw_username}&amp;request_password=${lw_password}&amp;actionb=reinit" dest="refresh.html"/>
+	</target>
+	
+	<target name="deploy-webfiles_only" depends="build_webfiles">
+		<copy todir="${deploy.war.dir}/${app.name}">
+			<fileset dir="${build.web.dir}"/>
+		</copy>
+		<copy todir="${deploy.war.dir}/${app.name}/WEB-INF">
+			<fileset dir="${build.webinf.dir}">
+				<exclude name="web.xml"/>
+			</fileset>
+		</copy>
+	</target>
+		
+	
+<!-- precompile jsp pages to test for errors
+THIS IS NOT WORKING YET
+
+    <target name="precompile_jsps" depends="deploy_web_files">
+	<jspc
+		destdir="${deploy.compiled_jsp.dir}"
+		srcdir="${deploy.webfiles.dir}" 
+		uribase="${deploy.webfiles.dir}">
+		<include name="**/*.jsp" />
+		<classpath>
+			<path refid="classpath"/>
+		</classpath>
+	</jspc>
+	<javac
+		srcdir="${deploy.compiled_jsp.dir}"
+		destdir="${deploy.compiled_jsp.dir}"
+		 optimize="${optimize}"
+		 debug="on"
+		 target="1.4">
+		<classpath>
+			<path refid="classpath"/>
+		</classpath>
+	</javac>
+    </target>
+-->
+<!-- unit testing
+NEEDS MORE WORK
+-->
+    <target name="test" depends="clean,compile,compile_test,build_webfiles">
+    	<copy todir="${build.webinf.dir}/contexts" overwrite="true">
+    		<fileset dir="${Lazerweb.basedir}/test/contexts"/>
+    	</copy>
+    	<junit dir="${Lazerweb.basedir}">
+    	  				  <classpath>
+    	  				    <path refid="classpath-test"/>
+    	  				    <pathelement path="${build.test.classes}"/>
+    	  				  </classpath>
+
+    	  				  <formatter type="plain" usefile="no" />
+
+    	  				  <batchtest fork="yes">
+    	  				    <fileset dir="${test.java.dir}">
+    	  				      <include name="**/*.java"/>
+    	  				      <exclude name="**/testObjects/**"/>
+    	  				    </fileset>
+    	  				  </batchtest>
+    	  				</junit>
+    </target>
+	
+	<target name="grab-stratlib">
+		<ant inheritall="off" dir="${Lazerweb.basedir}/../strategiclibrary"
+			antfile="${Lazerweb.basedir}/../strategiclibrary/build.xml" target="jar"></ant>
+		<copy todir="${lib.dir}" file="${Lazerweb.basedir}/../strategiclibrary/dist/strategiclibrary-1.5.jar"/>
+	</target>
+	
+	<target name="grab-coinjema">
+		<ant inheritall="off" dir="${Lazerweb.basedir}/../coinjema"
+			antfile="${Lazerweb.basedir}/../coinjema/build.xml" target="dist"></ant>
+		<copy todir="${lib.dir}" file="${Lazerweb.basedir}/../coinjema/dist/coinjema-core-${coinjema-version}.jar"/>
+		<copy todir="${Lazerweb.basedir}/../strategiclibrary/lib" file="${Lazerweb.basedir}/../coinjema/dist/coinjema-core-${coinjema-version}.jar"/>
+	</target>
+	
+	<target name="build-all" depends="grab-coinjema,grab-stratlib,clean,war"/>
+	<target name="deploy-all" depends="build-all,deploy"/>
+<!--
+-->    
+
+</project>

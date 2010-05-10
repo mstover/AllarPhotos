@@ -1,7 +1,7 @@
 product_tables=kdk_dai,kdk_sec,kpro,kdk_begs,kdk_ink
 web_directory=kodak
 href-base=/lazerweb/kodak/
-search_model=com.lazerinc.ecommerce.impl.KodakDAISearchModel
+search_model=com.allarphoto.ecommerce.impl.KodakDAISearchModel
 original_dir=Original Directory
 download_dir=/kodak/files/
 filesize=File Size

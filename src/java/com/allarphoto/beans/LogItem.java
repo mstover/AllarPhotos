@@ -20,7 +20,7 @@
 // Title: LogItem
 // Author: Michael Stover
 // Company: Lazer inc.
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 import java.io.Serializable;
 import java.util.Calendar;

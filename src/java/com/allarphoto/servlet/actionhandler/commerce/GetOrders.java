@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.commerce;
+package com.allarphoto.servlet.actionhandler.commerce;
 
 import java.util.Calendar;
 import java.util.Collection;
@@ -10,14 +10,14 @@ import java.util.List;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.client.beans.DateBean;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.Order;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.client.beans.DateBean;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.Order;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 public class GetOrders extends ApproveOrder {
 

@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.taglib;
+package com.allarphoto.servlet.taglib;
 
 import javax.servlet.jsp.tagext.TagSupport;
 

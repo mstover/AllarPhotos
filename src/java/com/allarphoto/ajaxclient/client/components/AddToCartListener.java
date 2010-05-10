@@ -1,10 +1,10 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import com.google.gwt.user.client.ui.ClickListener;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.components.icons.BaseIcon;
-import com.lazerinc.ajaxclient.client.components.icons.CancelIcon;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.components.icons.BaseIcon;
+import com.allarphoto.ajaxclient.client.components.icons.CancelIcon;
 
 public class AddToCartListener implements ClickListener {
 

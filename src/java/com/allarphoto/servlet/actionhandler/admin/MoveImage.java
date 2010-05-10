@@ -1,18 +1,18 @@
-package com.lazerinc.servlet.actionhandler.admin;
+package com.allarphoto.servlet.actionhandler.admin;
 
 import org.coinjema.context.CoinjemaDependency;
 
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.beans.LogItem;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.client.util.LogUtil;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
-import com.lazerinc.utils.Resource;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.beans.LogItem;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.client.util.LogUtil;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.utils.Resource;
 
 public class MoveImage extends ActionHandlerBase {
 
@@ -45,7 +45,7 @@ public class MoveImage extends ActionHandlerBase {
 
 	/**
 	 * @deprecated Use
-	 *             {@link com.lazerinc.ecommerce.ProductFamily#moveAsset(com.lazerinc.servlet.actionhandler.admin.MoveImage,int,String,String,SecurityModel)}
+	 *             {@link com.allarphoto.ecommerce.ProductFamily#moveAsset(com.allarphoto.servlet.actionhandler.admin.MoveImage,int,String,String,SecurityModel)}
 	 *             instead
 	 */
 	private LogItem moveAsset(ProductFamily family, int productId,

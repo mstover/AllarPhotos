@@ -1,6 +1,6 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
-import com.lazerinc.beans.Company;
+import com.allarphoto.beans.Company;
 
 public class CompanyAdd extends AbstractCacheFunction<Company> implements
 		CacheAdder<Company> {

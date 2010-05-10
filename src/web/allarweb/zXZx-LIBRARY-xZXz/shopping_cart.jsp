@@ -5,7 +5,7 @@
 	String help = "cart";
 %>
 <%@ include file="/zXZx-LIBRARY-xZXz/include/actionsAndValidate.inc" %>
-<jsp:useBean id="cart" scope="session" class="com.lazerinc.client.beans.ShoppingCartBean" />
+<jsp:useBean id="cart" scope="session" class="com.allarphoto.client.beans.ShoppingCartBean" />
 <c:set var="defaultImage" value='${configuration.properties["default_image"]}'/>
 <%@ include file="header.txt"%>
 <script language="JavaScript">

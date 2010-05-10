@@ -1,12 +1,12 @@
 import strategiclibrary.service.cache.*
-import com.lazerinc.ecommerce.*
-import com.lazerinc.server.product.*
-import com.lazerinc.server.ugd.*
-import com.lazerinc.cached.functions.*
-import com.lazerinc.utils.*
+import com.allarphoto.ecommerce.*
+import com.allarphoto.server.product.*
+import com.allarphoto.server.ugd.*
+import com.allarphoto.cached.functions.*
+import com.allarphoto.utils.*
 import org.coinjema.util.*
-import com.lazerinc.beans.*
-import com.lazerinc.client.ServiceGateway
+import com.allarphoto.beans.*
+import com.allarphoto.client.ServiceGateway
 import strategiclibrary.util.*
 
 pre = new Functor("getProductFamilyName").postChain(ServiceGateway.getProductService(),"getProductFamily")

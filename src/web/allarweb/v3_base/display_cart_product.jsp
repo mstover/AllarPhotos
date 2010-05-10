@@ -1,7 +1,7 @@
 <%@ include file="/ema_kpg/include/global.inc" %>
 <%	addParams.put(RequestConstants.REQUEST_ACTION+"x",ActionConstants.ACTION_GET_PRODUCT);%>
 <%@ include file="/ema_kpg/include/actionsAndValidate.inc" %>
-<jsp:useBean id="productBean" scope="session" class="com.lazerinc.client.beans.ProductBean"/>
+<jsp:useBean id="productBean" scope="session" class="com.allarphoto.client.beans.ProductBean"/>
 <c:set var="product" value="${productBean.product}"/>
 <c:set var="defaultImage" value='${configuration.properties["default_image"]}'/>
 <c:set var="thumbDir" value='${product.value["Thumbnail Directory"]}'/>

@@ -1,4 +1,4 @@
-package com.lazerinc.client.beans;
+package com.allarphoto.client.beans;
 
 import java.io.ObjectInputStream;
 import java.io.Serializable;
@@ -9,11 +9,11 @@ import org.coinjema.context.CoinjemaObject;
 
 import strategiclibrary.service.cache.CacheService;
 
-import com.lazerinc.beans.City;
-import com.lazerinc.beans.Country;
-import com.lazerinc.beans.Industry;
-import com.lazerinc.beans.Referrer;
-import com.lazerinc.beans.State;
+import com.allarphoto.beans.City;
+import com.allarphoto.beans.Country;
+import com.allarphoto.beans.Industry;
+import com.allarphoto.beans.Referrer;
+import com.allarphoto.beans.State;
 
 /**
  * @author Administrator To change this generated comment edit the template
@@ -26,7 +26,7 @@ public class GenericDataBean implements Serializable {
 	private transient CacheService cache;
 
 	/**
-	 * @see com.lazerinc.client.beans.ResponseBean#clear()
+	 * @see com.allarphoto.client.beans.ResponseBean#clear()
 	 */
 	public void clear() {
 	}

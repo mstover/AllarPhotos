@@ -1,15 +1,15 @@
-package com.lazerinc.servlet.actionhandler.admin;
+package com.allarphoto.servlet.actionhandler.admin;
 
 import org.coinjema.context.CoinjemaDependency;
 
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.server.ResourceService;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.server.ResourceService;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 public class AddResourceToPerms extends ActionHandlerBase {
 

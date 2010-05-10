@@ -1,6 +1,6 @@
-package com.lazerinc.irwin;
+package com.allarphoto.irwin;
 
-import com.lazerinc.ecommerce.CostReport;
+import com.allarphoto.ecommerce.CostReport;
 
 public class NewellCostReport extends CostReport {
 

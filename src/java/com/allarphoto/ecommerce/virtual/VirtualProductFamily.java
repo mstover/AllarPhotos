@@ -1,4 +1,4 @@
-package com.lazerinc.ecommerce.virtual;
+package com.allarphoto.ecommerce.virtual;
 
 import java.io.File;
 import java.util.Calendar;
@@ -18,22 +18,22 @@ import org.coinjema.context.CoinjemaDependency;
 import strategiclibrary.service.sql.ObjectMappingService;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.ajaxclient.client.beans.OrderVerificationPackage;
-import com.lazerinc.application.ExpirationTester;
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.application.impl.DefaultExpirationTester;
-import com.lazerinc.beans.LogItem;
-import com.lazerinc.beans.Path;
-import com.lazerinc.beans.User;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.client.beans.ProductBean;
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.ecommerce.Merchant;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.ecommerce.ProductSet;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.ajaxclient.client.beans.OrderVerificationPackage;
+import com.allarphoto.application.ExpirationTester;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.application.impl.DefaultExpirationTester;
+import com.allarphoto.beans.LogItem;
+import com.allarphoto.beans.Path;
+import com.allarphoto.beans.User;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.client.beans.ProductBean;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.ecommerce.Merchant;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.ecommerce.ProductSet;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 public class VirtualProductFamily extends ProductFamily {
 

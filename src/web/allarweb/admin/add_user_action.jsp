@@ -10,7 +10,7 @@ if(null != admin.getUser(request.getParameter("username")) && !admin.getUser(req
 	WebBean.setValues(admin,request);
 	CommerceUser user = new CommerceUser();
 	WebBean.setValues(user,request);	
-	com.lazerinc.beans.Company company = new com.lazerinc.beans.Company();
+	com.allarphoto.beans.Company company = new com.allarphoto.beans.Company();
 	company.setName("N/A");
 	company.setIndustry("N/A");
 	user.setShipAddress1("N/A");

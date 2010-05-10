@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import java.util.Iterator;
 
@@ -6,12 +6,12 @@ import com.google.gwt.user.client.ui.HasHorizontalAlignment;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.PopupPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.CartListener;
-import com.lazerinc.ajaxclient.client.Redrawable;
-import com.lazerinc.ajaxclient.client.SwappablePanel;
-import com.lazerinc.ajaxclient.client.beans.AjaxCart;
-import com.lazerinc.ajaxclient.client.beans.Request;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.CartListener;
+import com.allarphoto.ajaxclient.client.Redrawable;
+import com.allarphoto.ajaxclient.client.SwappablePanel;
+import com.allarphoto.ajaxclient.client.beans.AjaxCart;
+import com.allarphoto.ajaxclient.client.beans.Request;
 
 public class ShoppingCart extends VerticalPanel implements CartListener,
 		Redrawable {

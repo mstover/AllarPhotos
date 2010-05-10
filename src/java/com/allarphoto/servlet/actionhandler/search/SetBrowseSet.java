@@ -1,8 +1,8 @@
-package com.lazerinc.servlet.actionhandler.search;
+package com.allarphoto.servlet.actionhandler.search;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_BROWSE_SET;
-import static com.lazerinc.servlet.ActionConstants.ACTION_CATEGORY_SEARCH;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_BROWSE_SET;
+import static com.allarphoto.servlet.ActionConstants.ACTION_BROWSE_SET;
+import static com.allarphoto.servlet.ActionConstants.ACTION_CATEGORY_SEARCH;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_BROWSE_SET;
 
 import java.util.Collections;
 import java.util.List;
@@ -12,10 +12,10 @@ import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.client.beans.ProductSetBean;
-import com.lazerinc.lazerweb.utils.ProductDateSort;
-import com.lazerinc.utils.PagedList;
+import com.allarphoto.application.Product;
+import com.allarphoto.client.beans.ProductSetBean;
+import com.allarphoto.lazerweb.utils.ProductDateSort;
+import com.allarphoto.utils.PagedList;
 
 /**
  * The set of searched products is divided into pages. If their are 300 products
@@ -43,8 +43,8 @@ public class SetBrowseSet extends AbstractSearchAction {
 	}
 
 	public void performAction(HandlerData actionInfo)
-			throws com.lazerinc.client.exceptions.FatalException,
-			com.lazerinc.client.exceptions.InformationalException,
+			throws com.allarphoto.client.exceptions.FatalException,
+			com.allarphoto.client.exceptions.InformationalException,
 			ActionException {
 		getLog().debug("performing action: " + ACTION_BROWSE_SET);
 		ProductSetBean productBean = getProductsFound(actionInfo);

@@ -3,14 +3,14 @@ datasource=@IMAGE_DB@
 context_path=@app.name@
 import_time=
 log_datasource=@LOG_DB@
-log_model_class=com.lazerinc.utils.DatabaseLogger
-user_model=com.lazerinc.ecommerce.impl.BasicUserModel
-admin_model=com.lazerinc.ecommerce.impl.CommerceAdmin
-search_model=com.lazerinc.ecommerce.impl.BasicSearchModel
+log_model_class=com.allarphoto.utils.DatabaseLogger
+user_model=com.allarphoto.ecommerce.impl.BasicUserModel
+admin_model=com.allarphoto.ecommerce.impl.CommerceAdmin
+search_model=com.allarphoto.ecommerce.impl.BasicSearchModel
 product_tables=lw_demo
 number_of_products_shown=500
 search_display_size=12
-shopping_cart_class=com.lazerinc.ecommerce.impl.LazerwebCommerceCart
+shopping_cart_class=com.allarphoto.ecommerce.impl.LazerwebCommerceCart
 cart_display_size=12
 max_connections=10
 max_log_connections=1
@@ -27,7 +27,7 @@ log_level.lazerweb=INFO
 email_webmaster=webmaster@lazerinc.com
 baseDir=registry.contextRoot.parentFile.parentFile.absolutePath
 
-search_packages=com.lazerinc.servlet.actionhandler
+search_packages=com.allarphoto.servlet.actionhandler
 
 keycode_datasource=@KEYCODE_DB@
 

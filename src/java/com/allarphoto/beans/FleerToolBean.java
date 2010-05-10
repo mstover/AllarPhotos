@@ -2,7 +2,7 @@
  * FleerToolBean.java Created on June 26, 2003, 2:53 PM
  */
 
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 /**
  * @author Tom Cousins
@@ -10,8 +10,8 @@ package com.lazerinc.beans;
 
 import java.io.Serializable;
 
-import com.lazerinc.utils.Data;
-import com.lazerinc.utils.Filer;
+import com.allarphoto.utils.Data;
+import com.allarphoto.utils.Filer;
 
 public class FleerToolBean implements Serializable {
 	private static final long serialVersionUID = 1;

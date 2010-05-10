@@ -1,8 +1,8 @@
-package com.lazerinc.ajaxclient.client.components.irwin;
+package com.allarphoto.ajaxclient.client.components.irwin;
 
-import com.lazerinc.ajaxclient.client.UpdateListener;
-import com.lazerinc.ajaxclient.client.beans.AjaxOrder;
-import com.lazerinc.ajaxclient.client.components.OrderDisplay;
+import com.allarphoto.ajaxclient.client.UpdateListener;
+import com.allarphoto.ajaxclient.client.beans.AjaxOrder;
+import com.allarphoto.ajaxclient.client.components.OrderDisplay;
 
 public class NewellOrderDisplay extends OrderDisplay {
 

@@ -1,4 +1,4 @@
-package com.lazerinc.actions;
+package com.allarphoto.actions;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -11,14 +11,14 @@ import org.coinjema.context.ContextFactory;
 
 import strategiclibrary.service.webaction.MapHandlerData;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.kodak.actions.KodakExecuteOrder;
-import com.lazerinc.server.ProductService;
-import com.lazerinc.server.UserService;
-import com.lazerinc.testObjects.AbstractIntegratedTest;
+import com.allarphoto.application.Product;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.kodak.actions.KodakExecuteOrder;
+import com.allarphoto.server.ProductService;
+import com.allarphoto.server.UserService;
+import com.allarphoto.testObjects.AbstractIntegratedTest;
 
 public class OrderActions extends AbstractIntegratedTest {
 	DatabaseUtilities dbutil;

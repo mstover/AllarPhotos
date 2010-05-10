@@ -1,9 +1,9 @@
-package com.lazerinc.servlet.actionhandler.navigation;
+package com.allarphoto.servlet.actionhandler.navigation;
 
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 public class SetCallingPage extends ActionHandlerBase {
 

@@ -1,12 +1,12 @@
-package com.lazerinc.ajaxclient.client.factory;
+package com.allarphoto.ajaxclient.client.factory;
 
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.SwappablePanel;
-import com.lazerinc.ajaxclient.client.admin.LazerMenu;
-import com.lazerinc.ajaxclient.client.beans.AjaxCart;
-import com.lazerinc.ajaxclient.client.components.CheckoutPanel;
-import com.lazerinc.ajaxclient.client.components.mcc.MccSearchTree;
-import com.lazerinc.ajaxclient.client.components.mcc.MccVerifyScreen;
+import com.allarphoto.ajaxclient.client.SwappablePanel;
+import com.allarphoto.ajaxclient.client.admin.LazerMenu;
+import com.allarphoto.ajaxclient.client.beans.AjaxCart;
+import com.allarphoto.ajaxclient.client.components.CheckoutPanel;
+import com.allarphoto.ajaxclient.client.components.mcc.MccSearchTree;
+import com.allarphoto.ajaxclient.client.components.mcc.MccVerifyScreen;
 
 public class MccComponentFactory extends DefaultComponentFactory {
 

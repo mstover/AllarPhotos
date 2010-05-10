@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -19,20 +19,20 @@ import org.coinjema.context.CoinjemaObject;
 import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.service.sql.ObjectMappingService;
 
-import com.lazerinc.application.LazerwebDataSource;
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.beans.Company;
-import com.lazerinc.beans.User;
-import com.lazerinc.category.DateField;
-import com.lazerinc.category.ExpiredCategory;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.server.ResourceService;
-import com.lazerinc.server.UserService;
-import com.lazerinc.utils.Data;
-import com.lazerinc.utils.Functions;
-import com.lazerinc.utils.Resource;
+import com.allarphoto.application.LazerwebDataSource;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.beans.Company;
+import com.allarphoto.beans.User;
+import com.allarphoto.category.DateField;
+import com.allarphoto.category.ExpiredCategory;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.server.ResourceService;
+import com.allarphoto.server.UserService;
+import com.allarphoto.utils.Data;
+import com.allarphoto.utils.Functions;
+import com.allarphoto.utils.Resource;
 
 @CoinjemaObject
 public class DatabaseUtilities implements LazerwebDataSource {

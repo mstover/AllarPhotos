@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -10,7 +10,7 @@ import com.google.gwt.user.client.ui.Grid;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
 
 public class NumberSelector extends VerticalPanel implements ClickListener {
 

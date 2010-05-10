@@ -1,11 +1,11 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
 import java.util.List;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.lazerinc.ajaxclient.client.beans.AjaxAddress;
-import com.lazerinc.ajaxclient.client.beans.AjaxCart;
-import com.lazerinc.ajaxclient.client.beans.AjaxOrder;
+import com.allarphoto.ajaxclient.client.beans.AjaxAddress;
+import com.allarphoto.ajaxclient.client.beans.AjaxCart;
+import com.allarphoto.ajaxclient.client.beans.AjaxOrder;
 
 public interface OrderServiceAsync {
 

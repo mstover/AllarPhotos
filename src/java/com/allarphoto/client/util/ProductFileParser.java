@@ -1,4 +1,4 @@
-package com.lazerinc.client.util;
+package com.allarphoto.client.util;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -11,13 +11,13 @@ import org.coinjema.context.CoinjemaObject;
 
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.ExpiredImage;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.server.ProductService;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.ExpiredImage;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.server.ProductService;
 
 @CoinjemaObject
 public class ProductFileParser {

@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import java.util.List;
 
@@ -16,13 +16,13 @@ import com.google.gwt.user.client.ui.PopupPanel;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
-import com.lazerinc.ajaxclient.client.beans.Request;
-import com.lazerinc.ajaxclient.client.components.icons.CloseIcon;
-import com.lazerinc.ajaxclient.client.components.icons.NextIcon;
-import com.lazerinc.ajaxclient.client.components.icons.PreviousIcon;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.beans.Request;
+import com.allarphoto.ajaxclient.client.components.icons.CloseIcon;
+import com.allarphoto.ajaxclient.client.components.icons.NextIcon;
+import com.allarphoto.ajaxclient.client.components.icons.PreviousIcon;
 
 public class ProductPopup extends PopupPanel implements ClickListener {
 	AjaxProduct product;

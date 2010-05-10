@@ -1,1 +1,1 @@
-com.lazerinc.kodak.KodakProductBean.class
+com.allarphoto.kodak.KodakProductBean.class

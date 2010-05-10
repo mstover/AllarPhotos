@@ -1,15 +1,15 @@
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 import org.coinjema.context.CoinjemaDynamic;
 
 import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.ecommerce.ProductSet;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.ecommerce.ProductSet;
 
 public class DownloadItem extends LogItem {
 	private static final long serialVersionUID = 1;

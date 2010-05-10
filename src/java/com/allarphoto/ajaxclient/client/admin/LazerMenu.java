@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.admin;
+package com.allarphoto.ajaxclient.client.admin;
 
 import com.google.gwt.user.client.Command;
 import com.google.gwt.user.client.Timer;
@@ -10,16 +10,16 @@ import com.google.gwt.user.client.ui.MenuBar;
 import com.google.gwt.user.client.ui.MenuItem;
 import com.google.gwt.user.client.ui.MouseListener;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.CommandFactory;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxGroup;
-import com.lazerinc.ajaxclient.client.beans.AjaxProductFamily;
-import com.lazerinc.ajaxclient.client.components.BusyPopup;
-import com.lazerinc.ajaxclient.client.components.Legend;
-import com.lazerinc.ajaxclient.client.components.PopupWarning;
-import com.lazerinc.ajaxclient.client.components.SearchCenter;
-import com.lazerinc.ajaxclient.client.components.ShoppingCart;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.CommandFactory;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxGroup;
+import com.allarphoto.ajaxclient.client.beans.AjaxProductFamily;
+import com.allarphoto.ajaxclient.client.components.BusyPopup;
+import com.allarphoto.ajaxclient.client.components.Legend;
+import com.allarphoto.ajaxclient.client.components.PopupWarning;
+import com.allarphoto.ajaxclient.client.components.SearchCenter;
+import com.allarphoto.ajaxclient.client.components.ShoppingCart;
 
 public class LazerMenu extends HorizontalPanel {
 	protected final static int SUPER_ADMIN = 0;

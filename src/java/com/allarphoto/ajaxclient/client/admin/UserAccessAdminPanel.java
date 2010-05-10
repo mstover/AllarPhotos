@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.admin;
+package com.allarphoto.ajaxclient.client.admin;
 
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -15,11 +15,11 @@ import com.google.gwt.user.client.ui.TreeItem;
 import com.google.gwt.user.client.ui.TreeListener;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxAccessRequest;
-import com.lazerinc.ajaxclient.client.components.BusyPopup;
-import com.lazerinc.ajaxclient.client.components.PopupWarning;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxAccessRequest;
+import com.allarphoto.ajaxclient.client.components.BusyPopup;
+import com.allarphoto.ajaxclient.client.components.PopupWarning;
 
 public class UserAccessAdminPanel extends DockPanel {
 

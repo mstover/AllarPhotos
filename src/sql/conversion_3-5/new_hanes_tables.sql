@@ -172,7 +172,7 @@ grant all on hb_hanes_champprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_hanes_champ','Hanes Brand Champion','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_hanes_champ','Hanes Brand Champion','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 
@@ -384,7 +384,7 @@ grant all on hb_hanes_magprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_hanes_mag','Hanes Magalog','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_hanes_mag','Hanes Magalog','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 
@@ -596,7 +596,7 @@ grant all on hb_slushprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_slush','Hanes Slush Library','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_slush','Hanes Slush Library','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 

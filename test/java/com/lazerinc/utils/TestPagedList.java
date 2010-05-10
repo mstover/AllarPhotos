@@ -1,4 +1,4 @@
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.util.Collection;
 import java.util.LinkedList;

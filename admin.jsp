@@ -27,7 +27,7 @@
 		<!-- The module reference below is the link    -->
 		<!-- between html and your Web Toolkit module  -->		
 		<!--                                           -->
-		<meta name='gwt:module' content='com.lazerinc.ajaxclient.LazerAdmin'>
+		<meta name='gwt:module' content='com.allarphoto.ajaxclient.LazerAdmin'>
 		
 	</head>
 

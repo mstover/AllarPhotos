@@ -20,7 +20,7 @@
 // Title: User
 // Author: Michael Stover
 // Company: Lazer Inc.
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -35,9 +35,9 @@ import org.coinjema.context.CoinjemaDynamic;
 
 import strategiclibrary.service.cache.CacheService;
 
-import com.lazerinc.cached.DatabaseObject;
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.utils.Functions;
+import com.allarphoto.cached.DatabaseObject;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.utils.Functions;
 
 public class User implements Serializable, Comparable<User>, DatabaseObject {
 	private static final long serialVersionUID = 1;
@@ -46,33 +46,33 @@ public class User implements Serializable, Comparable<User>, DatabaseObject {
 		properties = new HashMap();
 	}
 
-	protected String username = com.lazerinc.dbtools.DBConnect.DEFAULT;
+	protected String username = com.allarphoto.dbtools.DBConnect.DEFAULT;
 
-	protected String password = com.lazerinc.dbtools.DBConnect.DEFAULT;
+	protected String password = com.allarphoto.dbtools.DBConnect.DEFAULT;
 
-	protected String firstName = com.lazerinc.dbtools.DBConnect.DEFAULT;
+	protected String firstName = com.allarphoto.dbtools.DBConnect.DEFAULT;
 
-	protected String lastName = com.lazerinc.dbtools.DBConnect.DEFAULT;
+	protected String lastName = com.allarphoto.dbtools.DBConnect.DEFAULT;
 
-	protected String emailAddress = com.lazerinc.dbtools.DBConnect.DEFAULT;
+	protected String emailAddress = com.allarphoto.dbtools.DBConnect.DEFAULT;
 
-	protected String phone = com.lazerinc.dbtools.DBConnect.DEFAULT;
+	protected String phone = com.allarphoto.dbtools.DBConnect.DEFAULT;
 
-	protected String fax = com.lazerinc.dbtools.DBConnect.DEFAULT;
+	protected String fax = com.allarphoto.dbtools.DBConnect.DEFAULT;
 
-	protected String addressLine1 = com.lazerinc.dbtools.DBConnect.DEFAULT;
+	protected String addressLine1 = com.allarphoto.dbtools.DBConnect.DEFAULT;
 
-	protected String addressLine2 = com.lazerinc.dbtools.DBConnect.DEFAULT;
+	protected String addressLine2 = com.allarphoto.dbtools.DBConnect.DEFAULT;
 
 	protected City city = new City("");
 
 	protected State state = new State("");
 
-	protected String zip = com.lazerinc.dbtools.DBConnect.DEFAULT;
+	protected String zip = com.allarphoto.dbtools.DBConnect.DEFAULT;
 
-	protected String passwordConfirm = com.lazerinc.dbtools.DBConnect.DEFAULT;
+	protected String passwordConfirm = com.allarphoto.dbtools.DBConnect.DEFAULT;
 
-	protected com.lazerinc.beans.Company company = new Company();
+	protected com.allarphoto.beans.Company company = new Company();
 
 	protected int userID;
 
@@ -221,11 +221,11 @@ public class User implements Serializable, Comparable<User>, DatabaseObject {
 		ois.defaultReadObject();
 	}
 
-	public void setCompany(com.lazerinc.beans.Company newCompany) {
+	public void setCompany(com.allarphoto.beans.Company newCompany) {
 		company = newCompany;
 	}
 
-	public com.lazerinc.beans.Company getCompany() {
+	public com.allarphoto.beans.Company getCompany() {
 		return company;
 	}
 

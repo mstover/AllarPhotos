@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import com.google.gwt.user.client.ui.KeyboardListener;
 import com.google.gwt.user.client.ui.TextBox;

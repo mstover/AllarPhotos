@@ -18,14 +18,14 @@ directory structure of the current library.
 		temp = (String)session.getValue("lazerweb.context");
 	}
 	if(!temp.equals("lazerweb") && !temp.equals("")){
-		redirect = "/"+com.lazerinc.utils.Functions.unsplit(com.lazerinc.utils.Functions.split(temp,"."),"/") + "/browse_products.jsp";
+		redirect = "/"+com.allarphoto.utils.Functions.unsplit(com.allarphoto.utils.Functions.split(temp,"."),"/") + "/browse_products.jsp";
 		if(temp.equals("lazerweb.wgr") && null != session.getValue("switch_approve")){
-			redirect = "/"+com.lazerinc.utils.Functions.unsplit(com.lazerinc.utils.Functions.split(temp,"."),"/") + "/admin_browse_products.jsp";			
+			redirect = "/"+com.allarphoto.utils.Functions.unsplit(com.allarphoto.utils.Functions.split(temp,"."),"/") + "/admin_browse_products.jsp";			
 		}
-		com.lazerinc.utils.Functions.javaLog("Redirecting from error page: "+redirect);
+		com.allarphoto.utils.Functions.javaLog("Redirecting from error page: "+redirect);
 		response.sendRedirect(redirect);
 	}else{
-		com.lazerinc.utils.Functions.javaLog("Default redirect from error page: /lazerweb3/index.jsp");
+		com.allarphoto.utils.Functions.javaLog("Default redirect from error page: /lazerweb3/index.jsp");
 		response.sendRedirect("/lazerweb3/index.jsp");
 	}
 %>

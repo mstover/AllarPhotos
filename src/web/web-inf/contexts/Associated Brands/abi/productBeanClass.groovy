@@ -1,1 +1,1 @@
-com.lazerinc.abi.AbiProductBean.class
+com.allarphoto.abi.AbiProductBean.class

@@ -1,4 +1,4 @@
-package com.lazerinc.category;
+package com.allarphoto.category;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,8 +7,8 @@ import strategiclibrary.service.BatchUpdate;
 import strategiclibrary.service.DataBase;
 import strategiclibrary.service.sql.ObjectMappingService;
 
-import com.lazerinc.ecommerce.CommerceProduct;
-import com.lazerinc.ecommerce.Merchant;
+import com.allarphoto.ecommerce.CommerceProduct;
+import com.allarphoto.ecommerce.Merchant;
 
 public class DescriptionField extends ProductField {
 	private static final long serialVersionUID = 1;

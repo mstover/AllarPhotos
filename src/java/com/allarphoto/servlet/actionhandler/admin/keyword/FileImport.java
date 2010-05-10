@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.admin.keyword;
+package com.allarphoto.servlet.actionhandler.admin.keyword;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,10 +10,10 @@ import java.util.LinkedList;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.client.util.ProductFileParser;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.application.Product;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.client.util.ProductFileParser;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 public class FileImport extends ActionHandlerBase {
 

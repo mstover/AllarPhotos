@@ -1,15 +1,15 @@
-package com.lazerinc.irwin;
+package com.allarphoto.irwin;
 
-import static com.lazerinc.ecommerce.Order.Status.AWAITING_APPROVAL;
+import static com.allarphoto.ecommerce.Order.Status.AWAITING_APPROVAL;
 
 import java.util.Collection;
 
-import com.lazerinc.application.Fulfillment;
-import com.lazerinc.beans.OrderItem;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.LazerwebFulfillment;
-import com.lazerinc.ecommerce.Merchant;
-import com.lazerinc.ecommerce.Order;
+import com.allarphoto.application.Fulfillment;
+import com.allarphoto.beans.OrderItem;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.LazerwebFulfillment;
+import com.allarphoto.ecommerce.Merchant;
+import com.allarphoto.ecommerce.Order;
 
 public class NewellOrder extends Order {
 

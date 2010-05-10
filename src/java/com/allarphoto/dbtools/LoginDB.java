@@ -21,7 +21,7 @@
 // Author: Michael Stover
 // Company: Lazer Inc.
 // Description: Interface for any databases that allow user log ins.
-package com.lazerinc.dbtools;
+package com.allarphoto.dbtools;
 
 public interface LoginDB {
 

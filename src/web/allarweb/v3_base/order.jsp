@@ -3,7 +3,7 @@
 	addParams.put("InvalidOrderInfo","verify.jsp?success=false");%>
 <%@ include file="/bali/include/actionsAndValidate.inc" %>
 
-<jsp:useBean id="orderResponse" scope="session" class="com.lazerinc.client.beans.OrderResponseBean"/>
+<jsp:useBean id="orderResponse" scope="session" class="com.allarphoto.client.beans.OrderResponseBean"/>
 
 <% String title = "Order Confirmation",banner="",help="order"; %>
 <%@ include file="header.txt"%>

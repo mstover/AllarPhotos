@@ -1,10 +1,10 @@
-package com.lazerinc.ajaxclient.client.components.basic;
+package com.allarphoto.ajaxclient.client.components.basic;
 
 import com.google.gwt.user.client.Element;
 import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.components.ThumbnailPanel;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.components.ThumbnailPanel;
 
 public class ThumbnailDragger implements DragPlugIn {
 

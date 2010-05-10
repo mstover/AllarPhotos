@@ -1,11 +1,11 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import com.google.gwt.user.client.ui.Grid;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.beans.AjaxAddress;
-import com.lazerinc.ajaxclient.client.beans.AjaxCompany;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.beans.AjaxAddress;
+import com.allarphoto.ajaxclient.client.beans.AjaxCompany;
 
 public class AddressForm extends VerticalPanel {
 	TextBox address1, address2, attn, city, phone, zip, company;

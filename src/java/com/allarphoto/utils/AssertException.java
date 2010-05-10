@@ -17,7 +17,7 @@
 // Company: Lazer Inc.
 // Description: Implements the assert exception so that an assert clause, similar
 // to assert in C++, can be used.
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 /*******************************************************************************
  * Implements the assert exception so that an assert clause, similar to assert

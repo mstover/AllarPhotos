@@ -1,6 +1,6 @@
 <%@ include file="/v3_base/include/global.inc" %>
 <%@ include file="/v3_base/include/handleActions.inc" %>
-<jsp:useBean id="errors" scope="request" class="com.lazerinc.client.beans.ErrorsBean"/>
+<jsp:useBean id="errors" scope="request" class="com.allarphoto.client.beans.ErrorsBean"/>
 
 <% 	/******* Login Page - gateway to the Online Library ********/
 

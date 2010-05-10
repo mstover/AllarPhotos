@@ -1,7 +1,7 @@
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
-import com.lazerinc.server.ResourceService;
-import com.lazerinc.testObjects.AbstractIntegratedTest;
+import com.allarphoto.server.ResourceService;
+import com.allarphoto.testObjects.AbstractIntegratedTest;
 
 
 public class TestResource extends AbstractIntegratedTest

@@ -1,1 +1,1 @@
-com.lazerinc.ajaxclient.client.components.irwin.IrwinComponentFactory.class
+com.allarphoto.ajaxclient.client.components.irwin.IrwinComponentFactory.class

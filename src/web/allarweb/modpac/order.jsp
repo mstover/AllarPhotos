@@ -8,7 +8,7 @@
 %>
 <%@ include file="/modpac/include/actionsAndValidate.inc" %>
 
-<jsp:useBean id="orderResponse" scope="session" class="com.lazerinc.client.beans.OrderResponseBean"/>
+<jsp:useBean id="orderResponse" scope="session" class="com.allarphoto.client.beans.OrderResponseBean"/>
 
 <%@ include file="header.txt"%>
 <div align="left">

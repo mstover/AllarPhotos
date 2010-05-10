@@ -1,1 +1,1 @@
-new com.lazerinc.kodak.KodakExpirationTester()
+new com.allarphoto.kodak.KodakExpirationTester()

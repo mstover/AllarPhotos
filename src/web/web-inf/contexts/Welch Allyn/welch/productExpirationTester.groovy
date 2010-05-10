@@ -1,1 +1,1 @@
-new com.lazerinc.welchallyn.WAExpirationTester()
+new com.allarphoto.welchallyn.WAExpirationTester()

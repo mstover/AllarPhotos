@@ -1,8 +1,8 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.admin.LazerMenu;
+import com.allarphoto.ajaxclient.client.admin.LazerMenu;
 
 public abstract class ComponentFactory implements IsSerializable {
 

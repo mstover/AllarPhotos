@@ -20,7 +20,7 @@
 // Title: DatabaseLogger
 // Author: Michael Stover
 // Company: Lazer inc.
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.util.Calendar;
 import java.util.Collection;
@@ -45,21 +45,21 @@ import strategiclibrary.service.sql.DefaultMappingService;
 import strategiclibrary.service.sql.ObjectMappingService;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.LogModel;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.beans.Address;
-import com.lazerinc.beans.DownloadItem;
-import com.lazerinc.beans.LogItem;
-import com.lazerinc.beans.OrderItem;
-import com.lazerinc.beans.UploadItem;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.dbtools.QueryItem;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.Order;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.server.ProductService;
-import com.lazerinc.server.UserService;
+import com.allarphoto.application.LogModel;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.beans.Address;
+import com.allarphoto.beans.DownloadItem;
+import com.allarphoto.beans.LogItem;
+import com.allarphoto.beans.OrderItem;
+import com.allarphoto.beans.UploadItem;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.dbtools.QueryItem;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.Order;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.server.ProductService;
+import com.allarphoto.server.UserService;
 
 @CoinjemaObject
 public class DatabaseLogger implements LogModel {

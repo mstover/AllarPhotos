@@ -1,6 +1,6 @@
-package com.lazerinc.servlet.actionhandler.commerce;
+package com.allarphoto.servlet.actionhandler.commerce;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_HANES_EXECUTE_ORDER;
+import static com.allarphoto.servlet.ActionConstants.ACTION_HANES_EXECUTE_ORDER;
 
 /**
  * After all the instructions have been set in the users shopping cart, this
@@ -26,7 +26,7 @@ import static com.lazerinc.servlet.ActionConstants.ACTION_HANES_EXECUTE_ORDER;
 public class HanesExecuteOrder extends BaliExecuteOrder {
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_HANES_EXECUTE_ORDER;

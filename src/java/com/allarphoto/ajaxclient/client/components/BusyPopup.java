@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,7 +1,7 @@
-package com.lazerinc.server.product;
+package com.allarphoto.server.product;
 
-import com.lazerinc.server.ProductService;
-import com.lazerinc.testObjects.AbstractIntegratedTest;
+import com.allarphoto.server.ProductService;
+import com.allarphoto.testObjects.AbstractIntegratedTest;
 
 
 public class TestProductService extends AbstractIntegratedTest

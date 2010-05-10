@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.user;
+package com.allarphoto.servlet.actionhandler.user;
 
 import java.io.StringWriter;
 import java.util.HashMap;
@@ -19,15 +19,15 @@ import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.service.webaction.ServletHandlerData;
 
-import com.lazerinc.beans.User;
-import com.lazerinc.beans.UserRequest;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.server.ResourceService;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
-import com.lazerinc.utils.WebBean;
+import com.allarphoto.beans.User;
+import com.allarphoto.beans.UserRequest;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.server.ResourceService;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
+import com.allarphoto.utils.WebBean;
 
 public class UserAccessRequest extends ActionHandlerBase {
 

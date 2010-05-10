@@ -1,13 +1,13 @@
-package com.lazerinc.servlet.actionhandler.admin;
+package com.allarphoto.servlet.actionhandler.admin;
 
 import java.util.Collection;
 
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.server.UserService;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.server.UserService;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 public class GetMyGroups extends ActionHandlerBase {
 

@@ -1,16 +1,16 @@
-package com.lazerinc.application.impl;
+package com.allarphoto.application.impl;
 
 import org.apache.log4j.Logger;
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.application.ExpirationTester;
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.server.ResourceService;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.ExpirationTester;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.server.ResourceService;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 @CoinjemaObject
 public class DefaultExpirationTester implements ExpirationTester {

@@ -1,4 +1,4 @@
-package com.lazerinc.client.beans;
+package com.allarphoto.client.beans;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -9,12 +9,12 @@ import java.util.List;
 
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.utils.Functions;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.utils.Functions;
+import com.allarphoto.utils.Right;
 
 /**
  * Title: Lazerweb Description: Lazerweb - Lazer Inc. version 3.0 Copyright:

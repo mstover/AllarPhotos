@@ -1,6 +1,6 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
-import com.lazerinc.beans.City;
+import com.allarphoto.beans.City;
 
 public class CityAdd extends AbstractCacheFunction<City> implements
 		CacheAdder<City> {

@@ -1,1 +1,1 @@
-com.lazerinc.client.beans.ProductBean.class
+com.allarphoto.client.beans.ProductBean.class

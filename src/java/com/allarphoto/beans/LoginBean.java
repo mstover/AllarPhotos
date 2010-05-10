@@ -20,7 +20,7 @@
 // Title: LoginBean
 // Author: Michael Stover
 // Company: Lazer Inc.
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 public class LoginBean {
 
@@ -43,7 +43,7 @@ public class LoginBean {
 		return password;
 	}
 
-	public boolean checkUser(com.lazerinc.dbtools.LoginDB database) {
+	public boolean checkUser(com.allarphoto.dbtools.LoginDB database) {
 		userID = database.checkUser(username, password);
 		if (userID != -1)
 			return true;

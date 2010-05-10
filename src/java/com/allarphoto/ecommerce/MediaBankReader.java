@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,10 +12,10 @@ import java.util.Map;
 
 import org.coinjema.context.CoinjemaContext;
 
-import com.lazerinc.dbtools.FoxProDB;
-import com.lazerinc.utils.Data;
-import com.lazerinc.utils.Filer;
-import com.lazerinc.utils.Functions;
+import com.allarphoto.dbtools.FoxProDB;
+import com.allarphoto.utils.Data;
+import com.allarphoto.utils.Filer;
+import com.allarphoto.utils.Functions;
 
 public class MediaBankReader {
 

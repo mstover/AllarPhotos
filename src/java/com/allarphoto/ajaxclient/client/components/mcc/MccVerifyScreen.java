@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components.mcc;
+package com.allarphoto.ajaxclient.client.components.mcc;
 
 import java.util.Iterator;
 import java.util.List;
@@ -8,13 +8,13 @@ import com.google.gwt.user.client.ui.DockPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.TabPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxCart;
-import com.lazerinc.ajaxclient.client.beans.OrderVerificationPackage;
-import com.lazerinc.ajaxclient.client.components.CheckoutPanel;
-import com.lazerinc.ajaxclient.client.components.PopupWarning;
-import com.lazerinc.ajaxclient.client.components.VerifyScreen;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxCart;
+import com.allarphoto.ajaxclient.client.beans.OrderVerificationPackage;
+import com.allarphoto.ajaxclient.client.components.CheckoutPanel;
+import com.allarphoto.ajaxclient.client.components.PopupWarning;
+import com.allarphoto.ajaxclient.client.components.VerifyScreen;
 
 public class MccVerifyScreen extends VerifyScreen {
 

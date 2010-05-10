@@ -20,7 +20,7 @@
 // Title: OrderedObject
 // Author: Michael Stover
 // Company: Lazer Inc.
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 public interface OrderedObject {
 

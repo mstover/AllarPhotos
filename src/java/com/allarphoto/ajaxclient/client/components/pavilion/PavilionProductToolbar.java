@@ -1,16 +1,16 @@
-package com.lazerinc.ajaxclient.client.components.pavilion;
+package com.allarphoto.ajaxclient.client.components.pavilion;
 
 import java.util.Iterator;
 
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
-import com.lazerinc.ajaxclient.client.beans.AjaxResource;
-import com.lazerinc.ajaxclient.client.components.ProductToolbar;
-import com.lazerinc.ajaxclient.client.components.icons.DownloadIcon;
-import com.lazerinc.ajaxclient.client.components.icons.EditIcon;
-import com.lazerinc.ajaxclient.client.components.icons.MoveToActiveIcon;
-import com.lazerinc.ajaxclient.client.components.icons.MoveToObsoleteIcon;
-import com.lazerinc.ajaxclient.client.components.icons.MoveToOfflineIcon;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.beans.AjaxResource;
+import com.allarphoto.ajaxclient.client.components.ProductToolbar;
+import com.allarphoto.ajaxclient.client.components.icons.DownloadIcon;
+import com.allarphoto.ajaxclient.client.components.icons.EditIcon;
+import com.allarphoto.ajaxclient.client.components.icons.MoveToActiveIcon;
+import com.allarphoto.ajaxclient.client.components.icons.MoveToObsoleteIcon;
+import com.allarphoto.ajaxclient.client.components.icons.MoveToOfflineIcon;
 
 public class PavilionProductToolbar extends ProductToolbar {
 

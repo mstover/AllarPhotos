@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -12,12 +12,12 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.Panel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Redrawable;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxGroup;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
-import com.lazerinc.ajaxclient.client.components.icons.SimpleIcon;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Redrawable;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxGroup;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.components.icons.SimpleIcon;
 
 public class SearchResultsViewer extends DockPanel implements Redrawable {
 	protected String family;

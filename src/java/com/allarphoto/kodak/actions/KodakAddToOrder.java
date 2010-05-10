@@ -1,4 +1,4 @@
-package com.lazerinc.kodak.actions;
+package com.allarphoto.kodak.actions;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.servlet.actionhandler.cart.AddToOrder;
+import com.allarphoto.servlet.actionhandler.cart.AddToOrder;
 
 public class KodakAddToOrder extends AddToOrder {
 	public final static String KODAK_ORDER = "addToOrder.order_";

@@ -1,4 +1,4 @@
-<%@ page import = "java.io.*,com.lazerinc.application.*,com.lazerinc.dbtools.*, com.lazerinc.ecommerce.*, com.lazerinc.utils.*, java.net.*, com.lazerinc.ecommerce.impl.*, java.util.*, com.lazerinc.beans.*"%>
+<%@ page import = "java.io.*,com.allarphoto.application.*,com.allarphoto.dbtools.*, com.allarphoto.ecommerce.*, com.allarphoto.utils.*, java.net.*, com.allarphoto.ecommerce.impl.*, java.util.*, com.allarphoto.beans.*"%>
 <%
 	StringBuffer emailMessage = new StringBuffer("The following list include images that need to be processed for the Fisher-Price B2B site:\n");
 	boolean emailFlag = false;

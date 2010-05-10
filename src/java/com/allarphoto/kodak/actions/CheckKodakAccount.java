@@ -1,4 +1,4 @@
-package com.lazerinc.kodak.actions;
+package com.allarphoto.kodak.actions;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,8 +6,8 @@ import java.util.Set;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 public class CheckKodakAccount extends ActionHandlerBase {
 

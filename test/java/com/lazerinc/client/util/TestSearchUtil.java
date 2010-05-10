@@ -1,11 +1,11 @@
-package com.lazerinc.client.util;
+package com.allarphoto.client.util;
 
 import org.coinjema.context.CoinjemaContext;
 import org.coinjema.context.ContextFactory;
 
-import com.lazerinc.client.beans.ProductSetBean;
-import com.lazerinc.server.UserService;
-import com.lazerinc.testObjects.AbstractIntegratedTest;
+import com.allarphoto.client.beans.ProductSetBean;
+import com.allarphoto.server.UserService;
+import com.allarphoto.testObjects.AbstractIntegratedTest;
 
 public class TestSearchUtil extends AbstractIntegratedTest {
 

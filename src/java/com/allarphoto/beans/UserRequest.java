@@ -1,4 +1,4 @@
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -8,11 +8,11 @@ import java.util.Map;
 
 import strategiclibrary.service.sql.ObjectMappingService;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.server.UserService;
-import com.lazerinc.utils.Resource;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.server.UserService;
+import com.allarphoto.utils.Resource;
 
 public class UserRequest implements Serializable {
 

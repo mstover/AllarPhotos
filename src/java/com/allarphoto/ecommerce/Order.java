@@ -2,14 +2,14 @@
  * Copyright 1999 (c) Lazer Incorporated All code contained in this file is the property of Lazer Incorporated. All
  * rights reserved.
  **********************************************************************************************************************/
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
-import static com.lazerinc.ecommerce.OrderFailedException.APPROVAL;
-import static com.lazerinc.ecommerce.OrderFailedException.CANCELLED;
-import static com.lazerinc.ecommerce.OrderFailedException.CONFIRMATION;
-import static com.lazerinc.ecommerce.OrderFailedException.FULFILLMENT;
-import static com.lazerinc.ecommerce.OrderFailedException.MERCHANT;
-import static com.lazerinc.ecommerce.OrderFailedException.REJECT;
+import static com.allarphoto.ecommerce.OrderFailedException.APPROVAL;
+import static com.allarphoto.ecommerce.OrderFailedException.CANCELLED;
+import static com.allarphoto.ecommerce.OrderFailedException.CONFIRMATION;
+import static com.allarphoto.ecommerce.OrderFailedException.FULFILLMENT;
+import static com.allarphoto.ecommerce.OrderFailedException.MERCHANT;
+import static com.allarphoto.ecommerce.OrderFailedException.REJECT;
 
 import java.io.Serializable;
 import java.util.Calendar;
@@ -32,11 +32,11 @@ import org.coinjema.context.CoinjemaObject;
 import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.Fulfillment;
-import com.lazerinc.application.SecureComponent;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.beans.Address;
-import com.lazerinc.beans.OrderItem;
+import com.allarphoto.application.Fulfillment;
+import com.allarphoto.application.SecureComponent;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.beans.Address;
+import com.allarphoto.beans.OrderItem;
 
 @CoinjemaObject
 public class Order implements Serializable, SecureComponent,

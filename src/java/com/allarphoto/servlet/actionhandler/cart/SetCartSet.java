@@ -1,16 +1,16 @@
-package com.lazerinc.servlet.actionhandler.cart;
+package com.allarphoto.servlet.actionhandler.cart;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_SET_CART_SET;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_BROWSE_SET;
+import static com.allarphoto.servlet.ActionConstants.ACTION_SET_CART_SET;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_BROWSE_SET;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.CartObject;
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.client.exceptions.FatalException;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.utils.PagedList;
+import com.allarphoto.application.CartObject;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.client.exceptions.FatalException;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.utils.PagedList;
 
 /**
  * The shopping cart is divided into viewable sets (if the total number of
@@ -26,7 +26,7 @@ import com.lazerinc.utils.PagedList;
 public class SetCartSet extends CartHandlerBase {
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#performAction(HandlerData)
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#performAction(HandlerData)
 	 */
 	public void performAction(HandlerData actionInfo) throws FatalException,
 			InformationalException, ActionException {
@@ -60,7 +60,7 @@ public class SetCartSet extends CartHandlerBase {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_SET_CART_SET;

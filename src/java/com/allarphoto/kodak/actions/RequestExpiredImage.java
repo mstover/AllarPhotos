@@ -1,4 +1,4 @@
-package com.lazerinc.kodak.actions;
+package com.allarphoto.kodak.actions;
 
 import java.io.StringWriter;
 import java.util.HashMap;
@@ -9,8 +9,8 @@ import org.coinjema.context.CoinjemaDynamic;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.servlet.actionhandler.message.LazerwebFeedback;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.servlet.actionhandler.message.LazerwebFeedback;
 
 public class RequestExpiredImage extends LazerwebFeedback {
 

@@ -20,13 +20,13 @@
 // Title: SecurityModel
 // Author: Michael Stover
 // Company: Lazer Inc.
-package com.lazerinc.application;
+package com.allarphoto.application;
 
 import java.util.Collection;
 
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
-import com.lazerinc.utils.Rights;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
+import com.allarphoto.utils.Rights;
 
 public interface SecurityModel {
 

@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.user;
+package com.allarphoto.servlet.actionhandler.user;
 
 import java.net.URL;
 import java.net.URLDecoder;
@@ -10,11 +10,11 @@ import org.coinjema.context.ContextOriented;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.service.webaction.ServletHandlerData;
-import static com.lazerinc.servlet.ActionConstants.ACTION_VALIDATE_LOGIN;
-import static com.lazerinc.servlet.ActionConstants.ACTION_LOGOUT;
+import static com.allarphoto.servlet.ActionConstants.ACTION_VALIDATE_LOGIN;
+import static com.allarphoto.servlet.ActionConstants.ACTION_LOGOUT;
 
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.servlet.actionhandler.login.Login;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.servlet.actionhandler.login.Login;
 
 public class AutoAction extends Login {
 

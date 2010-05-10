@@ -1,12 +1,12 @@
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Map;
 
-import com.lazerinc.beans.OrderItem;
-import com.lazerinc.utils.Functions;
-import com.lazerinc.utils.Right;
+import com.allarphoto.beans.OrderItem;
+import com.allarphoto.utils.Functions;
+import com.allarphoto.utils.Right;
 
 public class KodakDaiFulfillment extends LazerwebFulfillment {
 

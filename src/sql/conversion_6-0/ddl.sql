@@ -181,7 +181,7 @@ grant all on irwinprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model,customer_name,remote_managed) 
-values('irwin','Irwin Tools On-Line Image Library','On-Line Library','File Name',1,'com.lazerinc.ecommerce.LazerwebOrderModel','Irwin Tools','false');
+values('irwin','Irwin Tools On-Line Image Library','On-Line Library','File Name',1,'com.allarphoto.ecommerce.LazerwebOrderModel','Irwin Tools','false');
 
 COMMIT;
 

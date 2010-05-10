@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.user;
+package com.allarphoto.servlet.actionhandler.user;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -8,15 +8,15 @@ import java.util.Set;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.beans.User;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.server.UserService;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
-import static com.lazerinc.utils.Right.*;
-import com.lazerinc.utils.Rights;
+import com.allarphoto.beans.User;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.server.UserService;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
+import static com.allarphoto.utils.Right.*;
+import com.allarphoto.utils.Rights;
 
 public class GetUsersToAdmin extends ActionHandlerBase {
 

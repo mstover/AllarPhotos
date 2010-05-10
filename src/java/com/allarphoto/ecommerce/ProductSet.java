@@ -5,7 +5,7 @@
 // Company: Lazer Inc.
 // Description: Your description
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -24,7 +24,7 @@ import java.util.TreeSet;
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.application.Product;
+import com.allarphoto.application.Product;
 
 /*******************************************************************************
  * This class keeps a listing of products by their product numbers or sku. One

@@ -1,1 +1,1 @@
-com.lazerinc.kodak.KProShoppingCartBean.class
+com.allarphoto.kodak.KProShoppingCartBean.class

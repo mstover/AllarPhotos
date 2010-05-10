@@ -1,16 +1,16 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.ClickListener;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.SwappablePanel;
-import com.lazerinc.ajaxclient.client.components.icons.CartSave;
-import com.lazerinc.ajaxclient.client.components.icons.CheckoutIcon;
-import com.lazerinc.ajaxclient.client.components.icons.ClearCartIcon;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.SwappablePanel;
+import com.allarphoto.ajaxclient.client.components.icons.CartSave;
+import com.allarphoto.ajaxclient.client.components.icons.CheckoutIcon;
+import com.allarphoto.ajaxclient.client.components.icons.ClearCartIcon;
 
 public class VerticalShoppingCartToolbar extends VerticalPanel {
 

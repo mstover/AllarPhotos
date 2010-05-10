@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -12,10 +12,10 @@ import java.util.Map;
 
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.CartObject;
-import com.lazerinc.application.Product;
-import com.lazerinc.beans.LogItem;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.CartObject;
+import com.allarphoto.application.Product;
+import com.allarphoto.beans.LogItem;
+import com.allarphoto.utils.Right;
 
 public class KodakDAIOrderModel extends LazerwebOrderModel {
 

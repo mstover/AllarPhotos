@@ -1,8 +1,8 @@
-package com.lazerinc.servlet.actionhandler.login;
+package com.allarphoto.servlet.actionhandler.login;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_LOGIN;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_PASSWORD;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_USERNAME;
+import static com.allarphoto.servlet.ActionConstants.ACTION_LOGIN;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_PASSWORD;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_USERNAME;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -11,13 +11,13 @@ import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.service.webaction.ServletHandlerData;
 
-import com.lazerinc.client.beans.GenericDataBean;
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.util.LogUtil;
-import com.lazerinc.client.util.ShoppingCartUtil;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.servlet.actionhandler.cart.CartHandlerBase;
+import com.allarphoto.client.beans.GenericDataBean;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.util.LogUtil;
+import com.allarphoto.client.util.ShoppingCartUtil;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.servlet.actionhandler.cart.CartHandlerBase;
 
 /**
  * Logs the user in to the DAM system.
@@ -44,14 +44,14 @@ public class Login extends CartHandlerBase {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#requiresLogin()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#requiresLogin()
 	 */
 	public boolean requiresLogin() {
 		return false;
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#performAction(HandlerData)
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#performAction(HandlerData)
 	 */
 	public void performAction(HandlerData actionInfo) throws ActionException {
 		CommerceUser user = getUgd().checkUser(
@@ -102,7 +102,7 @@ public class Login extends CartHandlerBase {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_LOGIN;

@@ -1,1 +1,1 @@
-new com.lazerinc.application.impl.DefaultExpirationTester()
+new com.allarphoto.application.impl.DefaultExpirationTester()

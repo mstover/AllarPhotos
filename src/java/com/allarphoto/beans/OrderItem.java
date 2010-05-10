@@ -1,4 +1,4 @@
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,10 +9,10 @@ import org.coinjema.context.CoinjemaDynamic;
 import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.ProductFamily;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.ProductFamily;
 
 public class OrderItem extends LogItem {
 

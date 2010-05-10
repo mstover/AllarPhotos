@@ -1,11 +1,11 @@
-package com.lazerinc.kodak.actions;
+package com.allarphoto.kodak.actions;
 
 import org.coinjema.context.CoinjemaDynamic;
 
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 public class RandomBackgroundImage extends ActionHandlerBase {
 

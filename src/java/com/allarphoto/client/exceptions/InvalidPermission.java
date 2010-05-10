@@ -1,4 +1,4 @@
-package com.lazerinc.client.exceptions;
+package com.allarphoto.client.exceptions;
 
 /*
  * This class is being setup for use with the Intimate Apparel Web-Portal. If a user does not have permission to access

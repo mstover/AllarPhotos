@@ -1,4 +1,4 @@
-import com.lazerinc.ajaxclient.client.beans.*
+import com.allarphoto.ajaxclient.client.beans.*
 
 pack = new OrderVerificationPackage("","University Image Library")
 

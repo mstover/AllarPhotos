@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.admin;
+package com.allarphoto.servlet.actionhandler.admin;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -6,11 +6,11 @@ import java.util.List;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 public class GetProductFamilies extends ActionHandlerBase {
 

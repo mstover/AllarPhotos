@@ -1,12 +1,12 @@
-package com.lazerinc.server;
+package com.allarphoto.server;
 
-import com.lazerinc.beans.City;
-import com.lazerinc.beans.Country;
-import com.lazerinc.beans.State;
-import com.lazerinc.beans.User;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.server.UserService;
-import com.lazerinc.testObjects.AbstractIntegratedTest;
+import com.allarphoto.beans.City;
+import com.allarphoto.beans.Country;
+import com.allarphoto.beans.State;
+import com.allarphoto.beans.User;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.server.UserService;
+import com.allarphoto.testObjects.AbstractIntegratedTest;
 
 
 public class TestUserGroupService extends AbstractIntegratedTest

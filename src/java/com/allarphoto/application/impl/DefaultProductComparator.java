@@ -1,8 +1,8 @@
-package com.lazerinc.application.impl;
+package com.allarphoto.application.impl;
 
 import java.util.Comparator;
 
-import com.lazerinc.application.Product;
+import com.allarphoto.application.Product;
 
 public class DefaultProductComparator implements Comparator {
 

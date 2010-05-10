@@ -1,9 +1,9 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.Redrawable;
-import com.lazerinc.ajaxclient.client.SwappablePanel;
+import com.allarphoto.ajaxclient.client.Redrawable;
+import com.allarphoto.ajaxclient.client.SwappablePanel;
 
 public class SearchCenter extends VerticalPanel implements SwappablePanel,
 		Redrawable {

@@ -1,1 +1,1 @@
-com.lazerinc.client.beans.ShoppingCartBean.class
+com.allarphoto.client.beans.ShoppingCartBean.class

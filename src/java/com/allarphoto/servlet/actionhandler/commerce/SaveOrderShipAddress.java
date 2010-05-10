@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.commerce;
+package com.allarphoto.servlet.actionhandler.commerce;
 
 import org.coinjema.context.CoinjemaDependency;
 
@@ -6,10 +6,10 @@ import strategiclibrary.service.sql.ObjectMappingService;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.beans.Address;
-import com.lazerinc.cached.functions.AddressAdd;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
-import com.lazerinc.utils.WebBean;
+import com.allarphoto.beans.Address;
+import com.allarphoto.cached.functions.AddressAdd;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.utils.WebBean;
 
 public class SaveOrderShipAddress extends ActionHandlerBase {
 

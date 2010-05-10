@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components.icons;
+package com.allarphoto.ajaxclient.client.components.icons;
 
 import com.google.gwt.user.client.ui.ClickListener;
 

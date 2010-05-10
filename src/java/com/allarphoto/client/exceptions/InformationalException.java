@@ -1,4 +1,4 @@
-package com.lazerinc.client.exceptions;
+package com.allarphoto.client.exceptions;
 
 public class InformationalException extends LazerwebException {
 	private static final long serialVersionUID = 1;

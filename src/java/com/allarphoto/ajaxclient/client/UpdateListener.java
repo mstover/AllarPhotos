@@ -1,6 +1,6 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
-import com.lazerinc.ajaxclient.client.beans.AjaxOrder;
+import com.allarphoto.ajaxclient.client.beans.AjaxOrder;
 
 public interface UpdateListener {
 

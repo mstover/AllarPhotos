@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.admin.library;
+package com.allarphoto.ajaxclient.client.admin.library;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -23,17 +23,17 @@ import com.google.gwt.user.client.ui.TreeItem;
 import com.google.gwt.user.client.ui.TreeListener;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxProductFamily;
-import com.lazerinc.ajaxclient.client.beans.AjaxProductField;
-import com.lazerinc.ajaxclient.client.beans.DownloadStats;
-import com.lazerinc.ajaxclient.client.beans.DownloadUserStat;
-import com.lazerinc.ajaxclient.client.components.BusyPopup;
-import com.lazerinc.ajaxclient.client.components.DatePicker;
-import com.lazerinc.ajaxclient.client.components.EnterKeyListener;
-import com.lazerinc.ajaxclient.client.components.PopupWarning;
-import com.lazerinc.ajaxclient.client.components.icons.DeleteFieldIcon;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxProductFamily;
+import com.allarphoto.ajaxclient.client.beans.AjaxProductField;
+import com.allarphoto.ajaxclient.client.beans.DownloadStats;
+import com.allarphoto.ajaxclient.client.beans.DownloadUserStat;
+import com.allarphoto.ajaxclient.client.components.BusyPopup;
+import com.allarphoto.ajaxclient.client.components.DatePicker;
+import com.allarphoto.ajaxclient.client.components.EnterKeyListener;
+import com.allarphoto.ajaxclient.client.components.PopupWarning;
+import com.allarphoto.ajaxclient.client.components.icons.DeleteFieldIcon;
 
 public class LibraryTreeActions implements TreeListener {
 

@@ -1,13 +1,13 @@
-package com.lazerinc.abi;
+package com.allarphoto.abi;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.client.beans.ProductBean;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.client.beans.ProductBean;
+import com.allarphoto.utils.Right;
 
 public class AbiProductBean extends ProductBean {
 

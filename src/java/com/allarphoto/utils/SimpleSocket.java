@@ -17,7 +17,7 @@
 // Company: Lazer Inc.
 // Description: Class to give simple methods for dealing with socket input
 // and output.
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;

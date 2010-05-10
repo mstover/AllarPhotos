@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.uploader;
+package com.allarphoto.ajaxclient.client.uploader;
 
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
@@ -10,10 +10,10 @@ import com.google.gwt.user.client.ui.PopupPanel;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.components.BusyPopup;
-import com.lazerinc.ajaxclient.client.components.PopupWarning;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.components.BusyPopup;
+import com.allarphoto.ajaxclient.client.components.PopupWarning;
 
 public class UploadMetaDataScreen extends PopupPanel {
 	FlexTable table;

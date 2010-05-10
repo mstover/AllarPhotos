@@ -1,9 +1,9 @@
-package com.lazerinc.ajaxclient.client.components.fineart;
+package com.allarphoto.ajaxclient.client.components.fineart;
 
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
-import com.lazerinc.ajaxclient.client.beans.Request;
-import com.lazerinc.ajaxclient.client.components.icons.OrderIcon;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.beans.Request;
+import com.allarphoto.ajaxclient.client.components.icons.OrderIcon;
 
 public class FAOrderIcon extends OrderIcon {
 

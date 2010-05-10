@@ -12,7 +12,7 @@
  * other entities.
  **********************************************************************************************************************/
 
-package com.lazerinc.dbtools;
+package com.allarphoto.dbtools;
 
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
@@ -25,7 +25,7 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
-import com.lazerinc.utils.Functions;
+import com.allarphoto.utils.Functions;
 
 /*******************************************************************************
  * This class manages a pool of Connection objects (ConnectionObject). This pool

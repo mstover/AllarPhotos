@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
 import java.util.Collection;
 import java.util.Iterator;
@@ -10,9 +10,9 @@ import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.PopupPanel;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.beans.AjaxGroup;
-import com.lazerinc.ajaxclient.client.components.PopupWarning;
-import com.lazerinc.ajaxclient.client.components.basic.ComboBox;
+import com.allarphoto.ajaxclient.client.beans.AjaxGroup;
+import com.allarphoto.ajaxclient.client.components.PopupWarning;
+import com.allarphoto.ajaxclient.client.components.basic.ComboBox;
 
 public class AjaxSystem {
 	static int count = 0;

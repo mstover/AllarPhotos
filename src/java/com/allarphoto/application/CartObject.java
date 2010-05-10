@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.application;
+package com.allarphoto.application;
 
 import java.io.Serializable;
 import java.util.Map;

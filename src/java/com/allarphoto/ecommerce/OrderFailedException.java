@@ -1,4 +1,4 @@
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 public class OrderFailedException extends RuntimeException {
 

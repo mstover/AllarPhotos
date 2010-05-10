@@ -12,7 +12,7 @@
  * other entities.
  **********************************************************************************************************************/
 
-package com.lazerinc.dbtools;
+package com.allarphoto.dbtools;
 
 import java.util.Enumeration;
 import java.util.Hashtable;

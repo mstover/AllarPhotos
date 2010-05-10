@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
 

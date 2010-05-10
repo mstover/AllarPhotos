@@ -1,4 +1,4 @@
-package com.lazerinc.security;
+package com.allarphoto.security;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -11,13 +11,13 @@ import org.apache.log4j.Logger;
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.server.ResourceService;
-import com.lazerinc.server.UserService;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
-import com.lazerinc.utils.Rights;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.server.ResourceService;
+import com.allarphoto.server.UserService;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
+import com.allarphoto.utils.Rights;
 
 @CoinjemaObject
 public abstract class AbstractSecurityModel implements SecurityModel,

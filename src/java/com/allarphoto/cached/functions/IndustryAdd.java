@@ -1,6 +1,6 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
-import com.lazerinc.beans.Industry;
+import com.allarphoto.beans.Industry;
 
 public class IndustryAdd extends AbstractCacheFunction<Industry> implements
 		CacheAdder<Industry> {

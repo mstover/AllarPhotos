@@ -1,1 +1,1 @@
-new com.lazerinc.worldkitchen.WorldKitProductExpiration()
+new com.allarphoto.worldkitchen.WorldKitProductExpiration()

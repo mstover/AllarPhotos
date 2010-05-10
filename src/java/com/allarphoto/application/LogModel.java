@@ -20,14 +20,14 @@
 // Title: LogModel
 // Author: Michael Stover
 // Company: Lazer inc.
-package com.lazerinc.application;
+package com.allarphoto.application;
 
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Set;
 
-import com.lazerinc.beans.LogItem;
-import com.lazerinc.ecommerce.Order;
+import com.allarphoto.beans.LogItem;
+import com.allarphoto.ecommerce.Order;
 
 public interface LogModel {
 
@@ -64,7 +64,7 @@ public interface LogModel {
 	public Collection<Order> getOrders(String status, Calendar date,
 			SecurityModel security);
 
-	public void setDatabase(com.lazerinc.dbtools.DBConnect database);
+	public void setDatabase(com.allarphoto.dbtools.DBConnect database);
 
 	public java.util.Map getValues();
 }

@@ -1,1 +1,1 @@
-com.lazerinc.hbi.HbiDefProductBean.class
+com.allarphoto.hbi.HbiDefProductBean.class

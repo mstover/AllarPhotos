@@ -1,12 +1,12 @@
-package com.lazerinc.kodak;
+package com.allarphoto.kodak;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.application.impl.DefaultExpirationTester;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.impl.DefaultExpirationTester;
 
 public class KodakExpirationTester extends DefaultExpirationTester {
 

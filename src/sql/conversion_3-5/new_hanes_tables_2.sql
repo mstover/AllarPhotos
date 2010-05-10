@@ -172,7 +172,7 @@ grant all on hb_hanes_ultprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_hanes_ult','Hanes Ultimate','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_hanes_ult','Hanes Ultimate','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 
@@ -386,7 +386,7 @@ grant all on hb_hanes_sleepprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_hanes_sleep','Hanes Sleepwear','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_hanes_sleep','Hanes Sleepwear','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 

@@ -1,14 +1,14 @@
-package com.lazerinc.servlet.actionhandler.user;
+package com.allarphoto.servlet.actionhandler.user;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_VALIDATE_USER_INFO;
+import static com.allarphoto.servlet.ActionConstants.ACTION_VALIDATE_USER_INFO;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.FatalException;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.FatalException;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 /**
  * Allows the information about the current user to be modified.
@@ -71,7 +71,7 @@ public class ValidateUserInfo extends ActionHandlerBase {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_VALIDATE_USER_INFO;

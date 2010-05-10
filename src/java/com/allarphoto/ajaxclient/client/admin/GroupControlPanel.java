@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.admin;
+package com.allarphoto.ajaxclient.client.admin;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.ChangeListener;
@@ -13,13 +13,13 @@ import com.google.gwt.user.client.ui.TabListener;
 import com.google.gwt.user.client.ui.TabPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxGroup;
-import com.lazerinc.ajaxclient.client.beans.AjaxResource;
-import com.lazerinc.ajaxclient.client.beans.AjaxRights;
-import com.lazerinc.ajaxclient.client.components.BusyPopup;
-import com.lazerinc.ajaxclient.client.components.PopupWarning;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxGroup;
+import com.allarphoto.ajaxclient.client.beans.AjaxResource;
+import com.allarphoto.ajaxclient.client.beans.AjaxRights;
+import com.allarphoto.ajaxclient.client.components.BusyPopup;
+import com.allarphoto.ajaxclient.client.components.PopupWarning;
 
 public class GroupControlPanel extends TabPanel implements TabListener {
 

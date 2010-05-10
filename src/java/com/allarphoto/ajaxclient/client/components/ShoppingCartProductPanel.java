@@ -1,11 +1,11 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import com.google.gwt.user.client.ui.HasHorizontalAlignment;
 import com.google.gwt.user.client.ui.HasVerticalAlignment;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
-import com.lazerinc.ajaxclient.client.beans.Request;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.beans.Request;
 
 public class ShoppingCartProductPanel extends MultiProductPanel {
 

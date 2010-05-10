@@ -5,7 +5,7 @@
 // Company: Lazer inc.
 // Description: Your description
 
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -15,8 +15,8 @@ import java.io.Serializable;
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.cached.DatabaseObject;
-import com.lazerinc.server.ResourceService;
+import com.allarphoto.cached.DatabaseObject;
+import com.allarphoto.server.ResourceService;
 
 @CoinjemaObject
 public class Resource implements Serializable, Comparable<Resource>,

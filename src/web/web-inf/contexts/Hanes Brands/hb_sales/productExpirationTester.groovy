@@ -1,1 +1,1 @@
-new com.lazerinc.hbi.HosieryProductExpiration()
+new com.allarphoto.hbi.HosieryProductExpiration()

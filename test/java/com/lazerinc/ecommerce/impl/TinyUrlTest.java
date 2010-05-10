@@ -1,8 +1,8 @@
-package com.lazerinc.ecommerce.impl;
+package com.allarphoto.ecommerce.impl;
 
 import junit.framework.TestCase;
 
-import com.lazerinc.utils.TinyUrl;
+import com.allarphoto.utils.TinyUrl;
 
 public class TinyUrlTest extends TestCase
 {
@@ -14,7 +14,7 @@ public class TinyUrlTest extends TestCase
    }
 
    /*
-    * Test method for 'com.lazerinc.ecommerce.impl.LazerwebFulfillment.getTinyUrl(String)'
+    * Test method for 'com.allarphoto.ecommerce.impl.LazerwebFulfillment.getTinyUrl(String)'
     */
    public void testGetTinyUrl()
    {

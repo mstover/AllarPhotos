@@ -1,8 +1,8 @@
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 import java.io.Serializable;
 
-import com.lazerinc.cached.DatabaseObject;
+import com.allarphoto.cached.DatabaseObject;
 
 public class State implements Serializable, Comparable<State>, DatabaseObject {
 

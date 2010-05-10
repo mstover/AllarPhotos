@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.cart;
+package com.allarphoto.servlet.actionhandler.cart;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,9 +22,9 @@ public class AddAllCartToOrder extends AddToOrder {
 	 * 
 	 * @param actionInfo
 	 *            Description of Parameter
-	 * @exception com.lazerinc.client.exceptions.InformationalException
+	 * @exception com.allarphoto.client.exceptions.InformationalException
 	 *                Description of Exception
-	 * @exception com.lazerinc.client.exceptions.FatalException
+	 * @exception com.allarphoto.client.exceptions.FatalException
 	 *                Description of Exception
 	 **************************************************************************/
 	public void performAction(HandlerData actionInfo) throws ActionException {

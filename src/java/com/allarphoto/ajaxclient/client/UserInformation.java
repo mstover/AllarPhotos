@@ -1,13 +1,13 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
 import java.util.List;
 
 import com.google.gwt.user.client.rpc.RemoteService;
-import com.lazerinc.ajaxclient.client.beans.AjaxAccessRequest;
-import com.lazerinc.ajaxclient.client.beans.AjaxCart;
-import com.lazerinc.ajaxclient.client.beans.AjaxGroup;
-import com.lazerinc.ajaxclient.client.beans.AjaxPermissions;
-import com.lazerinc.ajaxclient.client.beans.AjaxUser;
+import com.allarphoto.ajaxclient.client.beans.AjaxAccessRequest;
+import com.allarphoto.ajaxclient.client.beans.AjaxCart;
+import com.allarphoto.ajaxclient.client.beans.AjaxGroup;
+import com.allarphoto.ajaxclient.client.beans.AjaxPermissions;
+import com.allarphoto.ajaxclient.client.beans.AjaxUser;
 
 public interface UserInformation extends RemoteService {
 
@@ -40,7 +40,7 @@ public interface UserInformation extends RemoteService {
 	public AjaxUser[] getUsers(String group);
 
 	/**
-	 * @gwt.typeArgs <com.lazerinc.ajaxclient.client.beans.AjaxUser>
+	 * @gwt.typeArgs <com.allarphoto.ajaxclient.client.beans.AjaxUser>
 	 * @param canAdmin
 	 * @return
 	 */

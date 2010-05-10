@@ -1,12 +1,12 @@
-package com.lazerinc.ajaxclient.client.components.fineart;
+package com.allarphoto.ajaxclient.client.components.fineart;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.client.beans.ProductBean;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.client.beans.ProductBean;
+import com.allarphoto.utils.Right;
 
 public class FineArtProductBean extends ProductBean {
 

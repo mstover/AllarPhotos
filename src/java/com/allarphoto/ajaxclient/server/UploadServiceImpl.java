@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.server;
+package com.allarphoto.ajaxclient.server;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -13,9 +13,9 @@ import java.util.zip.ZipOutputStream;
 
 import strategiclibrary.util.Files;
 
-import com.lazerinc.ajaxclient.client.UploadService;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.BadFilenameCharacter;
+import com.allarphoto.ajaxclient.client.UploadService;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.BadFilenameCharacter;
 
 public class UploadServiceImpl extends AbstractGwtServlet implements
 		UploadService {

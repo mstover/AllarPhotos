@@ -1,1 +1,1 @@
-new com.lazerinc.server.ugd.UserServiceImpl()
+new com.allarphoto.server.ugd.UserServiceImpl()

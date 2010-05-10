@@ -11,7 +11,7 @@
  * - Tom
  */
 
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 /**
  * 

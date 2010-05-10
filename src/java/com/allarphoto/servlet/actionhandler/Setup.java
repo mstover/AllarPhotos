@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler;
+package com.allarphoto.servlet.actionhandler;
 
 import org.apache.velocity.tools.generic.MathTool;
 
@@ -7,10 +7,10 @@ import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.service.webaction.beans.HtmlHelper;
 import strategiclibrary.util.ConverterInstance;
 
-import com.lazerinc.client.beans.DateBean;
-import com.lazerinc.client.beans.GenericDataBean;
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.utils.Counter;
+import com.allarphoto.client.beans.DateBean;
+import com.allarphoto.client.beans.GenericDataBean;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.utils.Counter;
 
 public class Setup extends ActionHandlerBase {
 

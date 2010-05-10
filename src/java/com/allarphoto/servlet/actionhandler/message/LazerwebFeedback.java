@@ -1,9 +1,9 @@
-package com.lazerinc.servlet.actionhandler.message;
+package com.allarphoto.servlet.actionhandler.message;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_LAZERWEB_FEEDBACK;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_EMAIL;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_EMAIL_TO;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_FULL_NAME;
+import static com.allarphoto.servlet.ActionConstants.ACTION_LAZERWEB_FEEDBACK;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_EMAIL;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_EMAIL_TO;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_FULL_NAME;
 
 import java.io.StringWriter;
 import java.util.HashMap;
@@ -21,9 +21,9 @@ import strategiclibrary.service.template.TemplateService;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.servlet.actionhandler.login.Login;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.servlet.actionhandler.login.Login;
 
 /**
  * This will cause the password for the requested username be sent to the user's
@@ -60,7 +60,7 @@ public class LazerwebFeedback extends Login {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#requiresLogin()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#requiresLogin()
 	 */
 	public boolean requiresLogin() {
 		return false;
@@ -71,7 +71,7 @@ public class LazerwebFeedback extends Login {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#performAction(HandlerData)
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#performAction(HandlerData)
 	 */
 	public void performAction(HandlerData actionInfo)
 			throws InformationalException, ActionException {
@@ -120,7 +120,7 @@ public class LazerwebFeedback extends Login {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_LAZERWEB_FEEDBACK;

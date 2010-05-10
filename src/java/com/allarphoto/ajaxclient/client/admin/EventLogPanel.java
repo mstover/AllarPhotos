@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.admin;
+package com.allarphoto.ajaxclient.client.admin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,12 +16,12 @@ import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxLogItem;
-import com.lazerinc.ajaxclient.client.components.BusyPopup;
-import com.lazerinc.ajaxclient.client.components.DatePicker;
-import com.lazerinc.ajaxclient.client.components.PopupWarning;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxLogItem;
+import com.allarphoto.ajaxclient.client.components.BusyPopup;
+import com.allarphoto.ajaxclient.client.components.DatePicker;
+import com.allarphoto.ajaxclient.client.components.PopupWarning;
 
 public class EventLogPanel extends DockPanel {
 

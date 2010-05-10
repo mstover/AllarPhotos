@@ -1,1 +1,1 @@
-new com.lazerinc.application.Controller()
+new com.allarphoto.application.Controller()

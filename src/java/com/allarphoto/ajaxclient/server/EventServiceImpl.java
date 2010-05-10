@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.server;
+package com.allarphoto.ajaxclient.server;
 
 import java.io.Serializable;
 import java.util.Arrays;
@@ -14,11 +14,11 @@ import org.coinjema.context.CoinjemaDependency;
 import strategiclibrary.service.sql.ObjectMappingService;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.ajaxclient.client.EventService;
-import com.lazerinc.ajaxclient.client.beans.AjaxLogItem;
-import com.lazerinc.beans.LogItem;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.utils.DatabaseLogger;
+import com.allarphoto.ajaxclient.client.EventService;
+import com.allarphoto.ajaxclient.client.beans.AjaxLogItem;
+import com.allarphoto.beans.LogItem;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.utils.DatabaseLogger;
 
 public class EventServiceImpl extends AbstractGwtServlet implements
 		EventService {

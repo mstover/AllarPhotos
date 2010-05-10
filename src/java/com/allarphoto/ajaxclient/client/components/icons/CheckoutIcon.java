@@ -1,11 +1,11 @@
-package com.lazerinc.ajaxclient.client.components.icons;
+package com.allarphoto.ajaxclient.client.components.icons;
 
 import com.google.gwt.user.client.ui.ClickListener;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.SwappablePanel;
-import com.lazerinc.ajaxclient.client.components.CheckoutPanel;
-import com.lazerinc.ajaxclient.client.components.ShoppingCart;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.SwappablePanel;
+import com.allarphoto.ajaxclient.client.components.CheckoutPanel;
+import com.allarphoto.ajaxclient.client.components.ShoppingCart;
 
 public class CheckoutIcon extends BaseIcon {
 	CheckoutPanel checkoutUI;

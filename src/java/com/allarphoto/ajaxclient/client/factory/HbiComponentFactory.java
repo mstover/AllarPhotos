@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.factory;
+package com.allarphoto.ajaxclient.client.factory;
 
 import com.google.gwt.user.client.ui.HasHorizontalAlignment;
 import com.google.gwt.user.client.ui.HorizontalPanel;

@@ -4,7 +4,7 @@
 // Author: Michael Stover
 // Company: Lazer inc.
 // Description: Your description
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.util.Arrays;
 import java.util.Properties;
@@ -13,11 +13,11 @@ import org.coinjema.context.CoinjemaContext;
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.dbtools.FirebirdDB;
-import com.lazerinc.server.UserService;
-import com.lazerinc.utils.Data;
-import com.lazerinc.utils.Resource;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.dbtools.FirebirdDB;
+import com.allarphoto.server.UserService;
+import com.allarphoto.utils.Data;
+import com.allarphoto.utils.Resource;
 
 @CoinjemaObject
 public class UserImport {

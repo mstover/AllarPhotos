@@ -20,7 +20,7 @@
 // Title: WebBean
 // Author: Michael Stover
 // Company: Lazer inc.
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.beans.IntrospectionException;
 import java.beans.Introspector;

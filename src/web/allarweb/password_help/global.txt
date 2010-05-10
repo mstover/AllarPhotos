@@ -1,5 +1,5 @@
 <%!
-	com.lazerinc.application.DatabaseApplicationController controller;
+	com.allarphoto.application.DatabaseApplicationController controller;
 	//sets the necessary config files for this family and places 
 	//a reference to them into this family's controller
 	public void startup() {

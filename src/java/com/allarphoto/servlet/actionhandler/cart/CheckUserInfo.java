@@ -1,14 +1,14 @@
-package com.lazerinc.servlet.actionhandler.cart;
+package com.allarphoto.servlet.actionhandler.cart;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_CHECK_USER_INFO;
+import static com.allarphoto.servlet.ActionConstants.ACTION_CHECK_USER_INFO;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 /**
  * This action handler simply verifies that the current user has all the data
@@ -68,7 +68,7 @@ public class CheckUserInfo extends ActionHandlerBase {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_CHECK_USER_INFO;

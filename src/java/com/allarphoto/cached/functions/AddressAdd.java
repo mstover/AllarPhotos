@@ -1,11 +1,11 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.lazerinc.beans.Address;
-import com.lazerinc.client.exceptions.LazerwebException;
+import com.allarphoto.beans.Address;
+import com.allarphoto.client.exceptions.LazerwebException;
 
 public class AddressAdd extends AbstractCacheFunction<Address> implements
 		CacheAdder<Address> {

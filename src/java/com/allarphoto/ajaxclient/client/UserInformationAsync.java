@@ -1,14 +1,14 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
 import java.util.List;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.lazerinc.ajaxclient.client.beans.AjaxAccessRequest;
-import com.lazerinc.ajaxclient.client.beans.AjaxCart;
-import com.lazerinc.ajaxclient.client.beans.AjaxGroup;
-import com.lazerinc.ajaxclient.client.beans.AjaxPermissions;
-import com.lazerinc.ajaxclient.client.beans.AjaxResource;
-import com.lazerinc.ajaxclient.client.beans.AjaxUser;
+import com.allarphoto.ajaxclient.client.beans.AjaxAccessRequest;
+import com.allarphoto.ajaxclient.client.beans.AjaxCart;
+import com.allarphoto.ajaxclient.client.beans.AjaxGroup;
+import com.allarphoto.ajaxclient.client.beans.AjaxPermissions;
+import com.allarphoto.ajaxclient.client.beans.AjaxResource;
+import com.allarphoto.ajaxclient.client.beans.AjaxUser;
 
 public interface UserInformationAsync {
 

@@ -1,1 +1,1 @@
-com.lazerinc.fineart.FineArtProductBean.class
+com.allarphoto.fineart.FineArtProductBean.class

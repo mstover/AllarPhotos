@@ -1,9 +1,9 @@
-package com.lazerinc.servlet.taglib;
+package com.allarphoto.servlet.taglib;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
 
-import com.lazerinc.utils.Functions;
+import com.allarphoto.utils.Functions;
 
 /**
  * Title: Description: Copyright: Copyright (c) 2000 Company:

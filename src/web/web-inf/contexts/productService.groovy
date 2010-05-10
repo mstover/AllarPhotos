@@ -1,1 +1,1 @@
-new com.lazerinc.server.ProductService()
+new com.allarphoto.server.ProductService()

@@ -1,10 +1,10 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import com.google.gwt.user.client.ui.HorizontalPanel;
-import com.lazerinc.ajaxclient.client.SwappablePanel;
-import com.lazerinc.ajaxclient.client.components.icons.CheckoutIcon;
-import com.lazerinc.ajaxclient.client.components.icons.ClearCartIcon;
-import com.lazerinc.ajaxclient.client.components.icons.ViewCartIcon;
+import com.allarphoto.ajaxclient.client.SwappablePanel;
+import com.allarphoto.ajaxclient.client.components.icons.CheckoutIcon;
+import com.allarphoto.ajaxclient.client.components.icons.ClearCartIcon;
+import com.allarphoto.ajaxclient.client.components.icons.ViewCartIcon;
 
 public class Toolbar extends HorizontalPanel {
 

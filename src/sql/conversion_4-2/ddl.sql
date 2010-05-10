@@ -172,7 +172,7 @@ grant all on hb_logosprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_logos','Hanesbrand Logos','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_logos','Hanesbrand Logos','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 

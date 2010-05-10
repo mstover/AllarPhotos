@@ -1,12 +1,12 @@
-package com.lazerinc.mcc;
+package com.allarphoto.mcc;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.client.beans.ProductBean;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.client.beans.ProductBean;
+import com.allarphoto.utils.Right;
 
 public class MccProductBean extends ProductBean {
 	private static final long serialVersionUID = 1;

@@ -10,6 +10,6 @@ EMAIL_ACTIVE=false
 error_monitor=mikes@lazerinc.com
 RECONFIGURABLE=true
 lw_username=mstover
-lw_password=[NBfM]
+lw_password=*****
 download_dir=/home/mikes/programs/apache-tomcat-5.5.12/webapps/ROOT/d/
 @download_url@="/d/".toString()

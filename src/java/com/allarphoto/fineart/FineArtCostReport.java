@@ -1,6 +1,6 @@
-package com.lazerinc.fineart;
+package com.allarphoto.fineart;
 
-import com.lazerinc.ecommerce.CostReport;
+import com.allarphoto.ecommerce.CostReport;
 
 public class FineArtCostReport extends CostReport {
 

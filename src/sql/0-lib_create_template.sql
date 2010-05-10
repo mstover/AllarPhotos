@@ -175,7 +175,7 @@ grant all on <library>price_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model,customer_name,remote_managed) 
-values('<library>','<descriptive_name>','On-Line Library','File Name',1,'com.lazerinc.ecommerce.LazerwebOrderModel','<customer_name>','false');
+values('<library>','<descriptive_name>','On-Line Library','File Name',1,'com.allarphoto.ecommerce.LazerwebOrderModel','<customer_name>','false');
 
 COMMIT;
 

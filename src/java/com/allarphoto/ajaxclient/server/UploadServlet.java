@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.server;
+package com.allarphoto.ajaxclient.server;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -25,17 +25,17 @@ import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.util.Converter;
 import strategiclibrary.util.Files;
 
-import com.lazerinc.beans.UploadItem;
-import com.lazerinc.beans.User;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.BadFilenameCharacter;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.server.UserService;
-import com.lazerinc.servlet.AbstractContextServlet;
-import com.lazerinc.utils.DatabaseLogger;
-import com.lazerinc.utils.Resource;
+import com.allarphoto.beans.UploadItem;
+import com.allarphoto.beans.User;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.BadFilenameCharacter;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.server.UserService;
+import com.allarphoto.servlet.AbstractContextServlet;
+import com.allarphoto.utils.DatabaseLogger;
+import com.allarphoto.utils.Resource;
 
 public class UploadServlet extends AbstractContextServlet {
 	private static final long serialVersionUID = 1;

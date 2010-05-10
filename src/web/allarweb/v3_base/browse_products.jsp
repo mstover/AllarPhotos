@@ -2,8 +2,8 @@
 <%	addParams.put(RequestConstants.REQUEST_ACTION+"x",ActionConstants.ACTION_CHANGE_NUMBER_SHOWN);
 		addParams.put(RequestConstants.REQUEST_ACTION+"r",ActionConstants.ACTION_BROWSE_SET);   %>
 <%@ include file="/ema_kpg/include/actionsAndValidate.inc" %>
-<jsp:useBean id="productsFound" scope="session" class="com.lazerinc.client.beans.ProductSetBean"/>
-<jsp:useBean id="cart" scope="session" class="com.lazerinc.client.beans.ShoppingCartBean" />
+<jsp:useBean id="productsFound" scope="session" class="com.allarphoto.client.beans.ProductSetBean"/>
+<jsp:useBean id="cart" scope="session" class="com.allarphoto.client.beans.ShoppingCartBean" />
 <c:set var="history_index" value="${productsFound.historyIndex}"/>
 <c:set var="defaultImage" value='${configuration[default_image]}'/>
 <% String title = "Browse Images",banner="browse", help="browse";	%>

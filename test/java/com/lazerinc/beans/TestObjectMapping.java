@@ -1,4 +1,4 @@
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 import java.util.Calendar;
 import java.util.Collection;
@@ -11,9 +11,9 @@ import strategiclibrary.service.sql.DefaultMappingService;
 import strategiclibrary.service.sql.ObjectMappingService;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.Order;
-import com.lazerinc.testObjects.AbstractIntegratedTest;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.Order;
+import com.allarphoto.testObjects.AbstractIntegratedTest;
 
 public class TestObjectMapping extends AbstractIntegratedTest {
 	DatabaseUtilities dbutil;

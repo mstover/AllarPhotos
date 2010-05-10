@@ -1,4 +1,4 @@
-package com.lazerinc.fineart;
+package com.allarphoto.fineart;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -19,17 +19,17 @@ import org.coinjema.util.Tuple;
 import strategiclibrary.service.template.TemplateService;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.CartObject;
-import com.lazerinc.application.Product;
-import com.lazerinc.ecommerce.BaliOrder;
-import com.lazerinc.ecommerce.CostReport;
-import com.lazerinc.ecommerce.LazerwebOrderModel;
-import com.lazerinc.ecommerce.Merchant;
-import com.lazerinc.ecommerce.Order;
-import com.lazerinc.ecommerce.OrderResponse;
-import com.lazerinc.server.ProductService;
-import com.lazerinc.utils.Functions;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.CartObject;
+import com.allarphoto.application.Product;
+import com.allarphoto.ecommerce.BaliOrder;
+import com.allarphoto.ecommerce.CostReport;
+import com.allarphoto.ecommerce.LazerwebOrderModel;
+import com.allarphoto.ecommerce.Merchant;
+import com.allarphoto.ecommerce.Order;
+import com.allarphoto.ecommerce.OrderResponse;
+import com.allarphoto.server.ProductService;
+import com.allarphoto.utils.Functions;
+import com.allarphoto.utils.Right;
 
 public class FineArtOrderModel extends LazerwebOrderModel {
 

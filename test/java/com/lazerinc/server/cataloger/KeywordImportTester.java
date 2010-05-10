@@ -1,13 +1,13 @@
-package com.lazerinc.server.cataloger;
+package com.allarphoto.server.cataloger;
 
 import java.util.Collection;
 
 import strategiclibrary.util.TextFile;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.client.util.ProductFileParser;
-import com.lazerinc.server.UserService;
-import com.lazerinc.testObjects.AbstractIntegratedTest;
+import com.allarphoto.application.Product;
+import com.allarphoto.client.util.ProductFileParser;
+import com.allarphoto.server.UserService;
+import com.allarphoto.testObjects.AbstractIntegratedTest;
 
 public class KeywordImportTester extends AbstractIntegratedTest {
 

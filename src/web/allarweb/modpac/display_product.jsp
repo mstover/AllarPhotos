@@ -5,9 +5,9 @@
 	addParams.put(RequestConstants.REQUEST_ACTION+"z",ActionConstants.ACTION_SET_NEXT_PRODUCT);  
 %>
 <%@ include file="/modpac/include/actionsAndValidate.inc" %>
-<jsp:useBean id="productBean" scope="session" class="com.lazerinc.client.beans.ProductBean"/>
-<jsp:useBean id="previousProductBean" scope="session" class="com.lazerinc.client.beans.ProductBean"/>
-<jsp:useBean id="nextProductBean" scope="session" class="com.lazerinc.client.beans.ProductBean"/>
+<jsp:useBean id="productBean" scope="session" class="com.allarphoto.client.beans.ProductBean"/>
+<jsp:useBean id="previousProductBean" scope="session" class="com.allarphoto.client.beans.ProductBean"/>
+<jsp:useBean id="nextProductBean" scope="session" class="com.allarphoto.client.beans.ProductBean"/>
 <c:set var="product" value="${productBean.product}"/>
 <c:set var="defaultImage" value='${configuration.properties["default_image"]}'/>
 <c:set var="thumbDir" value='${product.value["Thumbnail Directory"]}'/>

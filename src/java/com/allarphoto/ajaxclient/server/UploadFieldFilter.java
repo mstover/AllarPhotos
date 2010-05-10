@@ -1,11 +1,11 @@
-package com.lazerinc.ajaxclient.server;
+package com.allarphoto.ajaxclient.server;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import com.lazerinc.category.ProductField;
+import com.allarphoto.category.ProductField;
 
 public class UploadFieldFilter {
 

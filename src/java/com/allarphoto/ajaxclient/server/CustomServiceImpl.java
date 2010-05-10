@@ -1,13 +1,13 @@
-package com.lazerinc.ajaxclient.server;
+package com.allarphoto.ajaxclient.server;
 
 import org.coinjema.context.CoinjemaContext;
 import org.coinjema.context.CoinjemaDynamic;
 import org.coinjema.context.ContextFactory;
 
-import com.lazerinc.ajaxclient.client.ComponentFactory;
-import com.lazerinc.ajaxclient.client.CustomService;
-import com.lazerinc.ajaxclient.client.beans.AjaxProductFamily;
-import com.lazerinc.ajaxclient.client.factory.DefaultComponentFactory;
+import com.allarphoto.ajaxclient.client.ComponentFactory;
+import com.allarphoto.ajaxclient.client.CustomService;
+import com.allarphoto.ajaxclient.client.beans.AjaxProductFamily;
+import com.allarphoto.ajaxclient.client.factory.DefaultComponentFactory;
 
 public class CustomServiceImpl extends AbstractGwtServlet implements
 		CustomService {

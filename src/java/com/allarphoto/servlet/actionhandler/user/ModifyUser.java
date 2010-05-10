@@ -1,6 +1,6 @@
-package com.lazerinc.servlet.actionhandler.user;
+package com.allarphoto.servlet.actionhandler.user;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_MODIFY_USER;
+import static com.allarphoto.servlet.ActionConstants.ACTION_MODIFY_USER;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -8,17 +8,17 @@ import java.util.Set;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.FatalException;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.server.UserService;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
-import com.lazerinc.utils.Functions;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.WebBean;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.FatalException;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.server.UserService;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.utils.Functions;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.WebBean;
 
 /**
  * Allows the information about the current user to be modified.
@@ -83,7 +83,7 @@ public class ModifyUser extends ActionHandlerBase {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_MODIFY_USER;

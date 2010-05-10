@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components.pavilion;
+package com.allarphoto.ajaxclient.client.components.pavilion;
 
 import com.google.gwt.user.client.ui.ChangeListener;
 import com.google.gwt.user.client.ui.CheckBox;
@@ -8,10 +8,10 @@ import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.SwappablePanel;
-import com.lazerinc.ajaxclient.client.components.EnterKeyListener;
-import com.lazerinc.ajaxclient.client.components.SearchTree;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.SwappablePanel;
+import com.allarphoto.ajaxclient.client.components.EnterKeyListener;
+import com.allarphoto.ajaxclient.client.components.SearchTree;
 
 public class PavilionSearchTree extends SearchTree {
 

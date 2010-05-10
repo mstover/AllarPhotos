@@ -1,8 +1,8 @@
-package com.lazerinc.ajaxclient.client.components.icons;
+package com.allarphoto.ajaxclient.client.components.icons;
 
 import com.google.gwt.user.client.ui.ClickListener;
-import com.lazerinc.ajaxclient.client.beans.Request;
-import com.lazerinc.ajaxclient.client.components.AddToCartListener;
+import com.allarphoto.ajaxclient.client.beans.Request;
+import com.allarphoto.ajaxclient.client.components.AddToCartListener;
 
 public class CancelIcon extends BaseIcon {
 	Request request;

@@ -1,16 +1,16 @@
-package com.lazerinc.servlet.actionhandler.admin;
+package com.allarphoto.servlet.actionhandler.admin;
 
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.cached.functions.ProductFieldAdd;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.cached.functions.ProductFieldAdd;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 public class AddProductField extends ActionHandlerBase {
 

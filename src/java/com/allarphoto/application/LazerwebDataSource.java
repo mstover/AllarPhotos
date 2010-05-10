@@ -1,4 +1,4 @@
-package com.lazerinc.application;
+package com.allarphoto.application;
 
 import java.util.Collection;
 

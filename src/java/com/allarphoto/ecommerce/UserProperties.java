@@ -10,7 +10,7 @@
  * @author Michael Stover
  * @version 1.0
  */
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 public class UserProperties {
 

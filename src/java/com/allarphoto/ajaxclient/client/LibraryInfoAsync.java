@@ -1,9 +1,9 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
 import java.util.Map;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.lazerinc.ajaxclient.client.beans.AjaxCart;
+import com.allarphoto.ajaxclient.client.beans.AjaxCart;
 
 public interface LibraryInfoAsync {
 

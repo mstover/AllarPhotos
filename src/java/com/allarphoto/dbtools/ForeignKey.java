@@ -12,7 +12,7 @@
  * other entities.
  **********************************************************************************************************************/
 
-package com.lazerinc.dbtools;
+package com.allarphoto.dbtools;
 
 /*******************************************************************************
  * Class to store a description of a foreign key reference in a database. This

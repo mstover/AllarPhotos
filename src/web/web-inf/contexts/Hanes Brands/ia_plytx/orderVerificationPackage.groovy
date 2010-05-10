@@ -1,4 +1,4 @@
-import com.lazerinc.ajaxclient.client.beans.*
+import com.allarphoto.ajaxclient.client.beans.*
 
 pack = new OrderVerificationPackage("","IA Playtex On-Line Library")
 

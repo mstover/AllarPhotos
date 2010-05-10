@@ -1,1 +1,1 @@
-new com.lazerinc.server.ResourceService()
+new com.allarphoto.server.ResourceService()

@@ -1,4 +1,4 @@
-package com.lazerinc.client.beans;
+package com.allarphoto.client.beans;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -7,10 +7,10 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.ecommerce.OrderResponse;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.utils.Functions;
+import com.allarphoto.application.Product;
+import com.allarphoto.ecommerce.OrderResponse;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.utils.Functions;
 
 /**
  * @author Administrator To change this generated comment edit the template
@@ -22,7 +22,7 @@ public class OrderResponseBean implements Serializable {
 	OrderResponse response;
 
 	/**
-	 * @see com.lazerinc.client.beans.ResponseBean#clear()
+	 * @see com.allarphoto.client.beans.ResponseBean#clear()
 	 */
 	public void clear() {
 		response = null;

@@ -1,4 +1,4 @@
-package com.lazerinc.client.util;
+package com.allarphoto.client.util;
 
 import org.apache.log4j.Logger;
 import org.coinjema.context.CoinjemaDependency;
@@ -8,15 +8,15 @@ import org.coinjema.context.CoinjemaObject;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.ecommerce.UserProperties;
-import com.lazerinc.server.UserService;
-import com.lazerinc.utils.Functions;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.ecommerce.UserProperties;
+import com.allarphoto.server.UserService;
+import com.allarphoto.utils.Functions;
 
 /*******************************************************************************
  * Title: Lazerweb Description: Lazerweb - Lazer Inc. version 3.0 Copyright:

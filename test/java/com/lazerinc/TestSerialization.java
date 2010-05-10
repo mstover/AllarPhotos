@@ -1,4 +1,4 @@
-package com.lazerinc;
+package com.allarphoto;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -10,7 +10,7 @@ import java.util.Collection;
 import strategiclibrary.service.classfinder.ClassFinderService;
 import strategiclibrary.service.classfinder.DefaultClassFinderService;
 
-import com.lazerinc.testObjects.AbstractIntegratedTest;
+import com.allarphoto.testObjects.AbstractIntegratedTest;
 
 
 public class TestSerialization extends AbstractIntegratedTest

@@ -1,8 +1,8 @@
-package com.lazerinc.ajaxclient.client.components.icons;
+package com.allarphoto.ajaxclient.client.components.icons;
 
 import com.google.gwt.user.client.ui.ClickListener;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
-import com.lazerinc.ajaxclient.client.components.ProductEditPopup;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.components.ProductEditPopup;
 
 public class EditIcon extends BaseIcon {
 

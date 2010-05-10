@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components.wa;
+package com.allarphoto.ajaxclient.client.components.wa;
 
 import com.google.gwt.user.client.Command;
 import com.google.gwt.user.client.rpc.AsyncCallback;
@@ -9,13 +9,13 @@ import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.MenuBar;
 import com.google.gwt.user.client.ui.MenuItem;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.CommandFactory;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.admin.LazerMenu;
-import com.lazerinc.ajaxclient.client.beans.AjaxProductFamily;
-import com.lazerinc.ajaxclient.client.components.BusyPopup;
-import com.lazerinc.ajaxclient.client.components.SearchCenter;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.CommandFactory;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.admin.LazerMenu;
+import com.allarphoto.ajaxclient.client.beans.AjaxProductFamily;
+import com.allarphoto.ajaxclient.client.components.BusyPopup;
+import com.allarphoto.ajaxclient.client.components.SearchCenter;
 
 public class WAMenu extends LazerMenu {
 	protected boolean addBrowseMenu = true;

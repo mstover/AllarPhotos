@@ -20,13 +20,13 @@
 // Title: PerformanceLog
 // Author: Michael Stover
 // Company: Lazer Inc.
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.io.Serializable;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
-import com.lazerinc.beans.MethodPerformance;
+import com.allarphoto.beans.MethodPerformance;
 
 public class PerformanceLog implements Serializable {
 	private static final long serialVersionUID = 1;

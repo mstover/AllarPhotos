@@ -1,8 +1,8 @@
-package com.lazerinc.servlet.actionhandler.search;
+package com.allarphoto.servlet.actionhandler.search;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_CATEGORY_SEARCH;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_CATEGORY_PREFIX;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_HISTORY_INDEX;
+import static com.allarphoto.servlet.ActionConstants.ACTION_CATEGORY_SEARCH;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_CATEGORY_PREFIX;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_HISTORY_INDEX;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -13,15 +13,15 @@ import java.util.Set;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.client.beans.ProductSetBean;
-import com.lazerinc.client.beans.SearchCategoryBean;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.FatalException;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.ecommerce.ProductSet;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.client.beans.ProductSetBean;
+import com.allarphoto.client.beans.SearchCategoryBean;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.FatalException;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.ecommerce.ProductSet;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 /**
  * Title: Lazerweb Description: Lazerweb - Lazer Inc. version 3.0 Copyright:

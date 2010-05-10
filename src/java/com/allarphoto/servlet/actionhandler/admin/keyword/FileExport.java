@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.admin.keyword;
+package com.allarphoto.servlet.actionhandler.admin.keyword;
 
 import java.util.Collection;
 import java.util.Map;
@@ -10,8 +10,8 @@ import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.service.webaction.ServletHandlerData;
 
-import com.lazerinc.client.beans.ProductSetBean;
-import com.lazerinc.servlet.actionhandler.search.AbstractSearchAction;
+import com.allarphoto.client.beans.ProductSetBean;
+import com.allarphoto.servlet.actionhandler.search.AbstractSearchAction;
 
 public class FileExport extends AbstractSearchAction {
 

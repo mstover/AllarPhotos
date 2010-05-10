@@ -1,12 +1,12 @@
-package com.lazerinc.ajaxclient.client.components.wa;
+package com.allarphoto.ajaxclient.client.components.wa;
 
 import com.google.gwt.user.client.ui.ClickListener;
 import com.google.gwt.user.client.ui.Grid;
 import com.google.gwt.user.client.ui.HasVerticalAlignment;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Label;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.components.NumberSelector;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.components.NumberSelector;
 
 public class WANumberSelector extends NumberSelector {
 

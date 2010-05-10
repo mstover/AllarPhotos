@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.admin;
+package com.allarphoto.servlet.actionhandler.admin;
 
 import org.coinjema.util.Functor;
 
@@ -6,8 +6,8 @@ import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.util.DynamicArraySortWrapper;
 
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 public class SelectFamily extends ActionHandlerBase {
 

@@ -1,8 +1,8 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.Services;
 
 public class CenterShoppingCartProductPanel extends ShoppingCartProductPanel {
 

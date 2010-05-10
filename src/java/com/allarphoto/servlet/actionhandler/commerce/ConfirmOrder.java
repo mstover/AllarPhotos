@@ -1,14 +1,14 @@
-package com.lazerinc.servlet.actionhandler.commerce;
+package com.allarphoto.servlet.actionhandler.commerce;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_CONFIRM_ORDER;
+import static com.allarphoto.servlet.ActionConstants.ACTION_CONFIRM_ORDER;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.Order;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.Order;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 public class ConfirmOrder extends ApproveOrder {
 

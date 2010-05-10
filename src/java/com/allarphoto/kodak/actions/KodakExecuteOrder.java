@@ -1,13 +1,13 @@
-package com.lazerinc.kodak.actions;
+package com.allarphoto.kodak.actions;
 
 import org.coinjema.context.CoinjemaContext;
 
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.servlet.actionhandler.commerce.ExecuteOrder;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.servlet.actionhandler.commerce.ExecuteOrder;
 
 public class KodakExecuteOrder extends ExecuteOrder {
 

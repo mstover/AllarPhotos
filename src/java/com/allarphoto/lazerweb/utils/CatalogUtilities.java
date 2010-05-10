@@ -1,9 +1,9 @@
-package com.lazerinc.lazerweb.utils;
+package com.allarphoto.lazerweb.utils;
 
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.dbtools.InterbaseDB;
-import com.lazerinc.utils.Data;
-import com.lazerinc.utils.Functions;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.dbtools.InterbaseDB;
+import com.allarphoto.utils.Data;
+import com.allarphoto.utils.Functions;
 
 public class CatalogUtilities {
 
@@ -43,7 +43,7 @@ public class CatalogUtilities {
 	public CatalogUtilities() {
 		datasource = "//localhost/d:/DB Files/KEYWORDPARSE.GDB";
 		username = "damuser";
-		password = "r!VAld0";
+		password = "*****";
 		maxConnections = 5;
 		database = new InterbaseDB();
 	}

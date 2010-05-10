@@ -1,1 +1,1 @@
-new com.lazerinc.dbtools.FirebirdDB();
+new com.allarphoto.dbtools.FirebirdDB();

@@ -1,12 +1,12 @@
 <%@ include file="/bali/include/global.inc" %>
 <%@ include file="/bali/include/handleActions.inc" %>
-<jsp:useBean id="user" scope="session" class="com.lazerinc.client.beans.UserBean" />
-<jsp:useBean id="feedbackAlert" scope="request" class="com.lazerinc.client.beans.StringBean"/>
-<jsp:useBean id="feedbackSuccess" scope="request" class="com.lazerinc.client.beans.StringBean"/>
-<jsp:useBean id="feedbackMessage" scope="request" class="com.lazerinc.client.beans.StringBean"/>
-<jsp:useBean id="feedbackEmail" scope="request" class="com.lazerinc.client.beans.StringBean"/>
-<jsp:useBean id="feedbackFullName" scope="request" class="com.lazerinc.client.beans.StringBean"/>
-<jsp:useBean id="feedbackPhoneNo" scope="request" class="com.lazerinc.client.beans.StringBean"/>
+<jsp:useBean id="user" scope="session" class="com.allarphoto.client.beans.UserBean" />
+<jsp:useBean id="feedbackAlert" scope="request" class="com.allarphoto.client.beans.StringBean"/>
+<jsp:useBean id="feedbackSuccess" scope="request" class="com.allarphoto.client.beans.StringBean"/>
+<jsp:useBean id="feedbackMessage" scope="request" class="com.allarphoto.client.beans.StringBean"/>
+<jsp:useBean id="feedbackEmail" scope="request" class="com.allarphoto.client.beans.StringBean"/>
+<jsp:useBean id="feedbackFullName" scope="request" class="com.allarphoto.client.beans.StringBean"/>
+<jsp:useBean id="feedbackPhoneNo" scope="request" class="com.allarphoto.client.beans.StringBean"/>
 
 <% String title = "Library Feedback Form", banner="help"; %>
 <%@ include file="header.txt"%>

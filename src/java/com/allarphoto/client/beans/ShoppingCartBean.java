@@ -1,4 +1,4 @@
-package com.lazerinc.client.beans;
+package com.allarphoto.client.beans;
 
 import java.io.ObjectInputStream;
 import java.io.Serializable;
@@ -16,12 +16,12 @@ import java.util.TreeSet;
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.application.CartObject;
-import com.lazerinc.application.Product;
-import com.lazerinc.ecommerce.CommerceProduct;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.server.ProductService;
+import com.allarphoto.application.CartObject;
+import com.allarphoto.application.Product;
+import com.allarphoto.ecommerce.CommerceProduct;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.server.ProductService;
 
 /*******************************************************************************
  * Description of the Class

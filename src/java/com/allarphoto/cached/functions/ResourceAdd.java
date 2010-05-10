@@ -1,7 +1,7 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
-import com.lazerinc.beans.Industry;
-import com.lazerinc.utils.Resource;
+import com.allarphoto.beans.Industry;
+import com.allarphoto.utils.Resource;
 
 public class ResourceAdd extends AbstractCacheFunction<Resource> implements
 		CacheAdder<Resource> {

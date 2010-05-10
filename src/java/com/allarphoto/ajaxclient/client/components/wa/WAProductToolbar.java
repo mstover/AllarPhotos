@@ -1,13 +1,13 @@
-package com.lazerinc.ajaxclient.client.components.wa;
+package com.allarphoto.ajaxclient.client.components.wa;
 
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
-import com.lazerinc.ajaxclient.client.beans.AjaxResource;
-import com.lazerinc.ajaxclient.client.components.ProductToolbar;
-import com.lazerinc.ajaxclient.client.components.icons.EditIcon;
-import com.lazerinc.ajaxclient.client.components.icons.MoveToActiveIcon;
-import com.lazerinc.ajaxclient.client.components.icons.MoveToInactiveIcon;
-import com.lazerinc.ajaxclient.client.components.icons.MoveToOfflineIcon;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.beans.AjaxResource;
+import com.allarphoto.ajaxclient.client.components.ProductToolbar;
+import com.allarphoto.ajaxclient.client.components.icons.EditIcon;
+import com.allarphoto.ajaxclient.client.components.icons.MoveToActiveIcon;
+import com.allarphoto.ajaxclient.client.components.icons.MoveToInactiveIcon;
+import com.allarphoto.ajaxclient.client.components.icons.MoveToOfflineIcon;
 
 public class WAProductToolbar extends ProductToolbar {
 

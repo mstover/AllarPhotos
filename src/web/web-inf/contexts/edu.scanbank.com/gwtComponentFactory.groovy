@@ -1,1 +1,1 @@
-com.lazerinc.ajaxclient.client.factory.EduComponentFactory.class
+com.allarphoto.ajaxclient.client.factory.EduComponentFactory.class

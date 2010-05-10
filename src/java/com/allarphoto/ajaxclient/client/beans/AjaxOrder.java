@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.beans;
+package com.allarphoto.ajaxclient.client.beans;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,7 +24,7 @@ public class AjaxOrder implements IsSerializable {
 	boolean approve, confirm, fulfill;
 
 	/**
-	 * @gwt.typeArgs <com.lazerinc.ajaxclient.client.beans.AjaxOrderItem>
+	 * @gwt.typeArgs <com.allarphoto.ajaxclient.client.beans.AjaxOrderItem>
 	 */
 	List items = new ArrayList();
 

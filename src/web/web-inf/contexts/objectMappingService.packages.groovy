@@ -1,1 +1,1 @@
-["com.lazerinc.ecommerce","com.lazerinc.ecommerce.virtual","com.lazerinc.beans","com.lazerinc.server.ugd","com.lazerinc.utils","com.lazerinc.category"] as List
+["com.allarphoto.ecommerce","com.allarphoto.ecommerce.virtual","com.allarphoto.beans","com.allarphoto.server.ugd","com.allarphoto.utils","com.allarphoto.category"] as List

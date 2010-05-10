@@ -1,6 +1,6 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
-import com.lazerinc.beans.Country;
+import com.allarphoto.beans.Country;
 
 public class CountryAdd extends AbstractCacheFunction<Country> implements
 		CacheAdder<Country> {

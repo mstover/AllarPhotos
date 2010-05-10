@@ -1,1 +1,1 @@
-new com.lazerinc.utils.DatabaseLogger()
+new com.allarphoto.utils.DatabaseLogger()

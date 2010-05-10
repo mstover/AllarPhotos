@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.commerce;
+package com.allarphoto.servlet.actionhandler.commerce;
 
 import org.coinjema.context.CoinjemaDependency;
 
@@ -6,7 +6,7 @@ import strategiclibrary.service.notification.NotificationService;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 public class SendDownloadLink extends ActionHandlerBase {
 

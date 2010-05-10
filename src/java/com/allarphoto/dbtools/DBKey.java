@@ -20,7 +20,7 @@
 // Title: DBKey
 // Author: Michael Stover
 // Company: Lazer Inc.
-package com.lazerinc.dbtools;
+package com.allarphoto.dbtools;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

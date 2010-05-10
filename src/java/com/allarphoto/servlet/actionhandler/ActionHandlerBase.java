@@ -4,7 +4,7 @@
 // Author: Tom Cousins
 // Company: Lazer Inc.
 // Description: Tools & Trials
-package com.lazerinc.servlet.actionhandler;
+package com.allarphoto.servlet.actionhandler;
 
 import java.util.HashSet;
 import java.util.Map;
@@ -20,14 +20,14 @@ import org.coinjema.context.ContextOriented;
 import strategiclibrary.service.webaction.AbstractWebAction;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.Controller;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.cached.functions.CityAdd;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.server.ProductService;
-import com.lazerinc.server.UserService;
+import com.allarphoto.application.Controller;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.cached.functions.CityAdd;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.server.ProductService;
+import com.allarphoto.server.UserService;
 
 @CoinjemaObject(type = "action")
 public abstract class ActionHandlerBase extends AbstractWebAction {

@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.uploader;
+package com.allarphoto.ajaxclient.client.uploader;
 
 
 import com.google.gwt.user.client.Timer;
@@ -15,9 +15,9 @@ import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.components.BusyPopup;
-import com.lazerinc.ajaxclient.client.components.PopupWarning;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.components.BusyPopup;
+import com.allarphoto.ajaxclient.client.components.PopupWarning;
 
 public class Uploader extends HorizontalPanel {
 

@@ -100,7 +100,7 @@
 			      windowtitle="Lazerweb API Specification"
 			      header="&lt;b&gt;Lazerweb&lt;/b&gt;&lt;br&gt;&lt;font size='-1'&gt;1.7&lt;/font&gt;"
 			      bottom="Copyright &#169; 1998-2008 Lazer Inc. All Rights Reserved."
-			      packagenames="com.lazerinc.*">
+			      packagenames="com.allarphoto.*">
 	     <taglet name="strategiclibrary.service.webaction.taglet.ActionTaglet" path="${deploy.classes.dir}"/>
 	     <taglet name="strategiclibrary.service.webaction.taglet.ParamTaglet" path="${deploy.classes.dir}"/>
 	     <taglet name="strategiclibrary.service.webaction.BeanTaglet" path="${deploy.classes.dir}"/>
@@ -211,28 +211,28 @@
 	
 	<target name="build_webfiles" depends="descriptor_set,gwt-build">
     	<move todir="${build.web.dir}">
-    		<fileset dir="${build.jsclient.dir}/com.lazerinc.ajaxclient.LazerAdmin"/>
+    		<fileset dir="${build.jsclient.dir}/com.allarphoto.ajaxclient.LazerAdmin"/>
     	</move>
     	<copy todir="${build.web.dir}/hbi/def">
-    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    		<fileset dir="${build.addr_fragment.dir}/com.allarphoto.ajaxclient.AddressFragment"/>
     	</copy>
     	<copy todir="${build.web.dir}/hbi/ia_bali">
-    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    		<fileset dir="${build.addr_fragment.dir}/com.allarphoto.ajaxclient.AddressFragment"/>
     	</copy>
     	    	<copy todir="${build.web.dir}/hbi/ia_hanes">
-    	    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    	    		<fileset dir="${build.addr_fragment.dir}/com.allarphoto.ajaxclient.AddressFragment"/>
     	    	</copy>
     	    	<copy todir="${build.web.dir}/hbi/ia_bt">
-    	    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    	    		<fileset dir="${build.addr_fragment.dir}/com.allarphoto.ajaxclient.AddressFragment"/>
     	    	</copy>
     	    	<copy todir="${build.web.dir}/hbi/ia_jms">
-    	    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    	    		<fileset dir="${build.addr_fragment.dir}/com.allarphoto.ajaxclient.AddressFragment"/>
     	    	</copy>
     	    	<copy todir="${build.web.dir}/hbi/ia_plytx">
-    	    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    	    		<fileset dir="${build.addr_fragment.dir}/com.allarphoto.ajaxclient.AddressFragment"/>
     	    	</copy>
     	    	<copy todir="${build.web.dir}/hbi/ia_wndbr">
-    	    		<fileset dir="${build.addr_fragment.dir}/com.lazerinc.ajaxclient.AddressFragment"/>
+    	    		<fileset dir="${build.addr_fragment.dir}/com.allarphoto.ajaxclient.AddressFragment"/>
     	    	</copy>
 		<filter filtersfile="${Lazerweb.basedir}/${descriptor.file}"/>
 		<copy todir="${build.web.dir}" filtering="true">

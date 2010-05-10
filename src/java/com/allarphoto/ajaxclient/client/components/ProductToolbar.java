@@ -1,17 +1,17 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import java.util.Iterator;
 
 import com.google.gwt.user.client.ui.HorizontalPanel;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
-import com.lazerinc.ajaxclient.client.beans.AjaxResource;
-import com.lazerinc.ajaxclient.client.components.icons.DownloadIcon;
-import com.lazerinc.ajaxclient.client.components.icons.EditIcon;
-import com.lazerinc.ajaxclient.client.components.icons.MoveToActiveIcon;
-import com.lazerinc.ajaxclient.client.components.icons.MoveToObsoleteIcon;
-import com.lazerinc.ajaxclient.client.components.icons.MoveToOfflineIcon;
-import com.lazerinc.ajaxclient.client.components.icons.OrderIcon;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.beans.AjaxResource;
+import com.allarphoto.ajaxclient.client.components.icons.DownloadIcon;
+import com.allarphoto.ajaxclient.client.components.icons.EditIcon;
+import com.allarphoto.ajaxclient.client.components.icons.MoveToActiveIcon;
+import com.allarphoto.ajaxclient.client.components.icons.MoveToObsoleteIcon;
+import com.allarphoto.ajaxclient.client.components.icons.MoveToOfflineIcon;
+import com.allarphoto.ajaxclient.client.components.icons.OrderIcon;
 
 public class ProductToolbar extends HorizontalPanel {
 

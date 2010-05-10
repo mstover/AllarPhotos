@@ -1,4 +1,4 @@
-Create database "d:\lazerweb\lazerweb.gdb" USER "damuser" PASSWORD "r!VAld0" PAGE_SIZE 4096;
+Create database "d:\lazerweb\lazerweb.gdb" USER "damuser" PASSWORD "*****" PAGE_SIZE 4096;
 CREATE TABLE product_tables(
 product_table_id INTEGER NOT NULL PRIMARY KEY,
 table_name VARCHAR(25) NOT NULL UNIQUE,

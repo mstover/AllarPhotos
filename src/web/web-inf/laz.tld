@@ -20,12 +20,12 @@
 
 <tag>
 		<name>downloadSpeed</name>
-        <tag-class>com.lazerinc.servlet.taglib.DownloadSpeed</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.DownloadSpeed</tag-class>
         <body-content>empty</body-content>
         <description>Calculates download time based on size and speed</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>TagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -63,12 +63,12 @@
 	</tag>
 	<tag>	
 		<name>tree</name>
-        <tag-class>com.lazerinc.servlet.taglib.TreeTag</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.TreeTag</tag-class>
         <body-content>JSP</body-content>
         <description>Uses a template to display items in a simple Collection class</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>BodyTagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -191,12 +191,12 @@
 	
 	<tag>
 		<name>list</name>
-        <tag-class>com.lazerinc.servlet.taglib.ListTag</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.ListTag</tag-class>
         <body-content>JSP</body-content>
         <description>Uses a template to display items in a simple Collection class</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>BodyTagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -319,12 +319,12 @@
 
 <tag>
 		<name>for</name>
-        <tag-class>com.lazerinc.servlet.taglib.ForTag</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.ForTag</tag-class>
         <body-content>JSP</body-content>
         <description>Iterates via counting</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>BodyTagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -447,12 +447,12 @@
 
 	<tag>
 		<name>forValue</name>
-        <tag-class>com.lazerinc.servlet.taglib.ForValueTemplateObject</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.ForValueTemplateObject</tag-class>
         <body-content>empty</body-content>
         <description>Displays the current context value from parent tag</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>TagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -506,12 +506,12 @@
 	
 	<tag>
 		<name>value</name>
-        <tag-class>com.lazerinc.servlet.taglib.ValueTemplateObject</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.ValueTemplateObject</tag-class>
         <body-content>empty</body-content>
         <description>Displays the current context value from parent tag</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>TagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -550,12 +550,12 @@
 	
 	<tag>
 		<name>property</name>
-        <tag-class>com.lazerinc.servlet.taglib.PropertyTemplateObject</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.PropertyTemplateObject</tag-class>
         <body-content>empty</body-content>
         <description>Displays a property of the current context object from parent tag</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>TagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -608,12 +608,12 @@
 	
 	<tag>
 		<name>methodCall</name>
-        <tag-class>com.lazerinc.servlet.taglib.MethodTemplateObject</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.MethodTemplateObject</tag-class>
         <body-content>empty</body-content>
         <description>Displays the results of a method call on the current context object from the parent tag</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>TagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -680,12 +680,12 @@
 	
 	<tag>
 		<name>next</name>
-        <tag-class>com.lazerinc.servlet.taglib.NextTemplateObject</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.NextTemplateObject</tag-class>
         <body-content>JSP</body-content>
         <description>Forces the parent tag to move on to next context value</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>BodyTagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -710,12 +710,12 @@
 	
 	<tag>
 		<name>objectCall</name>
-        <tag-class>com.lazerinc.servlet.taglib.ObjectCallTemplateObject</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.ObjectCallTemplateObject</tag-class>
         <body-content>empty</body-content>
         <description>Displays the results of an object call, possibly using the current context object ($_) as an argument</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>TagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -796,12 +796,12 @@
 	
 	<tag>
 		<name>ifBlock</name>
-        <tag-class>com.lazerinc.servlet.taglib.IfBlock</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.IfBlock</tag-class>
         <body-content>JSP</body-content>
         <description>Begins an if block</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>BodyTagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -896,12 +896,12 @@
 	
 	<tag>
 		<name>if</name>
-        <tag-class>com.lazerinc.servlet.taglib.IfTag</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.IfTag</tag-class>
         <body-content>JSP</body-content>
         <description>Displays if the if-condition is true</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>BodyTagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -996,12 +996,12 @@
 	
 	<tag>
 		<name>else</name>
-        <tag-class>com.lazerinc.servlet.taglib.ElseTag</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.ElseTag</tag-class>
         <body-content>JSP</body-content>
         <description>Displays if the if-condition is false</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>BodyTagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
@@ -1026,12 +1026,12 @@
 
 	<tag>
 		<name>var</name>
-        <tag-class>com.lazerinc.servlet.taglib.VariableTag</tag-class>
+        <tag-class>com.allarphoto.servlet.taglib.VariableTag</tag-class>
         <body-content>empty</body-content>
         <description>Saves an object to the pagecontext for future retrieval</description>
         <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
         <tldx>
-            <packagename>com.lazerinc.servlet.taglib</packagename>
+            <packagename>com.allarphoto.servlet.taglib</packagename>
             <extendsSupportClass>TRUE</extendsSupportClass>
             <supportClass>TagSupport</supportClass>
             <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>

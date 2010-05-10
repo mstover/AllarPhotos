@@ -1,4 +1,4 @@
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;

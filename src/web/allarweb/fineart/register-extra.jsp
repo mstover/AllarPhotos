@@ -1,4 +1,4 @@
-<%@page import="java.util.*,java.lang.Math,strategiclibrary.service.webaction.beans.*,strategiclibrary.service.webaction.*,com.lazerinc.beans.*" %>
+<%@page import="java.util.*,java.lang.Math,strategiclibrary.service.webaction.beans.*,strategiclibrary.service.webaction.*,com.allarphoto.beans.*" %>
 <%@ taglib prefix="act" uri="/WEB-INF/webacttags.tld" %>
 <%@ taglib uri="/WEB-INF/veltag.tld" prefix="vel" %>
 <%@taglib uri="http://www.lazerinc-image.com/" prefix="laz" %>

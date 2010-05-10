@@ -1,4 +1,4 @@
-package com.lazerinc.client.beans;
+package com.allarphoto.client.beans;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -7,8 +7,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 
-import com.lazerinc.dbtools.QueryItem;
-import com.lazerinc.ecommerce.ProductSet;
+import com.allarphoto.dbtools.QueryItem;
+import com.allarphoto.ecommerce.ProductSet;
 
 /*******************************************************************************
  * Title: Lazerweb Description: Lazerweb - Lazer Inc. version 3.0 Copyright:

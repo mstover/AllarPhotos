@@ -1,1 +1,1 @@
-com.lazerinc.client.beans.SearchCategoryBean.class
+com.allarphoto.client.beans.SearchCategoryBean.class

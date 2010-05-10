@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.beans;
+package com.allarphoto.ajaxclient.client.beans;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,13 +8,13 @@ import java.util.List;
 import java.util.Set;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
-import com.lazerinc.ajaxclient.client.CartListener;
-import com.lazerinc.ajaxclient.client.components.icons.BaseIcon;
+import com.allarphoto.ajaxclient.client.CartListener;
+import com.allarphoto.ajaxclient.client.components.icons.BaseIcon;
 
 public class AjaxCart implements IsSerializable {
 
 	/**
-	 * @gwt.typeArgs <com.lazerinc.ajaxclient.client.beans.Request>
+	 * @gwt.typeArgs <com.allarphoto.ajaxclient.client.beans.Request>
 	 */
 	Set requests = new HashSet();
 

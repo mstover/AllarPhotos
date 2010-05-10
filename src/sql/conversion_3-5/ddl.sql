@@ -2238,7 +2238,7 @@ grant all on hb_c9price_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_c9','Champion','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_c9','Champion','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 
@@ -2438,7 +2438,7 @@ grant all on hb_casprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_cas','Casualwear','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_cas','Casualwear','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 
@@ -2638,7 +2638,7 @@ grant all on hb_champprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_champ','Champion USA','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_champ','Champion USA','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 
@@ -2840,7 +2840,7 @@ grant all on hb_duoprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_duo','Duofold','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_duo','Duofold','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 
@@ -3040,7 +3040,7 @@ grant all on hb_hosprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_hos','Hanes Hosiery','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_hos','Hanes Hosiery','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 
@@ -3240,7 +3240,7 @@ grant all on hb_leggsprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_leggs','Leggs','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_leggs','Leggs','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 
@@ -3440,7 +3440,7 @@ grant all on hb_obprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_ob','Hanes Printables','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_ob','Hanes Printables','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 
@@ -3640,7 +3640,7 @@ grant all on hb_poloprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_polo','Polo - Ralph Lauren','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_polo','Polo - Ralph Lauren','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 
@@ -3840,7 +3840,7 @@ grant all on hb_socksprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_socks','Hanes Socks','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_socks','Hanes Socks','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 
@@ -4040,7 +4040,7 @@ grant all on hb_uwprice_break to damuser;
 commit;
 
 insert into product_tables(table_name,descriptive_name,description,primary_label,product_type,order_model) 
-values('hb_uw','Hanes Underwear','On-Line Library','File Name',1,'com.lazerinc.ecommerce.impl.LazerwebOrderModel');
+values('hb_uw','Hanes Underwear','On-Line Library','File Name',1,'com.allarphoto.ecommerce.impl.LazerwebOrderModel');
 
 COMMIT;
 

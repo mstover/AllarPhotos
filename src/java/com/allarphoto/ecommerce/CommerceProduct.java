@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -25,9 +25,9 @@ import org.apache.commons.collections.map.MultiValueMap;
 
 import strategiclibrary.util.Files;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.beans.Path;
-import com.lazerinc.cached.DatabaseObject;
+import com.allarphoto.application.Product;
+import com.allarphoto.beans.Path;
+import com.allarphoto.cached.DatabaseObject;
 
 public class CommerceProduct implements Product, Serializable, DatabaseObject {
 	private static final long serialVersionUID = 1;
@@ -219,7 +219,7 @@ public class CommerceProduct implements Product, Serializable, DatabaseObject {
 	}
 
 	public void setProductFamily(
-			com.lazerinc.ecommerce.ProductFamily newProductFamily) {
+			com.allarphoto.ecommerce.ProductFamily newProductFamily) {
 		productFamily = newProductFamily;
 	}
 
@@ -227,7 +227,7 @@ public class CommerceProduct implements Product, Serializable, DatabaseObject {
 		this.family = family;
 	}
 
-	public com.lazerinc.ecommerce.ProductFamily getProductFamily() {
+	public com.allarphoto.ecommerce.ProductFamily getProductFamily() {
 		return productFamily;
 	}
 
@@ -439,7 +439,7 @@ public class CommerceProduct implements Product, Serializable, DatabaseObject {
 
 	private Calendar dateCataloged, dateModified,dateCreated;
 
-	private com.lazerinc.ecommerce.ProductFamily productFamily;
+	private com.allarphoto.ecommerce.ProductFamily productFamily;
 
 	private MultiMap value = MultiValueMap.decorate(new HashMap(),
 			new Factory() {

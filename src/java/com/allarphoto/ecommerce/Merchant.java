@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -11,9 +11,9 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.HashSet;
 
-import com.lazerinc.beans.City;
-import com.lazerinc.beans.Country;
-import com.lazerinc.beans.State;
+import com.allarphoto.beans.City;
+import com.allarphoto.beans.Country;
+import com.allarphoto.beans.State;
 
 public class Merchant implements Serializable {
 	private static final long serialVersionUID = 1;

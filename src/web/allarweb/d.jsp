@@ -1,4 +1,4 @@
-<%@ page import = "com.lazerinc.utils.*;" %>
+<%@ page import = "com.allarphoto.utils.*;" %>
 <%
 	// Why does this seem to work on port 8008?
 	String home = "@download_url@";  // "http://localhost:8080/wfd/";	 // "http://lweb.ws:8008/";

@@ -1,4 +1,4 @@
-package com.lazerinc.testObjects;
+package com.allarphoto.testObjects;
 
 import java.io.File;
 

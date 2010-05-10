@@ -1,11 +1,11 @@
-package com.lazerinc.client.util;
+package com.allarphoto.client.util;
 
 import org.apache.log4j.Logger;
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.application.LogModel;
-import com.lazerinc.beans.LogItem;
+import com.allarphoto.application.LogModel;
+import com.allarphoto.beans.LogItem;
 
 @CoinjemaObject
 public class LogUtil {

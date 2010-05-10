@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.application;
+package com.allarphoto.application;
 
 public interface OrderModel extends SecureComponent, OrderingService {
 

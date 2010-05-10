@@ -1,1 +1,1 @@
-com.lazerinc.welchallyn.WAProductBean.class
+com.allarphoto.welchallyn.WAProductBean.class

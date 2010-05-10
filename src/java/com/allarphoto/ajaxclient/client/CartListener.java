@@ -1,6 +1,6 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
-import com.lazerinc.ajaxclient.client.beans.Request;
+import com.allarphoto.ajaxclient.client.beans.Request;
 
 public interface CartListener {
 

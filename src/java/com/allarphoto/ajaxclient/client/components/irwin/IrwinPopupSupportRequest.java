@@ -1,8 +1,8 @@
-package com.lazerinc.ajaxclient.client.components.irwin;
+package com.allarphoto.ajaxclient.client.components.irwin;
 
 import com.google.gwt.user.client.ui.VerticalPanel;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.components.PopupSupportRequest;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.components.PopupSupportRequest;
 
 public class IrwinPopupSupportRequest extends PopupSupportRequest {
 

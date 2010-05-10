@@ -5,7 +5,7 @@
 // Company: Lazer inc.
 // Description: Your description
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -21,10 +21,10 @@ import java.util.Set;
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.application.Controller;
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.utils.Data;
-import com.lazerinc.utils.Functions;
+import com.allarphoto.application.Controller;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.utils.Data;
+import com.allarphoto.utils.Functions;
 
 @CoinjemaObject
 public class ImageDataCollector {

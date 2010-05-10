@@ -1,4 +1,4 @@
-package com.lazerinc.category;
+package com.allarphoto.category;
 
 public class ProtectedField extends CategoryField {
 	private static final long serialVersionUID = 1;

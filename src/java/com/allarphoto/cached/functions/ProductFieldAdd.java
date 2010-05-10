@@ -1,4 +1,4 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -8,10 +8,10 @@ import java.util.Set;
 import strategiclibrary.service.cache.Cache;
 import strategiclibrary.service.cache.CacheService;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.category.ProtectedField;
-import com.lazerinc.utils.Resource;
+import com.allarphoto.application.Product;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.category.ProtectedField;
+import com.allarphoto.utils.Resource;
 
 public class ProductFieldAdd extends AbstractCacheFunction<ProductField> {
 

@@ -1,4 +1,4 @@
-package com.lazerinc.hbi.actions;
+package com.allarphoto.hbi.actions;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -10,10 +10,10 @@ import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.service.webaction.ServletHandlerData;
 
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
-import com.lazerinc.utils.Resource;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.utils.Resource;
 
 public class HbiRedirect extends ActionHandlerBase {
 

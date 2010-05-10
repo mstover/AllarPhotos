@@ -1,14 +1,14 @@
-package com.lazerinc.servlet.actionhandler.search;
+package com.allarphoto.servlet.actionhandler.search;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_CHANGE_NUMBER_SHOWN;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_CHANGE_NUMBER_SHOWN;
+import static com.allarphoto.servlet.ActionConstants.ACTION_CHANGE_NUMBER_SHOWN;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_CHANGE_NUMBER_SHOWN;
 
 import java.util.Map;
 
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.beans.ProductSetBean;
+import com.allarphoto.client.beans.ProductSetBean;
 
 /**
  * This actin is used to change the number of products below which the user is
@@ -35,8 +35,8 @@ public class ChangeNumberShown extends AbstractSearchAction {
 	}
 
 	public void performAction(HandlerData actionInfo)
-			throws com.lazerinc.client.exceptions.FatalException,
-			com.lazerinc.client.exceptions.InformationalException,
+			throws com.allarphoto.client.exceptions.FatalException,
+			com.allarphoto.client.exceptions.InformationalException,
 			ActionException {
 		ProductSetBean productBean = getProductsFound(actionInfo);
 		String changeTo = actionInfo.getParameter(REQUEST_CHANGE_NUMBER_SHOWN);

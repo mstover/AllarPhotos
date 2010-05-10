@@ -1,4 +1,4 @@
-package com.lazerinc.servlet;
+package com.allarphoto.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -23,9 +23,9 @@ import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.service.webaction.ServletHandlerData;
 import strategiclibrary.service.webaction.WebRequestHandler;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.security.NoPermissions;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.security.NoPermissions;
 
 @CoinjemaObject(type = "servlet")
 public abstract class AbstractContextServlet extends HttpServlet {

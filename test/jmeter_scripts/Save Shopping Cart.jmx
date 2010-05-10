@@ -100,7 +100,7 @@
               </elementProp>
               <elementProp name="password" elementType="org.apache.jmeter.config.Argument">
                 <stringProp name="Argument.metadata">=</stringProp>
-                <stringProp name="Argument.value">[NBfM]</stringProp>
+                <stringProp name="Argument.value">*****</stringProp>
                 <stringProp name="Argument.name">password</stringProp>
               </elementProp>
             </collectionProp>

@@ -1,6 +1,6 @@
-package com.lazerinc.servlet.actionhandler.cart;
+package com.allarphoto.servlet.actionhandler.cart;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_ORDER_ITEMS;
+import static com.allarphoto.servlet.ActionConstants.ACTION_ORDER_ITEMS;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -68,9 +68,9 @@ public class AddToOrder extends CartHandlerBase {
 	 * 
 	 * @param actionInfo
 	 *            Description of Parameter
-	 * @exception com.lazerinc.client.exceptions.InformationalException
+	 * @exception com.allarphoto.client.exceptions.InformationalException
 	 *                Description of Exception
-	 * @exception com.lazerinc.client.exceptions.FatalException
+	 * @exception com.allarphoto.client.exceptions.FatalException
 	 *                Description of Exception
 	 **************************************************************************/
 	public void performAction(HandlerData actionInfo) throws ActionException {

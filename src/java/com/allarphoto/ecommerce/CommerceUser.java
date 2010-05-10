@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -12,12 +12,12 @@ import java.io.Serializable;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import com.lazerinc.beans.Address;
-import com.lazerinc.beans.City;
-import com.lazerinc.beans.Country;
-import com.lazerinc.beans.Referrer;
-import com.lazerinc.beans.State;
-import com.lazerinc.beans.User;
+import com.allarphoto.beans.Address;
+import com.allarphoto.beans.City;
+import com.allarphoto.beans.Country;
+import com.allarphoto.beans.Referrer;
+import com.allarphoto.beans.State;
+import com.allarphoto.beans.User;
 
 public class CommerceUser extends User implements Serializable {
 	private static final long serialVersionUID = 1;

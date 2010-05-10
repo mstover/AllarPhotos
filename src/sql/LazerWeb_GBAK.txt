@@ -7,11 +7,11 @@ rem ---------------------------------------------------------------------------
 cd \Program Files\Firebird\bin\
 for /f "Tokens=2-4 Delims=/ " %a in ('Date /t') do set mm=%a&set dd=%b&set yy=%c
 set myBackup=c:\lazerweb\backup\lazerweb_%yy%_%mm%%dd%.gbk
-gbak -b -user DAMUSER -pas r!VAld0 \\pascal\c:\lazerweb\LAZERWEB.GDB %myBackup%
+gbak -b -user DAMUSER -pas ***** \\pascal\c:\lazerweb\LAZERWEB.GDB %myBackup%
 @echo GBAK has finished Backup. Press any key to view results or Ctrl+C to cancel.
 @pause
 
 rem ---------------------------------------------------------------------------
 rem to restore
-rem gbak -r -user DAMUSER -pas r!VAld0 %myBackup% \\pascal\c:\lazerweb\LAZERWEB.GDB 
+rem gbak -r -user DAMUSER -pas ***** %myBackup% \\pascal\c:\lazerweb\LAZERWEB.GDB 
 rem ---------------------------------------------------------------------------

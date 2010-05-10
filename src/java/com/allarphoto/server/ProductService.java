@@ -1,4 +1,4 @@
-package com.lazerinc.server;
+package com.allarphoto.server;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,17 +20,17 @@ import org.coinjema.util.Tuple;
 import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.service.sql.ObjectMappingService;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.client.beans.ProductBean;
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.ecommerce.CommerceProduct;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.Merchant;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.client.beans.ProductBean;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.ecommerce.CommerceProduct;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.Merchant;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 /*******************************************************************************
  * Title: Lazerweb Description: Lazerweb - Lazer Inc. version 3.0 Copyright:

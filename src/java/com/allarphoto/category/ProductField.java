@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.category;
+package com.allarphoto.category;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -17,8 +17,8 @@ import strategiclibrary.service.BatchUpdate;
 import strategiclibrary.service.DataBase;
 import strategiclibrary.service.sql.ObjectMappingService;
 
-import com.lazerinc.cached.DatabaseObject;
-import com.lazerinc.ecommerce.CommerceProduct;
+import com.allarphoto.cached.DatabaseObject;
+import com.allarphoto.ecommerce.CommerceProduct;
 
 public abstract class ProductField implements Comparable, Serializable,
 		DatabaseObject {

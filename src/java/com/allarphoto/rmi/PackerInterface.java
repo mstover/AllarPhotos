@@ -1,4 +1,4 @@
-package com.lazerinc.rmi;
+package com.allarphoto.rmi;
 
 import java.io.File;
 import java.rmi.Remote;

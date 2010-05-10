@@ -5,7 +5,7 @@
  * it only in accordance with the terms of the license agreement you entered into with Sun.
  */
 
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 // import sun.misc.Launcher;
 
@@ -168,7 +168,7 @@ public class ServletClassLoader extends ClassLoader {
 	 */
 	public Class loadClass(String name) throws ClassNotFoundException {
 		// First, check if the class has already been loaded
-		if (!name.startsWith("com.lazerinc"))
+		if (!name.startsWith("com.allarphoto"))
 			return super.loadClass(name);
 		Class c = findClass(name);
 		resolveClass(c);

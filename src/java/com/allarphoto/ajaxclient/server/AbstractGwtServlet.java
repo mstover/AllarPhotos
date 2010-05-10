@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.server;
+package com.allarphoto.ajaxclient.server;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -22,29 +22,29 @@ import strategiclibrary.util.Converter;
 import strategiclibrary.util.Files;
 
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
-import com.lazerinc.ajaxclient.client.beans.AjaxAddress;
-import com.lazerinc.ajaxclient.client.beans.AjaxCompany;
-import com.lazerinc.ajaxclient.client.beans.AjaxGroup;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
-import com.lazerinc.ajaxclient.client.beans.AjaxProductFamily;
-import com.lazerinc.ajaxclient.client.beans.AjaxProductField;
-import com.lazerinc.ajaxclient.client.beans.AjaxResource;
-import com.lazerinc.ajaxclient.client.beans.AjaxRights;
-import com.lazerinc.ajaxclient.client.beans.AjaxUser;
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.beans.Address;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.client.beans.ProductBean;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.security.NoPermissions;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
-import com.lazerinc.utils.Rights;
+import com.allarphoto.ajaxclient.client.beans.AjaxAddress;
+import com.allarphoto.ajaxclient.client.beans.AjaxCompany;
+import com.allarphoto.ajaxclient.client.beans.AjaxGroup;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.beans.AjaxProductFamily;
+import com.allarphoto.ajaxclient.client.beans.AjaxProductField;
+import com.allarphoto.ajaxclient.client.beans.AjaxResource;
+import com.allarphoto.ajaxclient.client.beans.AjaxRights;
+import com.allarphoto.ajaxclient.client.beans.AjaxUser;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.beans.Address;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.client.beans.ProductBean;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.security.NoPermissions;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
+import com.allarphoto.utils.Rights;
 
 @CoinjemaObject
 public abstract class AbstractGwtServlet extends RemoteServiceServlet {

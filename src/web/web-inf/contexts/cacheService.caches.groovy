@@ -1,13 +1,13 @@
 import strategiclibrary.service.cache.*
-import com.lazerinc.ecommerce.*
-import com.lazerinc.ecommerce.virtual.*
-import com.lazerinc.application.*
-import com.lazerinc.category.*
-import com.lazerinc.server.*
-import com.lazerinc.cached.functions.*
-import com.lazerinc.utils.*
+import com.allarphoto.ecommerce.*
+import com.allarphoto.ecommerce.virtual.*
+import com.allarphoto.application.*
+import com.allarphoto.category.*
+import com.allarphoto.server.*
+import com.allarphoto.cached.functions.*
+import com.allarphoto.utils.*
 import org.coinjema.util.*
-import com.lazerinc.beans.*
+import com.allarphoto.beans.*
 import strategiclibrary.util.*
 
 [new CacheRegistration(cacheTime : TimeConstants.HOUR * 4,

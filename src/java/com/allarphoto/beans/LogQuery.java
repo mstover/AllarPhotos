@@ -20,7 +20,7 @@
 // Title: LogQuery
 // Author: Michael Stover
 // Company: Lazer inc.
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 public class LogQuery {
 

@@ -1,7 +1,7 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
 import com.google.gwt.user.client.rpc.RemoteService;
-import com.lazerinc.ajaxclient.client.beans.AjaxProductFamily;
+import com.allarphoto.ajaxclient.client.beans.AjaxProductFamily;
 
 public interface CustomService extends RemoteService {
 

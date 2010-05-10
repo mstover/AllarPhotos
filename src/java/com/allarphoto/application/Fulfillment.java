@@ -1,7 +1,7 @@
-package com.lazerinc.application;
+package com.allarphoto.application;
 
-import com.lazerinc.ecommerce.Merchant;
-import com.lazerinc.ecommerce.Order;
+import com.allarphoto.ecommerce.Merchant;
+import com.allarphoto.ecommerce.Order;
 
 public interface Fulfillment extends SecureComponent {
 

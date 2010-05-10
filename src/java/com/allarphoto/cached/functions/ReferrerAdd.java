@@ -1,6 +1,6 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
-import com.lazerinc.beans.Referrer;
+import com.allarphoto.beans.Referrer;
 
 public class ReferrerAdd extends AbstractCacheFunction<Referrer> implements
 		CacheAdder<Referrer> {

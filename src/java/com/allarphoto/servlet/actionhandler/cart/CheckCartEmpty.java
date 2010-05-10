@@ -1,11 +1,11 @@
-package com.lazerinc.servlet.actionhandler.cart;
+package com.allarphoto.servlet.actionhandler.cart;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_CHECK_CART_EMPTY;
+import static com.allarphoto.servlet.ActionConstants.ACTION_CHECK_CART_EMPTY;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.client.exceptions.LazerwebException;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.client.exceptions.LazerwebException;
 
 public class CheckCartEmpty extends CartHandlerBase {
 

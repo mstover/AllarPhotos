@@ -1,6 +1,6 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
-import com.lazerinc.beans.State;
+import com.allarphoto.beans.State;
 
 public class StateAdd extends AbstractCacheFunction<State> implements
 		CacheAdder<State> {

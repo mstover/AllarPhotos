@@ -1,10 +1,10 @@
-package com.lazerinc.servlet.taglib;
+package com.allarphoto.servlet.taglib;
 
 import java.io.IOException;
 
 import org.coinjema.collections.HashTree;
 
-import com.lazerinc.utils.Functions;
+import com.allarphoto.utils.Functions;
 
 /**
  * Title: Lazerweb Description: Lazerweb - Lazer Inc. version 3.0 Copyright:

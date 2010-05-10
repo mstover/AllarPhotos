@@ -1,4 +1,4 @@
-package com.lazerinc.rmi;
+package com.allarphoto.rmi;
 
 import java.io.File;
 import java.rmi.Naming;
@@ -7,7 +7,7 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.Properties;
 
-import com.lazerinc.utils.Filer;
+import com.allarphoto.utils.Filer;
 
 public class Packer extends UnicastRemoteObject implements PackerInterface {
 	private static final long serialVersionUID = 1;
@@ -84,7 +84,7 @@ public class Packer extends UnicastRemoteObject implements PackerInterface {
 			System.setSecurityManager(new RMISecurityManager());
 		}
 
-		String name = "//192.9.200.154/com.lazerinc.rmi.Packer";
+		String name = "//192.9.200.154/com.allarphoto.rmi.Packer";
 
 		try {
 			Packer p = new Packer();

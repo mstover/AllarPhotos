@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.admin;
+package com.allarphoto.servlet.actionhandler.admin;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -8,11 +8,11 @@ import java.util.Set;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.security.VirtualGroupBasedSecurity;
-import com.lazerinc.server.UserService;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.security.VirtualGroupBasedSecurity;
+import com.allarphoto.server.UserService;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 public class GetGroups extends ActionHandlerBase {
 

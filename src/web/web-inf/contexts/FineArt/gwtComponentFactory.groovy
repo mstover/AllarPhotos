@@ -1,1 +1,1 @@
-com.lazerinc.ajaxclient.client.components.fineart.FineArtComponentFactory.class
+com.allarphoto.ajaxclient.client.components.fineart.FineArtComponentFactory.class

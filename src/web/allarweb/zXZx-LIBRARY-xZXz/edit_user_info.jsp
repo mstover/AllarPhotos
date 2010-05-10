@@ -1,7 +1,7 @@
 <%@ include file="/zXZx-LIBRARY-xZXz/include/global.inc" %>
 <%@ include file="/zXZx-LIBRARY-xZXz/include/actionsAndValidate.inc" %>
-<jsp:useBean id="user" scope="session" class="com.lazerinc.client.beans.UserBean" />
-<jsp:useBean id="data" scope="session" class="com.lazerinc.client.beans.GenericDataBean" />
+<jsp:useBean id="user" scope="session" class="com.allarphoto.client.beans.UserBean" />
+<jsp:useBean id="data" scope="session" class="com.allarphoto.client.beans.GenericDataBean" />
 
 <c:set var='title' value='${title} - Edit User Info' />
 <c:set var='help' value="edit_user" />

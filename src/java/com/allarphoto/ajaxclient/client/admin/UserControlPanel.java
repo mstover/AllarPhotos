@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.admin;
+package com.allarphoto.ajaxclient.client.admin;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -15,15 +15,15 @@ import com.google.gwt.user.client.ui.PasswordTextBox;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.DeleteListener;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxGroup;
-import com.lazerinc.ajaxclient.client.beans.AjaxUser;
-import com.lazerinc.ajaxclient.client.components.BusyPopup;
-import com.lazerinc.ajaxclient.client.components.DatePicker;
-import com.lazerinc.ajaxclient.client.components.PopupWarning;
-import com.lazerinc.ajaxclient.client.components.basic.ComboBox;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.DeleteListener;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxGroup;
+import com.allarphoto.ajaxclient.client.beans.AjaxUser;
+import com.allarphoto.ajaxclient.client.components.BusyPopup;
+import com.allarphoto.ajaxclient.client.components.DatePicker;
+import com.allarphoto.ajaxclient.client.components.PopupWarning;
+import com.allarphoto.ajaxclient.client.components.basic.ComboBox;
 
 public class UserControlPanel extends DockPanel {
 

@@ -1,15 +1,15 @@
-package com.lazerinc.servlet.actionhandler.search;
+package com.allarphoto.servlet.actionhandler.search;
 
 import org.coinjema.context.CoinjemaDynamic;
 
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.beans.ProductBean;
-import com.lazerinc.client.beans.ProductSetBean;
-import com.lazerinc.client.beans.SearchCategoryBean;
-import com.lazerinc.client.util.SearchUtil;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.client.beans.ProductBean;
+import com.allarphoto.client.beans.ProductSetBean;
+import com.allarphoto.client.beans.SearchCategoryBean;
+import com.allarphoto.client.util.SearchUtil;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 public abstract class AbstractSearchAction extends ActionHandlerBase {
 	protected SearchUtil searchUtil = new SearchUtil();

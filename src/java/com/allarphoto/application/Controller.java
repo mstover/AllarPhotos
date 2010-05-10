@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.application;
+package com.allarphoto.application;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -17,8 +17,8 @@ import org.coinjema.context.CoinjemaDynamic;
 import org.coinjema.context.CoinjemaObject;
 import org.coinjema.util.Functor;
 
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.ecommerce.DatabaseUtilities;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.ecommerce.DatabaseUtilities;
 
 @CoinjemaObject(type = "lazerweb")
 public class Controller {

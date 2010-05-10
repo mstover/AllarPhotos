@@ -105,7 +105,7 @@
                 </elementProp>
                 <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
                   <stringProp name="Argument.metadata">=</stringProp>
-                  <stringProp name="Argument.value">[NBfM]</stringProp>
+                  <stringProp name="Argument.value">*****</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   <stringProp name="Argument.name">request_password</stringProp>
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
@@ -1020,7 +1020,7 @@
                 </elementProp>
                 <elementProp name="" elementType="org.apache.jmeter.protocol.http.util.HTTPArgument">
                   <stringProp name="Argument.metadata">=</stringProp>
-                  <stringProp name="Argument.value">[NBfM]</stringProp>
+                  <stringProp name="Argument.value">*****</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   <stringProp name="Argument.name">request_password</stringProp>
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>

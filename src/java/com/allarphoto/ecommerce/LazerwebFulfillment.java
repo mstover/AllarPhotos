@@ -1,4 +1,4 @@
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -11,18 +11,18 @@ import org.coinjema.context.CoinjemaObject;
 
 import strategiclibrary.service.notification.NotificationService;
 
-import com.lazerinc.application.Controller;
-import com.lazerinc.application.Fulfillment;
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecureComponent;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.beans.OrderItem;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.server.ResourceService;
-import com.lazerinc.utils.Functions;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
-import com.lazerinc.utils.TinyUrl;
+import com.allarphoto.application.Controller;
+import com.allarphoto.application.Fulfillment;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecureComponent;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.beans.OrderItem;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.server.ResourceService;
+import com.allarphoto.utils.Functions;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
+import com.allarphoto.utils.TinyUrl;
 
 @CoinjemaObject(type = "fulfiller")
 public class LazerwebFulfillment implements Fulfillment, SecureComponent {

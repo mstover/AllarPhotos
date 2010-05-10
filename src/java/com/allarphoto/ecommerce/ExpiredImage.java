@@ -1,4 +1,4 @@
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import org.coinjema.context.CoinjemaDynamic;
 

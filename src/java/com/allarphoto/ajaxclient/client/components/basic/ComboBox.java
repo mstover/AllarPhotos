@@ -1,9 +1,9 @@
-package com.lazerinc.ajaxclient.client.components.basic;
+package com.allarphoto.ajaxclient.client.components.basic;
 
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.ListBox;
 import com.google.gwt.user.client.ui.TextBox;
-import com.lazerinc.ajaxclient.client.components.icons.ComboEditIcon;
+import com.allarphoto.ajaxclient.client.components.icons.ComboEditIcon;
 
 public class ComboBox extends HorizontalPanel {
 

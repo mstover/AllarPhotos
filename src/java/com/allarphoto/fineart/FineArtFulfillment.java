@@ -1,14 +1,14 @@
-package com.lazerinc.fineart;
+package com.allarphoto.fineart;
 
 import java.util.Map;
 
-import com.lazerinc.beans.OrderItem;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.LazerwebFulfillment;
-import com.lazerinc.ecommerce.Merchant;
-import com.lazerinc.ecommerce.Order;
-import com.lazerinc.utils.Right;
-import com.lazerinc.utils.TinyUrl;
+import com.allarphoto.beans.OrderItem;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.LazerwebFulfillment;
+import com.allarphoto.ecommerce.Merchant;
+import com.allarphoto.ecommerce.Order;
+import com.allarphoto.utils.Right;
+import com.allarphoto.utils.TinyUrl;
 
 public class FineArtFulfillment extends LazerwebFulfillment {
 

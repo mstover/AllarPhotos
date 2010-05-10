@@ -1,6 +1,6 @@
-package com.lazerinc.servlet.actionhandler.commerce;
+package com.allarphoto.servlet.actionhandler.commerce;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_EXECUTE_ORDER;
+import static com.allarphoto.servlet.ActionConstants.ACTION_EXECUTE_ORDER;
 
 import java.io.File;
 import java.util.Iterator;
@@ -8,17 +8,17 @@ import java.util.Iterator;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.service.webaction.ServletHandlerData;
 
-import com.lazerinc.application.OrderingService;
-import com.lazerinc.application.Product;
-import com.lazerinc.application.ServiceGateway;
-import com.lazerinc.client.beans.OrderResponseBean;
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.OrderResponse;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.application.OrderingService;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.ServiceGateway;
+import com.allarphoto.client.beans.OrderResponseBean;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.OrderResponse;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 /**
  * After all the instructions have been set in the users shopping cart, this
@@ -54,7 +54,7 @@ public class ExecuteOrder extends ActionHandlerBase {
 	public static final String INSTRUCTIONS = "instructions";
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#performAction(HandlerData)
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#performAction(HandlerData)
 	 */
 	public void performAction(HandlerData actionInfo) throws LazerwebException {
 		ShoppingCartBean cart = (ShoppingCartBean) actionInfo.getBean("cart");
@@ -193,7 +193,7 @@ public class ExecuteOrder extends ActionHandlerBase {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_EXECUTE_ORDER;

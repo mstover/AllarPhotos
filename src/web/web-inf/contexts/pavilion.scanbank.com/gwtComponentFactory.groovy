@@ -1,1 +1,1 @@
-com.lazerinc.ajaxclient.client.components.pavilion.PavilionComponentFactory.class
+com.allarphoto.ajaxclient.client.components.pavilion.PavilionComponentFactory.class

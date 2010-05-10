@@ -1,4 +1,4 @@
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -11,7 +11,7 @@ import org.apache.commons.collections.MultiMap;
 
 import strategiclibrary.service.webaction.MapHandlerData;
 
-import com.lazerinc.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.CommerceUser;
 
 
 public class TestWebBean extends TestCase

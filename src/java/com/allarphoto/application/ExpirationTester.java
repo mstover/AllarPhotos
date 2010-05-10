@@ -1,6 +1,6 @@
-package com.lazerinc.application;
+package com.allarphoto.application;
 
-import com.lazerinc.utils.Right;
+import com.allarphoto.utils.Right;
 
 public interface ExpirationTester {
 

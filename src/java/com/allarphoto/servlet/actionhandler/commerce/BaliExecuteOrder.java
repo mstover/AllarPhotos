@@ -1,20 +1,20 @@
-package com.lazerinc.servlet.actionhandler.commerce;
+package com.allarphoto.servlet.actionhandler.commerce;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_BALI_EXECUTE_ORDER;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_ACCOUNT_NAME;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_INSTRUCTIONS;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_PURPOSE;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_PURPOSE_OTHER;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_SHIP_TO;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_SOLD_TO;
+import static com.allarphoto.servlet.ActionConstants.ACTION_BALI_EXECUTE_ORDER;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_ACCOUNT_NAME;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_INSTRUCTIONS;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_PURPOSE;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_PURPOSE_OTHER;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_SHIP_TO;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_SOLD_TO;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.beans.OrderResponseBean;
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.OrderResponse;
+import com.allarphoto.client.beans.OrderResponseBean;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.OrderResponse;
 
 /**
  * After all the instructions have been set in the users shopping cart, this
@@ -40,7 +40,7 @@ import com.lazerinc.ecommerce.OrderResponse;
 public class BaliExecuteOrder extends ExecuteOrder {
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#performAction(HandlerData)
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#performAction(HandlerData)
 	 */
 	public void performAction(HandlerData actionInfo) throws LazerwebException {
 		// verifyShipTo(actionInfo);
@@ -131,7 +131,7 @@ public class BaliExecuteOrder extends ExecuteOrder {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_BALI_EXECUTE_ORDER;

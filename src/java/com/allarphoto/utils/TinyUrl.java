@@ -1,4 +1,4 @@
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;

@@ -1,4 +1,4 @@
-package com.lazerinc.client.exceptions;
+package com.allarphoto.client.exceptions;
 
 import strategiclibrary.service.webaction.ActionException;
 

@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components.basic;
+package com.allarphoto.ajaxclient.client.components.basic;
 
 import com.google.gwt.user.client.Element;
 import com.google.gwt.user.client.ui.Widget;

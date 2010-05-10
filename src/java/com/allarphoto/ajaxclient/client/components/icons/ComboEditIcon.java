@@ -1,12 +1,12 @@
-package com.lazerinc.ajaxclient.client.components.icons;
+package com.allarphoto.ajaxclient.client.components.icons;
 
 import com.google.gwt.user.client.ui.ClickListener;
 import com.google.gwt.user.client.ui.PopupPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.components.EnterKeyListener;
-import com.lazerinc.ajaxclient.client.components.basic.ComboBox;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.components.EnterKeyListener;
+import com.allarphoto.ajaxclient.client.components.basic.ComboBox;
 
 public class ComboEditIcon extends BaseIcon {
 	ComboBox combo;

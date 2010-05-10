@@ -1,4 +1,4 @@
-package com.lazerinc.server;
+package com.allarphoto.server;
 
 import java.util.Collection;
 
@@ -7,7 +7,7 @@ import org.coinjema.context.CoinjemaObject;
 
 import strategiclibrary.service.cache.CacheService;
 
-import com.lazerinc.utils.Resource;
+import com.allarphoto.utils.Resource;
 
 @CoinjemaObject
 public class ResourceService {

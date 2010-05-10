@@ -20,7 +20,7 @@
 // Title: Rights
 // Author: Michael Stover
 // Company: Lazer Inc.
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -32,7 +32,7 @@ import java.util.Map.Entry;
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.server.ResourceService;
+import com.allarphoto.server.ResourceService;
 
 @CoinjemaObject
 public class Rights implements Serializable {

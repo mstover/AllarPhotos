@@ -1,4 +1,4 @@
-package com.lazerinc.commerce;
+package com.allarphoto.commerce;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -7,11 +7,11 @@ import java.util.List;
 import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.service.cache.DefaultObjectCache;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.server.UserService;
-import com.lazerinc.testObjects.AbstractIntegratedTest;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.server.UserService;
+import com.allarphoto.testObjects.AbstractIntegratedTest;
 
 
 public class TestUserMapping extends AbstractIntegratedTest

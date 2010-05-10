@@ -1,16 +1,16 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.rpc.ServiceDefTarget;
 import com.google.gwt.user.client.ui.impl.FocusImpl;
-import com.lazerinc.ajaxclient.client.admin.LazerMenu;
-import com.lazerinc.ajaxclient.client.beans.AjaxCart;
-import com.lazerinc.ajaxclient.client.beans.AjaxPermissions;
-import com.lazerinc.ajaxclient.client.beans.AjaxUser;
-import com.lazerinc.ajaxclient.client.beans.Request;
-import com.lazerinc.ajaxclient.client.components.basic.Drag;
-import com.lazerinc.ajaxclient.client.components.basic.ThumbnailDragger;
+import com.allarphoto.ajaxclient.client.admin.LazerMenu;
+import com.allarphoto.ajaxclient.client.beans.AjaxCart;
+import com.allarphoto.ajaxclient.client.beans.AjaxPermissions;
+import com.allarphoto.ajaxclient.client.beans.AjaxUser;
+import com.allarphoto.ajaxclient.client.beans.Request;
+import com.allarphoto.ajaxclient.client.components.basic.Drag;
+import com.allarphoto.ajaxclient.client.components.basic.ThumbnailDragger;
 
 public class Services implements CartListener {
 	public UserInformationAsync userInfoService;

@@ -1,13 +1,13 @@
-package com.lazerinc.servlet.actionhandler.login;
+package com.allarphoto.servlet.actionhandler.login;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_VALIDATE_LOGIN;
+import static com.allarphoto.servlet.ActionConstants.ACTION_VALIDATE_LOGIN;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.FatalException;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.FatalException;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 /**
  * Checks to make sure the current user is correctly logged in. Otherwise, an

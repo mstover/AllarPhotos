@@ -5,9 +5,9 @@
 %>
 <%@ include file="/zXZx-LIBRARY-xZXz/include/actionsAndValidate.inc" %>
 
-<jsp:useBean id="productsFound" scope="session" class="com.lazerinc.client.beans.ProductSetBean"/>
-<jsp:useBean id="messages" scope="request" class="com.lazerinc.client.beans.MessageBean"/>
-<jsp:useBean id="searchCategories" scope="session" class="com.lazerinc.client.beans.SearchCategoryBean"/>
+<jsp:useBean id="productsFound" scope="session" class="com.allarphoto.client.beans.ProductSetBean"/>
+<jsp:useBean id="messages" scope="request" class="com.allarphoto.client.beans.MessageBean"/>
+<jsp:useBean id="searchCategories" scope="session" class="com.allarphoto.client.beans.SearchCategoryBean"/>
 
 <c:set var="title" value='${title} - Image Search' />
 <c:set var="help" value="search" scope='session' />

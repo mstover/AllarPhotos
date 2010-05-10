@@ -1,9 +1,9 @@
 <%@ include file="/bali/include/global.inc" %>
 <% addParams.put(RequestConstants.REQUEST_ACTION+"w",ActionConstants.ACTION_GET_COST_REPORT);%>
 <%@ include file="/bali/include/actionsAndValidate.inc" %>
-<jsp:useBean id="cart" scope="session" class="com.lazerinc.client.beans.ShoppingCartBean" />
-<jsp:useBean id="user" scope="session" class="com.lazerinc.client.beans.UserBean" />
-<jsp:useBean id="costReport" scope="request" class="com.lazerinc.client.beans.CostReportBean"/>
+<jsp:useBean id="cart" scope="session" class="com.allarphoto.client.beans.ShoppingCartBean" />
+<jsp:useBean id="user" scope="session" class="com.allarphoto.client.beans.UserBean" />
+<jsp:useBean id="costReport" scope="request" class="com.allarphoto.client.beans.CostReportBean"/>
 <% 
 	String title = "Verifying Order/Download",banner="verify",help="verify";
 %>

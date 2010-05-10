@@ -1,1 +1,1 @@
-com.lazerinc.worldkitchen.WorldKitProductBean.class
+com.allarphoto.worldkitchen.WorldKitProductBean.class

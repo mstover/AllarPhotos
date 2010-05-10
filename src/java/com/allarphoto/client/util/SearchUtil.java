@@ -1,4 +1,4 @@
-package com.lazerinc.client.util;
+package com.allarphoto.client.util;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -18,22 +18,22 @@ import org.coinjema.collections.SortedHashTree;
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.application.Controller;
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.client.beans.ProductSetBean;
-import com.lazerinc.client.beans.SearchCategoryBean;
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.dbtools.QueryItem;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.ecommerce.ProductSet;
-import com.lazerinc.server.ProductService;
-import com.lazerinc.utils.Functions;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
-import com.lazerinc.utils.Rights;
+import com.allarphoto.application.Controller;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.client.beans.ProductSetBean;
+import com.allarphoto.client.beans.SearchCategoryBean;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.dbtools.QueryItem;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.ecommerce.ProductSet;
+import com.allarphoto.server.ProductService;
+import com.allarphoto.utils.Functions;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
+import com.allarphoto.utils.Rights;
 
 /*******************************************************************************
  * Title: Lazerweb Description: Lazerweb - Lazer Inc. version 3.0 Copyright:

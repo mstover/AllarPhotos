@@ -1,4 +1,4 @@
-<%@ page import = "java.io.*,com.lazerinc.application.*,com.lazerinc.dbtools.*, com.lazerinc.ecommerce.*, com.lazerinc.utils.*, java.net.*, com.lazerinc.ecommerce.impl.*, java.util.*, com.lazerinc.beans.*"%>
+<%@ page import = "java.io.*,com.allarphoto.application.*,com.allarphoto.dbtools.*, com.allarphoto.ecommerce.*, com.allarphoto.utils.*, java.net.*, com.allarphoto.ecommerce.impl.*, java.util.*, com.allarphoto.beans.*"%>
 <%
 	DatabaseApplicationController controller = (DatabaseApplicationController)application.getAttribute("lazerweb.admin.controller");
 	if(controller == null)
@@ -32,7 +32,7 @@
 	WebBean.setValues(admin,request);
 	CommerceUser user = new CommerceUser();
 	WebBean.setValues(user,request);
-	com.lazerinc.beans.Company company = new com.lazerinc.beans.Company();
+	com.allarphoto.beans.Company company = new com.allarphoto.beans.Company();
 	company.setName(request.getParameter("name"));
 		String temp;
 	company.setIndustry(request.getParameter("industry_text"));

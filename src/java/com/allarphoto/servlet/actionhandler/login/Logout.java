@@ -1,12 +1,12 @@
-package com.lazerinc.servlet.actionhandler.login;
+package com.allarphoto.servlet.actionhandler.login;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_LOGOUT;
+import static com.allarphoto.servlet.ActionConstants.ACTION_LOGOUT;
 
 import java.util.Map;
 
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 /**
  * The logout action clears all session information, which effectively means the
@@ -27,8 +27,8 @@ public class Logout extends ActionHandlerBase {
 	}
 
 	public void performAction(HandlerData actionInfo)
-			throws com.lazerinc.client.exceptions.FatalException,
-			com.lazerinc.client.exceptions.InformationalException {
+			throws com.allarphoto.client.exceptions.FatalException,
+			com.allarphoto.client.exceptions.InformationalException {
 		for (String o : actionInfo.getBeanMap().keySet()) {
 			getLog().debug("Removing bean " + o + " from user's session");
 			if ("user".equals(o) || "productsFound".equals(o)

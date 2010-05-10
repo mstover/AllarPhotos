@@ -12,12 +12,12 @@
  * other entities.
  **********************************************************************************************************************/
 
-package com.lazerinc.dbtools;
+package com.allarphoto.dbtools;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 
-import com.lazerinc.utils.Functions;
+import com.allarphoto.utils.Functions;
 
 /*******************************************************************************
  * A wrapper class for a database Connection object. This class holds

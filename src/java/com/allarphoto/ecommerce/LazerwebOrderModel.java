@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.io.File;
 import java.util.Calendar;
@@ -21,24 +21,24 @@ import org.coinjema.context.CoinjemaObject;
 
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.CartObject;
-import com.lazerinc.application.Controller;
-import com.lazerinc.application.ExpirationTester;
-import com.lazerinc.application.LogModel;
-import com.lazerinc.application.OrderModel;
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.beans.Address;
-import com.lazerinc.beans.LogItem;
-import com.lazerinc.beans.OrderItem;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.server.ResourceService;
-import com.lazerinc.server.UserService;
-import com.lazerinc.utils.Functions;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
-import com.lazerinc.utils.Rights;
+import com.allarphoto.application.CartObject;
+import com.allarphoto.application.Controller;
+import com.allarphoto.application.ExpirationTester;
+import com.allarphoto.application.LogModel;
+import com.allarphoto.application.OrderModel;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.beans.Address;
+import com.allarphoto.beans.LogItem;
+import com.allarphoto.beans.OrderItem;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.server.ResourceService;
+import com.allarphoto.server.UserService;
+import com.allarphoto.utils.Functions;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
+import com.allarphoto.utils.Rights;
 
 @CoinjemaObject
 public class LazerwebOrderModel implements OrderModel {

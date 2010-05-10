@@ -1,4 +1,4 @@
-package com.lazerinc.abi.actions;
+package com.allarphoto.abi.actions;
 
 import java.util.Map;
 
@@ -7,7 +7,7 @@ import org.coinjema.context.CoinjemaDynamic;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 public class AbiSetup extends ActionHandlerBase {
 

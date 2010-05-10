@@ -1,9 +1,9 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.lazerinc.ecommerce.ProductFamily;
+import com.allarphoto.ecommerce.ProductFamily;
 
 public class FamilyFunctor extends AbstractCacheFunction<ProductFamily> {
 

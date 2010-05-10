@@ -1,20 +1,20 @@
-package com.lazerinc.servlet.actionhandler.commerce;
+package com.allarphoto.servlet.actionhandler.commerce;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_APPROVE_ORDER;
+import static com.allarphoto.servlet.ActionConstants.ACTION_APPROVE_ORDER;
 
 import org.coinjema.context.CoinjemaDependency;
 
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.beans.OrderItem;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.Order;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
-import com.lazerinc.utils.DatabaseLogger;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.beans.OrderItem;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.Order;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.utils.DatabaseLogger;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 /**
  * After all the instructions have been set in the users shopping cart, this
@@ -46,7 +46,7 @@ public class ApproveOrder extends ActionHandlerBase {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#performAction(HandlerData)
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#performAction(HandlerData)
 	 */
 	public void performAction(HandlerData actionInfo) throws LazerwebException {
 		Order order = getOrder(actionInfo);
@@ -130,7 +130,7 @@ public class ApproveOrder extends ActionHandlerBase {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_APPROVE_ORDER;

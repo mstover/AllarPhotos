@@ -12,7 +12,7 @@
  * other entities.
  **********************************************************************************************************************/
 
-package com.lazerinc.dbtools;
+package com.allarphoto.dbtools;
 
 import java.lang.ref.SoftReference;
 import java.sql.ResultSet;
@@ -36,9 +36,9 @@ import org.coinjema.context.CoinjemaObject;
 
 import strategiclibrary.service.DataBase;
 
-import com.lazerinc.utils.Counter;
-import com.lazerinc.utils.Data;
-import com.lazerinc.utils.Functions;
+import com.allarphoto.utils.Counter;
+import com.allarphoto.utils.Data;
+import com.allarphoto.utils.Functions;
 
 /*******************************************************************************
  * This abstract class describes the methods necessary to interact with any
@@ -936,7 +936,7 @@ public abstract class DBConnect {
 	public abstract void dropIndexes(TableDesign table);
 
 	/***************************************************************************
-	 * Returns the resultset (in com.lazerinc.utils.Data format) from the stored
+	 * Returns the resultset (in com.allarphoto.utils.Data format) from the stored
 	 * select procedure specified.
 	 * 
 	 * @param procedureName
@@ -1106,7 +1106,7 @@ public abstract class DBConnect {
 
 	/***************************************************************************
 	 * Returns the resultset from a query in the form of a
-	 * com.lazerinc.utils.Data object.
+	 * com.allarphoto.utils.Data object.
 	 * 
 	 * @param tableName
 	 *            Names of tables selecting from
@@ -1154,7 +1154,7 @@ public abstract class DBConnect {
 
 	/***************************************************************************
 	 * Returns the resultset from a query in the form of a
-	 * com.lazerinc.utils.Data object.
+	 * com.allarphoto.utils.Data object.
 	 * 
 	 * @param tableName
 	 *            Names of tables selecting from
@@ -1289,7 +1289,7 @@ public abstract class DBConnect {
 	 * 
 	 * @param rs
 	 *            ResultSet passed in from a database query
-	 * @return A Data object (com.lazerinc.utils)
+	 * @return A Data object (com.allarphoto.utils)
 	 * @throws java.sql.SQLException
 	 **************************************************************************/
 	public static Data getDataFromResultSet(ResultSet rs, String[] columns)

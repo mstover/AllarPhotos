@@ -1,10 +1,10 @@
-package com.lazerinc.application;
+package com.allarphoto.application;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.lazerinc.server.ProductService;
-import com.lazerinc.server.UserService;
+import com.allarphoto.server.ProductService;
+import com.allarphoto.server.UserService;
 
 public class ServiceGateway {
 

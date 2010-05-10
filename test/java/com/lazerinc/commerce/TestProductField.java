@@ -1,12 +1,12 @@
-package com.lazerinc.commerce;
+package com.allarphoto.commerce;
 
 import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.service.cache.DefaultObjectCache;
 
-import com.lazerinc.category.ProductField;
-import com.lazerinc.category.ProtectedField;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.testObjects.AbstractIntegratedTest;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.category.ProtectedField;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.testObjects.AbstractIntegratedTest;
 
 public class TestProductField extends AbstractIntegratedTest {
 

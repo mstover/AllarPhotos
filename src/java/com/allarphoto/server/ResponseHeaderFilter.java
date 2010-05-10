@@ -1,4 +1,4 @@
-package com.lazerinc.server;
+package com.allarphoto.server;
 
 import java.io.*;
 import javax.servlet.*;

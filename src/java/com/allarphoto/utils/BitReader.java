@@ -20,7 +20,7 @@
 // Title: BitReader
 // Author: Michael Stover
 // Company: Lazer inc.
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

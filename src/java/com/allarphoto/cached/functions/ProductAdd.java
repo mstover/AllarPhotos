@@ -1,4 +1,4 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -17,11 +17,11 @@ import strategiclibrary.service.cache.Cache;
 import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.beans.Path;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.category.ProtectedField;
-import com.lazerinc.ecommerce.CommerceProduct;
-import com.lazerinc.utils.Resource;
+import com.allarphoto.beans.Path;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.category.ProtectedField;
+import com.allarphoto.ecommerce.CommerceProduct;
+import com.allarphoto.utils.Resource;
 
 public class ProductAdd extends AbstractCacheFunction<CommerceProduct> {
 	ResourceAdd resAdder = new ResourceAdd();

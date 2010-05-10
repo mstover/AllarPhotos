@@ -1,5 +1,5 @@
 <%!
-	com.lazerinc.application.DatabaseApplicationController controller;
+	com.allarphoto.application.DatabaseApplicationController controller;
 	public void startup() {
     	ServletConfig config = getServletConfig();
         ServletContext application = config.getServletContext();

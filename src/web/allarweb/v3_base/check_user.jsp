@@ -1,10 +1,10 @@
 <%@ include file="/bali/include/global.inc" %>
 <%@ include file="/bali/include/actionsAndValidate.inc" %>
-<jsp:useBean id="user" scope="session" class="com.lazerinc.client.beans.UserBean" />
-<jsp:useBean id="cart" scope="session" class="com.lazerinc.client.beans.ShoppingCartBean" />
+<jsp:useBean id="user" scope="session" class="com.allarphoto.client.beans.UserBean" />
+<jsp:useBean id="cart" scope="session" class="com.allarphoto.client.beans.ShoppingCartBean" />
 <%	addParams.put(RequestConstants.REQUEST_ACTION+"x",ActionConstants.ACTION_CHECK_USER_INFO); %>
 <%	addParams.put("IncompleteUserInformationException","edit_user_info.jsp?badInfo=true"); %>
-<jsp:useBean id="data" scope="session" class="com.lazerinc.client.beans.GenericDataBean" />
+<jsp:useBean id="data" scope="session" class="com.allarphoto.client.beans.GenericDataBean" />
 <% 
 String title = "Check User Information",banner="verify",help="verify";		
 %>

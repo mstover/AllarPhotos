@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.server;
+package com.allarphoto.ajaxclient.server;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,7 +12,7 @@ import org.coinjema.context.CoinjemaDynamic;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.service.webaction.WebRequestHandlerContainer;
 
-import com.lazerinc.servlet.AbstractContextServlet;
+import com.allarphoto.servlet.AbstractContextServlet;
 
 public class KeywordImportServlet extends AbstractContextServlet {
 

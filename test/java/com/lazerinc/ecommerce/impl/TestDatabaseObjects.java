@@ -1,20 +1,20 @@
-package com.lazerinc.ecommerce.impl;
+package com.allarphoto.ecommerce.impl;
 
 import java.util.Collection;
 
 import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.service.cache.DefaultObjectCache;
 
-import com.lazerinc.beans.Address;
-import com.lazerinc.beans.City;
-import com.lazerinc.beans.Company;
-import com.lazerinc.beans.Country;
-import com.lazerinc.beans.Industry;
-import com.lazerinc.beans.State;
-import com.lazerinc.cached.functions.AddressAdd;
-import com.lazerinc.cached.functions.CompanyAdd;
-import com.lazerinc.cached.functions.IndustryAdd;
-import com.lazerinc.testObjects.AbstractIntegratedTest;
+import com.allarphoto.beans.Address;
+import com.allarphoto.beans.City;
+import com.allarphoto.beans.Company;
+import com.allarphoto.beans.Country;
+import com.allarphoto.beans.Industry;
+import com.allarphoto.beans.State;
+import com.allarphoto.cached.functions.AddressAdd;
+import com.allarphoto.cached.functions.CompanyAdd;
+import com.allarphoto.cached.functions.IndustryAdd;
+import com.allarphoto.testObjects.AbstractIntegratedTest;
 
 
 public class TestDatabaseObjects extends AbstractIntegratedTest

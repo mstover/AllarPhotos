@@ -4,8 +4,8 @@
 	addParams.put(RequestConstants.REQUEST_ACTION+"r",ActionConstants.ACTION_BROWSE_SET);   
 %>
 <%@ include file="/modpac/include/actionsAndValidate.inc" %>
-<jsp:useBean id="productsFound" scope="session" class="com.lazerinc.client.beans.ProductSetBean"/>
-<jsp:useBean id="cart" scope="session" class="com.lazerinc.client.beans.ShoppingCartBean" />
+<jsp:useBean id="productsFound" scope="session" class="com.allarphoto.client.beans.ProductSetBean"/>
+<jsp:useBean id="cart" scope="session" class="com.allarphoto.client.beans.ShoppingCartBean" />
 <c:set var="history_index" value="${productsFound.historyIndex}"/>
 <c:set var="defaultImage" value='${configuration[default_image]}'/>
 <c:set var="title" value='${title} - Browse Images' />

@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.taglib;
+package com.allarphoto.servlet.taglib;
 
 public class ForValueTemplateObject extends ValueTemplateObject {
 	private static final long serialVersionUID = 1;

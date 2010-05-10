@@ -1,8 +1,8 @@
-package com.lazerinc.client.util;
+package com.allarphoto.client.util;
 
 import java.util.Comparator;
 
-import com.lazerinc.category.ProductField;
+import com.allarphoto.category.ProductField;
 
 public class SearchOrderSort implements Comparator<ProductField> {
 

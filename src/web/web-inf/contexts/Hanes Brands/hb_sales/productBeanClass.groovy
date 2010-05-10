@@ -1,1 +1,1 @@
-com.lazerinc.hbi.ChampionSalesProductBean.class
+com.allarphoto.hbi.ChampionSalesProductBean.class

@@ -1,6 +1,6 @@
 <%@ include file="/zXZx-LIBRARY-xZXz/include/global.inc" %>
 <%@ include file="/zXZx-LIBRARY-xZXz/include/handleActions.inc" %>
-<jsp:useBean id="errors" scope="request" class="com.lazerinc.client.beans.ErrorsBean"/>
+<jsp:useBean id="errors" scope="request" class="com.allarphoto.client.beans.ErrorsBean"/>
 
 <% 	/******* Login Page - gateway to the Online Library ********/
 	// insert a session variable as a passthrough to the search page

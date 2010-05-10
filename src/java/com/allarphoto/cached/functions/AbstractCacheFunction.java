@@ -1,4 +1,4 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,8 +12,8 @@ import strategiclibrary.service.cache.Cache;
 import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.service.sql.ObjectMappingService;
 
-import com.lazerinc.cached.DatabaseObject;
-import com.lazerinc.ecommerce.DatabaseUtilities;
+import com.allarphoto.cached.DatabaseObject;
+import com.allarphoto.ecommerce.DatabaseUtilities;
 
 @CoinjemaObject(type = "cacheFunction")
 public abstract class AbstractCacheFunction<T extends DatabaseObject>

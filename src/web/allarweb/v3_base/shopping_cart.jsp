@@ -1,7 +1,7 @@
 <%@ include file="/ema_kpg/include/global.inc" %>
 <%	addParams.put(RequestConstants.REQUEST_ACTION+"x",ActionConstants.ACTION_SET_CART_SET); %>
 <%@ include file="/ema_kpg/include/actionsAndValidate.inc" %>
-<jsp:useBean id="cart" scope="session" class="com.lazerinc.client.beans.ShoppingCartBean" />
+<jsp:useBean id="cart" scope="session" class="com.allarphoto.client.beans.ShoppingCartBean" />
 <c:set var="defaultImage" value='${configuration.properties["default_image"]}'/>
 <%  String title = "Your Shopping Cart",banner="cart",help="cart"; %>
 <%@ include file="header.txt"%>

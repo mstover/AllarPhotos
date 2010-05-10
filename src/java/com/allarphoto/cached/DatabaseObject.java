@@ -1,4 +1,4 @@
-package com.lazerinc.cached;
+package com.allarphoto.cached;
 
 public interface DatabaseObject {
 

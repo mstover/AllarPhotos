@@ -1,4 +1,4 @@
-package com.lazerinc.servlet;
+package com.allarphoto.servlet;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,9 +15,9 @@ import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaDynamic;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.ecommerce.DatabaseUtilities;
+import com.allarphoto.application.Product;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.ecommerce.DatabaseUtilities;
 import com.sun.media.jai.codec.FileSeekableStream;
 
 /*******************************************************************************

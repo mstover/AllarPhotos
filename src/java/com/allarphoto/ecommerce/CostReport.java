@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -16,7 +16,7 @@ import org.apache.log4j.Logger;
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.application.Product;
+import com.allarphoto.application.Product;
 
 /*******************************************************************************
  * Stores cost information for a number of Products. Costs stored are per

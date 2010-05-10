@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import java.util.Iterator;
 
@@ -13,12 +13,12 @@ import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.UpdateListener;
-import com.lazerinc.ajaxclient.client.beans.AjaxOrder;
-import com.lazerinc.ajaxclient.client.beans.AjaxOrderItem;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.UpdateListener;
+import com.allarphoto.ajaxclient.client.beans.AjaxOrder;
+import com.allarphoto.ajaxclient.client.beans.AjaxOrderItem;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
 
 public class OrderDisplay extends VerticalPanel {
 	AjaxOrder order;

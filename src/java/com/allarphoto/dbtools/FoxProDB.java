@@ -12,7 +12,7 @@
  * other entities.
  **********************************************************************************************************************/
 
-package com.lazerinc.dbtools;
+package com.allarphoto.dbtools;
 
 import java.sql.Connection;
 import java.sql.Statement;
@@ -20,7 +20,7 @@ import java.sql.Types;
 
 import org.coinjema.context.CoinjemaContext;
 
-import com.lazerinc.utils.Data;
+import com.allarphoto.utils.Data;
 
 /*******************************************************************************
  * This class is used to connect and drive an ODBC database. No SQL is needed to
@@ -521,7 +521,7 @@ public class FoxProDB extends DBConnect {
 	}
 
 	/***************************************************************************
-	 * Returns the resultset (in com.lazerinc.utils.Data format) from the stored
+	 * Returns the resultset (in com.allarphoto.utils.Data format) from the stored
 	 * select procedure specified.
 	 * 
 	 * @param procedureName
@@ -535,6 +535,6 @@ public class FoxProDB extends DBConnect {
 	public Data useStoredProcedure(String procedureName, String[] columns,
 			String[] args) {
 		return null;
-		// TODO: implement this com.lazerinc.dbtools.DBConnect abstract method
+		// TODO: implement this com.allarphoto.dbtools.DBConnect abstract method
 	}
 }

@@ -20,7 +20,7 @@
 // Title: SecureComponent
 // Author: Michael Stover
 // Company: Lazer Inc.
-package com.lazerinc.application;
+package com.allarphoto.application;
 
 public interface SecureComponent {
 

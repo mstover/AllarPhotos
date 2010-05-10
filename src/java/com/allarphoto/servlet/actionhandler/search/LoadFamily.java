@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.search;
+package com.allarphoto.servlet.actionhandler.search;
 
 import org.coinjema.context.CoinjemaDynamic;
 

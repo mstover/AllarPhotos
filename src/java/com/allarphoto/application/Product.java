@@ -3,15 +3,15 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.application;
+package com.allarphoto.application;
 
 import java.io.Serializable;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Set;
 
-import com.lazerinc.beans.Path;
-import com.lazerinc.ecommerce.ProductFamily;
+import com.allarphoto.beans.Path;
+import com.allarphoto.ecommerce.ProductFamily;
 
 /*******************************************************************************
  * This interface describes a class that can represent any kind of product. In
@@ -154,11 +154,11 @@ public interface Product extends Comparable, Serializable {
 	public void setId(int newId);
 
 	public void setProductFamily(
-			com.lazerinc.ecommerce.ProductFamily newProductFamily);
+			com.allarphoto.ecommerce.ProductFamily newProductFamily);
 
 	public void setProductFamilyName(String family);
 
-	public com.lazerinc.ecommerce.ProductFamily getProductFamily();
+	public com.allarphoto.ecommerce.ProductFamily getProductFamily();
 
 	public String getProductFamilyName();
 

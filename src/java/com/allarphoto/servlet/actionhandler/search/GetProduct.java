@@ -1,18 +1,18 @@
-package com.lazerinc.servlet.actionhandler.search;
+package com.allarphoto.servlet.actionhandler.search;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_GET_PRODUCT;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_PRODUCT_FAMILY;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_PRODUCT_ID;
+import static com.allarphoto.servlet.ActionConstants.ACTION_GET_PRODUCT;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_PRODUCT_FAMILY;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_PRODUCT_ID;
 
 import java.util.Map;
 
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.client.beans.ProductBean;
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.client.exceptions.LazerwebException;
+import com.allarphoto.application.Product;
+import com.allarphoto.client.beans.ProductBean;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.client.exceptions.LazerwebException;
 
 /**
  * Retrieves a specific product and stores its information in a bean.

@@ -3,7 +3,7 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.io.File;
 import java.util.Calendar;
@@ -14,10 +14,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import com.lazerinc.application.CartObject;
-import com.lazerinc.application.Product;
-import com.lazerinc.utils.Functions;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.CartObject;
+import com.allarphoto.application.Product;
+import com.allarphoto.utils.Functions;
+import com.allarphoto.utils.Right;
 
 public class KodakInkOrderModel extends LazerwebOrderModel {
 

@@ -1,12 +1,12 @@
-package com.lazerinc.application;
+package com.allarphoto.application;
 
 import java.util.Collection;
 import java.util.Map;
 
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.CostReport;
-import com.lazerinc.ecommerce.CreditCard;
-import com.lazerinc.ecommerce.OrderResponse;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.CostReport;
+import com.allarphoto.ecommerce.CreditCard;
+import com.allarphoto.ecommerce.OrderResponse;
 
 /**
  * Title: Lazerweb Description: Lazerweb - Lazer Inc. version 3.0 Copyright:

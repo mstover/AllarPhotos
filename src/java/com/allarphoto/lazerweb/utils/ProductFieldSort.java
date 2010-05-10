@@ -1,9 +1,9 @@
-package com.lazerinc.lazerweb.utils;
+package com.allarphoto.lazerweb.utils;
 
 import java.io.Serializable;
 import java.util.Comparator;
 
-import com.lazerinc.application.Product;
+import com.allarphoto.application.Product;
 
 public class ProductFieldSort implements Comparator<Product>, Serializable {
 

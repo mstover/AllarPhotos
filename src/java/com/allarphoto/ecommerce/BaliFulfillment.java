@@ -1,10 +1,10 @@
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import com.lazerinc.beans.OrderItem;
-import com.lazerinc.utils.TinyUrl;
+import com.allarphoto.beans.OrderItem;
+import com.allarphoto.utils.TinyUrl;
 
 public class BaliFulfillment extends LazerwebFulfillment {
 

@@ -1,9 +1,9 @@
-package com.lazerinc.ajaxclient.client.beans;
+package com.allarphoto.ajaxclient.client.beans;
 
 import java.util.HashMap;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
 
 public class AjaxLogItem implements IsSerializable {
 

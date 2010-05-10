@@ -1,4 +1,4 @@
-package com.lazerinc.client.beans;
+package com.allarphoto.client.beans;
 
 import java.io.Serializable;
 import java.util.Iterator;
@@ -7,9 +7,9 @@ import org.apache.log4j.Logger;
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.ecommerce.CostReport;
-import com.lazerinc.ecommerce.ProductFamily;
+import com.allarphoto.application.Product;
+import com.allarphoto.ecommerce.CostReport;
+import com.allarphoto.ecommerce.ProductFamily;
 
 /**
  * @author Administrator To change this generated comment edit the template
@@ -24,7 +24,7 @@ public class CostReportBean implements Serializable {
 	Logger log;
 
 	/**
-	 * @see com.lazerinc.client.beans.ResponseBean#clear()
+	 * @see com.allarphoto.client.beans.ResponseBean#clear()
 	 */
 	public void clear() {
 		report = null;

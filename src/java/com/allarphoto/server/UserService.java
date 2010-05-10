@@ -1,4 +1,4 @@
-package com.lazerinc.server;
+package com.allarphoto.server;
 
 import java.io.StringWriter;
 import java.util.Collection;
@@ -25,18 +25,18 @@ import strategiclibrary.service.sql.ObjectMappingService;
 import strategiclibrary.service.template.TemplateService;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.beans.User;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.security.VirtualGroupBasedSecurity;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
-import com.lazerinc.utils.Rights;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.beans.User;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.security.VirtualGroupBasedSecurity;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
+import com.allarphoto.utils.Rights;
 
 @CoinjemaObject(type = "userService")
 public class UserService {

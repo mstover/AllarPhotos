@@ -1,1 +1,1 @@
-com.lazerinc.irwin.IrwinProductBean.class
+com.allarphoto.irwin.IrwinProductBean.class

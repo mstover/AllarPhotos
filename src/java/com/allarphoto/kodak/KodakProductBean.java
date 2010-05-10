@@ -1,11 +1,11 @@
-package com.lazerinc.kodak;
+package com.allarphoto.kodak;
 
 import org.coinjema.context.CoinjemaDependency;
 import org.coinjema.context.CoinjemaObject;
 
-import com.lazerinc.category.ProductField;
-import com.lazerinc.client.beans.ProductBean;
-import com.lazerinc.ecommerce.DatabaseUtilities;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.client.beans.ProductBean;
+import com.allarphoto.ecommerce.DatabaseUtilities;
 
 @CoinjemaObject
 public class KodakProductBean extends ProductBean {

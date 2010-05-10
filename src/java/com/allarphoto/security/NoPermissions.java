@@ -1,12 +1,12 @@
-package com.lazerinc.security;
+package com.allarphoto.security;
 
 import java.util.Collection;
 import java.util.Collections;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
-import com.lazerinc.utils.Rights;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
+import com.allarphoto.utils.Rights;
 
 public class NoPermissions implements SecurityModel {
 

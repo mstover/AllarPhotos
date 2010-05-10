@@ -1,5 +1,5 @@
-<%@ page import="com.lazerinc.servlet.*,com.lazerinc.client.beans.*,com.lazerinc.dbtools.*,
-com.lazerinc.beans.*,com.lazerinc.utils.*,org.apache.log.Logger,java.net.*,com.lazerinc.ecommerce.*,java.util.*" %>
+<%@ page import="com.allarphoto.servlet.*,com.allarphoto.client.beans.*,com.allarphoto.dbtools.*,
+com.allarphoto.beans.*,com.allarphoto.utils.*,org.apache.log.Logger,java.net.*,com.allarphoto.ecommerce.*,java.util.*" %>
 
 <%@taglib uri="http://www.lazerinc-image.com/" prefix="laz" %>
 <%@taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
@@ -32,4 +32,4 @@ com.lazerinc.beans.*,com.lazerinc.utils.*,org.apache.log.Logger,java.net.*,com.l
 		}
  
 Map addParams = new HashMap(); %>
-<jsp:useBean id="configuration" scope="session" class="com.lazerinc.client.beans.ConfigBean"/>
+<jsp:useBean id="configuration" scope="session" class="com.allarphoto.client.beans.ConfigBean"/>

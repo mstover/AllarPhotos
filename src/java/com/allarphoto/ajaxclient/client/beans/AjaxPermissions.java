@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.beans;
+package com.allarphoto.ajaxclient.client.beans;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,7 +12,7 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 public class AjaxPermissions implements IsSerializable {
 
 	/**
-	 * @gwt.typeArgs <com.lazerinc.ajaxclient.client.beans.AjaxResource,com.lazerinc.ajaxclient.client.beans.AjaxRights>
+	 * @gwt.typeArgs <com.allarphoto.ajaxclient.client.beans.AjaxResource,com.allarphoto.ajaxclient.client.beans.AjaxRights>
 	 */
 	Map perms = new HashMap();
 

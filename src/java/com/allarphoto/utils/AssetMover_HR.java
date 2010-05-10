@@ -4,7 +4,7 @@
  * Created on March 25, 2003
  */
 
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.io.File;
 import java.util.Calendar;

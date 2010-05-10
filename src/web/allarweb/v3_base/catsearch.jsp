@@ -3,9 +3,9 @@
     addParams.put(RequestConstants.REQUEST_ACTION+"r",ActionConstants.ACTION_CATEGORY_SEARCH);   %>
 <%@ include file="/bali/include/actionsAndValidate.inc" %>
 
-<jsp:useBean id="productsFound" scope="session" class="com.lazerinc.client.beans.ProductSetBean"/>
-<jsp:useBean id="messages" scope="request" class="com.lazerinc.client.beans.MessageBean"/>
-<jsp:useBean id="searchCategories" scope="session" class="com.lazerinc.client.beans.SearchCategoryBean"/>
+<jsp:useBean id="productsFound" scope="session" class="com.allarphoto.client.beans.ProductSetBean"/>
+<jsp:useBean id="messages" scope="request" class="com.allarphoto.client.beans.MessageBean"/>
+<jsp:useBean id="searchCategories" scope="session" class="com.allarphoto.client.beans.SearchCategoryBean"/>
 <% String title = "Image Search", banner = "search", help = "search"; // page title and banner image %>
 <!--Header that every page contains-->
 <%@ include file="header.txt"%>

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.lazerinc.security;
+package com.allarphoto.security;
 
 import java.io.ObjectInputStream;
 import java.util.Collection;
@@ -14,10 +14,10 @@ import org.coinjema.context.CoinjemaObject;
 
 import strategiclibrary.service.sql.ObjectMappingService;
 
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
-import com.lazerinc.utils.Rights;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
+import com.allarphoto.utils.Rights;
 
 @CoinjemaObject
 public class GroupBasedSecurity extends AbstractSecurityModel {

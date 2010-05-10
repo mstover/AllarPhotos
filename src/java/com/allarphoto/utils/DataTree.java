@@ -12,7 +12,7 @@
  * other entities.
  **********************************************************************************************************************/
 
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.util.Enumeration;
 import java.util.Vector;

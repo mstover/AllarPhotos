@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.uploader;
+package com.allarphoto.ajaxclient.client.uploader;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,9 +16,9 @@ import com.google.gwt.user.client.ui.Tree;
 import com.google.gwt.user.client.ui.TreeItem;
 import com.google.gwt.user.client.ui.TreeListener;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.components.BusyPopup;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.components.BusyPopup;
 
 public class TreeControls {
 

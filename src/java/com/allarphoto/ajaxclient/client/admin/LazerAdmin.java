@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.admin;
+package com.allarphoto.ajaxclient.client.admin;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.Command;
@@ -15,15 +15,15 @@ import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.CommandFactory;
-import com.lazerinc.ajaxclient.client.ComponentFactory;
-import com.lazerinc.ajaxclient.client.MainPanel;
-import com.lazerinc.ajaxclient.client.Redrawable;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxUser;
-import com.lazerinc.ajaxclient.client.components.PopupWarning;
-import com.lazerinc.ajaxclient.client.components.basic.PngLoadListener;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.CommandFactory;
+import com.allarphoto.ajaxclient.client.ComponentFactory;
+import com.allarphoto.ajaxclient.client.MainPanel;
+import com.allarphoto.ajaxclient.client.Redrawable;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxUser;
+import com.allarphoto.ajaxclient.client.components.PopupWarning;
+import com.allarphoto.ajaxclient.client.components.basic.PngLoadListener;
 
 public class LazerAdmin implements EntryPoint, MainPanel, WindowResizeListener {
 	private DockPanel dock;

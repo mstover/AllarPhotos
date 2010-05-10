@@ -1,11 +1,11 @@
-package com.lazerinc.servlet.actionhandler.search;
+package com.allarphoto.servlet.actionhandler.search;
 
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.client.beans.ProductSetBean;
-import com.lazerinc.client.beans.SearchCategoryBean;
+import com.allarphoto.client.beans.ProductSetBean;
+import com.allarphoto.client.beans.SearchCategoryBean;
 
 public class CheckNumImagesFound extends AbstractSearchAction {
 

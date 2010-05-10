@@ -7,5 +7,5 @@ ds = new
 		ds.setIdleTimeout(1000);
 		ds.setPooling(true);
 		ds.setUser("damuser");
-		ds.setPassword("r!VAld0");
+		ds.setPassword("*****");
 ds

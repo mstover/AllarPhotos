@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components.basic;
+package com.allarphoto.ajaxclient.client.components.basic;
 
 import java.util.ArrayList;
 import java.util.Iterator;

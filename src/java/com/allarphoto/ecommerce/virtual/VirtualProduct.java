@@ -1,4 +1,4 @@
-package com.lazerinc.ecommerce.virtual;
+package com.allarphoto.ecommerce.virtual;
 
 import java.util.Calendar;
 import java.util.Collection;
@@ -6,10 +6,10 @@ import java.util.Date;
 import java.util.Map;
 import java.util.Set;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.beans.Path;
-import com.lazerinc.ecommerce.CommerceProduct;
-import com.lazerinc.ecommerce.ProductFamily;
+import com.allarphoto.application.Product;
+import com.allarphoto.beans.Path;
+import com.allarphoto.ecommerce.CommerceProduct;
+import com.allarphoto.ecommerce.ProductFamily;
 
 public class VirtualProduct extends CommerceProduct {
 	

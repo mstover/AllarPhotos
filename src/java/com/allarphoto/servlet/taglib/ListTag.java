@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.taglib;
+package com.allarphoto.servlet.taglib;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
-import com.lazerinc.utils.Functions;
+import com.allarphoto.utils.Functions;
 
 /*******************************************************************************
  * @author Michael Stover

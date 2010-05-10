@@ -1,4 +1,4 @@
-package com.lazerinc.kodak;
+package com.allarphoto.kodak;
 
 import org.apache.log4j.Logger;
 import org.coinjema.context.CoinjemaDependency;
@@ -6,11 +6,11 @@ import org.coinjema.context.CoinjemaObject;
 
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.Controller;
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.client.beans.Cart;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.Controller;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.client.beans.Cart;
+import com.allarphoto.utils.Right;
 
 public class KodakShoppingCartBean extends KProShoppingCartBean {
 

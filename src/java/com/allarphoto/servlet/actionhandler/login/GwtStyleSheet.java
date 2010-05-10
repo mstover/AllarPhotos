@@ -1,4 +1,4 @@
-package com.lazerinc.servlet.actionhandler.login;
+package com.allarphoto.servlet.actionhandler.login;
 
 import org.coinjema.context.CoinjemaContext;
 import org.coinjema.context.CoinjemaDynamic;
@@ -7,7 +7,7 @@ import org.coinjema.context.ContextFactory;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 public class GwtStyleSheet extends ActionHandlerBase {
 

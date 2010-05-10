@@ -1,12 +1,12 @@
-package com.lazerinc.client.beans;
+package com.allarphoto.client.beans;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import com.lazerinc.application.CartObject;
-import com.lazerinc.application.Product;
+import com.allarphoto.application.CartObject;
+import com.allarphoto.application.Product;
 
 /*******************************************************************************
  * Description of the Class

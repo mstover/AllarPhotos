@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components;
+package com.allarphoto.ajaxclient.client.components;
 
 import java.util.Iterator;
 import java.util.List;
@@ -12,11 +12,11 @@ import com.google.gwt.user.client.ui.TreeItem;
 import com.google.gwt.user.client.ui.TreeListener;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.UpdateListener;
-import com.lazerinc.ajaxclient.client.beans.AjaxOrder;
-import com.lazerinc.ajaxclient.client.beans.AjaxProductFamily;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.UpdateListener;
+import com.allarphoto.ajaxclient.client.beans.AjaxOrder;
+import com.allarphoto.ajaxclient.client.beans.AjaxProductFamily;
 
 public class OrderFilter extends VerticalPanel implements UpdateListener {
 	DatePicker sinceDate;

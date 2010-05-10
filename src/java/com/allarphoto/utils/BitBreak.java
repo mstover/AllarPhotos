@@ -20,7 +20,7 @@
 // Title: BitBreak
 // Author: Michael Stover
 // Company: Lazer inc.
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 public class BitBreak {
 

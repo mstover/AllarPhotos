@@ -1,7 +1,7 @@
-package com.lazerinc.servlet.actionhandler.admin.keyword;
+package com.allarphoto.servlet.actionhandler.admin.keyword;
 
-import static com.lazerinc.servlet.RequestConstants.REQUEST_PRODUCT_FAMILY;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_PRODUCT_ID;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_PRODUCT_FAMILY;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_PRODUCT_ID;
 
 import java.util.Set;
 
@@ -12,14 +12,14 @@ import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.util.Converter;
 import strategiclibrary.util.Files;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 public class UpdateProduct extends ActionHandlerBase {
 

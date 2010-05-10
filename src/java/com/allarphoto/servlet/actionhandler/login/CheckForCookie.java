@@ -1,10 +1,10 @@
-package com.lazerinc.servlet.actionhandler.login;
+package com.allarphoto.servlet.actionhandler.login;
 
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 public class CheckForCookie extends ActionHandlerBase {
 

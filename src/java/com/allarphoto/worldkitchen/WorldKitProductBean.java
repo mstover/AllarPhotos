@@ -1,9 +1,9 @@
-package com.lazerinc.worldkitchen;
+package com.allarphoto.worldkitchen;
 
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.category.ProductField;
-import com.lazerinc.client.beans.ProductBean;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.client.beans.ProductBean;
 
 public class WorldKitProductBean extends ProductBean {
 

@@ -1,6 +1,6 @@
-package com.lazerinc.servlet.actionhandler.search;
+package com.allarphoto.servlet.actionhandler.search;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_SIMPLE_SEARCH;
+import static com.allarphoto.servlet.ActionConstants.ACTION_SIMPLE_SEARCH;
 
 import java.util.Calendar;
 import java.util.HashSet;
@@ -11,11 +11,11 @@ import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.client.beans.ProductSetBean;
-import com.lazerinc.client.beans.SearchCategoryBean;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.ecommerce.ProductSet;
-import com.lazerinc.servlet.RequestConstants;
+import com.allarphoto.client.beans.ProductSetBean;
+import com.allarphoto.client.beans.SearchCategoryBean;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.ecommerce.ProductSet;
+import com.allarphoto.servlet.RequestConstants;
 
 /**
  * A simple keyword search action.
@@ -42,8 +42,8 @@ public class SimpleSearch extends AbstractSearchAction {
 	}
 
 	public void performAction(HandlerData actionInfo)
-			throws com.lazerinc.client.exceptions.FatalException,
-			com.lazerinc.client.exceptions.InformationalException,
+			throws com.allarphoto.client.exceptions.FatalException,
+			com.allarphoto.client.exceptions.InformationalException,
 			ActionException {
 		SearchCategoryBean categories = getSearchCategoryBean(actionInfo);
 		ProductSetBean productBean = getProductsFound(actionInfo);

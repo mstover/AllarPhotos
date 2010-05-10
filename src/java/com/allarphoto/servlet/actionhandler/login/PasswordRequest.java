@@ -1,7 +1,7 @@
-package com.lazerinc.servlet.actionhandler.login;
+package com.allarphoto.servlet.actionhandler.login;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_PASSWORD_REQUEST;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_EMAIL;
+import static com.allarphoto.servlet.ActionConstants.ACTION_PASSWORD_REQUEST;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_EMAIL;
 
 import java.util.Collection;
 
@@ -12,10 +12,10 @@ import strategiclibrary.service.notification.NotificationService;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.utils.Functions;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.utils.Functions;
 
 /**
  * This will cause the password for the requested username be sent to the user's
@@ -49,14 +49,14 @@ public class PasswordRequest extends Login {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#requiresLogin()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#requiresLogin()
 	 */
 	public boolean requiresLogin() {
 		return false;
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#performAction(HandlerData)
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#performAction(HandlerData)
 	 */
 	public void performAction(HandlerData actionInfo) throws ActionException {
 		String username = actionInfo.getParameter("username");
@@ -88,7 +88,7 @@ public class PasswordRequest extends Login {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_PASSWORD_REQUEST;

@@ -1,7 +1,7 @@
-package com.lazerinc.ajaxclient.client.beans;
+package com.allarphoto.ajaxclient.client.beans;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
-import com.lazerinc.ajaxclient.client.components.icons.BaseIcon;
+import com.allarphoto.ajaxclient.client.components.icons.BaseIcon;
 
 public class Request implements IsSerializable {
 

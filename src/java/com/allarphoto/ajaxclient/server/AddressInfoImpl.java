@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.server;
+package com.allarphoto.ajaxclient.server;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -13,17 +13,17 @@ import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.service.sql.ObjectMappingService;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.ajaxclient.client.AddressInfo;
-import com.lazerinc.ajaxclient.client.beans.AjaxAddress;
-import com.lazerinc.beans.Address;
-import com.lazerinc.beans.City;
-import com.lazerinc.beans.Company;
-import com.lazerinc.beans.Country;
-import com.lazerinc.beans.Industry;
-import com.lazerinc.beans.OrderItem;
-import com.lazerinc.beans.State;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.ecommerce.CommerceUser;
+import com.allarphoto.ajaxclient.client.AddressInfo;
+import com.allarphoto.ajaxclient.client.beans.AjaxAddress;
+import com.allarphoto.beans.Address;
+import com.allarphoto.beans.City;
+import com.allarphoto.beans.Company;
+import com.allarphoto.beans.Country;
+import com.allarphoto.beans.Industry;
+import com.allarphoto.beans.OrderItem;
+import com.allarphoto.beans.State;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.ecommerce.CommerceUser;
 
 public class AddressInfoImpl extends AbstractGwtServlet implements AddressInfo {
 	private static final long serialVersionUID = 1;

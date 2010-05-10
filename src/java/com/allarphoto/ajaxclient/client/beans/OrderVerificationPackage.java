@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.beans;
+package com.allarphoto.ajaxclient.client.beans;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -14,12 +14,12 @@ public class OrderVerificationPackage implements IsSerializable {
 	String family;
 
 	/**
-	 * @gwt.typeArgs <com.lazerinc.ajaxclient.client.beans.FormField>
+	 * @gwt.typeArgs <com.allarphoto.ajaxclient.client.beans.FormField>
 	 */
 	List fields = new ArrayList();
 
 	/**
-	 * @gwt.typeArgs <com.lazerinc.ajaxclient.client.beans.Request>
+	 * @gwt.typeArgs <com.allarphoto.ajaxclient.client.beans.Request>
 	 */
 	List requests = new ArrayList();
 

@@ -17,7 +17,7 @@
     <!-- fetchpix servlet -->
     <servlet>
         <servlet-name>fetchpix</servlet-name>
-        <servlet-class>com.lazerinc.servlet.fetch</servlet-class>
+        <servlet-class>com.allarphoto.servlet.fetch</servlet-class>
         <init-param>
           <param-name>default_file</param-name>
           <param-value>/iwimages/image_unavailable.gif</param-value>
@@ -34,42 +34,42 @@
     
     <servlet>
     	<servlet-name>UserInfoGWT</servlet-name>
-    	<servlet-class>com.lazerinc.ajaxclient.server.UserInformationImpl</servlet-class>
+    	<servlet-class>com.allarphoto.ajaxclient.server.UserInformationImpl</servlet-class>
     </servlet>
     
     <servlet>
     	<servlet-name>LibInfoGWT</servlet-name>
-    	<servlet-class>com.lazerinc.ajaxclient.server.LibraryInfoImpl</servlet-class>
+    	<servlet-class>com.allarphoto.ajaxclient.server.LibraryInfoImpl</servlet-class>
     </servlet>
     
     <servlet>
     	<servlet-name>KeywordImport</servlet-name>
-    	<servlet-class>com.lazerinc.ajaxclient.server.KeywordImportServlet</servlet-class>
+    	<servlet-class>com.allarphoto.ajaxclient.server.KeywordImportServlet</servlet-class>
     </servlet>
     
     <servlet>
     	<servlet-name>EventServiceGWT</servlet-name>
-    	<servlet-class>com.lazerinc.ajaxclient.server.EventServiceImpl</servlet-class>
+    	<servlet-class>com.allarphoto.ajaxclient.server.EventServiceImpl</servlet-class>
     </servlet>
     
     <servlet>
     	<servlet-name>OrderServiceGWT</servlet-name>
-    	<servlet-class>com.lazerinc.ajaxclient.server.OrderServiceImpl</servlet-class>
+    	<servlet-class>com.allarphoto.ajaxclient.server.OrderServiceImpl</servlet-class>
     </servlet>
     
     <servlet>
     	<servlet-name>CustomServiceGWT</servlet-name>
-    	<servlet-class>com.lazerinc.ajaxclient.server.CustomServiceImpl</servlet-class>
+    	<servlet-class>com.allarphoto.ajaxclient.server.CustomServiceImpl</servlet-class>
     </servlet>
     
     <servlet>
     	<servlet-name>AddressInfoGWT</servlet-name>
-    	<servlet-class>com.lazerinc.ajaxclient.server.AddressInfoImpl</servlet-class>
+    	<servlet-class>com.allarphoto.ajaxclient.server.AddressInfoImpl</servlet-class>
     </servlet>
     
     <servlet>
     	<servlet-name>UploadServiceGWT</servlet-name>
-    	<servlet-class>com.lazerinc.ajaxclient.server.UploadServiceImpl</servlet-class>
+    	<servlet-class>com.allarphoto.ajaxclient.server.UploadServiceImpl</servlet-class>
     </servlet>
     
     <servlet>
@@ -84,7 +84,7 @@
     
     <servlet>
     	<servlet-name>uploader</servlet-name>
-    	<servlet-class>com.lazerinc.ajaxclient.server.UploadServlet</servlet-class>
+    	<servlet-class>com.allarphoto.ajaxclient.server.UploadServlet</servlet-class>
     </servlet>
 
     <!-- mapping for fetchpix -->

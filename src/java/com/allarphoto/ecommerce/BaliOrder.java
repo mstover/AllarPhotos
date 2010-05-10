@@ -1,12 +1,12 @@
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
-import static com.lazerinc.ecommerce.Order.Status.AWAITING_APPROVAL;
+import static com.allarphoto.ecommerce.Order.Status.AWAITING_APPROVAL;
 
 import java.io.Serializable;
 import java.util.Collection;
 
-import com.lazerinc.application.Fulfillment;
-import com.lazerinc.beans.OrderItem;
+import com.allarphoto.application.Fulfillment;
+import com.allarphoto.beans.OrderItem;
 
 public class BaliOrder extends Order implements Serializable {
 	private static final long serialVersionUID = 1;

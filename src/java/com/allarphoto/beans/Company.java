@@ -20,14 +20,14 @@
 // Title: Company
 // Author: Michael Stover
 // Company: Lazer Inc.
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-import com.lazerinc.cached.DatabaseObject;
+import com.allarphoto.cached.DatabaseObject;
 
 public class Company implements Serializable, Comparable<Company>,
 		DatabaseObject {

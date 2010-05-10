@@ -1,27 +1,27 @@
-package com.lazerinc.ajaxclient.client.components.abi;
+package com.allarphoto.ajaxclient.client.components.abi;
 
 import com.google.gwt.user.client.Command;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.ClickListener;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.CommandFactory;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.SwappablePanel;
-import com.lazerinc.ajaxclient.client.admin.LazerMenu;
-import com.lazerinc.ajaxclient.client.beans.AjaxCart;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
-import com.lazerinc.ajaxclient.client.beans.AjaxProductFamily;
-import com.lazerinc.ajaxclient.client.beans.Request;
-import com.lazerinc.ajaxclient.client.components.CheckoutPanel;
-import com.lazerinc.ajaxclient.client.components.NumberSelector;
-import com.lazerinc.ajaxclient.client.components.SearchCenter;
-import com.lazerinc.ajaxclient.client.components.SearchResultsViewer;
-import com.lazerinc.ajaxclient.client.components.SearchTree;
-import com.lazerinc.ajaxclient.client.components.SouthShoppingCart;
-import com.lazerinc.ajaxclient.client.components.ThumbnailPanel;
-import com.lazerinc.ajaxclient.client.components.VerifyScreen;
-import com.lazerinc.ajaxclient.client.factory.DefaultComponentFactory;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.CommandFactory;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.SwappablePanel;
+import com.allarphoto.ajaxclient.client.admin.LazerMenu;
+import com.allarphoto.ajaxclient.client.beans.AjaxCart;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.beans.AjaxProductFamily;
+import com.allarphoto.ajaxclient.client.beans.Request;
+import com.allarphoto.ajaxclient.client.components.CheckoutPanel;
+import com.allarphoto.ajaxclient.client.components.NumberSelector;
+import com.allarphoto.ajaxclient.client.components.SearchCenter;
+import com.allarphoto.ajaxclient.client.components.SearchResultsViewer;
+import com.allarphoto.ajaxclient.client.components.SearchTree;
+import com.allarphoto.ajaxclient.client.components.SouthShoppingCart;
+import com.allarphoto.ajaxclient.client.components.ThumbnailPanel;
+import com.allarphoto.ajaxclient.client.components.VerifyScreen;
+import com.allarphoto.ajaxclient.client.factory.DefaultComponentFactory;
 
 public class ABIComponentFactory extends DefaultComponentFactory {
 

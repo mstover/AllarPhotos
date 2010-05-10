@@ -1,1 +1,1 @@
-com.lazerinc.hbi.IntimatesProductBean.class
+com.allarphoto.hbi.IntimatesProductBean.class

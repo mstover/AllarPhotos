@@ -1,4 +1,4 @@
-package com.lazerinc.ajaxclient.client.components.fineart;
+package com.allarphoto.ajaxclient.client.components.fineart;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
@@ -12,16 +12,16 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RadioButton;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.Services;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
-import com.lazerinc.ajaxclient.client.components.BusyPopup;
-import com.lazerinc.ajaxclient.client.components.MultiProductPanel;
-import com.lazerinc.ajaxclient.client.components.PageSelector;
-import com.lazerinc.ajaxclient.client.components.PopupWarning;
-import com.lazerinc.ajaxclient.client.components.SearchResultsViewer;
-import com.lazerinc.ajaxclient.client.components.VerticalProductPanel;
-import com.lazerinc.ajaxclient.client.components.icons.SimpleIcon;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.Services;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.components.BusyPopup;
+import com.allarphoto.ajaxclient.client.components.MultiProductPanel;
+import com.allarphoto.ajaxclient.client.components.PageSelector;
+import com.allarphoto.ajaxclient.client.components.PopupWarning;
+import com.allarphoto.ajaxclient.client.components.SearchResultsViewer;
+import com.allarphoto.ajaxclient.client.components.VerticalProductPanel;
+import com.allarphoto.ajaxclient.client.components.icons.SimpleIcon;
 
 public class FineArtSearchResultsViewer extends SearchResultsViewer {
 

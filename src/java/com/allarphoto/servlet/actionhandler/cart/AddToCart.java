@@ -1,16 +1,16 @@
-package com.lazerinc.servlet.actionhandler.cart;
+package com.allarphoto.servlet.actionhandler.cart;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_ADD_TO_CART;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_PRODUCT_FAMILY;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_PRODUCT_ID;
+import static com.allarphoto.servlet.ActionConstants.ACTION_ADD_TO_CART;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_PRODUCT_FAMILY;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_PRODUCT_ID;
 
 import java.util.Map;
 
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.client.util.SearchUtil;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.client.util.SearchUtil;
 
 /**
  * Title: Lazerweb Description: Lazerweb - Lazer Inc. version 3.0 Copyright:

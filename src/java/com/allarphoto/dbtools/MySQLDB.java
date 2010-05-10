@@ -11,13 +11,13 @@
  * Lazer does have the right to sell this exception, if they choose, but they cannot grant additional exceptions to any
  * other entities.
  **********************************************************************************************************************/
-package com.lazerinc.dbtools;
+package com.allarphoto.dbtools;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import com.lazerinc.utils.Data;
-import com.lazerinc.utils.Functions;
+import com.allarphoto.utils.Data;
+import com.allarphoto.utils.Functions;
 
 public class MySQLDB extends DBConnect {
 
@@ -65,7 +65,7 @@ public class MySQLDB extends DBConnect {
 	} // end of Method
 
 	public boolean createTable(TableDesign parm1) {
-		// TODO: implement this com.lazerinc.dbtools.DBConnect abstract method
+		// TODO: implement this com.allarphoto.dbtools.DBConnect abstract method
 		return false;
 	}
 
@@ -256,25 +256,25 @@ public class MySQLDB extends DBConnect {
 	}
 
 	public boolean createPrimaryAutoNumber(TableDesign parm1) {
-		// TODO: implement this com.lazerinc.dbtools.DBConnect abstract method
+		// TODO: implement this com.allarphoto.dbtools.DBConnect abstract method
 		return false;
 	}
 
 	public void dropIndexes(TableDesign parm1) {
-		// TODO: implement this com.lazerinc.dbtools.DBConnect abstract method
+		// TODO: implement this com.allarphoto.dbtools.DBConnect abstract method
 	}
 
 	public void createIndexes(TableDesign parm1) {
-		// TODO: implement this com.lazerinc.dbtools.DBConnect abstract method
+		// TODO: implement this com.allarphoto.dbtools.DBConnect abstract method
 	}
 
 	public String setType(TableDesign parm1, String parm2) {
 		return "";
-		// TODO: implement this com.lazerinc.dbtools.DBConnect abstract method
+		// TODO: implement this com.allarphoto.dbtools.DBConnect abstract method
 	}
 
 	/***************************************************************************
-	 * Returns the resultset (in com.lazerinc.utils.Data format) from the stored
+	 * Returns the resultset (in com.allarphoto.utils.Data format) from the stored
 	 * select procedure specified.
 	 * 
 	 * @param procedureName
@@ -288,7 +288,7 @@ public class MySQLDB extends DBConnect {
 	public Data useStoredProcedure(String procedureName, String[] columns,
 			String[] args) {
 		return null;
-		// TODO: implement this com.lazerinc.dbtools.DBConnect abstract method
+		// TODO: implement this com.allarphoto.dbtools.DBConnect abstract method
 	}
 
 }

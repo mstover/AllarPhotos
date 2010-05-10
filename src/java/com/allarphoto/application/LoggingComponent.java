@@ -20,7 +20,7 @@
 // Title: LoggingComponent
 // Author: Michael Stover
 // Company: Lazer inc.
-package com.lazerinc.application;
+package com.allarphoto.application;
 
 public interface LoggingComponent {
 

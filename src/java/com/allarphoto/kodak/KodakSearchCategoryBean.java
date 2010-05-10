@@ -1,4 +1,4 @@
-package com.lazerinc.kodak;
+package com.allarphoto.kodak;
 
 import java.util.Collection;
 import java.util.LinkedList;
@@ -6,8 +6,8 @@ import java.util.List;
 
 import org.coinjema.collections.HashTree;
 
-import com.lazerinc.client.beans.ProductSetBean;
-import com.lazerinc.client.beans.SearchCategoryBean;
+import com.allarphoto.client.beans.ProductSetBean;
+import com.allarphoto.client.beans.SearchCategoryBean;
 
 public class KodakSearchCategoryBean extends SearchCategoryBean {
 

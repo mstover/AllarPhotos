@@ -1,4 +1,4 @@
-package com.lazerinc.fineart;
+package com.allarphoto.fineart;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,11 +7,11 @@ import java.util.Set;
 import strategiclibrary.service.webaction.ActionException;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.beans.User;
-import com.lazerinc.beans.UserRequest;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.servlet.actionhandler.user.UserAccessRequest;
+import com.allarphoto.beans.User;
+import com.allarphoto.beans.UserRequest;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.servlet.actionhandler.user.UserAccessRequest;
 
 public class FineArtAccessRequest extends UserAccessRequest {
 

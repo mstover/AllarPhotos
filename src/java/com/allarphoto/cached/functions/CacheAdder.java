@@ -1,4 +1,4 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
 public interface CacheAdder<T> {
 	public void add(T obj);

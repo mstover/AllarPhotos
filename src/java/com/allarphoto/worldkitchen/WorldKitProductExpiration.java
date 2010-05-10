@@ -1,15 +1,15 @@
-package com.lazerinc.worldkitchen;
+package com.allarphoto.worldkitchen;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.application.impl.DefaultExpirationTester;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.application.impl.DefaultExpirationTester;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 public class WorldKitProductExpiration extends DefaultExpirationTester {
 

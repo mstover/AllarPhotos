@@ -1,4 +1,4 @@
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 public enum Right {
 	READ {

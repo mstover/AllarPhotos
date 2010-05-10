@@ -1,22 +1,22 @@
-package com.lazerinc.servlet.actionhandler.commerce;
+package com.allarphoto.servlet.actionhandler.commerce;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_GET_COST_REPORT;
+import static com.allarphoto.servlet.ActionConstants.ACTION_GET_COST_REPORT;
 
 import java.util.Collection;
 import java.util.Iterator;
 
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.OrderingService;
-import com.lazerinc.application.ServiceGateway;
-import com.lazerinc.client.beans.CostReportBean;
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.FatalException;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.ecommerce.CostReport;
-import com.lazerinc.ecommerce.ProductFamily;
-import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
+import com.allarphoto.application.OrderingService;
+import com.allarphoto.application.ServiceGateway;
+import com.allarphoto.client.beans.CostReportBean;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.FatalException;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.ecommerce.CostReport;
+import com.allarphoto.ecommerce.ProductFamily;
+import com.allarphoto.servlet.actionhandler.ActionHandlerBase;
 
 /**
  * Returns information about the cost of the currently ordered products in the
@@ -32,7 +32,7 @@ import com.lazerinc.servlet.actionhandler.ActionHandlerBase;
 public class GetCostReport extends ActionHandlerBase {
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#performAction(HandlerData)
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#performAction(HandlerData)
 	 */
 	public void performAction(HandlerData actionInfo) throws FatalException,
 			InformationalException {
@@ -60,7 +60,7 @@ public class GetCostReport extends ActionHandlerBase {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_GET_COST_REPORT;

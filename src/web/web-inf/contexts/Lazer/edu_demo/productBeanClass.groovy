@@ -1,1 +1,1 @@
-com.lazerinc.edu.EduProductBean.class
+com.allarphoto.edu.EduProductBean.class

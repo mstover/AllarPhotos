@@ -2,7 +2,7 @@
  * DateBean.java Created on June 18, 2003, 12:41 PM
  */
 
-package com.lazerinc.client.beans;
+package com.allarphoto.client.beans;
 
 import java.io.Serializable;
 import java.text.DateFormat;

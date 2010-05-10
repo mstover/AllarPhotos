@@ -1,1 +1,1 @@
-new com.lazerinc.saralee.BaliProductExpiration()
+new com.allarphoto.saralee.BaliProductExpiration()

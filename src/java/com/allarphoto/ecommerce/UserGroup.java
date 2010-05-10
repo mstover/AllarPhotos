@@ -20,7 +20,7 @@
 // Title: UserGroup
 // Author: Michael Stover
 // Company: Lazer Inc.
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -32,11 +32,11 @@ import org.coinjema.context.CoinjemaDynamic;
 
 import strategiclibrary.service.cache.CacheService;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.security.GroupBasedSecurity;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
-import com.lazerinc.utils.Rights;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.security.GroupBasedSecurity;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
+import com.allarphoto.utils.Rights;
 
 public class UserGroup implements Serializable, Comparable<UserGroup>,
 		SecurityModel {

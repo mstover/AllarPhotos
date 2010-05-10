@@ -14,7 +14,7 @@
 		<!-- You can put it in the HEAD, but startup    -->
 		<!-- is slightly faster if you include it here. -->
 		<!--                                            -->
-		<meta name='gwt:module' content='com.lazerinc.ajaxclient.AddressFragment'>
+		<meta name='gwt:module' content='com.allarphoto.ajaxclient.AddressFragment'>
 		<script language="javascript" src="gwt.js"></script>
 #end
 	

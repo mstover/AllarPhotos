@@ -1,11 +1,11 @@
-package com.lazerinc.cached.functions;
+package com.allarphoto.cached.functions;
 
 import org.coinjema.context.CoinjemaDependency;
 
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.DatabaseUtilities;
-import com.lazerinc.ecommerce.UserGroup;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.DatabaseUtilities;
+import com.allarphoto.ecommerce.UserGroup;
 
 public class UserAdd extends AbstractCacheFunction<CommerceUser> implements
 		CacheAdder<CommerceUser> {

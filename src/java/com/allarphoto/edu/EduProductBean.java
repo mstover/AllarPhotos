@@ -1,12 +1,12 @@
-package com.lazerinc.edu;
+package com.allarphoto.edu;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.client.beans.ProductBean;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.client.beans.ProductBean;
+import com.allarphoto.utils.Right;
 
 public class EduProductBean extends ProductBean {
 	private static final long serialVersionUID = 1;

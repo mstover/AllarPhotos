@@ -1,11 +1,11 @@
-package com.lazerinc.testObjects;
+package com.allarphoto.testObjects;
 
 import java.util.Properties;
 
 import org.coinjema.context.CoinjemaContext;
 import org.coinjema.context.CoinjemaDynamic;
 
-import com.lazerinc.application.Controller;
+import com.allarphoto.application.Controller;
 
 
 public class DoNothingController extends Controller

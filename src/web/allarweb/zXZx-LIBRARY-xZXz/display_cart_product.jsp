@@ -10,7 +10,7 @@
 	String help = "detail";
 %>
 <%@ include file="/zXZx-LIBRARY-xZXz/include/actionsAndValidate.inc" %>
-<jsp:useBean id="productBean" scope="session" class="com.lazerinc.client.beans.ProductBean"/>
+<jsp:useBean id="productBean" scope="session" class="com.allarphoto.client.beans.ProductBean"/>
 <c:set var="product" value="${productBean.product}"/>
 <c:set var="defaultImage" value='${configuration.properties["default_image"]}'/>
 <c:set var="thumbDir" value='${product.value["Thumbnail Directory"]}'/>

@@ -1,12 +1,12 @@
-package com.lazerinc.welchallyn;
+package com.allarphoto.welchallyn;
 
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.client.exceptions.LazerwebException;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.client.exceptions.LazerwebException;
 
 public class ExecuteOrder extends
-		com.lazerinc.servlet.actionhandler.commerce.ExecuteOrder {
+		com.allarphoto.servlet.actionhandler.commerce.ExecuteOrder {
 
 	public ExecuteOrder() {
 	}

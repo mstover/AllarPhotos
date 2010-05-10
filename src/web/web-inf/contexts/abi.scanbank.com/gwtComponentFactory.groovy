@@ -1,1 +1,1 @@
-com.lazerinc.ajaxclient.client.components.abi.ABIComponentFactory.class
+com.allarphoto.ajaxclient.client.components.abi.ABIComponentFactory.class

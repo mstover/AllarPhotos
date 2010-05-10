@@ -1,12 +1,12 @@
-package com.lazerinc.ajaxclient.client.components.fineart;
+package com.allarphoto.ajaxclient.client.components.fineart;
 
 import com.google.gwt.user.client.ui.ClickListener;
 import com.google.gwt.user.client.ui.Grid;
 import com.google.gwt.user.client.ui.HasVerticalAlignment;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Label;
-import com.lazerinc.ajaxclient.client.AjaxSystem;
-import com.lazerinc.ajaxclient.client.components.NumberSelector;
+import com.allarphoto.ajaxclient.client.AjaxSystem;
+import com.allarphoto.ajaxclient.client.components.NumberSelector;
 
 public class FineArtNumberSelector extends NumberSelector {
 

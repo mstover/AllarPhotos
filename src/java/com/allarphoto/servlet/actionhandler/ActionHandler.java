@@ -1,12 +1,12 @@
-package com.lazerinc.servlet.actionhandler;
+package com.allarphoto.servlet.actionhandler;
 
 import java.util.Map;
 
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.servlet.ActionConstants;
-import com.lazerinc.servlet.RequestConstants;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.servlet.ActionConstants;
+import com.allarphoto.servlet.RequestConstants;
 
 public interface ActionHandler extends ActionConstants, RequestConstants {
 

@@ -12,7 +12,7 @@
  * other entities.
  **********************************************************************************************************************/
 
-package com.lazerinc.dbtools;
+package com.allarphoto.dbtools;
 
 import java.sql.ResultSet;
 import java.sql.Types;
@@ -22,8 +22,8 @@ import java.util.GregorianCalendar;
 import org.apache.log4j.Logger;
 import org.coinjema.context.CoinjemaContext;
 
-import com.lazerinc.utils.Data;
-import com.lazerinc.utils.Functions;
+import com.allarphoto.utils.Data;
+import com.allarphoto.utils.Functions;
 
 /*******************************************************************************
  * This class is used to connect and drive an Interbase database. No SQL is
@@ -585,7 +585,7 @@ public class InterbaseDB extends DBConnect {
 	} // End Method
 
 	/***************************************************************************
-	 * Returns the resultset (in com.lazerinc.utils.Data format) from the stored
+	 * Returns the resultset (in com.allarphoto.utils.Data format) from the stored
 	 * select procedure specified.
 	 * 
 	 * @param procedureName

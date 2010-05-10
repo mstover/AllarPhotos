@@ -12,12 +12,12 @@
  * other entities.
  **********************************************************************************************************************/
 
-package com.lazerinc.dbtools;
+package com.allarphoto.dbtools;
 
 import java.sql.Types;
 
-import com.lazerinc.utils.Data;
-import com.lazerinc.utils.Functions;
+import com.allarphoto.utils.Data;
+import com.allarphoto.utils.Functions;
 
 /*******************************************************************************
  * This class is used to connect and drive an ODBC database. No SQL is needed to
@@ -495,7 +495,7 @@ public class OdbcDB extends DBConnect {
 	} // End of Method
 
 	/***************************************************************************
-	 * Returns the resultset (in com.lazerinc.utils.Data format) from the stored
+	 * Returns the resultset (in com.allarphoto.utils.Data format) from the stored
 	 * select procedure specified.
 	 * 
 	 * @param procedureName
@@ -509,6 +509,6 @@ public class OdbcDB extends DBConnect {
 	public Data useStoredProcedure(String procedureName, String[] columns,
 			String[] args) {
 		return null;
-		// TODO: implement this com.lazerinc.dbtools.DBConnect abstract method
+		// TODO: implement this com.allarphoto.dbtools.DBConnect abstract method
 	}
 }

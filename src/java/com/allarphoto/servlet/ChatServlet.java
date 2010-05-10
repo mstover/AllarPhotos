@@ -1,4 +1,4 @@
-package com.lazerinc.servlet;
+package com.allarphoto.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;

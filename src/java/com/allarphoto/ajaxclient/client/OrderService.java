@@ -1,17 +1,17 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
 import java.util.List;
 
 import com.google.gwt.user.client.rpc.RemoteService;
-import com.lazerinc.ajaxclient.client.beans.AjaxAddress;
-import com.lazerinc.ajaxclient.client.beans.AjaxCart;
-import com.lazerinc.ajaxclient.client.beans.AjaxOrder;
-import com.lazerinc.ajaxclient.client.beans.AjaxOrderResponse;
+import com.allarphoto.ajaxclient.client.beans.AjaxAddress;
+import com.allarphoto.ajaxclient.client.beans.AjaxCart;
+import com.allarphoto.ajaxclient.client.beans.AjaxOrder;
+import com.allarphoto.ajaxclient.client.beans.AjaxOrderResponse;
 
 public interface OrderService extends RemoteService {
 
 	/**
-	 * @gwt.typeArgs <com.lazerinc.ajaxclient.client.beans.OrderVerificationPackage>
+	 * @gwt.typeArgs <com.allarphoto.ajaxclient.client.beans.OrderVerificationPackage>
 	 * @param cart
 	 * @return
 	 */
@@ -19,9 +19,9 @@ public interface OrderService extends RemoteService {
 
 	/**
 	 * 
-	 * @gwt.typeArgs <com.lazerinc.ajaxclient.client.beans.AjaxOrderResponse>
+	 * @gwt.typeArgs <com.allarphoto.ajaxclient.client.beans.AjaxOrderResponse>
 	 * @gwt.typeArgs orders
-	 *               <com.lazerinc.ajaxclient.client.beans.OrderVerificationPackage>
+	 *               <com.allarphoto.ajaxclient.client.beans.OrderVerificationPackage>
 	 * @param orders
 	 * @param aa
 	 * @return
@@ -42,19 +42,19 @@ public interface OrderService extends RemoteService {
 			List families, String[] links);
 
 	/**
-	 * @gwt.typeArgs <com.lazerinc.ajaxclient.client.beans.AjaxOrder>
+	 * @gwt.typeArgs <com.allarphoto.ajaxclient.client.beans.AjaxOrder>
 	 * @return
 	 */
 	public List getOrders(String status, String fromDate);
 
 	/**
-	 * @gwt.typeArgs <com.lazerinc.ajaxclient.client.beans.AjaxOrder>
+	 * @gwt.typeArgs <com.allarphoto.ajaxclient.client.beans.AjaxOrder>
 	 * @return
 	 */
 	public List getLibraryOrders(String library, String status, String fromDate);
 
 	/**
-	 * @gwt.typeArgs <com.lazerinc.ajaxclient.client.beans.AjaxOrder>
+	 * @gwt.typeArgs <com.allarphoto.ajaxclient.client.beans.AjaxOrder>
 	 * @return
 	 */
 	public List getUserOrders(String username, String fromDate);

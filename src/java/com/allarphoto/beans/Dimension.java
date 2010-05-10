@@ -20,7 +20,7 @@
 // Title: Dimension
 // Author: Michael Stover
 // Company: Lazer inc.
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

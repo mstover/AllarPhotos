@@ -1,1 +1,1 @@
-new com.lazerinc.ecommerce.DatabaseUtilities()
+new com.allarphoto.ecommerce.DatabaseUtilities()

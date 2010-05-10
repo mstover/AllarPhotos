@@ -1,4 +1,4 @@
-package com.lazerinc.client.beans;
+package com.allarphoto.client.beans;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -8,17 +8,17 @@ import java.util.Set;
 
 import org.coinjema.collections.HashTree;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.beans.City;
-import com.lazerinc.beans.Company;
-import com.lazerinc.beans.Country;
-import com.lazerinc.beans.Referrer;
-import com.lazerinc.beans.State;
-import com.lazerinc.ecommerce.CommerceUser;
-import com.lazerinc.ecommerce.UserGroup;
-import com.lazerinc.utils.Functions;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.beans.City;
+import com.allarphoto.beans.Company;
+import com.allarphoto.beans.Country;
+import com.allarphoto.beans.Referrer;
+import com.allarphoto.beans.State;
+import com.allarphoto.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.UserGroup;
+import com.allarphoto.utils.Functions;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 public class UserBean implements Serializable {
 	private static final long serialVersionUID = 1;

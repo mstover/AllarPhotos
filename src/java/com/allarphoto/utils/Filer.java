@@ -12,7 +12,7 @@
  * other entities.
  **********************************************************************************************************************/
 
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -33,7 +33,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
 
-import com.lazerinc.application.Controller;
+import com.allarphoto.application.Controller;
 
 /*******************************************************************************
  * Class for simplified File and keyboard input/output.

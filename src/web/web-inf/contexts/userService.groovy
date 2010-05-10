@@ -1,1 +1,1 @@
-new com.lazerinc.server.UserService()
+new com.allarphoto.server.UserService()

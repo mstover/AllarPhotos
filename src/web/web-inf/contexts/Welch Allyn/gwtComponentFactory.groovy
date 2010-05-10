@@ -1,1 +1,1 @@
-com.lazerinc.ajaxclient.client.components.wa.WAComponentFactory.class
+com.allarphoto.ajaxclient.client.components.wa.WAComponentFactory.class

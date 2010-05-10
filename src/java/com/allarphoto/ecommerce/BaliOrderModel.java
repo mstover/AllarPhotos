@@ -3,13 +3,13 @@
  * rights reserved.
  **********************************************************************************************************************/
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import org.apache.log4j.Logger;
 import org.coinjema.context.CoinjemaDynamic;
 
-import com.lazerinc.application.Product;
-import com.lazerinc.beans.OrderItem;
+import com.allarphoto.application.Product;
+import com.allarphoto.beans.OrderItem;
 
 public class BaliOrderModel extends LazerwebOrderModel {
 

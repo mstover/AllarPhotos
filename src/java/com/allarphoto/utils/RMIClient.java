@@ -1,10 +1,10 @@
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.io.File;
 import java.rmi.Naming;
 import java.rmi.RMISecurityManager;
 
-import com.lazerinc.rmi.PackerInterface;
+import com.allarphoto.rmi.PackerInterface;
 
 public class RMIClient {
 
@@ -17,7 +17,7 @@ public class RMIClient {
 				System.setSecurityManager(new RMISecurityManager());
 			} // */
 			PackerInterface pi = (PackerInterface) Naming
-					.lookup("//archimedes:1099/com.lazerinc.rmi.Packer");
+					.lookup("//archimedes:1099/com.allarphoto.rmi.Packer");
 
 			String ds = args[0];
 			String outputFile = args[1];

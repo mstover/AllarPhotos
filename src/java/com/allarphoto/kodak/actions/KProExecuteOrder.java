@@ -1,8 +1,8 @@
-package com.lazerinc.kodak.actions;
+package com.allarphoto.kodak.actions;
 
-import com.lazerinc.client.beans.ShoppingCartBean;
-import com.lazerinc.client.exceptions.InformationalException;
-import com.lazerinc.client.exceptions.LazerwebException;
+import com.allarphoto.client.beans.ShoppingCartBean;
+import com.allarphoto.client.exceptions.InformationalException;
+import com.allarphoto.client.exceptions.LazerwebException;
 
 public class KProExecuteOrder extends KodakExecuteOrder {
 

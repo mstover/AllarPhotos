@@ -1,12 +1,12 @@
-package com.lazerinc.security;
+package com.allarphoto.security;
 
 import java.util.Arrays;
 import java.util.Collection;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.beans.User;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Rights;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.beans.User;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Rights;
 
 public class VirtualGroupBasedSecurity extends AbstractSecurityModel {
 	private static final long serialVersionUID = 1;

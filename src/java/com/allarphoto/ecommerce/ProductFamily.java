@@ -5,7 +5,7 @@
 // Company: Lazer Inc.
 // Description: ProductFamily
 
-package com.lazerinc.ecommerce;
+package com.allarphoto.ecommerce;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -41,25 +41,25 @@ import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.util.Files;
 import strategiclibrary.util.TimeConstants;
 
-import com.lazerinc.ajaxclient.client.beans.OrderVerificationPackage;
-import com.lazerinc.application.ExpirationTester;
-import com.lazerinc.application.NullSecurity;
-import com.lazerinc.application.Product;
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.application.impl.DefaultExpirationTester;
-import com.lazerinc.application.impl.DefaultProductComparator;
-import com.lazerinc.beans.LogItem;
-import com.lazerinc.beans.Path;
-import com.lazerinc.cached.DatabaseObject;
-import com.lazerinc.cached.functions.ProductAdd;
-import com.lazerinc.cached.functions.ProductFieldAdd;
-import com.lazerinc.category.ProductField;
-import com.lazerinc.client.beans.ProductBean;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.dbtools.DBConnect;
-import com.lazerinc.server.ProductService;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.ajaxclient.client.beans.OrderVerificationPackage;
+import com.allarphoto.application.ExpirationTester;
+import com.allarphoto.application.NullSecurity;
+import com.allarphoto.application.Product;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.application.impl.DefaultExpirationTester;
+import com.allarphoto.application.impl.DefaultProductComparator;
+import com.allarphoto.beans.LogItem;
+import com.allarphoto.beans.Path;
+import com.allarphoto.cached.DatabaseObject;
+import com.allarphoto.cached.functions.ProductAdd;
+import com.allarphoto.cached.functions.ProductFieldAdd;
+import com.allarphoto.category.ProductField;
+import com.allarphoto.client.beans.ProductBean;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.dbtools.DBConnect;
+import com.allarphoto.server.ProductService;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 @CoinjemaObject
 public class ProductFamily implements Serializable, Comparator, DatabaseObject {

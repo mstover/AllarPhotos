@@ -1,15 +1,15 @@
-package com.lazerinc.servlet.actionhandler.commerce;
+package com.allarphoto.servlet.actionhandler.commerce;
 
-import static com.lazerinc.servlet.ActionConstants.ACTION_GET_ORDER_DETAILS;
-import static com.lazerinc.servlet.RequestConstants.REQUEST_ORDER_NUMBER;
+import static com.allarphoto.servlet.ActionConstants.ACTION_GET_ORDER_DETAILS;
+import static com.allarphoto.servlet.RequestConstants.REQUEST_ORDER_NUMBER;
 import strategiclibrary.service.webaction.HandlerData;
 
-import com.lazerinc.application.SecurityModel;
-import com.lazerinc.client.beans.UserBean;
-import com.lazerinc.client.exceptions.LazerwebException;
-import com.lazerinc.ecommerce.Order;
-import com.lazerinc.utils.Resource;
-import com.lazerinc.utils.Right;
+import com.allarphoto.application.SecurityModel;
+import com.allarphoto.client.beans.UserBean;
+import com.allarphoto.client.exceptions.LazerwebException;
+import com.allarphoto.ecommerce.Order;
+import com.allarphoto.utils.Resource;
+import com.allarphoto.utils.Right;
 
 /**
  * After all the instructions have been set in the users shopping cart, this
@@ -35,7 +35,7 @@ import com.lazerinc.utils.Right;
 public class GetOrderDetails extends ApproveOrder {
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#performAction(HandlerData)
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#performAction(HandlerData)
 	 */
 	public void performAction(HandlerData actionInfo) throws LazerwebException {
 		String orderNumber = actionInfo.getParameter(REQUEST_ORDER_NUMBER);
@@ -64,7 +64,7 @@ public class GetOrderDetails extends ApproveOrder {
 	}
 
 	/**
-	 * @see com.lazerinc.servlet.actionhandler.ActionHandler#getActionName()
+	 * @see com.allarphoto.servlet.actionhandler.ActionHandler#getActionName()
 	 */
 	public String getName() {
 		return ACTION_GET_ORDER_DETAILS;

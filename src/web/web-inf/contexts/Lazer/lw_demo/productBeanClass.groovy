@@ -1,1 +1,1 @@
-com.lazerinc.mcc.MccProductBean.class
+com.allarphoto.mcc.MccProductBean.class

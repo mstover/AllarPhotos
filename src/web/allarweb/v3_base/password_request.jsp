@@ -1,7 +1,7 @@
 <%@ include file="/bali/include/global.inc" %>
 <%@ include file="/bali/include/handleActions.inc" %>
-<jsp:useBean id="passwordMessage" scope="request" class="com.lazerinc.client.beans.StringBean"/>
-<jsp:useBean id="passwordSuccess" scope="request" class="com.lazerinc.client.beans.StringBean"/>
+<jsp:useBean id="passwordMessage" scope="request" class="com.allarphoto.client.beans.StringBean"/>
+<jsp:useBean id="passwordSuccess" scope="request" class="com.allarphoto.client.beans.StringBean"/>
 
 <% String title = "Password Request", banner = "login", help = "password"; // page title and banner image %>
 <!--Header that every page contains-->

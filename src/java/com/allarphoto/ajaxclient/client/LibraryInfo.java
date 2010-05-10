@@ -1,13 +1,13 @@
-package com.lazerinc.ajaxclient.client;
+package com.allarphoto.ajaxclient.client;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
 import com.google.gwt.user.client.rpc.RemoteService;
-import com.lazerinc.ajaxclient.client.beans.AjaxProduct;
-import com.lazerinc.ajaxclient.client.beans.AjaxProductFamily;
-import com.lazerinc.ajaxclient.client.beans.DownloadStats;
+import com.allarphoto.ajaxclient.client.beans.AjaxProduct;
+import com.allarphoto.ajaxclient.client.beans.AjaxProductFamily;
+import com.allarphoto.ajaxclient.client.beans.DownloadStats;
 
 public interface LibraryInfo extends RemoteService {
 
@@ -63,7 +63,7 @@ public interface LibraryInfo extends RemoteService {
 	public List getDisplayableFields(String family);
 
 	/**
-	 * @gwt.typeArgs <com.lazerinc.ajaxclient.client.beans.AjaxProductField>
+	 * @gwt.typeArgs <com.allarphoto.ajaxclient.client.beans.AjaxProductField>
 	 * @param family
 	 * @return
 	 */

@@ -1,4 +1,4 @@
-package com.lazerinc.servlet;
+package com.allarphoto.servlet;
 
 import java.io.IOException;
 
@@ -42,6 +42,6 @@ public class InvestmentReturn extends HttpServlet {
 	// Get Servlet information
 
 	public String getServletInfo() {
-		return "com.lazerinc.servlet.InvestmentReturn Information";
+		return "com.allarphoto.servlet.InvestmentReturn Information";
 	}
 }

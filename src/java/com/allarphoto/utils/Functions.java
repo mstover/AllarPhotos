@@ -12,7 +12,7 @@
  * other entities.
  **********************************************************************************************************************/
 
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -1995,10 +1995,10 @@ public class Functions {
 	 *            int holding maximum height for this image
 	 * @return array holding the new, adjusted height and width of image.
 	 **************************************************************************/
-	public static com.lazerinc.beans.Dimension resizeDimension(
-			com.lazerinc.beans.Dimension current,
-			com.lazerinc.beans.Dimension max) {
-		com.lazerinc.beans.Dimension retVal = new com.lazerinc.beans.Dimension();
+	public static com.allarphoto.beans.Dimension resizeDimension(
+			com.allarphoto.beans.Dimension current,
+			com.allarphoto.beans.Dimension max) {
+		com.allarphoto.beans.Dimension retVal = new com.allarphoto.beans.Dimension();
 		float widthRatio = current.getWidth() / max.getWidth();
 		float heightRatio = current.getHeight() / max.getHeight();
 		if (heightRatio > 1 || widthRatio > 1) {
@@ -2021,9 +2021,9 @@ public class Functions {
 	 *            Name of file that holds binary image data
 	 * @return Image object
 	 **************************************************************************/
-	public static com.lazerinc.beans.Dimension getImageDimensions(
+	public static com.allarphoto.beans.Dimension getImageDimensions(
 			String filename, String defaultImage) {
-		com.lazerinc.beans.Dimension dim = new com.lazerinc.beans.Dimension();
+		com.allarphoto.beans.Dimension dim = new com.allarphoto.beans.Dimension();
 		javax.media.jai.RenderedOp destImage;
 		try {
 			destImage = javax.media.jai.JAI.create("fileload", filename);

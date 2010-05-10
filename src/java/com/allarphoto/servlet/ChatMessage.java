@@ -1,4 +1,4 @@
-package com.lazerinc.servlet;
+package com.allarphoto.servlet;
 
 import java.util.Hashtable;
 

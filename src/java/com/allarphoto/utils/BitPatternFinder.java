@@ -20,7 +20,7 @@
 // Title: BitPatternFinder
 // Author: Michael Stover
 // Company: Lazer inc.
-package com.lazerinc.utils;
+package com.allarphoto.utils;
 
 import java.util.BitSet;
 

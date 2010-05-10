@@ -1,11 +1,11 @@
-package com.lazerinc.beans;
+package com.allarphoto.beans;
 
 import org.coinjema.context.CoinjemaDynamic;
 
 import strategiclibrary.service.cache.CacheService;
 import strategiclibrary.util.Converter;
 
-import com.lazerinc.ecommerce.CommerceUser;
+import com.allarphoto.ecommerce.CommerceUser;
 
 public class UploadItem extends DownloadItem {
 
